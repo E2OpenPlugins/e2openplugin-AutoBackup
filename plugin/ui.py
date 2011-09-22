@@ -30,7 +30,7 @@ def getLocationChoices():
 	return result
 
 def getStandardFiles():
-	return [os.path.normpath(n.strip()) for n in open('/usr/lib/enigma2/python/Plugins/PLi/AutoBackup/backup.cfg', 'r')]
+	return [os.path.normpath(n.strip()) for n in open('/usr/lib/enigma2/python/Plugins/Extensions/AutoBackup/backup.cfg', 'r')]
 
 def getSelectedFiles():
 	result = getStandardFiles()
@@ -152,7 +152,7 @@ class Config(ConfigListScreen,Screen):
 					st = os.stat(os.path.join(path, ".timestamp"))
 					try:
 						macaddr = open('/sys/class/net/eth0/address').read().strip().replace(':','')
-						fn = "PLi-AutoBackup%s.tar.gz" % macaddr
+						fn = "AutoBackup%s.tar.gz" % macaddr
 						st = os.stat(os.path.join(path, fn))
 					except:
 						# No box-specific backup found

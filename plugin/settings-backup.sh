@@ -19,7 +19,7 @@ then
 	echo "No destination, aborted"
 	exit 1
 fi
-PLI_BACKUPFILE=/usr/lib/enigma2/python/Plugins/PLi/AutoBackup/backup.cfg
+BACKUPFILE=/usr/lib/enigma2/python/Plugins/Extensions/AutoBackup/backup.cfg
 USER_BACKUPFILE=/etc/backup.cfg
 USER_AUTOINSTALL=/etc/autoinstall
 INSTALLED=/etc/installed
@@ -37,9 +37,9 @@ fi
 echo "Backup to ${BACKUPDIR}/backup/"
 mkdir -p ${BACKUPDIR}/backup
 
-if [ -f ${PLI_BACKUPFILE} ] 
+if [ -f ${BACKUPFILE} ] 
 then
-	for file in $(cat ${PLI_BACKUPFILE})
+	for file in $(cat ${BACKUPFILE})
 	do
 		if [ -f $file ]
 		then
@@ -82,10 +82,10 @@ fi
 
 crontab -l > /tmp/crontab 2> /dev/null && echo /tmp/crontab >> ${RESTORE_TEMP}
 
-tar -czf ${BACKUPDIR}/backup/PLi-AutoBackup${MACADDR}.tar.gz --files-from=/tmp/restore.cfg 2> /dev/null
+tar -czf ${BACKUPDIR}/backup/AutoBackup${MACADDR}.tar.gz --files-from=/tmp/restore.cfg 2> /dev/null
 if [ ! -z "${MACADDR}" ]
 then
-	ln -f -s PLi-AutoBackup${MACADDR}.tar.gz ${BACKUPDIR}/backup/PLi-AutoBackup.tar.gz || cp -p ${BACKUPDIR}/backup/PLi-AutoBackup${MACADDR}.tar.gz ${BACKUPDIR}/backup/PLi-AutoBackup.tar.gz  
+	ln -f -s AutoBackup${MACADDR}.tar.gz ${BACKUPDIR}/backup/AutoBackup.tar.gz || cp -p ${BACKUPDIR}/backup/AutoBackup${MACADDR}.tar.gz ${BACKUPDIR}/backup/AutoBackup.tar.gz  
 fi
 
 if [ "${AUTOINSTALL}" == "yes" -a -f ${INSTALLED} ]
