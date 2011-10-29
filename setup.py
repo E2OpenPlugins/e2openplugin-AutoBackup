@@ -7,5 +7,6 @@ setup (name = 'enigma2-plugin-extensions-autobackup',
        package_dir = {pkg: 'plugin'},
        packages = [pkg],
        package_data = {pkg: 
-           ['plugin.png', 'backup.cfg', 'settings-backup.sh']}
+           ['plugin.png', 'backup.cfg', 'settings-backup.sh']},
+       scripts = ['plugin/settings-backup.sh']
       )
