@@ -10,6 +10,8 @@ from Components.ConfigList import ConfigListScreen
 from Components.ActionMap import ActionMap
 from Components.Button import Button
 from Components.Label import Label
+from Screens.ChoiceBox import ChoiceBox
+from Screens.MessageBox import MessageBox
 from Tools.FuzzyDate import FuzzyTime
 
 FRIENDLY = {
@@ -193,6 +195,21 @@ class Config(ConfigListScreen,Screen):
 		self.close(False,self.session)
 
 	def menu(self):
+		lst = [
+		        (_("Select files to backup"), self.selectFiles),
+		        (_("Run a backup now"), self.dobackup),
+		]
+		if self.isActive:
+		        lst.append((_("Don't auto-restore this next time"), self.disable))
+		        lst.append((_("Restore"), self.dorestore))
+		self.session.openWithCallback(self.menuDone, ChoiceBox, list = lst)
+
+	def menuDone(self, result):
+	        if not result or not result[1]:
+	                return
+		result[1]()
+
+	def selectFiles(self):
 		self.session.open(BackupSelection)
 
 	def showOutput(self):
@@ -208,6 +225,28 @@ class Config(ConfigListScreen,Screen):
 		self.showOutput()
 		self["statusbar"].setText(_('Running'))
 		cmd = plugin.backupCommand()
+		if self.container.execute(cmd):
+			print "[AutoBackup] failed to execute"
+			self.showOutput()
+
+	def dorestore(self):
+	        where = self.cfgwhere.value
+		if not where:
+			return
+		if not self.isActive:
+		        return
+		self.session.openWithCallback(self.dorestorenow, MessageBox,
+			 _("This will restore your backup on %s.\nDo you really want to restore those settings and restart?") % where)
+	def dorestorenow(self, confirm):
+	        if not confirm:
+	                return
+	        where = self.cfgwhere.value
+	        if not where:
+	                return # huh?
+		self.data = ''
+		self.showOutput()
+		self["statusbar"].setText(_('Running'))
+		cmd = '/etc/init.d/settings-restore.sh ' + where + ' ; killall enigma2'
 		if self.container.execute(cmd):
 			print "[AutoBackup] failed to execute"
 			self.showOutput()
