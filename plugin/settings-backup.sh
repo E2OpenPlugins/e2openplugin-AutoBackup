@@ -82,10 +82,10 @@ fi
 
 crontab -l > /tmp/crontab 2> /dev/null && echo /tmp/crontab >> ${RESTORE_TEMP}
 
-tar -czf ${BACKUPDIR}/backup/AutoBackup${MACADDR}.tar.gz --files-from=/tmp/restore.cfg 2> /dev/null
+tar -czf ${BACKUPDIR}/backup/PLi-AutoBackup${MACADDR}.tar.gz --files-from=/tmp/restore.cfg 2> /dev/null
 if [ ! -z "${MACADDR}" ]
 then
-	ln -f -s AutoBackup${MACADDR}.tar.gz ${BACKUPDIR}/backup/AutoBackup.tar.gz || cp -p ${BACKUPDIR}/backup/AutoBackup${MACADDR}.tar.gz ${BACKUPDIR}/backup/AutoBackup.tar.gz  
+	ln -f -s PLi-AutoBackup${MACADDR}.tar.gz ${BACKUPDIR}/backup/PLi-AutoBackup.tar.gz || cp -p ${BACKUPDIR}/backup/PLi-AutoBackup${MACADDR}.tar.gz ${BACKUPDIR}/backup/PLi-AutoBackup.tar.gz  
 fi
 
 if [ "${AUTOINSTALL}" == "yes" -a -f ${INSTALLED} ]
