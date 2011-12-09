@@ -80,6 +80,7 @@ class Config(ConfigListScreen,Screen):
 		
 	def __init__(self, session, args = 0):
 		self.session = session
+		self.skinName = ["Config_AutoBackup", "Config"]
 		self.setup_title = _("AutoBackup Configuration")
 		Screen.__init__(self, session)
 		cfg = config.plugins.autobackup
@@ -269,7 +270,7 @@ class Config(ConfigListScreen,Screen):
 
 class BackupSelection(Screen):
 	skin = """
-		<screen name="BackupSelection" position="center,center" size="560,400" title="Select files/folders to backup">
+		<screen position="center,center" size="560,400" title="Select files/folders to backup">
 			<ePixmap pixmap="skin_default/buttons/red.png" position="0,0" size="140,40" alphatest="on" />
 			<ePixmap pixmap="skin_default/buttons/green.png" position="140,0" size="140,40" alphatest="on" />
 			<ePixmap pixmap="skin_default/buttons/yellow.png" position="280,0" size="140,40" alphatest="on" />
@@ -281,6 +282,7 @@ class BackupSelection(Screen):
 
 	def __init__(self, session):
 		Screen.__init__(self, session)
+		self.skinName = ["BackupSelection_AutoBackup", "BackupSelection"]
 		from Components.Sources.StaticText import StaticText
 		from Components.FileList import MultiFileSelectList
 		self["key_red"] = StaticText(_("Cancel"))
