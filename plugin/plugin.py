@@ -1,3 +1,4 @@
+from . import _
 import time
 import os
 import enigma

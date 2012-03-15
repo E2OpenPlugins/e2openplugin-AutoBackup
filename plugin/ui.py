@@ -1,6 +1,6 @@
 ##################################
 # Configuration GUI
-
+from . import _
 import plugin
 import os
 import enigma
@@ -127,6 +127,7 @@ class Config(ConfigListScreen,Screen):
 		self.container.dataAvail.append(self.dataAvail)
 		self.cfgwhere.addNotifier(self.changedWhere)
 		self.onClose.append(self.__onClose)
+		self.setTitle(_("AutoBackup Configuration"))
 
 	# for summary:
 	def changedEntry(self):

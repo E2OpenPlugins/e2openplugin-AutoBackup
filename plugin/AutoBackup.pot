@@ -1,0 +1,145 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2012-03-15 07:58+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: plugin.py:121
+msgid "Automatic settings backup"
+msgstr ""
+
+#: ui.py:18
+msgid "Harddisk"
+msgstr ""
+
+#: ui.py:19
+msgid "USB"
+msgstr ""
+
+#: ui.py:20
+msgid "CF"
+msgstr ""
+
+#: ui.py:21
+msgid "SD"
+msgstr ""
+
+#: ui.py:84
+msgid "AutoBackup Configuration"
+msgstr ""
+
+#: ui.py:97
+msgid "Nowhere"
+msgstr ""
+
+#: ui.py:100
+msgid "Backup location"
+msgstr ""
+
+#: ui.py:101
+msgid "Daily automatic backup"
+msgstr ""
+
+#: ui.py:102
+msgid "Automatic start time"
+msgstr ""
+
+#: ui.py:103
+msgid "Create Autoinstall"
+msgstr ""
+
+#: ui.py:106 ui.py:288
+msgid "Cancel"
+msgstr ""
+
+#: ui.py:107
+msgid "Ok"
+msgstr ""
+
+#: ui.py:108
+msgid "Manual"
+msgstr ""
+
+#: ui.py:146
+msgid "No suitable media found, insert USB stick, flash card or harddisk."
+msgstr ""
+
+#: ui.py:152
+msgid "No backup present"
+msgstr ""
+
+#: ui.py:164
+msgid "Last backup date"
+msgstr ""
+
+#: ui.py:167
+msgid "Disabled"
+msgstr ""
+
+#: ui.py:169
+msgid "Disable"
+msgstr ""
+
+#: ui.py:200
+msgid "Select files to backup"
+msgstr ""
+
+#: ui.py:201
+msgid "Run a backup now"
+msgstr ""
+
+#: ui.py:204
+msgid "Don't auto-restore this next time"
+msgstr ""
+
+#: ui.py:205
+msgid "Restore"
+msgstr ""
+
+#: ui.py:227 ui.py:249
+msgid "Running"
+msgstr ""
+
+#: ui.py:240
+#, python-format
+msgid ""
+"This will restore your backup on %s.\n"
+"Do you really want to restore those settings and restart?"
+msgstr ""
+
+#: ui.py:258
+msgid "Failed"
+msgstr ""
+
+#: ui.py:260
+msgid "Done"
+msgstr ""
+
+#: ui.py:289
+msgid "Save"
+msgstr ""
+
+#: ui.py:319
+msgid "Select files/folders to backup"
+msgstr ""
+
+#: ui.py:324
+msgid "Deselect"
+msgstr ""
+
+#: ui.py:326
+msgid "Select"
+msgstr ""
