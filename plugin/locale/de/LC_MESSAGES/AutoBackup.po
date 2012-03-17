@@ -1,0 +1,151 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: enigma2-plugin-extensions-autobackup\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2012-03-15 07:58+0100\n"
+"PO-Revision-Date: 2012-03-17 08:54+0100\n"
+"Last-Translator: \n"
+"Language-Team: daddelfalk\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-Language: German\n"
+"X-Poedit-Country: GERMANY\n"
+"X-Poedit-SourceCharset: iso-8859-15\n"
+
+#
+msgid "Automatic settings backup"
+msgstr "Automatische Sicherung der Einstellungen"
+
+#
+msgid "Harddisk"
+msgstr "Festplatte"
+
+#
+msgid "USB"
+msgstr "USB"
+
+#
+msgid "CF"
+msgstr "CF"
+
+#
+msgid "SD"
+msgstr "SD"
+
+#
+msgid "AutoBackup Configuration"
+msgstr "AutoBackup Konfiguration"
+
+#
+msgid "Nowhere"
+msgstr "Nirgends"
+
+#
+msgid "Backup location"
+msgstr "Sicherungs-Ort"
+
+#
+msgid "Daily automatic backup"
+msgstr "Automatische tägliche Sicherung"
+
+#
+msgid "Automatic start time"
+msgstr "Automatische Startzeit"
+
+#
+msgid "Create Autoinstall"
+msgstr "Erstelle Automatische Installation"
+
+#
+msgid "Cancel"
+msgstr "Abbrechen"
+
+#
+msgid "Ok"
+msgstr "OK"
+
+#
+msgid "Manual"
+msgstr "Manuell"
+
+#
+msgid "No suitable media found, insert USB stick, flash card or harddisk."
+msgstr "Kein passendes Sicherungsmedium gefunden. Bitte einen USB-Stick, CF oder Festplatte anstecken."
+
+#
+msgid "No backup present"
+msgstr "Keine Sicherung vorhanden"
+
+#
+msgid "Last backup date"
+msgstr "Letztes Sicherungsdatum"
+
+#
+msgid "Disabled"
+msgstr "Deaktiviert"
+
+#
+msgid "Disable"
+msgstr "Deaktivieren"
+
+#
+msgid "Select files to backup"
+msgstr "Dateien zum Sichern auswählen"
+
+#
+msgid "Run a backup now"
+msgstr "Jetzt eine Sicherung starten"
+
+#
+msgid "Don't auto-restore this next time"
+msgstr "Nächstes Mal keine automatische Wiederherstellung"
+
+#
+msgid "Restore"
+msgstr "Wiederherstellen"
+
+#
+msgid "Running"
+msgstr "Wird ausgeführt"
+
+#
+#, python-format
+msgid ""
+"This will restore your backup on %s.\n"
+"Do you really want to restore those settings and restart?"
+msgstr ""
+"Damit wird Ihre Sicherung aus %s wiederhergestellt.\n"
+"Wollen Sie die Einstellungen wirklich wiederherstellen und neu starten?"
+
+#
+msgid "Failed"
+msgstr "Fehlgeschlagen"
+
+#
+msgid "Done"
+msgstr "Beendet"
+
+#
+msgid "Save"
+msgstr "Speichern"
+
+#
+msgid "Select files/folders to backup"
+msgstr "Wählen Sie Dateien/Ordner für die Sicherung"
+
+#
+msgid "Deselect"
+msgstr "Markierung aufheben"
+
+#
+msgid "Select"
+msgstr "Auswählen"
+
