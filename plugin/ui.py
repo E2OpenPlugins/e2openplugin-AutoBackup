@@ -29,6 +29,15 @@ def getLocationChoices():
 			if items[0].startswith('//'):
 				desc += ' (*)'
 			result.append((items[1], desc))
+		elif items[1] == '/' and items[0].startswith('/dev/'):
+			# Box that has a rootfs mounted from a device
+			desc = _("root")
+			# On a 7025, that'd be the harddisk or CF
+			if items[0].startswith('/dev/hdc'):
+				desc = _("CF")
+			elif items[0].startswith('/dev/hda'):
+				desk = _("Harddisk")
+			result.append((items[1], desc))
 	return result
 
 def getStandardFiles():
