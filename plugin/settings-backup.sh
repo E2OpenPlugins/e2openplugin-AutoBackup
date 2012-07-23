@@ -70,6 +70,7 @@ then
 fi
 
 cp -f /etc/passwd /tmp && echo /tmp/passwd >> ${RESTORE_TEMP}
+cp -f /etc/shadow /tmp && echo /tmp/shadow >> ${RESTORE_TEMP}
 
 if [ -f /etc/fstab ]
 then
@@ -114,5 +115,6 @@ rm -f /tmp/restore.cfg
 rm -f /tmp/crontab
 rm -f /tmp/fstab
 rm -f /tmp/passwd
+rm -f /tmp/shadow
 rm -f ${TEMP_INSTALLED}
 true
