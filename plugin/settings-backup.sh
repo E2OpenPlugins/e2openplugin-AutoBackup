@@ -37,7 +37,7 @@ fi
 echo "Backup to ${BACKUPDIR}/backup/"
 mkdir -p ${BACKUPDIR}/backup
 
-if [ -f ${BACKUPFILE} ] 
+if [ -f ${BACKUPFILE} ]
 then
 	for file in $(cat ${BACKUPFILE})
 	do
@@ -53,7 +53,7 @@ then
 	done
 fi
 
-if [ -f ${USER_BACKUPFILE} ] 
+if [ -f ${USER_BACKUPFILE} ]
 then
 	for file in $(cat ${USER_BACKUPFILE})
 	do
@@ -77,7 +77,7 @@ then
   do
     grep "${fstype}" /etc/fstab >> /tmp/fstab
   done
-  [ -s /tmp/fstab ] && echo /tmp/fstab >> ${RESTORE_TEMP} 
+  [ -s /tmp/fstab ] && echo /tmp/fstab >> ${RESTORE_TEMP}
 fi
 
 crontab -l > /tmp/crontab 2> /dev/null && echo /tmp/crontab >> ${RESTORE_TEMP}
@@ -85,7 +85,7 @@ crontab -l > /tmp/crontab 2> /dev/null && echo /tmp/crontab >> ${RESTORE_TEMP}
 tar -czf ${BACKUPDIR}/backup/PLi-AutoBackup${MACADDR}.tar.gz --files-from=/tmp/restore.cfg 2> /dev/null
 if [ ! -z "${MACADDR}" ]
 then
-	ln -f -s PLi-AutoBackup${MACADDR}.tar.gz ${BACKUPDIR}/backup/PLi-AutoBackup.tar.gz || cp -p ${BACKUPDIR}/backup/PLi-AutoBackup${MACADDR}.tar.gz ${BACKUPDIR}/backup/PLi-AutoBackup.tar.gz  
+	ln -f -s PLi-AutoBackup${MACADDR}.tar.gz ${BACKUPDIR}/backup/PLi-AutoBackup.tar.gz || cp -p ${BACKUPDIR}/backup/PLi-AutoBackup${MACADDR}.tar.gz ${BACKUPDIR}/backup/PLi-AutoBackup.tar.gz
 fi
 
 if [ "${AUTOINSTALL}" == "yes" -a -f ${INSTALLED} ]
