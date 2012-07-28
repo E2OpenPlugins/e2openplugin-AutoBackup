@@ -1,0 +1,144 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: auto backup Persian Translation\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2012-03-15 07:58+0100\n"
+"PO-Revision-Date: 2012-07-23 22:02+0330\n"
+"Last-Translator: mehdi <mehdi_ar_yekta@yahoo.com>\n"
+"Language-Team: Persian Professionals <persianpros@yahoo.com>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: Persian\n"
+"X-Poedit-Country: IRAN, ISLAMIC REPUBLIC OF\n"
+
+#
+msgid "Automatic settings backup"
+msgstr "تهیه یک نسخه پشتیبان از لیست تنظیمات"
+
+#
+msgid "Harddisk"
+msgstr "هارد دیسک"
+
+#
+msgid "USB"
+msgstr "فلش مموری"
+
+#
+msgid "CF"
+msgstr "کارت حافظه از نوع از نوع سی اف"
+
+#
+msgid "SD"
+msgstr "کارت حافظه از نوع اس دی"
+
+#
+msgid "AutoBackup Configuration"
+msgstr "پیکربندی خودکار به منظور تهیه نسخه پشتیبان"
+
+#
+msgid "Nowhere"
+msgstr "هیچ کجا "
+
+#
+msgid "Backup location"
+msgstr "محل ذخیره سازی نسخه پشتیبان"
+
+#
+msgid "Daily automatic backup"
+msgstr "تهیه نسخه پشتیبان بصورت روزانه"
+
+#
+msgid "Automatic start time"
+msgstr "تنظیم زمان برای شروع خودکار"
+
+#
+msgid "Create Autoinstall"
+msgstr "ایجاد یک نصب خودکار"
+
+#
+msgid "Cancel"
+msgstr "لغو کردن"
+
+#
+msgid "Ok"
+msgstr "کار تایید می شود "
+
+#
+msgid "Manual"
+msgstr "کار بصورت دستی "
+
+#
+msgid "No suitable media found, insert USB stick, flash card or harddisk."
+msgstr "هیچ رسانه مناسبی یافت نگردید پس فلش مموری یا کارت حافظه یا هارد دیسک را متصل کنید"
+
+#
+msgid "No backup present"
+msgstr "در حال حاضر هیچ نسخه پشتیبانی وجود ندارد"
+
+#
+msgid "Last backup date"
+msgstr "زمان آخرین تهیه نسخه پشتیبان"
+
+#
+msgid "Disabled"
+msgstr "غیر فعال گردید"
+
+#
+msgid "Disable"
+msgstr "غیر فعال"
+
+#
+msgid "Select files to backup"
+msgstr "پوشه مورد نظر جهت ذخیره سازی نسخه پشتیبان را انتخاب کنید"
+
+#
+msgid "Run a backup now"
+msgstr "در حال اجرای نسخه پشتیبان"
+
+#
+msgid "Don't auto-restore this next time"
+msgstr "برای بار بعدی بصورت خودکار بازگردانی نکن "
+
+#
+msgid "Restore"
+msgstr "بازگردان کردن"
+
+#
+msgid "Running"
+msgstr "عملیات در حال اجرا است"
+
+#
+#, python-format
+msgid ""
+"This will restore your backup on %s.\n"
+"Do you really want to restore those settings and restart?"
+msgstr ""
+"فایل شما بازگردانی خواهد شد %s.\n"
+" آیا واقعا قصد بازگردانی تنظیمات و راه اندازی مجدد را دارید ؟"
+
+#
+msgid "Failed"
+msgstr "عملیات ناموفق"
+
+#
+msgid "Done"
+msgstr "عملیتات انجام گردد"
+
+#
+msgid "Save"
+msgstr "ذخیره سازی عملیات"
+
+#
+msgid "Select files/folders to backup"
+msgstr "فایل و پوشه مورد نظر را جهت ذخیره سازی نسخه پشتیبان انتخاب کنید"
+
+#
+msgid "Deselect"
+msgstr "لغو مورد انتخاب شده"
+
+#
+msgid "Select"
+msgstr "انتخاب کردن"
+
