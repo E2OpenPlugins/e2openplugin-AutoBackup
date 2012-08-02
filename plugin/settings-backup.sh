@@ -70,7 +70,7 @@ then
 fi
 
 cp -f /etc/passwd /tmp && echo /tmp/passwd >> ${RESTORE_TEMP}
-cp -f /etc/shadow /tmp && echo /tmp/shadow >> ${RESTORE_TEMP}
+[ -f /etc/shadow ] && cp -f /etc/shadow /tmp && echo /tmp/shadow >> ${RESTORE_TEMP}
 
 if [ -f /etc/fstab ]
 then
