@@ -35,7 +35,7 @@ else
 fi
 
 echo "Backup to ${BACKUPDIR}/backup/"
-mkdir -p ${BACKUPDIR}/backup
+mkdir -p "${BACKUPDIR}/backup"
 
 if [ -f ${BACKUPFILE} ]
 then
@@ -83,34 +83,34 @@ fi
 
 crontab -l > /tmp/crontab 2> /dev/null && echo /tmp/crontab >> ${RESTORE_TEMP}
 
-tar -czf ${BACKUPDIR}/backup/PLi-AutoBackup${MACADDR}.tar.gz --files-from=/tmp/restore.cfg 2> /dev/null
+tar -czf "${BACKUPDIR}/backup/PLi-AutoBackup${MACADDR}.tar.gz" --files-from=/tmp/restore.cfg 2> /dev/null
 if [ ! -z "${MACADDR}" ]
 then
-	ln -f -s PLi-AutoBackup${MACADDR}.tar.gz ${BACKUPDIR}/backup/PLi-AutoBackup.tar.gz || cp -p ${BACKUPDIR}/backup/PLi-AutoBackup${MACADDR}.tar.gz ${BACKUPDIR}/backup/PLi-AutoBackup.tar.gz
+	ln -f -s PLi-AutoBackup${MACADDR}.tar.gz "${BACKUPDIR}/backup/PLi-AutoBackup.tar.gz" || cp -p "${BACKUPDIR}/backup/PLi-AutoBackup${MACADDR}.tar.gz" "${BACKUPDIR}/backup/PLi-AutoBackup.tar.gz"
 fi
 
 if [ "${AUTOINSTALL}" == "yes" -a -f ${INSTALLED} ]
 then
 	echo "Generating ${BACKUPDIR}/backup/autoinstall${MACADDR}"
 	${IPKG} list_installed | cut -d ' ' -f 1 > ${TEMP_INSTALLED}
-	diff ${INSTALLED} ${TEMP_INSTALLED} | grep '+' | grep -v '@' | grep -v '+++' | sed 's/^+//' > ${BACKUPDIR}/backup/autoinstall${MACADDR}
+	diff ${INSTALLED} ${TEMP_INSTALLED} | grep '+' | grep -v '@' | grep -v '+++' | sed 's/^+//' > "${BACKUPDIR}/backup/autoinstall${MACADDR}"
 	if [ -f ${USER_AUTOINSTALL} ]
 	then
 		for plugin in `cat ${USER_AUTOINSTALL}`
 		do
-			cp -p ${BACKUPDIR}/backup/autoinstall /tmp/autoinstall
+			cp -p "${BACKUPDIR}/backup/autoinstall" /tmp/autoinstall
 			pluginname=`echo ${plugin} | sed 's/_.*//' | sed -re 's/^.+\///'`
-			cat /tmp/autoinstall | grep -v "$pluginname$" > ${BACKUPDIR}/backup/autoinstall${MACADDR}
+			cat /tmp/autoinstall | grep -v "$pluginname$" > "${BACKUPDIR}/backup/autoinstall${MACADDR}"
 		done
-		cat ${USER_AUTOINSTALL} >> ${BACKUPDIR}/backup/autoinstall${MACADDR}
+		cat ${USER_AUTOINSTALL} >> "${BACKUPDIR}/backup/autoinstall${MACADDR}"
 	fi
 	if [ ! -z "${MACADDR}" ]
 	then
-		ln -f -s autoinstall${MACADDR} ${BACKUPDIR}/backup/autoinstall || cp -p ${BACKUPDIR}/backup/autoinstall${MACADDR} ${BACKUPDIR}/backup/autoinstall
+		ln -f -s autoinstall${MACADDR} "${BACKUPDIR}/backup/autoinstall" || cp -p "${BACKUPDIR}/backup/autoinstall${MACADDR}" "${BACKUPDIR}/backup/autoinstall"
 	fi
 fi
 
-touch ${BACKUPDIR}/backup/.timestamp
+touch "${BACKUPDIR}/backup/.timestamp"
 rm -f /tmp/restore.cfg
 rm -f /tmp/crontab
 rm -f /tmp/fstab
