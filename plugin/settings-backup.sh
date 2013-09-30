@@ -70,11 +70,12 @@ if [ "$AUTOINSTALL" == "yes" -a -f $INSTALLED ] ; then
 	diff $INSTALLED $TEMP_INSTALLED | grep "^+" | grep -v "^+++ $TEMP_INSTALLED" | \
                sed 's/^+//' > "$BACKUPDIR/backup/autoinstall$MACADDR"
 	if [ -f $USER_AUTOINSTALL ] ; then
-		while read plugin ; do
-			pluginname=`echo $plugin | sed -e 's/_.*//' -re 's/^.+\///'`
-			mv "$BACKUPDIR/backup/autoinstall$MACADDR"  "$BACKUPDIR/backup/au.$$"
-			grep -v "$pluginname$" "$BACKUPDIR/backup/au.$$"  > "$BACKUPDIR/backup/autoinstall$MACADDR"
-		done < $USER_AUTOINSTALL
+		for plugin in `cat ${USER_AUTOINSTALL}`
+		do
+			pluginname=`echo $plugin | sed -e 's/_.*//' | sed -re 's/^.+\///'`
+			mv "$BACKUPDIR/backup/autoinstall$MACADDR" "$BACKUPDIR/backup/au.$$"
+			grep -v "$pluginname$" "$BACKUPDIR/backup/au.$$" > "$BACKUPDIR/backup/autoinstall$MACADDR"
+		done
 		cat $USER_AUTOINSTALL >> "$BACKUPDIR/backup/autoinstall$MACADDR"
 	fi
 	ln -f -s autoinstall$MACADDR "$BACKUPDIR/backup/autoinstall" || \
