@@ -1,0 +1,115 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: enigma2-plugin-extensions-autobackup\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2012-03-15 07:58+0100\n"
+"PO-Revision-Date: 2013-02-01 14:26+0200\n"
+"Last-Translator: BoxFreak\n"
+"Language-Team: daddelfalk\n"
+"Language: fi\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Generator: Poedit 1.5.4\n"
+
+msgid "AutoBackup Configuration"
+msgstr "AutoBackup Asetukset"
+
+msgid "Automatic settings backup"
+msgstr "Automaattiset asetukset varmuuskopiolle"
+
+msgid "Automatic start time"
+msgstr "Automaattinen aloitusaika"
+
+msgid "Backup location"
+msgstr "Varmuuskopion hakemisto"
+
+msgid "CF"
+msgstr "CF"
+
+msgid "Cancel"
+msgstr "Peruuta"
+
+msgid "Create Autoinstall"
+msgstr "Tee Automaattinen asennus"
+
+msgid "Daily automatic backup"
+msgstr "Päivittäinen automaattinen varmuuskopio"
+
+msgid "Deselect"
+msgstr "Poista valinta"
+
+msgid "Disable"
+msgstr "Poista käytöstä"
+
+msgid "Disabled"
+msgstr "Pois käytöstä"
+
+msgid "Don't auto-restore this next time"
+msgstr "Älä tee automaattista palautusta ensi kerralla"
+
+msgid "Done"
+msgstr "Tehty"
+
+msgid "Failed"
+msgstr "Epäonnistui"
+
+msgid "Harddisk"
+msgstr "Kovalevy"
+
+msgid "Last backup date"
+msgstr "Viimeisen varmuuskopion päiväys"
+
+msgid "Manual"
+msgstr "Manuaalinen"
+
+msgid "No backup present"
+msgstr "Varmuuskopioita ei löydy"
+
+msgid "No suitable media found, insert USB stick, flash card or harddisk."
+msgstr ""
+"Sopivaa tallennuspaikkaa ei löytynyt, lisää USB tikku, muistikortti tai "
+"kovalevy."
+
+msgid "Nowhere"
+msgstr "Ei missään"
+
+msgid "Ok"
+msgstr "Ok"
+
+msgid "Restore"
+msgstr "Palauta"
+
+msgid "Run a backup now"
+msgstr "Käynnistä varmuuskopiointi nyt"
+
+msgid "Running"
+msgstr "Käynnissä"
+
+msgid "SD"
+msgstr "SD"
+
+msgid "Save"
+msgstr "Tallenna"
+
+msgid "Select"
+msgstr "Valitse"
+
+msgid "Select files to backup"
+msgstr "Valitse varmuuskopioitavat tiedostot"
+
+msgid "Select files/folders to backup"
+msgstr "Valitse varmuuskopioitavat tiedostot/hakemistot"
+
+msgid ""
+"This will restore your backup on %s.\n"
+"Do you really want to restore those settings and restart?"
+msgstr ""
+"Tämä palauttaa varmuuskopiosi %s.\n"
+"Haluatko todella palauttaa nämä asetukset ja uudelleenkäynnistää "
+"vastaanottimesi?"
+
+msgid "USB"
+msgstr "USB"
