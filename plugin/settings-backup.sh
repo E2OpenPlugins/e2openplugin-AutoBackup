@@ -55,7 +55,7 @@ cp -f /etc/passwd /tmp && echo /tmp/passwd >> $RESTORE_TEMP
 [ -f /etc/shadow ] && cp -f /etc/shadow /tmp && echo /tmp/shadow >> $RESTORE_TEMP
 
 [ -f /etc/fstab ] && \
-    grep -E ' cifs | nfs | swap |^UUID=|^LABEL=' /etc/fstab > /tmp/fstab && \
+    grep -E ' cifs | nfs | swap |^UUID=|^LABEL=' /etc/fstab | sort -fd | uniq > /tmp/fstab && \
     echo /tmp/fstab >> $RESTORE_TEMP
 
 crontab -l > /tmp/crontab 2> /dev/null && echo /tmp/crontab >> $RESTORE_TEMP
