@@ -86,7 +86,7 @@ class Config(ConfigListScreen,Screen):
 	</widget>
 	<widget name="statusbar" position="10,380" size="470,20" font="Regular;18" />
 </screen>"""
-		
+
 	def __init__(self, session, args = 0):
 		self.session = session
 		self.skinName = ["Config_AutoBackup", "Config"]
@@ -207,18 +207,18 @@ class Config(ConfigListScreen,Screen):
 
 	def menu(self):
 		lst = [
-		        (_("Select files to backup"), self.selectFiles),
-		        (_("Run a backup now"), self.dobackup),
+			(_("Select files to backup"), self.selectFiles),
+			(_("Run a backup now"), self.dobackup),
 		]
 		if self.isActive:
-		        lst.append((_("Don't auto-restore this next time"), self.disable))
-		        lst.append((_("Restore"), self.dorestore))
+			lst.append((_("Don't auto-restore this next time"), self.disable))
+			lst.append((_("Restore"), self.dorestore))
 		lst.append((_("Backup EPG cache"), self.doepgcachebackup))
 		self.session.openWithCallback(self.menuDone, ChoiceBox, list = lst)
 
 	def menuDone(self, result):
-	        if not result or not result[1]:
-	                return
+		if not result or not result[1]:
+			return
 		result[1]()
 
 	def selectFiles(self):
@@ -242,19 +242,19 @@ class Config(ConfigListScreen,Screen):
 			self.showOutput()
 
 	def dorestore(self):
-	        where = self.cfgwhere.value
+		where = self.cfgwhere.value
 		if not where:
 			return
 		if not self.isActive:
-		        return
+			return
 		self.session.openWithCallback(self.dorestorenow, MessageBox,
-			 _("This will restore your backup on %s.\nDo you really want to restore those settings and restart?") % where)
+			_("This will restore your backup on %s.\nDo you really want to restore those settings and restart?") % where)
 	def dorestorenow(self, confirm):
-	        if not confirm:
-	                return
-	        where = self.cfgwhere.value
-	        if not where:
-	                return # huh?
+		if not confirm:
+			return
+		where = self.cfgwhere.value
+		if not where:
+			return # huh?
 		self.data = ''
 		self.showOutput()
 		self["statusbar"].setText(_('Running'))
