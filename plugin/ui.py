@@ -213,6 +213,7 @@ class Config(ConfigListScreen,Screen):
 		if self.isActive:
 		        lst.append((_("Don't auto-restore this next time"), self.disable))
 		        lst.append((_("Restore"), self.dorestore))
+		lst.append((_("Backup EPG cache"), self.doepgcachebackup))
 		self.session.openWithCallback(self.menuDone, ChoiceBox, list = lst)
 
 	def menuDone(self, result):
@@ -277,6 +278,11 @@ class Config(ConfigListScreen,Screen):
 		self.data += s
 		print "[AutoBackup]", s.strip()
 		self.showOutput()
+
+	def doepgcachebackup(self):
+		from enigma import eEPGCache
+		cache = eEPGCache.getInstance()
+		cache.save()
 
 class BackupSelection(Screen):
 	skin = """
