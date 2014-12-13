@@ -46,6 +46,9 @@ msgstr "Nastavení AutoBackup"
 msgid "Nowhere"
 msgstr "Nikde"
 
+msgid "Backup EPG cache"
+msgstr "Uložit EPG cache"
+
 # Autobackup
 #
 #
