@@ -209,11 +209,11 @@ class Config(ConfigListScreen,Screen):
 		lst = [
 			(_("Select files to backup"), self.selectFiles),
 			(_("Run a backup now"), self.dobackup),
+			(_("Backup EPG cache"), self.doepgcachebackup),
 		]
 		if self.isActive:
 			lst.append((_("Don't auto-restore this next time"), self.disable))
 			lst.append((_("Restore"), self.dorestore))
-		lst.append((_("Backup EPG cache"), self.doepgcachebackup))
 		self.session.openWithCallback(self.menuDone, ChoiceBox, list = lst)
 
 	def menuDone(self, result):
