@@ -13,6 +13,7 @@ config.plugins.autobackup.wakeup = ConfigClock(default = ((3*60) + 0) * 60) # 3:
 config.plugins.autobackup.enabled = ConfigEnableDisable(default = False)
 config.plugins.autobackup.autoinstall = ConfigOnOff(default = False)
 config.plugins.autobackup.where = ConfigText(default = "/media/hdd")
+config.plugins.autobackup.epgcache = ConfigOnOff(default = False)
 
 # Global variables
 autoStartTimer = None

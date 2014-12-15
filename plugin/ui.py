@@ -110,6 +110,7 @@ class Config(ConfigListScreen,Screen):
 			getConfigListEntry(_("Daily automatic backup"), cfg.enabled),
 			getConfigListEntry(_("Automatic start time"), cfg.wakeup),
 			getConfigListEntry (_("Create Autoinstall"), cfg.autoinstall),
+			getConfigListEntry (_("EPG cache backup"), cfg.epgcache),
 			]
 		ConfigListScreen.__init__(self, configList, session=session, on_change = self.changedEntry)
 		self["key_red"] = Button(_("Cancel"))
@@ -233,6 +234,8 @@ class Config(ConfigListScreen,Screen):
 		self.saveAll()
 		# Write config file before creating the backup so we have it all
 		configfile.save()
+		if config.plugins.autobackup.epgcache.value:
+			self.doepgcachebackup()
 		self.data = ''
 		self.showOutput()
 		self["statusbar"].setText(_('Running'))
