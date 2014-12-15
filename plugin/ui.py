@@ -249,6 +249,7 @@ class Config(ConfigListScreen,Screen):
 			return
 		self.session.openWithCallback(self.dorestorenow, MessageBox,
 			_("This will restore your backup on %s.\nDo you really want to restore those settings and restart?") % where)
+
 	def dorestorenow(self, confirm):
 		if not confirm:
 			return
@@ -262,6 +263,9 @@ class Config(ConfigListScreen,Screen):
 		if self.container.execute(cmd):
 			print "[AutoBackup] failed to execute"
 			self.showOutput()
+
+	def doepgcachebackup(self):
+		enigma.eEPGCache.getInstance().save()
 
 	def appClosed(self, retval):
 		print "[AutoBackup] done:", retval
@@ -278,11 +282,6 @@ class Config(ConfigListScreen,Screen):
 		self.data += s
 		print "[AutoBackup]", s.strip()
 		self.showOutput()
-
-	def doepgcachebackup(self):
-		from enigma import eEPGCache
-		cache = eEPGCache.getInstance()
-		cache.save()
 
 class BackupSelection(Screen):
 	skin = """
