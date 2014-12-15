@@ -113,3 +113,9 @@ msgstr ""
 
 msgid "USB"
 msgstr "USB"
+
+msgid "Backup EPG cache"
+msgstr ""
+
+msgid "EPG cache backup"
+msgstr ""

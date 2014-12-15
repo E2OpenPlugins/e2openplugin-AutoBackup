@@ -46,9 +46,6 @@ msgstr "Nastavení AutoBackup"
 msgid "Nowhere"
 msgstr "Nikde"
 
-msgid "Backup EPG cache"
-msgstr "Uložit EPG cache"
-
 # Autobackup
 #
 #
@@ -172,6 +169,13 @@ msgstr "Odebrat"
 msgid "Select"
 msgstr "Zvolit"
 
+#:
+msgid "Backup EPG cache"
+msgstr "Uložit EPG cache"
+
+#:
+msgid "EPG cache backup"
+msgstr "Zálohování EPG cache"
 #~ msgid "%d second"
 
 #~ msgid_plural "%d seconds"

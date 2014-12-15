@@ -143,3 +143,11 @@ msgstr ""
 #: ui.py:326
 msgid "Select"
 msgstr ""
+
+#:
+msgid "Backup EPG cache"
+msgstr ""
+
+#:
+msgid "EPG cache backup"
+msgstr ""

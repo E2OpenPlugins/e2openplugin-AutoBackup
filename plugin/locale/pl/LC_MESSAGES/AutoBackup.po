@@ -144,3 +144,11 @@ msgstr "Odznacz"
 #: ui.py:326
 msgid "Select"
 msgstr "Wybierz"
+
+#:
+msgid "Backup EPG cache"
+msgstr ""
+
+#:
+msgid "EPG cache backup"
+msgstr ""

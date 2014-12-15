@@ -133,3 +133,10 @@ msgstr "Αποεπιλογή"
 msgid "Select"
 msgstr "Επιλογή"
 
+#:
+msgid "Backup EPG cache"
+msgstr ""
+
+#:
+msgid "EPG cache backup"
+msgstr ""

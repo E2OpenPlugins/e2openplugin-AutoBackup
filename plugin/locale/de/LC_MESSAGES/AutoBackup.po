@@ -149,3 +149,10 @@ msgstr "Markierung aufheben"
 msgid "Select"
 msgstr "Auswählen"
 
+#:
+msgid "Backup EPG cache"
+msgstr ""
+
+#:
+msgid "EPG cache backup"
+msgstr ""

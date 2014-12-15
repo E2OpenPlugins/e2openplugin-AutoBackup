@@ -168,3 +168,10 @@ msgstr "Kies niet"
 msgid "Select"
 msgstr "Kies"
 
+#:
+msgid "Backup EPG cache"
+msgstr ""
+
+#:
+msgid "EPG cache backup"
+msgstr ""

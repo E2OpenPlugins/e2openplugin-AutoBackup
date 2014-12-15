@@ -142,3 +142,10 @@ msgstr "لغو مورد انتخاب شده"
 msgid "Select"
 msgstr "انتخاب کردن"
 
+#:
+msgid "Backup EPG cache"
+msgstr ""
+
+#:
+msgid "EPG cache backup"
+msgstr ""
