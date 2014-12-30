@@ -1,12 +1,5 @@
-#! /bin/sh
+#!/bin/sh
 # Backup files to harddisk backup dir
-#
-# Refactor code.
-# Fix grepping for new packages
-# Fix autoinstall handling
-# Simplify MACADDR handling by setting to nomac if no mac found
-# Check if backup dir actually exists as a dir
-
 
 AUTOINSTALL="no"
 
@@ -28,7 +21,6 @@ if [ ! -d "$BACKUPDIR" ] ; then
 	exit 1
 fi
 
-
 BACKUPFILE=/usr/lib/enigma2/python/Plugins/Extensions/AutoBackup/backup.cfg
 USER_BACKUPFILE=/etc/backup.cfg
 USER_AUTOINSTALL=/etc/autoinstall
@@ -37,8 +29,6 @@ TEMP_INSTALLED=/tmp/installed
 RESTORE_TEMP=/tmp/restore.cfg
 MACADDR=`cat /sys/class/net/eth0/address | tr -d :`
 [ -z "$MACADDR" ] && MACADDR=nomac
-
-type opkg >/dev/null  &&  IPKG=opkg  ||  IPKG=ipkg
 
 echo "Backup to $BACKUPDIR/backup/"
 [ ! -d "$BACKUPDIR/backup" ] && mkdir -p "$BACKUPDIR/backup"
@@ -66,7 +56,7 @@ cp -p "$BACKUPDIR/backup/PLi-AutoBackup$MACADDR.tar.gz" "$BACKUPDIR/backup/PLi-A
 
 if [ "$AUTOINSTALL" == "yes" -a -f $INSTALLED ] ; then
 	echo "Generating $BACKUPDIR/backup/autoinstall$MACADDR"
-	$IPKG list_installed | cut -d ' ' -f 1 > $TEMP_INSTALLED
+	opkg list_installed | cut -d ' ' -f 1 > $TEMP_INSTALLED
 	diff $INSTALLED $TEMP_INSTALLED | grep "^+" | grep -v "^+++ $TEMP_INSTALLED" | \
                sed 's/^+//' > "$BACKUPDIR/backup/autoinstall$MACADDR"
 	if [ -f $USER_AUTOINSTALL ] ; then
