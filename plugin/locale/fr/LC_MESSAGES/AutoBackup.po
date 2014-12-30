@@ -1,0 +1,116 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: enigma2-plugin-extensions-autobackup\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-12-28 14:22+0100\n"
+"PO-Revision-Date: 2014-12-29 14:29+0100\n"
+"Last-Translator: soupalonion <sabrosa@free.fr>\n"
+"Language-Team: french\n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: Poedit 1.7.1\n"
+
+msgid "AutoBackup Configuration"
+msgstr "Configuration de AutoBackup"
+
+msgid "Automatic settings backup"
+msgstr "Sauvegarde automatique des réglages"
+
+msgid "Automatic start time"
+msgstr "Heure de lancement automatique"
+
+msgid "Backup location"
+msgstr "Emplacement de la sauvegarde"
+
+msgid "CF"
+msgstr "CF"
+
+msgid "Cancel"
+msgstr "Annuler"
+
+msgid "Create Autoinstall"
+msgstr "Créer une installation auto"
+
+msgid "Daily automatic backup"
+msgstr "Sauvegarde automatique quotidienne"
+
+msgid "Deselect"
+msgstr "Désélectionner"
+
+msgid "Disable"
+msgstr "Désactiver"
+
+msgid "Disabled"
+msgstr "Désactivé"
+
+msgid "Don't auto-restore this next time"
+msgstr "Pas de restauration auto la prochaine fois"
+
+msgid "Done"
+msgstr "Effectué"
+
+msgid "EPG cache backup"
+msgstr "Sauvegarde du cache EPG"
+
+msgid "Failed"
+msgstr "Echoué"
+
+msgid "Harddisk"
+msgstr "Disque dur"
+
+msgid "Last backup date"
+msgstr "Date de la dernière sauvegarde"
+
+msgid "Manual"
+msgstr "Manuel"
+
+msgid "No backup present"
+msgstr "Aucune sauvegarde présente"
+
+msgid "No suitable media found, insert USB stick, flash card or harddisk."
+msgstr ""
+"Aucun média approprié trouvé, insérez une clé USB, carte flash ou disque "
+"dur."
+
+msgid "Nowhere"
+msgstr "Nulle part"
+
+msgid "Ok"
+msgstr "Ok"
+
+msgid "Restore"
+msgstr "Restaurer"
+
+msgid "Run a backup now"
+msgstr "Lancer une sauvegarde maintenant"
+
+msgid "Running"
+msgstr "En cours"
+
+msgid "SD"
+msgstr "SD"
+
+msgid "Save"
+msgstr "Sauvegarder"
+
+msgid "Select"
+msgstr "Sélectionner"
+
+msgid "Select files to backup"
+msgstr "Sélectionner les fichiers à sauvegarder"
+
+msgid "Select files/folders to backup"
+msgstr "Sélectionner les fichiers/dossiers à sauvegarder"
+
+msgid ""
+"This will restore your backup on %s.\n"
+"Do you really want to restore those settings and restart?"
+msgstr ""
+"Ceci va restaurer votre sauvegarde sur %s.\n"
+"Voulez-vous vraiment restaurer ces réglages et redémarrer?"
+
+msgid "USB"
+msgstr "USB"
