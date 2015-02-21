@@ -179,4 +179,4 @@ msgstr "Zálohování EPG cache"
 
 #:
 msgid "Remove autoinstall list"
-msgstr "Smazat autoinstall seznam"
+msgstr "Smazat autoinstall soubory"
