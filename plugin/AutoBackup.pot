@@ -151,3 +151,7 @@ msgstr ""
 #:
 msgid "EPG cache backup"
 msgstr ""
+
+#:
+msgid "Remove autoinstall list"
+msgstr ""
