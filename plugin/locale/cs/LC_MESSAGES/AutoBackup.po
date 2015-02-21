@@ -176,23 +176,7 @@ msgstr "Uložit EPG cache"
 #:
 msgid "EPG cache backup"
 msgstr "Zálohování EPG cache"
-#~ msgid "%d second"
 
-#~ msgid_plural "%d seconds"
-#~ msgstr[0] "%d sekunda"
-#~ msgstr[1] "%d sekundy"
-#~ msgstr[2] "%d sekund"
-
-#~ msgid "%d minute"
-
-#~ msgid_plural "%d minutes"
-#~ msgstr[0] "%d minuta"
-#~ msgstr[1] "%d minuty"
-#~ msgstr[2] "%d minut"
-
-#~ msgid "%d hour"
-
-#~ msgid_plural "%d hours"
-#~ msgstr[0] "%d hodina"
-#~ msgstr[1] "%d hodiny"
-#~ msgstr[2] "%d hodin"
+#:
+msgid "Remove autoinstall list"
+msgstr "Smazat autoinstall seznam"
