@@ -153,6 +153,7 @@ class Config(ConfigListScreen,Screen):
 
 	def changedWhere(self, cfg):
 		self.isActive = False
+		self.hasAutoinstall = False
 		if not cfg.value:
 			self["status"].setText(_("No suitable media found, insert USB stick, flash card or harddisk."))
 			self.isActive = False
@@ -162,12 +163,15 @@ class Config(ConfigListScreen,Screen):
 			if not os.path.exists(path):
 				self["status"].setText(_("No backup present"))
 			else:
+				self.hasAutoinstall = os.path.exists(os.path.join(path, "autoinstall"))
 				try:
 					st = os.stat(os.path.join(path, ".timestamp"))
 					try:
 						macaddr = open('/sys/class/net/eth0/address').read().strip().replace(':','')
 						fn = "AutoBackup%s.tar.gz" % macaddr
 						st = os.stat(os.path.join(path, fn))
+						if not self.hasAutoinstall:
+							self.hasAutoinstall = os.path.exists(os.path.join(path, "autoinstall" + macaddr))
 					except:
 						# No box-specific backup found
 						pass
@@ -214,6 +218,8 @@ class Config(ConfigListScreen,Screen):
 		]
 		if self.isActive:
 			lst.append((_("Don't auto-restore this next time"), self.disable))
+			if self.hasAutoinstall:
+				lst.append((_("Remove autoinstall list"), self.doremoveautoinstall))
 			lst.append((_("Restore"), self.dorestore))
 		self.session.openWithCallback(self.menuDone, ChoiceBox, list = lst)
 
@@ -266,6 +272,22 @@ class Config(ConfigListScreen,Screen):
 		if self.container.execute(cmd):
 			print "[AutoBackup] failed to execute"
 			self.showOutput()
+
+	def doremoveautoinstall(self):
+		cfg = self.cfgwhere
+		if not cfg.value:
+			return
+		path = os.path.join(cfg.value, 'backup', "autoinstall")
+		try:
+			os.unlink(path)
+		except:
+			pass
+		try:
+			macaddr = open('/sys/class/net/eth0/address').read().strip().replace(':','')
+			os.unlink(path + macaddr)
+		except:
+			pass
+		self.changedWhere(cfg)
 
 	def doepgcachebackup(self):
 		enigma.eEPGCache.getInstance().save()
