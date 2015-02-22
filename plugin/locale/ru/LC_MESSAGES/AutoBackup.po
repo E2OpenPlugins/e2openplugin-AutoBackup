@@ -118,3 +118,6 @@ msgstr ""
 
 msgid "USB"
 msgstr "USB"
+
+msgid "Remove autoinstall list"
+msgstr "Удалить файлы автоинсталляции"
