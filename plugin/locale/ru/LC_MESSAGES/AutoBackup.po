@@ -2,9 +2,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ims\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-03-15 07:58+0100\n"
+"POT-Creation-Date: 2016-05-06 14:14+0200\n"
 "PO-Revision-Date: \n"
-"Last-Translator: Dima73 <Dima-73@inbox.lv>\n"
+"Last-Translator: neoatomic <neoatomic@users.noreply.github.com>\n"
 "Language-Team: \n"
 "Language: cs_CZ\n"
 "MIME-Version: 1.0\n"
@@ -12,103 +12,124 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
 "|| n%100>=20) ? 1 : 2;\n"
-"X-Generator: Poedit 1.7.1\n"
+"X-Generator: Poedit 1.8.7\n"
 
-msgid "AutoBackup Configuration"
-msgstr "Настройки AutoBackup"
-
+#: ../plugin/plugin.py:123
 msgid "Automatic settings backup"
 msgstr "Автоматический бэкап настроек"
 
-msgid "Automatic start time"
-msgstr "Время автоматического старта"
-
-msgid "Backup EPG cache"
-msgstr "Бекап кеша EPG"
-
-msgid "Backup location"
-msgstr "Расположение бэкапа"
-
-msgid "CF"
-msgstr "CF"
-
-msgid "Cancel"
-msgstr "Отмена"
-
-msgid "Create Autoinstall"
-msgstr "Создать автоинсталляцию"
-
-msgid "Daily automatic backup"
-msgstr "Ежедневный автоматический бэкап"
-
-msgid "Deselect"
-msgstr "Не выбирать"
-
-msgid "Disable"
-msgstr "Отключить"
-
-msgid "Disabled"
-msgstr "Отключен"
-
-msgid "Don't auto-restore this next time"
-msgstr "Не восстанавливать автоматически в следущий раз"
-
-msgid "Done"
-msgstr "Выполнено"
-
-msgid "EPG cache backup"
-msgstr "Бекап кеша EPG"
-
-msgid "Failed"
-msgstr "Ошибка"
-
+#: ../plugin/ui.py:18 ../plugin/ui.py:39
 msgid "Harddisk"
 msgstr "Жесткий диск"
 
-msgid "Last backup date"
-msgstr "Дата последнего бэкапа"
+#: ../plugin/ui.py:19
+msgid "USB"
+msgstr "USB"
 
+#: ../plugin/ui.py:20 ../plugin/ui.py:37
+msgid "CF"
+msgstr "CF"
+
+#: ../plugin/ui.py:21
+msgid "SD"
+msgstr "SD"
+
+#: ../plugin/ui.py:34
+msgid "root"
+msgstr ""
+
+#: ../plugin/ui.py:93 ../plugin/ui.py:140
+msgid "AutoBackup Configuration"
+msgstr "Настройки AutoBackup"
+
+#: ../plugin/ui.py:106
+msgid "Nowhere"
+msgstr "Нигде"
+
+#: ../plugin/ui.py:109
+msgid "Backup location"
+msgstr "Расположение бэкапа"
+
+#: ../plugin/ui.py:110
+msgid "Daily automatic backup"
+msgstr "Ежедневный автоматический бэкап"
+
+#: ../plugin/ui.py:111
+msgid "Automatic start time"
+msgstr "Время автоматического старта"
+
+#: ../plugin/ui.py:112
+msgid "Create Autoinstall"
+msgstr "Создать автоинсталляцию"
+
+#: ../plugin/ui.py:113
+msgid "EPG cache backup"
+msgstr "Бекап кеша EPG"
+
+#: ../plugin/ui.py:116 ../plugin/ui.py:328
+msgid "Cancel"
+msgstr "Отмена"
+
+#: ../plugin/ui.py:117
+msgid "Ok"
+msgstr "Ок"
+
+#: ../plugin/ui.py:118
 msgid "Manual"
 msgstr "В ручную"
 
-msgid "No backup present"
-msgstr "Не найден бэкап"
-
+#: ../plugin/ui.py:158
 msgid "No suitable media found, insert USB stick, flash card or harddisk."
 msgstr ""
 "Нет подходящего устройства, необходимо подключить флешку/карту памяти/"
 "жесткий диск."
 
-msgid "Nowhere"
-msgstr "Нигде"
+#: ../plugin/ui.py:164
+msgid "No backup present"
+msgstr "Не найден бэкап"
 
-msgid "Ok"
-msgstr "Ок"
+#: ../plugin/ui.py:179
+msgid "Last backup date"
+msgstr "Дата последнего бэкапа"
 
-msgid "Restore"
-msgstr "Восстановить"
+#: ../plugin/ui.py:182
+msgid "Disabled"
+msgstr "Отключен"
 
-msgid "Run a backup now"
-msgstr "Выполнить бэкап сейчас"
+#: ../plugin/ui.py:184
+msgid "Disable"
+msgstr "Отключить"
 
-msgid "Running"
-msgstr "Запущено"
-
-msgid "SD"
-msgstr "SD"
-
-msgid "Save"
-msgstr "Сохранить"
-
-msgid "Select"
-msgstr "Выбрать"
-
+#: ../plugin/ui.py:215
 msgid "Select files to backup"
 msgstr "Выберите файлы для бэкапа"
 
-msgid "Select files/folders to backup"
-msgstr "Выбор файлов/папок для резервного копирования"
+#: ../plugin/ui.py:216
+msgid "Run a backup now"
+msgstr "Выполнить бэкап сейчас"
 
+#: ../plugin/ui.py:217
+msgid "Backup EPG cache"
+msgstr "Бекап кеша EPG"
+
+#: ../plugin/ui.py:220
+msgid "Don't auto-restore this next time"
+msgstr "Не восстанавливать автоматически в следущий раз"
+
+#: ../plugin/ui.py:222
+msgid "Remove autoinstall list"
+msgstr "Удалить файлы автоинсталляции"
+
+#: ../plugin/ui.py:223
+msgid "Restore"
+msgstr "Восстановить"
+
+#: ../plugin/ui.py:247 ../plugin/ui.py:270
+msgid "Running"
+msgstr "Запущено"
+
+#: ../plugin/ui.py:260
+#, python-format
 msgid ""
 "This will restore your backup on %s.\n"
 "Do you really want to restore those settings and restart?"
@@ -116,8 +137,26 @@ msgstr ""
 "Это позволит восстановить резервную копию %s.\n"
 "Вы действительно хотите восстановить эти настройки и сделать рестарт?"
 
-msgid "USB"
-msgstr "USB"
+#: ../plugin/ui.py:298
+msgid "Failed"
+msgstr "Ошибка"
 
-msgid "Remove autoinstall list"
-msgstr "Удалить файлы автоинсталляции"
+#: ../plugin/ui.py:300
+msgid "Done"
+msgstr "Выполнено"
+
+#: ../plugin/ui.py:329
+msgid "Save"
+msgstr "Сохранить"
+
+#: ../plugin/ui.py:359
+msgid "Select files/folders to backup"
+msgstr "Выбор файлов/папок для резервного копирования"
+
+#: ../plugin/ui.py:365
+msgid "Deselect"
+msgstr "Не выбирать"
+
+#: ../plugin/ui.py:367
+msgid "Select"
+msgstr "Выбрать"

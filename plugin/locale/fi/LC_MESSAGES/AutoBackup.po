@@ -2,9 +2,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2-plugin-extensions-autobackup\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-03-15 07:58+0100\n"
-"PO-Revision-Date: 2013-02-01 14:26+0200\n"
-"Last-Translator: BoxFreak\n"
+"POT-Creation-Date: 2016-05-06 14:13+0200\n"
+"PO-Revision-Date: 2016-05-06 14:14+0200\n"
+"Last-Translator: neoatomic <neoatomic@users.noreply.github.com>\n"
 "Language-Team: daddelfalk\n"
 "Language: fi\n"
 "MIME-Version: 1.0\n"
@@ -12,97 +12,124 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Poedit-SourceCharset: UTF-8\n"
-"X-Generator: Poedit 1.5.4\n"
+"X-Generator: Poedit 1.8.7\n"
 
-msgid "AutoBackup Configuration"
-msgstr "AutoBackup Asetukset"
-
+#: ../plugin/plugin.py:123
 msgid "Automatic settings backup"
 msgstr "Automaattiset asetukset varmuuskopiolle"
 
-msgid "Automatic start time"
-msgstr "Automaattinen aloitusaika"
-
-msgid "Backup location"
-msgstr "Varmuuskopion hakemisto"
-
-msgid "CF"
-msgstr "CF"
-
-msgid "Cancel"
-msgstr "Peruuta"
-
-msgid "Create Autoinstall"
-msgstr "Tee Automaattinen asennus"
-
-msgid "Daily automatic backup"
-msgstr "Päivittäinen automaattinen varmuuskopio"
-
-msgid "Deselect"
-msgstr "Poista valinta"
-
-msgid "Disable"
-msgstr "Poista käytöstä"
-
-msgid "Disabled"
-msgstr "Pois käytöstä"
-
-msgid "Don't auto-restore this next time"
-msgstr "Älä tee automaattista palautusta ensi kerralla"
-
-msgid "Done"
-msgstr "Tehty"
-
-msgid "Failed"
-msgstr "Epäonnistui"
-
+#: ../plugin/ui.py:18 ../plugin/ui.py:39
 msgid "Harddisk"
 msgstr "Kovalevy"
 
-msgid "Last backup date"
-msgstr "Viimeisen varmuuskopion päiväys"
+#: ../plugin/ui.py:19
+msgid "USB"
+msgstr "USB"
 
+#: ../plugin/ui.py:20 ../plugin/ui.py:37
+msgid "CF"
+msgstr "CF"
+
+#: ../plugin/ui.py:21
+msgid "SD"
+msgstr "SD"
+
+#: ../plugin/ui.py:34
+msgid "root"
+msgstr ""
+
+#: ../plugin/ui.py:93 ../plugin/ui.py:140
+msgid "AutoBackup Configuration"
+msgstr "AutoBackup Asetukset"
+
+#: ../plugin/ui.py:106
+msgid "Nowhere"
+msgstr "Ei missään"
+
+#: ../plugin/ui.py:109
+msgid "Backup location"
+msgstr "Varmuuskopion hakemisto"
+
+#: ../plugin/ui.py:110
+msgid "Daily automatic backup"
+msgstr "Päivittäinen automaattinen varmuuskopio"
+
+#: ../plugin/ui.py:111
+msgid "Automatic start time"
+msgstr "Automaattinen aloitusaika"
+
+#: ../plugin/ui.py:112
+msgid "Create Autoinstall"
+msgstr "Tee Automaattinen asennus"
+
+#: ../plugin/ui.py:113
+msgid "EPG cache backup"
+msgstr ""
+
+#: ../plugin/ui.py:116 ../plugin/ui.py:328
+msgid "Cancel"
+msgstr "Peruuta"
+
+#: ../plugin/ui.py:117
+msgid "Ok"
+msgstr "Ok"
+
+#: ../plugin/ui.py:118
 msgid "Manual"
 msgstr "Manuaalinen"
 
-msgid "No backup present"
-msgstr "Varmuuskopioita ei löydy"
-
+#: ../plugin/ui.py:158
 msgid "No suitable media found, insert USB stick, flash card or harddisk."
 msgstr ""
 "Sopivaa tallennuspaikkaa ei löytynyt, lisää USB tikku, muistikortti tai "
 "kovalevy."
 
-msgid "Nowhere"
-msgstr "Ei missään"
+#: ../plugin/ui.py:164
+msgid "No backup present"
+msgstr "Varmuuskopioita ei löydy"
 
-msgid "Ok"
-msgstr "Ok"
+#: ../plugin/ui.py:179
+msgid "Last backup date"
+msgstr "Viimeisen varmuuskopion päiväys"
 
-msgid "Restore"
-msgstr "Palauta"
+#: ../plugin/ui.py:182
+msgid "Disabled"
+msgstr "Pois käytöstä"
 
-msgid "Run a backup now"
-msgstr "Käynnistä varmuuskopiointi nyt"
+#: ../plugin/ui.py:184
+msgid "Disable"
+msgstr "Poista käytöstä"
 
-msgid "Running"
-msgstr "Käynnissä"
-
-msgid "SD"
-msgstr "SD"
-
-msgid "Save"
-msgstr "Tallenna"
-
-msgid "Select"
-msgstr "Valitse"
-
+#: ../plugin/ui.py:215
 msgid "Select files to backup"
 msgstr "Valitse varmuuskopioitavat tiedostot"
 
-msgid "Select files/folders to backup"
-msgstr "Valitse varmuuskopioitavat tiedostot/hakemistot"
+#: ../plugin/ui.py:216
+msgid "Run a backup now"
+msgstr "Käynnistä varmuuskopiointi nyt"
 
+#: ../plugin/ui.py:217
+msgid "Backup EPG cache"
+msgstr ""
+
+#: ../plugin/ui.py:220
+msgid "Don't auto-restore this next time"
+msgstr "Älä tee automaattista palautusta ensi kerralla"
+
+#: ../plugin/ui.py:222
+msgid "Remove autoinstall list"
+msgstr ""
+
+#: ../plugin/ui.py:223
+msgid "Restore"
+msgstr "Palauta"
+
+#: ../plugin/ui.py:247 ../plugin/ui.py:270
+msgid "Running"
+msgstr "Käynnissä"
+
+#: ../plugin/ui.py:260
+#, python-format
 msgid ""
 "This will restore your backup on %s.\n"
 "Do you really want to restore those settings and restart?"
@@ -111,11 +138,26 @@ msgstr ""
 "Haluatko todella palauttaa nämä asetukset ja uudelleenkäynnistää "
 "vastaanottimesi?"
 
-msgid "USB"
-msgstr "USB"
+#: ../plugin/ui.py:298
+msgid "Failed"
+msgstr "Epäonnistui"
 
-msgid "Backup EPG cache"
-msgstr ""
+#: ../plugin/ui.py:300
+msgid "Done"
+msgstr "Tehty"
 
-msgid "EPG cache backup"
-msgstr ""
+#: ../plugin/ui.py:329
+msgid "Save"
+msgstr "Tallenna"
+
+#: ../plugin/ui.py:359
+msgid "Select files/folders to backup"
+msgstr "Valitse varmuuskopioitavat tiedostot/hakemistot"
+
+#: ../plugin/ui.py:365
+msgid "Deselect"
+msgstr "Poista valinta"
+
+#: ../plugin/ui.py:367
+msgid "Select"
+msgstr "Valitse"

@@ -2,117 +2,133 @@ msgid ""
 msgstr ""
 "Project-Id-Version: AutoBackup\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-03-15 07:58+0100\n"
+"POT-Creation-Date: 2016-05-06 14:14+0200\n"
 "PO-Revision-Date: \n"
-"Last-Translator: blzr <blzr@o2.pl>\n"
+"Last-Translator: neoatomic <neoatomic@users.noreply.github.com>\n"
 "Language-Team: \n"
+"Language: pl_PL\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Poedit-Language: Polish\n"
-"X-Poedit-Country: POLAND\n"
 "X-Poedit-SourceCharset: utf-8\n"
-"Plural-Forms: nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"Plural-Forms: nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
+"|| n%100>=20) ? 1 : 2;\n"
+"X-Generator: Poedit 1.8.7\n"
 
-#: plugin.py:121
+#: ../plugin/plugin.py:123
 msgid "Automatic settings backup"
 msgstr "Automatyczny backup ustawień"
 
-#: ui.py:18
+#: ../plugin/ui.py:18 ../plugin/ui.py:39
 msgid "Harddisk"
 msgstr "HDD"
 
-#: ui.py:19
+#: ../plugin/ui.py:19
 msgid "USB"
 msgstr "USB"
 
-#: ui.py:20
+#: ../plugin/ui.py:20 ../plugin/ui.py:37
 msgid "CF"
 msgstr "CF"
 
-#: ui.py:21
+#: ../plugin/ui.py:21
 msgid "SD"
 msgstr "SD"
 
-#: ui.py:84
+#: ../plugin/ui.py:34
+msgid "root"
+msgstr ""
+
+#: ../plugin/ui.py:93 ../plugin/ui.py:140
 msgid "AutoBackup Configuration"
 msgstr "Konfiguracja AutoBackup"
 
-#: ui.py:97
+#: ../plugin/ui.py:106
 msgid "Nowhere"
 msgstr "Nigdzie"
 
-#: ui.py:100
+#: ../plugin/ui.py:109
 msgid "Backup location"
 msgstr "Lokalizacja backupu"
 
-#: ui.py:101
+#: ../plugin/ui.py:110
 msgid "Daily automatic backup"
 msgstr "Codzienny automatyczny backup"
 
-#: ui.py:102
+#: ../plugin/ui.py:111
 msgid "Automatic start time"
 msgstr "Automatycznie twórz backup o:"
 
-#: ui.py:103
+#: ../plugin/ui.py:112
 msgid "Create Autoinstall"
 msgstr "Twórz plik Autoinstall"
 
-#: ui.py:106
-#: ui.py:288
+#: ../plugin/ui.py:113
+msgid "EPG cache backup"
+msgstr ""
+
+#: ../plugin/ui.py:116 ../plugin/ui.py:328
 msgid "Cancel"
 msgstr "Anuluj"
 
-#: ui.py:107
+#: ../plugin/ui.py:117
 msgid "Ok"
 msgstr "OK"
 
-#: ui.py:108
+#: ../plugin/ui.py:118
 msgid "Manual"
 msgstr "Ręcznie"
 
-#: ui.py:146
+#: ../plugin/ui.py:158
 msgid "No suitable media found, insert USB stick, flash card or harddisk."
-msgstr "Brak odpowiedniego nośnika, podłącz pena USB, kartę CF albo dysk twardy"
+msgstr ""
+"Brak odpowiedniego nośnika, podłącz pena USB, kartę CF albo dysk twardy"
 
-#: ui.py:152
+#: ../plugin/ui.py:164
 msgid "No backup present"
 msgstr "Nie znaleziono backupu"
 
-#: ui.py:164
+#: ../plugin/ui.py:179
 msgid "Last backup date"
 msgstr "Data ostatniego backupu"
 
-#: ui.py:167
+#: ../plugin/ui.py:182
 msgid "Disabled"
 msgstr "Wyłączone"
 
-#: ui.py:169
+#: ../plugin/ui.py:184
 msgid "Disable"
 msgstr "Wyłącz"
 
-#: ui.py:200
+#: ../plugin/ui.py:215
 msgid "Select files to backup"
 msgstr "Wybierz pliki do backupu"
 
-#: ui.py:201
+#: ../plugin/ui.py:216
 msgid "Run a backup now"
 msgstr "Wykonaj backup teraz"
 
-#: ui.py:204
+#: ../plugin/ui.py:217
+msgid "Backup EPG cache"
+msgstr ""
+
+#: ../plugin/ui.py:220
 msgid "Don't auto-restore this next time"
 msgstr "Nie przywracaj automatycznie następnym razem"
 
-#: ui.py:205
+#: ../plugin/ui.py:222
+msgid "Remove autoinstall list"
+msgstr ""
+
+#: ../plugin/ui.py:223
 msgid "Restore"
 msgstr "Przywróć"
 
-#: ui.py:227
-#: ui.py:249
+#: ../plugin/ui.py:247 ../plugin/ui.py:270
 msgid "Running"
 msgstr "W toku"
 
-#: ui.py:240
+#: ../plugin/ui.py:260
 #, python-format
 msgid ""
 "This will restore your backup on %s.\n"
@@ -121,34 +137,26 @@ msgstr ""
 "To przywróci Twój backup z %s.\n"
 "Chcesz przywrócić te ustawienia i wykonać restart?"
 
-#: ui.py:258
+#: ../plugin/ui.py:298
 msgid "Failed"
 msgstr "Nie powiodło się"
 
-#: ui.py:260
+#: ../plugin/ui.py:300
 msgid "Done"
 msgstr "Zrobione"
 
-#: ui.py:289
+#: ../plugin/ui.py:329
 msgid "Save"
 msgstr "Zapisz"
 
-#: ui.py:319
+#: ../plugin/ui.py:359
 msgid "Select files/folders to backup"
 msgstr "Wybierz pliki/foldery do backupu"
 
-#: ui.py:324
+#: ../plugin/ui.py:365
 msgid "Deselect"
 msgstr "Odznacz"
 
-#: ui.py:326
+#: ../plugin/ui.py:367
 msgid "Select"
 msgstr "Wybierz"
-
-#:
-msgid "Backup EPG cache"
-msgstr ""
-
-#:
-msgid "EPG cache backup"
-msgstr ""
