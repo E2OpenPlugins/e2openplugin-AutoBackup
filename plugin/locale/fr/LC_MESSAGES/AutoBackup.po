@@ -157,3 +157,6 @@ msgstr "Désélectionner"
 #: ../plugin/ui.py:367
 msgid "Select"
 msgstr "Sélectionner"
+
+msgid "Save previous backup"
+msgstr ""

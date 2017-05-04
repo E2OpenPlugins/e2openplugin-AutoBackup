@@ -159,3 +159,6 @@ msgstr "Αποεπιλογή"
 #: ../plugin/ui.py:367
 msgid "Select"
 msgstr "Επιλογή"
+
+msgid "Save previous backup"
+msgstr ""

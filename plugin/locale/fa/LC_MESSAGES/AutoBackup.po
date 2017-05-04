@@ -189,3 +189,6 @@ msgstr "لغو مورد انتخاب شده"
 #: ../plugin/ui.py:367
 msgid "Select"
 msgstr "انتخاب کردن"
+
+msgid "Save previous backup"
+msgstr ""

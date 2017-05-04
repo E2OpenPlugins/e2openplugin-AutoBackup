@@ -196,3 +196,6 @@ msgstr "Markierung aufheben"
 #: ../plugin/ui.py:367
 msgid "Select"
 msgstr "Auswählen"
+
+msgid "Save previous backup"
+msgstr ""

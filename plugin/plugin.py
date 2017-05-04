@@ -14,6 +14,7 @@ config.plugins.autobackup.enabled = ConfigEnableDisable(default = False)
 config.plugins.autobackup.autoinstall = ConfigOnOff(default = False)
 config.plugins.autobackup.where = ConfigText(default = "/media/hdd")
 config.plugins.autobackup.epgcache = ConfigOnOff(default = False)
+config.plugins.autobackup.prevbackup = ConfigOnOff(default = False)
 
 # Global variables
 autoStartTimer = None
@@ -29,6 +30,7 @@ def backupCommand():
 	if config.plugins.autobackup.autoinstall.value:
 		cmd += " -a"
 	cmd += " " + config.plugins.autobackup.where.value
+	cmd += " " + str(int(config.plugins.autobackup.prevbackup.value))
 	return cmd
 
 def runBackup():

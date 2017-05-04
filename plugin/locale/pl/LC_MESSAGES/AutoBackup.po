@@ -160,3 +160,6 @@ msgstr "Odznacz"
 #: ../plugin/ui.py:367
 msgid "Select"
 msgstr "Wybierz"
+
+msgid "Save previous backup"
+msgstr ""

@@ -33,6 +33,12 @@ MACADDR=`cat /sys/class/net/eth0/address | tr -d :`
 echo "Backup to $BACKUPDIR/backup/"
 [ ! -d "$BACKUPDIR/backup" ] && mkdir -p "$BACKUPDIR/backup"
 
+echo "tar previous backup to $BACKUPDIR/backup/"
+if [ "$2" == "1" ] ; then
+    now=$(date +"%Y%m%d_%H%M")
+    tar -czf "$BACKUPDIR/backup.$now.tar.gz" "$BACKUPDIR/backup/"
+fi
+
 for bckfile in $BACKUPFILE $USER_BACKUPFILE ; do
     if [ -f $bckfile ] ; then
 	while read file ; do

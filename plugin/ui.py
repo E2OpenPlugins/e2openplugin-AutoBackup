@@ -111,6 +111,7 @@ class Config(ConfigListScreen,Screen):
 			getConfigListEntry(_("Automatic start time"), cfg.wakeup),
 			getConfigListEntry (_("Create Autoinstall"), cfg.autoinstall),
 			getConfigListEntry (_("EPG cache backup"), cfg.epgcache),
+			getConfigListEntry (_("Save previous backup"), cfg.prevbackup),
 			]
 		ConfigListScreen.__init__(self, configList, session=session, on_change = self.changedEntry)
 		self["key_red"] = Button(_("Cancel"))

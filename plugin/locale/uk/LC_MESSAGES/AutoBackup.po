@@ -158,3 +158,6 @@ msgstr "Скасувати"
 #: ../plugin/ui.py:367
 msgid "Select"
 msgstr "Вибрати"
+
+msgid "Save previous backup"
+msgstr ""

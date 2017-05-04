@@ -180,3 +180,6 @@ msgstr "Kies niet"
 #: ../plugin/ui.py:367
 msgid "Select"
 msgstr "Kies"
+
+msgid "Save previous backup"
+msgstr ""

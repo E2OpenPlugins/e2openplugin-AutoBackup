@@ -161,3 +161,6 @@ msgstr "Poista valinta"
 #: ../plugin/ui.py:367
 msgid "Select"
 msgstr "Valitse"
+
+msgid "Save previous backup"
+msgstr ""

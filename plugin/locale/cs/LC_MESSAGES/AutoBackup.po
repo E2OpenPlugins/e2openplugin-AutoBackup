@@ -183,3 +183,6 @@ msgstr "Odebrat"
 #: ../plugin/ui.py:367
 msgid "Select"
 msgstr "Zvolit"
+
+msgid "Save previous backup"
+msgstr "Uložit předchozí zálohu"
