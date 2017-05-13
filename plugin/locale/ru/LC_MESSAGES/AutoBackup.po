@@ -162,4 +162,4 @@ msgid "Select"
 msgstr "Выбрать"
 
 msgid "Save previous backup"
-msgstr ""
+msgstr "Сохранить предыдущий бекап"
