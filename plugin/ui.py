@@ -269,7 +269,7 @@ class Config(ConfigListScreen,Screen):
 		self.data = ''
 		self.showOutput()
 		self["statusbar"].setText(_('Running'))
-		cmd = '/etc/init.d/settings-restore.sh ' + where + ' ; killall enigma2'
+		cmd = '/etc/init.d/settings-restore.sh ' + where + ' ; killall -9 enigma2'
 		if self.container.execute(cmd):
 			print "[AutoBackup] failed to execute"
 			self.showOutput()
