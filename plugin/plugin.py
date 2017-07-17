@@ -11,7 +11,7 @@ from Components.config import config, \
 config.plugins.autobackup = ConfigSubsection()
 config.plugins.autobackup.wakeup = ConfigClock(default = ((3*60) + 0) * 60) # 3:00
 config.plugins.autobackup.enabled = ConfigEnableDisable(default = False)
-config.plugins.autobackup.autoinstall = ConfigOnOff(default = False)
+config.plugins.autobackup.autoinstall = ConfigOnOff(default = True)
 config.plugins.autobackup.where = ConfigText(default = "/media/hdd")
 config.plugins.autobackup.epgcache = ConfigOnOff(default = False)
 config.plugins.autobackup.prevbackup = NoSave(ConfigOnOff(default = False))
