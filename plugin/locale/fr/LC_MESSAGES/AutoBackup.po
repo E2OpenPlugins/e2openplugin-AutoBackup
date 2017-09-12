@@ -3,15 +3,15 @@ msgstr ""
 "Project-Id-Version: enigma2-plugin-extensions-autobackup\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-05-06 14:14+0200\n"
-"PO-Revision-Date: 2016-05-06 14:14+0200\n"
-"Last-Translator: neoatomic <neoatomic@users.noreply.github.com>\n"
+"PO-Revision-Date: 2017-09-12 14:36+0200\n"
+"Last-Translator: Pr2\n"
 "Language-Team: french\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Poedit 1.8.7\n"
+"X-Generator: Poedit 2.0.3\n"
 
 #: ../plugin/plugin.py:123
 msgid "Automatic settings backup"
@@ -35,7 +35,7 @@ msgstr "SD"
 
 #: ../plugin/ui.py:34
 msgid "root"
-msgstr ""
+msgstr "racine"
 
 #: ../plugin/ui.py:93 ../plugin/ui.py:140
 msgid "AutoBackup Configuration"
@@ -107,7 +107,7 @@ msgstr "Lancer une sauvegarde maintenant"
 
 #: ../plugin/ui.py:217
 msgid "Backup EPG cache"
-msgstr ""
+msgstr "Sauvegarder le cache EPG"
 
 #: ../plugin/ui.py:220
 msgid "Don't auto-restore this next time"
@@ -115,7 +115,7 @@ msgstr "Pas de restauration auto la prochaine fois"
 
 #: ../plugin/ui.py:222
 msgid "Remove autoinstall list"
-msgstr ""
+msgstr "Enlever la liste d’auto-installation"
 
 #: ../plugin/ui.py:223
 msgid "Restore"
@@ -159,4 +159,4 @@ msgid "Select"
 msgstr "Sélectionner"
 
 msgid "Save previous backup"
-msgstr ""
+msgstr "Enregistrer la sauvegarde précédente"
