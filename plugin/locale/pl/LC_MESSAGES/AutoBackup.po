@@ -13,11 +13,11 @@ msgstr ""
 "X-Poedit-SourceCharset: utf-8\n"
 "Plural-Forms: nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
 "|| n%100>=20) ? 1 : 2;\n"
-"X-Generator: Poedit 1.8.7\n"
+"X-Generator: Poedit 2.0.4\n"
 
 #: ../plugin/plugin.py:123
 msgid "Automatic settings backup"
-msgstr "Automatyczny backup ustawień"
+msgstr "Automatyczna kopia zapasowa ustawień"
 
 #: ../plugin/ui.py:18 ../plugin/ui.py:39
 msgid "Harddisk"
@@ -49,15 +49,15 @@ msgstr "Nigdzie"
 
 #: ../plugin/ui.py:109
 msgid "Backup location"
-msgstr "Lokalizacja backupu"
+msgstr "Lokalizacja kopii zapasowej"
 
 #: ../plugin/ui.py:110
 msgid "Daily automatic backup"
-msgstr "Codzienny automatyczny backup"
+msgstr "Codzienna automatyczna kopia zapasowa"
 
 #: ../plugin/ui.py:111
 msgid "Automatic start time"
-msgstr "Automatycznie twórz backup o:"
+msgstr "Automatycznie twórz kopię zapasową o:"
 
 #: ../plugin/ui.py:112
 msgid "Create Autoinstall"
@@ -65,7 +65,7 @@ msgstr "Twórz plik Autoinstall"
 
 #: ../plugin/ui.py:113
 msgid "EPG cache backup"
-msgstr ""
+msgstr "Kopia zapasowa EPG cache"
 
 #: ../plugin/ui.py:116 ../plugin/ui.py:328
 msgid "Cancel"
@@ -86,11 +86,11 @@ msgstr ""
 
 #: ../plugin/ui.py:164
 msgid "No backup present"
-msgstr "Nie znaleziono backupu"
+msgstr "Nie znaleziono kopii zapasowej"
 
 #: ../plugin/ui.py:179
 msgid "Last backup date"
-msgstr "Data ostatniego backupu"
+msgstr "Data ostatniej kopii zapasowej"
 
 #: ../plugin/ui.py:182
 msgid "Disabled"
@@ -102,15 +102,15 @@ msgstr "Wyłącz"
 
 #: ../plugin/ui.py:215
 msgid "Select files to backup"
-msgstr "Wybierz pliki do backupu"
+msgstr "Wybierz pliki do kopii zapasowej"
 
 #: ../plugin/ui.py:216
 msgid "Run a backup now"
-msgstr "Wykonaj backup teraz"
+msgstr "Wykonaj kopię zapasową teraz"
 
 #: ../plugin/ui.py:217
 msgid "Backup EPG cache"
-msgstr ""
+msgstr "Wykonaj kopię zapasową EPG cache"
 
 #: ../plugin/ui.py:220
 msgid "Don't auto-restore this next time"
@@ -118,7 +118,7 @@ msgstr "Nie przywracaj automatycznie następnym razem"
 
 #: ../plugin/ui.py:222
 msgid "Remove autoinstall list"
-msgstr ""
+msgstr "Usuń listę autoinstall"
 
 #: ../plugin/ui.py:223
 msgid "Restore"
@@ -134,7 +134,7 @@ msgid ""
 "This will restore your backup on %s.\n"
 "Do you really want to restore those settings and restart?"
 msgstr ""
-"To przywróci Twój backup z %s.\n"
+"Zostanie przywrócona kopia zapasowa z %s.\n"
 "Chcesz przywrócić te ustawienia i wykonać restart?"
 
 #: ../plugin/ui.py:298
@@ -151,7 +151,7 @@ msgstr "Zapisz"
 
 #: ../plugin/ui.py:359
 msgid "Select files/folders to backup"
-msgstr "Wybierz pliki/foldery do backupu"
+msgstr "Wybierz pliki/foldery do kopii zapasowej"
 
 #: ../plugin/ui.py:365
 msgid "Deselect"
@@ -162,4 +162,4 @@ msgid "Select"
 msgstr "Wybierz"
 
 msgid "Save previous backup"
-msgstr ""
+msgstr "Zapisuj poprzednią kopię zapasową"
