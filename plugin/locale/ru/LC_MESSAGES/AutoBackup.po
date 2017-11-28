@@ -36,7 +36,7 @@ msgstr "SD"
 
 #: ../plugin/ui.py:34
 msgid "root"
-msgstr ""
+msgstr "root"
 
 #: ../plugin/ui.py:93 ../plugin/ui.py:140
 msgid "AutoBackup Configuration"
