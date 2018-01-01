@@ -11,6 +11,7 @@ from Components.ConfigList import ConfigListScreen
 from Components.ActionMap import ActionMap
 from Components.Button import Button
 from Components.Label import Label
+from Components.ScrollLabel import ScrollLabel
 from Screens.ChoiceBox import ChoiceBox
 from Screens.MessageBox import MessageBox
 from Tools.FuzzyDate import FuzzyTime
@@ -121,7 +122,7 @@ class Config(ConfigListScreen,Screen):
 		self["key_yellow"] = Button(_("Manual"))
 		self["key_blue"] = Button("")
 		self["statusbar"] = Label()
-		self["status"] = Label()
+		self["status"] = ScrollLabel('', showscrollbar=False)
 		self["setupActions"] = ActionMap(["SetupActions", "ColorActions", "MenuActions"],
 		{
 			"red": self.cancel,
@@ -236,9 +237,7 @@ class Config(ConfigListScreen,Screen):
 		self.session.open(BackupSelection)
 
 	def showOutput(self):
-		# show the last 9 lines to have a scroll effect
-		s = self.data.split('\n')[-9:]
-		self["status"].setText('\n'.join(s))
+		self["status"].setText(self.data)
 
 	def dobackup(self):
 		if not self.cfgwhere.value:
@@ -333,9 +332,8 @@ class Config(ConfigListScreen,Screen):
 		self.changedWhere(self.cfgwhere)
 
 	def dataAvail(self, s):
-		self.data += s
 		print "[AutoBackup]", s.strip()
-		self.showOutput()
+		self["status"].appendText(s)
 
 class BackupSelection(Screen):
 	skin = """
