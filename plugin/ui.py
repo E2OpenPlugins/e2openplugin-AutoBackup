@@ -1,4 +1,5 @@
 ##################################
+##################################
 # Configuration GUI
 from . import _
 import plugin
@@ -69,22 +70,23 @@ class Config(ConfigListScreen,Screen):
 <screen position="center,center" size="560,400" title="AutoBackup Configuration" >
 	<ePixmap name="red"    position="0,0"   zPosition="2" size="140,40" pixmap="skin_default/buttons/red.png" transparent="1" alphatest="on" />
 	<ePixmap name="green"  position="140,0" zPosition="2" size="140,40" pixmap="skin_default/buttons/green.png" transparent="1" alphatest="on" />
-	<ePixmap name="yellow" position="280,0" zPosition="2" size="140,40" pixmap="skin_default/buttons/yellow.png" transparent="1" alphatest="on" /> 
-	<ePixmap name="blue"   position="420,0" zPosition="2" size="140,40" pixmap="skin_default/buttons/blue.png" transparent="1" alphatest="on" /> 
+	<ePixmap name="yellow" position="280,0" zPosition="2" size="140,40" pixmap="skin_default/buttons/yellow.png" transparent="1" alphatest="on" />
+	<ePixmap name="blue"   position="420,0" zPosition="2" size="140,40" pixmap="skin_default/buttons/blue.png" transparent="1" alphatest="on" />
 
-	<widget name="key_red" position="0,0" size="140,40" valign="center" halign="center" zPosition="4"  foregroundColor="white" font="Regular;20" transparent="1" shadowColor="background" shadowOffset="-2,-2" /> 
-	<widget name="key_green" position="140,0" size="140,40" valign="center" halign="center" zPosition="4"  foregroundColor="white" font="Regular;20" transparent="1" shadowColor="background" shadowOffset="-2,-2" /> 
+	<widget name="key_red" position="0,0" size="140,40" valign="center" halign="center" zPosition="4"  foregroundColor="white" font="Regular;20" transparent="1" shadowColor="background" shadowOffset="-2,-2" />
+	<widget name="key_green" position="140,0" size="140,40" valign="center" halign="center" zPosition="4"  foregroundColor="white" font="Regular;20" transparent="1" shadowColor="background" shadowOffset="-2,-2" />
 	<widget name="key_yellow" position="280,0" size="140,40" valign="center" halign="center" zPosition="4"  foregroundColor="white" font="Regular;20" transparent="1" shadowColor="background" shadowOffset="-2,-2" />
 	<widget name="key_blue" position="420,0" size="140,40" valign="center" halign="center" zPosition="4"  foregroundColor="white" font="Regular;20" transparent="1" shadowColor="background" shadowOffset="-2,-2" />
 
 	<widget name="config" position="10,40" size="540,200" scrollbarMode="showOnDemand" />
-	<widget name="status" position="10,250" size="540,130" font="Regular;16" />
+
+	<widget name="statusbar" position="10,250" size="470,20" font="Regular;18" />
+	<widget name="status" position="10,280" size="540,130" font="Console;14" />
 
 	<ePixmap alphatest="on" pixmap="skin_default/icons/clock.png" position="480,383" size="14,14" zPosition="3"/>
 	<widget font="Regular;18" halign="left" position="505,380" render="Label" size="55,20" source="global.CurrentTime" transparent="1" valign="center" zPosition="3">
 		<convert type="ClockToText">Default</convert>
 	</widget>
-	<widget name="statusbar" position="10,380" size="470,20" font="Regular;18" />
 </screen>"""
 
 	def __init__(self, session, args = 0):
@@ -96,7 +98,7 @@ class Config(ConfigListScreen,Screen):
 		choices=getLocationChoices()
 		if choices:
 			currentwhere = cfg.where.value
-			defaultchoice = choices[0][0] 
+			defaultchoice = choices[0][0]
 			for k,v in choices:
 				if k == currentwhere:
 					defaultchoice = k
@@ -220,6 +222,7 @@ class Config(ConfigListScreen,Screen):
 		if self.isActive:
 			lst.append((_("Don't auto-restore this next time"), self.disable))
 			if self.hasAutoinstall:
+				lst.append((_("Run autoinstall"), self.doautoinstall))
 				lst.append((_("Remove autoinstall list"), self.doremoveautoinstall))
 			lst.append((_("Restore"), self.dorestore))
 		self.session.openWithCallback(self.menuDone, ChoiceBox, list = lst)
@@ -233,7 +236,9 @@ class Config(ConfigListScreen,Screen):
 		self.session.open(BackupSelection)
 
 	def showOutput(self):
-		self["status"].setText(self.data)
+		# show the last 9 lines to have a scroll effect
+		s = self.data.split('\n')[-9:]
+		self["status"].setText('\n'.join(s))
 
 	def dobackup(self):
 		if not self.cfgwhere.value:
@@ -245,7 +250,7 @@ class Config(ConfigListScreen,Screen):
 			self.doepgcachebackup()
 		self.data = ''
 		self.showOutput()
-		self["statusbar"].setText(_('Running'))
+		self["statusbar"].setText(_('Running...'))
 		cmd = plugin.backupCommand()
 		if self.container.execute(cmd):
 			print "[AutoBackup] failed to execute"
@@ -268,10 +273,33 @@ class Config(ConfigListScreen,Screen):
 			return # huh?
 		self.data = ''
 		self.showOutput()
-		self["statusbar"].setText(_('Running'))
+		self["statusbar"].setText(_('Running...'))
 		cmd = '/etc/init.d/settings-restore.sh ' + where + ' ; killall -9 enigma2'
 		if self.container.execute(cmd):
 			print "[AutoBackup] failed to execute"
+			self.showOutput()
+
+	def doautoinstall(self):
+		where = self.cfgwhere.value
+		if not where:
+			return
+		if not self.isActive:
+			return
+		self.session.openWithCallback(self.doautoinstallnow, MessageBox,
+			_("This will reinstall all plugins from your backup on %s.\nDo you really want to reinstall?") % where)
+
+	def doautoinstallnow(self, confirm):
+		if not confirm:
+			return
+		where = self.cfgwhere.value
+		if not where:
+			return # huh?
+		self.data = ''
+		self.showOutput()
+		self["statusbar"].setText(_('Running...'))
+		cmd = 'opkg update && while read f o; do opkg install $o $f; done < ' + where + '/backup/autoinstall'
+		if self.container.execute(cmd):
+			print "[AutoInstall] failed to execute"
 			self.showOutput()
 
 	def doremoveautoinstall(self):
