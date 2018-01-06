@@ -125,8 +125,8 @@ msgid "Restore"
 msgstr "Восстановить"
 
 #: ../plugin/ui.py:247 ../plugin/ui.py:270
-msgid "Running"
-msgstr "Запущено"
+msgid "Running..."
+msgstr "Запущено..."
 
 #: ../plugin/ui.py:260
 #, python-format
@@ -163,3 +163,9 @@ msgstr "Выбрать"
 
 msgid "Save previous backup"
 msgstr "Сохранить предыдущий бекап"
+
+msgid "Run autoinstall"
+msgstr "Запустить автоинсталляцию"
+
+msgid "This will reinstall all plugins from your backup on %s.\nDo you really want to reinstall?"
+msgstr "Это переустановит все плагины, доступные на фиде, из Вашего бекапа на %s.\nВы действительно хотите выполнить переустановку плагинов?"
