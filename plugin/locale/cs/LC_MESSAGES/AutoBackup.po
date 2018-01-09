@@ -3,9 +3,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ims\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-05-06 14:13+0200\n"
+"POT-Creation-Date: 2018-01-09 10:41+0100\n"
 "PO-Revision-Date: \n"
-"Last-Translator: neoatomic <neoatomic@users.noreply.github.com>\n"
+"Last-Translator: ims <ims21@users.sourceforge.net>\n"
 "Language-Team: PLi <ims21@users.sourceforge.net>\n"
 "Language: cs_CZ\n"
 "MIME-Version: 1.0\n"
@@ -13,139 +13,147 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
 "|| n%100>=20) ? 1 : 2;\n"
-"X-Generator: Poedit 1.8.7\n"
+"X-Generator: Poedit 1.8.7.1\n"
 
 #
-#: ../plugin/plugin.py:123
+#: plugin.py:125
 msgid "Automatic settings backup"
 msgstr "Nastavení automatického zálohování"
 
 #
-#: ../plugin/ui.py:18 ../plugin/ui.py:39
+#: ui.py:20 ui.py:41
 msgid "Harddisk"
 msgstr "Pevný disk"
 
-#: ../plugin/ui.py:19
+#: ui.py:21
 msgid "USB"
 msgstr "USB"
 
-#: ../plugin/ui.py:20 ../plugin/ui.py:37
+#: ui.py:22 ui.py:39
 msgid "CF"
 msgstr "CF"
 
-#: ../plugin/ui.py:21
+#: ui.py:23
 msgid "SD"
 msgstr "SD"
 
-#: ../plugin/ui.py:34
+#: ui.py:36
 msgid "root"
 msgstr "root"
 
 #
-#: ../plugin/ui.py:93 ../plugin/ui.py:140
+#: ui.py:96 ui.py:144
 msgid "AutoBackup Configuration"
 msgstr "Nastavení AutoBackup"
 
-#: ../plugin/ui.py:106
+#: ui.py:109
 msgid "Nowhere"
 msgstr "Nikde"
 
 # Autobackup
 #
 #
-#: ../plugin/ui.py:109
+#: ui.py:112
 msgid "Backup location"
 msgstr "Umístění zálohy"
 
 #
-#: ../plugin/ui.py:110
+#: ui.py:113
 msgid "Daily automatic backup"
 msgstr "Denně automaticky zálohovat"
 
 #
-#: ../plugin/ui.py:111
+#: ui.py:114
 msgid "Automatic start time"
 msgstr "Čas automatické zálohy"
 
 #
-#: ../plugin/ui.py:112
+#: ui.py:115
 msgid "Create Autoinstall"
 msgstr "Založit Autoinstall"
 
-#: ../plugin/ui.py:113
+#: ui.py:116
 msgid "EPG cache backup"
 msgstr "Zálohování EPG cache"
 
+#: ui.py:117
+msgid "Save previous backup"
+msgstr "Uložit předchozí zálohu"
+
 #
-#: ../plugin/ui.py:116 ../plugin/ui.py:328
+#: ui.py:120 ui.py:355
 msgid "Cancel"
 msgstr "Zavřít"
 
-#: ../plugin/ui.py:117
+#: ui.py:121
 msgid "Ok"
 msgstr "Ok"
 
 #
-#: ../plugin/ui.py:118
+#: ui.py:122
 msgid "Manual"
 msgstr "Ručně"
 
-#: ../plugin/ui.py:158
+#: ui.py:162
 msgid "No suitable media found, insert USB stick, flash card or harddisk."
 msgstr ""
 "Žádné vhodné médium nebylo nalezeno. Vložte USB, flash kartu nebo pevný disk."
 
 #
-#: ../plugin/ui.py:164
+#: ui.py:168
 msgid "No backup present"
 msgstr "Žádná záloha"
 
 #
-#: ../plugin/ui.py:179
+#: ui.py:183
 msgid "Last backup date"
 msgstr "Datum poslední zálohy"
 
 #
-#: ../plugin/ui.py:182
+#: ui.py:186
 msgid "Disabled"
 msgstr "zakázán"
 
 #
-#: ../plugin/ui.py:184
+#: ui.py:188
 msgid "Disable"
 msgstr "Zakázat"
 
-#: ../plugin/ui.py:215
+#: ui.py:219
 msgid "Select files to backup"
 msgstr "Výběr souborů pro zálohování."
 
-#: ../plugin/ui.py:216
+#: ui.py:220
 msgid "Run a backup now"
 msgstr "Spustit zálohu nyní"
 
-#: ../plugin/ui.py:217
+#: ui.py:221
 msgid "Backup EPG cache"
 msgstr "Uložit EPG cache"
 
-#: ../plugin/ui.py:220
+#: ui.py:224
 msgid "Don't auto-restore this next time"
 msgstr "Následující čas automaticky neobnovovat"
 
-#: ../plugin/ui.py:222
+#: ui.py:226
+msgid "Run autoinstall"
+msgstr "Spustit autoinstall"
+
+#: ui.py:227
 msgid "Remove autoinstall list"
 msgstr "Smazat autoinstall soubory"
 
 #
-#: ../plugin/ui.py:223
+#: ui.py:228
 msgid "Restore"
 msgstr "Obnovit"
 
 #
-#: ../plugin/ui.py:247 ../plugin/ui.py:270
-msgid "Running"
-msgstr "Probíhá"
+#: ui.py:252 ui.py:275 ui.py:298
+msgid "Running..."
+msgstr "Probíhá..."
 
-#: ../plugin/ui.py:260
+#: ui.py:265
 #, python-format
 msgid ""
 "This will restore your backup on %s.\n"
@@ -154,35 +162,41 @@ msgstr ""
 "Tímto obnovíte Vaši zálohu z %s.\n"
 "Chcete opravdu obnovit tato nastavení a restartovat?"
 
+#: ui.py:288
+#, python-format
+msgid ""
+"This will reinstall all plugins from your backup on %s.\n"
+"Do you really want to reinstall?"
+msgstr ""
+"Přeinstaluje všechny pluginy z Vaší zálohy v %s.\n"
+"Chcete opravdu přeinstalovat?"
+
 #
-#: ../plugin/ui.py:298
+#: ui.py:326
 msgid "Failed"
 msgstr "Selhalo"
 
 #
-#: ../plugin/ui.py:300
+#: ui.py:328
 msgid "Done"
 msgstr "Dokončeno"
 
 #
-#: ../plugin/ui.py:329
+#: ui.py:356
 msgid "Save"
 msgstr "Uložit"
 
 #
-#: ../plugin/ui.py:359
+#: ui.py:386
 msgid "Select files/folders to backup"
 msgstr "Vyberte soubory/složky pro zálohování"
 
 #
-#: ../plugin/ui.py:365
+#: ui.py:392
 msgid "Deselect"
 msgstr "Odebrat"
 
 #
-#: ../plugin/ui.py:367
+#: ui.py:394
 msgid "Select"
 msgstr "Zvolit"
-
-msgid "Save previous backup"
-msgstr "Uložit předchozí zálohu"
