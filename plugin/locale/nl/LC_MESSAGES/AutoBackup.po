@@ -3,146 +3,137 @@ msgid ""
 msgstr ""
 "Project-Id-Version: milo\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-05-06 14:14+0200\n"
+"POT-Creation-Date: 2018-01-09 10:40+0100\n"
 "PO-Revision-Date: \n"
-"Last-Translator: neoatomic <neoatomic@users.noreply.github.com>\n"
+"Last-Translator: Frans van Gils <voorzitter@openpli.org>\n"
 "Language-Team: PLi <ims21@users.sourceforge.net>\n"
 "Language: nl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.8.7\n"
+"X-Generator: Poedit 1.5.7\n"
 
-#
-#: ../plugin/plugin.py:123
+#: plugin.py:125
 msgid "Automatic settings backup"
 msgstr "Automatische reservekopie"
 
-#
-#: ../plugin/ui.py:18 ../plugin/ui.py:39
+#: ui.py:20 ui.py:41
 msgid "Harddisk"
 msgstr "Harde schijf"
 
-#: ../plugin/ui.py:19
+#: ui.py:21
 msgid "USB"
 msgstr "USB"
 
-#: ../plugin/ui.py:20 ../plugin/ui.py:37
+#: ui.py:22 ui.py:39
 msgid "CF"
 msgstr "CF"
 
-#: ../plugin/ui.py:21
+#: ui.py:23
 msgid "SD"
 msgstr "SD"
 
-#: ../plugin/ui.py:34
+#: ui.py:36
 msgid "root"
 msgstr "root"
 
-#
-#: ../plugin/ui.py:93 ../plugin/ui.py:140
+#: ui.py:96 ui.py:144
 msgid "AutoBackup Configuration"
 msgstr "Autobackup instellingen"
 
-#: ../plugin/ui.py:106
+#: ui.py:109
 msgid "Nowhere"
 msgstr "Nergens"
 
-# Autobackup
-#
-#
-#: ../plugin/ui.py:109
+#: ui.py:112
 msgid "Backup location"
-msgstr "Plaats backup hier"
+msgstr "Plaats de backup hier"
 
-#
-#: ../plugin/ui.py:110
+#: ui.py:113
 msgid "Daily automatic backup"
 msgstr "Elke dag automatisch een backup maken"
 
-#
-#: ../plugin/ui.py:111
+#: ui.py:114
 msgid "Automatic start time"
 msgstr "Aanvangstijd automatische backup"
 
-#
-#: ../plugin/ui.py:112
+#: ui.py:115
 msgid "Create Autoinstall"
-msgstr "Maak Autoinstall bestand aan"
+msgstr "Maak een Autoinstall bestand aan"
 
-#: ../plugin/ui.py:113
+#: ui.py:116
 msgid "EPG cache backup"
-msgstr "EPG cache backup"
+msgstr "Backup de EPG-cache"
 
-#
-#: ../plugin/ui.py:116 ../plugin/ui.py:328
+#: ui.py:117
+msgid "Save previous backup"
+msgstr "Sla de vorige backup op"
+
+#: ui.py:120 ui.py:355
 msgid "Cancel"
 msgstr "Annuleren"
 
-#: ../plugin/ui.py:117
+#: ui.py:121
 msgid "Ok"
 msgstr "Ok"
 
-#
-#: ../plugin/ui.py:118
+#: ui.py:122
 msgid "Manual"
 msgstr "Handmatig"
 
-#: ../plugin/ui.py:158
+#: ui.py:162
 msgid "No suitable media found, insert USB stick, flash card or harddisk."
 msgstr "Geen geschikt medium gevonden, USB stick, CF kaart of harddisk nodig."
 
-#
-#: ../plugin/ui.py:164
+#: ui.py:168
 msgid "No backup present"
 msgstr "Geen backup aanwezig"
 
-#
-#: ../plugin/ui.py:179
+#: ui.py:183
 msgid "Last backup date"
 msgstr "Datum vorige backup"
 
-#
-#: ../plugin/ui.py:182
+#: ui.py:186
 msgid "Disabled"
 msgstr "Uit"
 
-#
-#: ../plugin/ui.py:184
+#: ui.py:188
 msgid "Disable"
 msgstr "Uit"
 
-#: ../plugin/ui.py:215
+#: ui.py:219
 msgid "Select files to backup"
-msgstr "Kies bestanden voor backup"
+msgstr "Kies de bestanden om te backuppen"
 
-#: ../plugin/ui.py:216
+#: ui.py:220
 msgid "Run a backup now"
 msgstr "Maak nu een backup"
 
-#: ../plugin/ui.py:217
+#: ui.py:221
 msgid "Backup EPG cache"
 msgstr "Backup EPG-cache"
 
-#: ../plugin/ui.py:220
+#: ui.py:224
 msgid "Don't auto-restore this next time"
-msgstr "Zet deze niet vanzelf terug volgende keer"
+msgstr "Zet de backup niet vanzelf terug de volgende keer"
 
-#: ../plugin/ui.py:222
+#: ui.py:226
+msgid "Run autoinstall"
+msgstr "Start de AutoInstall"
+
+#: ui.py:227
 msgid "Remove autoinstall list"
-msgstr "Verwijder autoinstall lijst"
+msgstr "Verwijder de AutoInstall lijst"
 
-#
-#: ../plugin/ui.py:223
+#: ui.py:228
 msgid "Restore"
-msgstr "Herstellen"
+msgstr "Herstel de image"
 
-#
-#: ../plugin/ui.py:247 ../plugin/ui.py:270
-msgid "Running"
+#: ui.py:252 ui.py:275 ui.py:298
+msgid "Running..."
 msgstr "Loopt"
 
-#: ../plugin/ui.py:260
+#: ui.py:265
 #, python-format
 msgid ""
 "This will restore your backup on %s.\n"
@@ -151,35 +142,35 @@ msgstr ""
 "De backup wordt teruggezet vanaf %s.\n"
 "Nu herstellen en opnieuw opstarten?"
 
-#
-#: ../plugin/ui.py:298
+#: ui.py:288
+#, python-format
+msgid ""
+"This will reinstall all plugins from your backup on %s.\n"
+"Do you really want to reinstall?"
+msgstr ""
+"De backup wordt teruggezet vanaf %s.\n"
+"Nu herstellen en opnieuw opstarten?"
+
+#: ui.py:326
 msgid "Failed"
 msgstr "Mislukt"
 
-#
-#: ../plugin/ui.py:300
+#: ui.py:328
 msgid "Done"
 msgstr "Gereed"
 
-#
-#: ../plugin/ui.py:329
+#: ui.py:356
 msgid "Save"
 msgstr "Opslaan"
 
-#
-#: ../plugin/ui.py:359
+#: ui.py:386
 msgid "Select files/folders to backup"
-msgstr "Kies bestanden en mappen voor backup"
+msgstr "Kies de bestanden en mappen voor de backup"
 
-#
-#: ../plugin/ui.py:365
+#: ui.py:392
 msgid "Deselect"
-msgstr "Kies niet"
+msgstr "Déselecteer"
 
-#
-#: ../plugin/ui.py:367
+#: ui.py:394
 msgid "Select"
 msgstr "Kies"
-
-msgid "Save previous backup"
-msgstr ""
