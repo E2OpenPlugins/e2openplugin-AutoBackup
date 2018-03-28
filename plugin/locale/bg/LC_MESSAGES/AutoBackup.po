@@ -1,0 +1,128 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: ims\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-05-06 14:14+0200\n"
+"PO-Revision-Date: \n"
+"Last-Translator: Мартин Петков <marto74bg@yahoo.co.uk>\n"
+"Language-Team: \n"
+"Language: bg\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
+"|| n%100>=20) ? 1 : 2;\n"
+"X-Generator: Poedit 2.0.6\n"
+
+msgid "AutoBackup Configuration"
+msgstr "AutoBackup Настройки"
+
+msgid "Automatic settings backup"
+msgstr "Настройки за Автоматично резервно копие"
+
+msgid "Automatic start time"
+msgstr "Време за автоматичен старт"
+
+msgid "Backup EPG cache"
+msgstr "Резервно копие на EPG кеша"
+
+msgid "Backup location"
+msgstr "Местоположение за резервно копие"
+
+msgid "CF"
+msgstr "CF"
+
+msgid "Cancel"
+msgstr "Отказ"
+
+msgid "Create Autoinstall"
+msgstr "Създаване на Автоматична инсталация"
+
+msgid "Daily automatic backup"
+msgstr "Ежедневно автоматично резервно копие"
+
+msgid "Deselect"
+msgstr "Отмяна Избор"
+
+msgid "Disable"
+msgstr "Спри"
+
+msgid "Disabled"
+msgstr "Спрян"
+
+msgid "Don't auto-restore this next time"
+msgstr "Не възстановявай автоматично това следващия път"
+
+msgid "Done"
+msgstr "Изпълнено"
+
+msgid "EPG cache backup"
+msgstr "EPG кеш резервно копие"
+
+msgid "Failed"
+msgstr "Грешка"
+
+msgid "Harddisk"
+msgstr "Твърд диск"
+
+msgid "Last backup date"
+msgstr "Дата на последното резервно копие"
+
+msgid "Manual"
+msgstr "Ръчно"
+
+msgid "No backup present"
+msgstr "Не е открито резервно копие"
+
+msgid "No suitable media found, insert USB stick, flash card or harddisk."
+msgstr ""
+"Няма подходящо устройство, необходимо е да поставите флашка или твърд диск."
+
+msgid "Nowhere"
+msgstr "Никъде"
+
+msgid "Ok"
+msgstr "Ок"
+
+msgid "Remove autoinstall list"
+msgstr "Изтрий файловете за автоинсталация"
+
+msgid "Restore"
+msgstr "Възстанови"
+
+msgid "Run a backup now"
+msgstr "Направи резервно копие сега"
+
+msgid "Running"
+msgstr "Извършва се"
+
+msgid "SD"
+msgstr "SD"
+
+msgid "Save"
+msgstr "Запази"
+
+msgid "Save previous backup"
+msgstr "Запази предишното резервно копие"
+
+msgid "Select"
+msgstr "Избери"
+
+msgid "Select files to backup"
+msgstr "Изберете файлове за резервно копие"
+
+msgid "Select files/folders to backup"
+msgstr "Изберете файлове/папки за резервно копие"
+
+msgid ""
+"This will restore your backup on %s.\n"
+"Do you really want to restore those settings and restart?"
+msgstr ""
+"Това ще възстанови вашето резервно копие на %s.\n"
+"Искате ли да възстановите тези настройки и да рестартирате?"
+
+msgid "USB"
+msgstr "USB"
+
+msgid "root"
+msgstr "главна директория"
