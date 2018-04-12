@@ -1,0 +1,177 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: AutoBackup\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-01-09 10:40+0100\n"
+"PO-Revision-Date: \n"
+"Last-Translator: Gringo <openpli@tiscali.it>\n"
+"Language-Team: \n"
+"Language: it\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 1.8.7.1\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+
+#: plugin.py:125
+msgid "Automatic settings backup"
+msgstr "Backup automatico delle impostazioni"
+
+#: ui.py:20 ui.py:41
+msgid "Harddisk"
+msgstr "Disco rigido"
+
+#: ui.py:21
+msgid "USB"
+msgstr "Unità USB"
+
+#: ui.py:22 ui.py:39
+msgid "CF"
+msgstr "Scheda CF"
+
+#: ui.py:23
+msgid "SD"
+msgstr "Scheda SD"
+
+#: ui.py:36
+msgid "root"
+msgstr "root"
+
+#: ui.py:96 ui.py:144
+msgid "AutoBackup Configuration"
+msgstr "Configurazione AutoBackup"
+
+#: ui.py:109
+msgid "Nowhere"
+msgstr "Nessuna destinazione"
+
+#: ui.py:112
+msgid "Backup location"
+msgstr "Destinazione dei backup"
+
+#: ui.py:113
+msgid "Daily automatic backup"
+msgstr "Backup giornaliero automatico"
+
+#: ui.py:114
+msgid "Automatic start time"
+msgstr "Orario di inizio dell'avvio automatico"
+
+#: ui.py:115
+msgid "Create Autoinstall"
+msgstr "Creare un backup utilizzabile per il ripristino automatico"
+
+#: ui.py:116
+msgid "EPG cache backup"
+msgstr "Backup della cache EPG"
+
+#: ui.py:117
+msgid "Save previous backup"
+msgstr "Salvare backup precedente"
+
+#: ui.py:120 ui.py:355
+msgid "Cancel"
+msgstr "Annullare"
+
+#: ui.py:121
+msgid "Ok"
+msgstr "OK"
+
+#: ui.py:122
+msgid "Manual"
+msgstr "Manuale"
+
+#: ui.py:162
+msgid "No suitable media found, insert USB stick, flash card or harddisk."
+msgstr "Nessuna unità trovata, inserire una chiavetta USB, scheda flash o disco rigido."
+
+#: ui.py:168
+msgid "No backup present"
+msgstr "Nessun backup presente"
+
+#: ui.py:183
+msgid "Last backup date"
+msgstr "Data ultimo backup"
+
+#: ui.py:186
+msgid "Disabled"
+msgstr "Disabilitato"
+
+#: ui.py:188
+msgid "Disable"
+msgstr "Disabilitare"
+
+#: ui.py:219
+msgid "Select files to backup"
+msgstr "Selezionare file da salvare"
+
+#: ui.py:220
+msgid "Run a backup now"
+msgstr "Eseguire un backup adesso"
+
+#: ui.py:221
+msgid "Backup EPG cache"
+msgstr "Salvare cache EPG"
+
+#: ui.py:224
+msgid "Don't auto-restore this next time"
+msgstr "Non ripristinare in automatico la prossima volta"
+
+#: ui.py:226
+msgid "Run autoinstall"
+msgstr "Eseguire un ripristino automatico"
+
+#: ui.py:227
+msgid "Remove autoinstall list"
+msgstr "Rimuovere elenco ripristino automatico"
+
+#: ui.py:228
+msgid "Restore"
+msgstr "Ripristinare"
+
+#: ui.py:252 ui.py:275 ui.py:298
+msgid "Running..."
+msgstr "In esecuzione..."
+
+#: ui.py:265
+#, python-format
+msgid ""
+"This will restore your backup on %s.\n"
+"Do you really want to restore those settings and restart?"
+msgstr ""
+"Il backup sarà ripristinato su %s.\n"
+"Si desidera veramente ripristinare le impostazioni e riavviare?"
+
+#: ui.py:288
+#, python-format
+msgid ""
+"This will reinstall all plugins from your backup on %s.\n"
+"Do you really want to reinstall?"
+msgstr ""
+"Tutti i plugin saranno reinstallati dal backup su %s.\n"
+"Si desidera veramente reinstallare?"
+
+#: ui.py:326
+msgid "Failed"
+msgstr "Non riuscito"
+
+#: ui.py:328
+msgid "Done"
+msgstr "Fatto"
+
+#: ui.py:356
+msgid "Save"
+msgstr "Salvare"
+
+#: ui.py:386
+msgid "Select files/folders to backup"
+msgstr "Selezionare i file e le cartelle da includere nel backup"
+
+#: ui.py:392
+msgid "Deselect"
+msgstr "Deselezionare"
+
+#: ui.py:394
+msgid "Select"
+msgstr "Selezionare"
