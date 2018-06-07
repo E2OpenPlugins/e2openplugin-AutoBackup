@@ -7,158 +7,162 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2-plugin-extensions-autobackup\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-05-06 14:13+0200\n"
+"POT-Creation-Date: 2018-06-07 17:04+0200\n"
 "PO-Revision-Date: 2016-05-06 14:13+0200\n"
 "Last-Translator: neoatomic <neoatomic@users.noreply.github.com>\n"
 "Language-Team: daddelfalk\n"
 "Language: de_DE\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Poedit-SourceCharset: iso-8859-15\n"
 "X-Generator: Poedit 1.8.7\n"
 
 #
-#: ../plugin/plugin.py:123
-msgid "Automatic settings backup"
-msgstr "Automatische Sicherung der Einstellungen"
-
-#
-#: ../plugin/ui.py:18 ../plugin/ui.py:39
-msgid "Harddisk"
-msgstr "Festplatte"
-
-#
-#: ../plugin/ui.py:19
-msgid "USB"
-msgstr "USB"
-
-#
-#: ../plugin/ui.py:20 ../plugin/ui.py:37
-msgid "CF"
-msgstr "CF"
-
-#
-#: ../plugin/ui.py:21
-msgid "SD"
-msgstr "SD"
-
-#: ../plugin/ui.py:34
-msgid "root"
-msgstr ""
-
-#
-#: ../plugin/ui.py:93 ../plugin/ui.py:140
 msgid "AutoBackup Configuration"
 msgstr "AutoBackup Konfiguration"
 
 #
-#: ../plugin/ui.py:106
-msgid "Nowhere"
-msgstr "Nirgends"
+msgid "Automatic settings backup"
+msgstr "Automatische Sicherung der Einstellungen"
 
 #
-#: ../plugin/ui.py:109
-msgid "Backup location"
-msgstr "Sicherungs-Ort"
-
-#
-#: ../plugin/ui.py:110
-msgid "Daily automatic backup"
-msgstr "Automatische tägliche Sicherung"
-
-#
-#: ../plugin/ui.py:111
 msgid "Automatic start time"
 msgstr "Automatische Startzeit"
 
-#
-#: ../plugin/ui.py:112
-msgid "Create Autoinstall"
-msgstr "Erstelle Automatische Installation"
-
-#: ../plugin/ui.py:113
-msgid "EPG cache backup"
-msgstr ""
-
-#
-#: ../plugin/ui.py:116 ../plugin/ui.py:328
-msgid "Cancel"
-msgstr "Abbrechen"
-
-#
-#: ../plugin/ui.py:117
-msgid "Ok"
-msgstr "OK"
-
-#
-#: ../plugin/ui.py:118
-msgid "Manual"
-msgstr "Manuell"
-
-#
-#: ../plugin/ui.py:158
-msgid "No suitable media found, insert USB stick, flash card or harddisk."
-msgstr ""
-"Kein passendes Sicherungsmedium gefunden. Bitte einen USB-Stick, CF oder "
-"Festplatte anstecken."
-
-#
-#: ../plugin/ui.py:164
-msgid "No backup present"
-msgstr "Keine Sicherung vorhanden"
-
-#
-#: ../plugin/ui.py:179
-msgid "Last backup date"
-msgstr "Letztes Sicherungsdatum"
-
-#
-#: ../plugin/ui.py:182
-msgid "Disabled"
-msgstr "Deaktiviert"
-
-#
-#: ../plugin/ui.py:184
-msgid "Disable"
-msgstr "Deaktivieren"
-
-#
-#: ../plugin/ui.py:215
-msgid "Select files to backup"
-msgstr "Dateien zum Sichern auswählen"
-
-#
-#: ../plugin/ui.py:216
-msgid "Run a backup now"
-msgstr "Jetzt eine Sicherung starten"
-
-#: ../plugin/ui.py:217
 msgid "Backup EPG cache"
 msgstr ""
 
 #
-#: ../plugin/ui.py:220
+msgid "Backup location"
+msgstr "Sicherungs-Ort"
+
+#
+msgid "CF"
+msgstr "CF"
+
+#
+msgid "Cancel"
+msgstr "Abbrechen"
+
+#
+msgid "Create Autoinstall"
+msgstr "Erstelle Automatische Installation"
+
+#
+msgid "Daily automatic backup"
+msgstr "Automatische tägliche Sicherung"
+
+#
+msgid "Deselect"
+msgstr "Markierung aufheben"
+
+#
+msgid "Disable"
+msgstr "Deaktivieren"
+
+#
+msgid "Disabled"
+msgstr "Deaktiviert"
+
+#
 msgid "Don't auto-restore this next time"
 msgstr "Nächstes Mal keine automatische Wiederherstellung"
 
-#: ../plugin/ui.py:222
+#
+msgid "Done"
+msgstr "Beendet"
+
+msgid "EPG cache backup"
+msgstr ""
+
+#
+msgid "Failed"
+msgstr "Fehlgeschlagen"
+
+#
+msgid "Harddisk"
+msgstr "Festplatte"
+
+#
+msgid "Last backup date"
+msgstr "Letztes Sicherungsdatum"
+
+#
+msgid "Manual"
+msgstr "Manuell"
+
+#
+msgid "No backup present"
+msgstr "Keine Sicherung vorhanden"
+
+#
+msgid "No suitable media found, insert USB stick, flash card or harddisk."
+msgstr "Kein passendes Sicherungsmedium gefunden. Bitte einen USB-Stick, CF oder Festplatte anstecken."
+
+#
+msgid "Nowhere"
+msgstr "Nirgends"
+
+#
+msgid "Ok"
+msgstr "OK"
+
 msgid "Remove autoinstall list"
 msgstr ""
 
 #
-#: ../plugin/ui.py:223
 msgid "Restore"
 msgstr "Wiederherstellen"
 
 #
-#: ../plugin/ui.py:247 ../plugin/ui.py:270
-msgid "Running"
+msgid "Run a backup now"
+msgstr "Jetzt eine Sicherung starten"
+
+#
+#, fuzzy
+msgid "Run autoinstall"
+msgstr "Erstelle Automatische Installation"
+
+#
+#, fuzzy
+msgid "Running..."
 msgstr "Wird ausgeführt"
 
 #
-#: ../plugin/ui.py:260
+msgid "SD"
+msgstr "SD"
+
+#
+msgid "Save"
+msgstr "Speichern"
+
+msgid "Save previous backup"
+msgstr ""
+
+#
+msgid "Select"
+msgstr "Auswählen"
+
+#
+msgid "Select files to backup"
+msgstr "Dateien zum Sichern auswählen"
+
+#
+msgid "Select files/folders to backup"
+msgstr "Wählen Sie Dateien/Ordner für die Sicherung"
+
+#
+#, fuzzy, python-format
+msgid ""
+"This will reinstall all plugins from your backup on %s.\n"
+"Do you really want to reinstall?"
+msgstr ""
+"Damit wird Ihre Sicherung aus %s wiederhergestellt.\n"
+"Wollen Sie die Einstellungen wirklich wiederherstellen und neu starten?"
+
+#
 #, python-format
 msgid ""
 "This will restore your backup on %s.\n"
@@ -168,34 +172,8 @@ msgstr ""
 "Wollen Sie die Einstellungen wirklich wiederherstellen und neu starten?"
 
 #
-#: ../plugin/ui.py:298
-msgid "Failed"
-msgstr "Fehlgeschlagen"
+msgid "USB"
+msgstr "USB"
 
-#
-#: ../plugin/ui.py:300
-msgid "Done"
-msgstr "Beendet"
-
-#
-#: ../plugin/ui.py:329
-msgid "Save"
-msgstr "Speichern"
-
-#
-#: ../plugin/ui.py:359
-msgid "Select files/folders to backup"
-msgstr "Wählen Sie Dateien/Ordner für die Sicherung"
-
-#
-#: ../plugin/ui.py:365
-msgid "Deselect"
-msgstr "Markierung aufheben"
-
-#
-#: ../plugin/ui.py:367
-msgid "Select"
-msgstr "Auswählen"
-
-msgid "Save previous backup"
+msgid "root"
 msgstr ""

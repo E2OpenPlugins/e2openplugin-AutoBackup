@@ -1,0 +1,144 @@
+# Italian translations for AutoBackup.
+# Signed-off-by: Gringo <openpli@tiscali.it>
+#
+# Updated by: Gringo <openpli@tiscali.it>
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: AutoBackup\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-06-07 17:07+0200\n"
+"PO-Revision-Date: \n"
+"Last-Translator: Gringo <openpli@tiscali.it>\n"
+"Language-Team: \n"
+"Language: it\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 1.8.7.1\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+
+msgid "AutoBackup Configuration"
+msgstr "Configurazione AutoBackup"
+
+msgid "Automatic settings backup"
+msgstr "Backup automatico delle impostazioni"
+
+msgid "Automatic start time"
+msgstr "Orario di inizio dell'avvio automatico"
+
+msgid "Backup EPG cache"
+msgstr "Salvare cache EPG"
+
+msgid "Backup location"
+msgstr "Destinazione dei backup"
+
+msgid "CF"
+msgstr "Scheda CF"
+
+msgid "Cancel"
+msgstr "Annullare"
+
+msgid "Create Autoinstall"
+msgstr "Creare un backup utilizzabile per il ripristino automatico"
+
+msgid "Daily automatic backup"
+msgstr "Backup giornaliero automatico"
+
+msgid "Deselect"
+msgstr "Deselezionare"
+
+msgid "Disable"
+msgstr "Disabilitare"
+
+msgid "Disabled"
+msgstr "Disabilitato"
+
+msgid "Don't auto-restore this next time"
+msgstr "Non ripristinare in automatico la prossima volta"
+
+msgid "Done"
+msgstr "Fatto"
+
+msgid "EPG cache backup"
+msgstr "Backup della cache EPG"
+
+msgid "Failed"
+msgstr "Non riuscito"
+
+msgid "Harddisk"
+msgstr "Disco rigido"
+
+msgid "Last backup date"
+msgstr "Data ultimo backup"
+
+msgid "Manual"
+msgstr "Manuale"
+
+msgid "No backup present"
+msgstr "Nessun backup presente"
+
+msgid "No suitable media found, insert USB stick, flash card or harddisk."
+msgstr "Nessuna unità trovata, inserire una chiavetta USB, scheda flash o disco rigido."
+
+msgid "Nowhere"
+msgstr "Nessuna destinazione"
+
+msgid "Ok"
+msgstr "OK"
+
+msgid "Remove autoinstall list"
+msgstr "Rimuovere elenco ripristino automatico"
+
+msgid "Restore"
+msgstr "Ripristinare"
+
+msgid "Run a backup now"
+msgstr "Eseguire un backup adesso"
+
+msgid "Run autoinstall"
+msgstr "Eseguire un ripristino automatico"
+
+msgid "Running..."
+msgstr "In esecuzione..."
+
+msgid "SD"
+msgstr "Scheda SD"
+
+msgid "Save"
+msgstr "Salvare"
+
+msgid "Save previous backup"
+msgstr "Salvare backup precedente"
+
+msgid "Select"
+msgstr "Selezionare"
+
+msgid "Select files to backup"
+msgstr "Selezionare file da salvare"
+
+msgid "Select files/folders to backup"
+msgstr "Selezionare i file e le cartelle da includere nel backup"
+
+#, python-format
+msgid ""
+"This will reinstall all plugins from your backup on %s.\n"
+"Do you really want to reinstall?"
+msgstr ""
+"Tutti i plugin saranno reinstallati dal backup su %s.\n"
+"Si desidera veramente reinstallare?"
+
+#, python-format
+msgid ""
+"This will restore your backup on %s.\n"
+"Do you really want to restore those settings and restart?"
+msgstr ""
+"Il backup sarà ripristinato su %s.\n"
+"Si desidera veramente ripristinare le impostazioni e riavviare?"
+
+msgid "USB"
+msgstr "Unità USB"
+
+msgid "root"
+msgstr "root"

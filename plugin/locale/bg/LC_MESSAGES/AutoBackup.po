@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ims\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-05-06 14:14+0200\n"
+"POT-Creation-Date: 2018-06-07 17:04+0200\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Мартин Петков <marto74bg@yahoo.co.uk>\n"
 "Language-Team: \n"
@@ -10,8 +10,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
-"|| n%100>=20) ? 1 : 2;\n"
+"Plural-Forms: nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Generator: Poedit 2.0.6\n"
 
 msgid "AutoBackup Configuration"
@@ -75,8 +74,7 @@ msgid "No backup present"
 msgstr "Не е открито резервно копие"
 
 msgid "No suitable media found, insert USB stick, flash card or harddisk."
-msgstr ""
-"Няма подходящо устройство, необходимо е да поставите флашка или твърд диск."
+msgstr "Няма подходящо устройство, необходимо е да поставите флашка или твърд диск."
 
 msgid "Nowhere"
 msgstr "Никъде"
@@ -93,7 +91,12 @@ msgstr "Възстанови"
 msgid "Run a backup now"
 msgstr "Направи резервно копие сега"
 
-msgid "Running"
+#, fuzzy
+msgid "Run autoinstall"
+msgstr "Изтрий файловете за автоинсталация"
+
+#, fuzzy
+msgid "Running..."
 msgstr "Извършва се"
 
 msgid "SD"
@@ -114,6 +117,15 @@ msgstr "Изберете файлове за резервно копие"
 msgid "Select files/folders to backup"
 msgstr "Изберете файлове/папки за резервно копие"
 
+#, fuzzy, python-format
+msgid ""
+"This will reinstall all plugins from your backup on %s.\n"
+"Do you really want to reinstall?"
+msgstr ""
+"Това ще възстанови вашето резервно копие на %s.\n"
+"Искате ли да възстановите тези настройки и да рестартирате?"
+
+#, python-format
 msgid ""
 "This will restore your backup on %s.\n"
 "Do you really want to restore those settings and restart?"
