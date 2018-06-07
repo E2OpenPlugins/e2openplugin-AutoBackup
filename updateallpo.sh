@@ -28,6 +28,7 @@ printf "Creating file $extension.pot\n"
 find -s -X .. -name "*.py" -exec xgettext --no-wrap -L Python --from-code=UTF-8 -kpgettext:1c,2 --add-comments="TRANSLATORS:" -d $extension -s -o $extension-py.pot {} \+
 gsed --in-place $extension-py.pot --expression=s/CHARSET/UTF-8/
 cat $extension-py.pot | msguniq --no-wrap --no-location -o $extension.pot -
+rm $extension-py.pot
 OLDIFS=$IFS
 IFS=" "
 for lang in "${languages[@]}" ; do
