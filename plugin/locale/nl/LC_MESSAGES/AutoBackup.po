@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: milo\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-07 17:04+0200\n"
+"POT-Creation-Date: 2018-07-17 16:09+0200\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Frans van Gils <voorzitter@openpli.org>\n"
 "Language-Team: PLi <ims21@users.sourceforge.net>\n"
@@ -13,108 +13,143 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 1.5.7\n"
 
+#: ../ui.py:96 ../ui.py:144
 msgid "AutoBackup Configuration"
 msgstr "Autobackup instellingen"
 
+#: ../plugin.py:125
 msgid "Automatic settings backup"
 msgstr "Automatische reservekopie"
 
+#: ../ui.py:114
 msgid "Automatic start time"
 msgstr "Aanvangstijd automatische backup"
 
+#: ../ui.py:221
 msgid "Backup EPG cache"
 msgstr "Backup EPG-cache"
 
+#: ../ui.py:112
 msgid "Backup location"
 msgstr "Plaats de backup hier"
 
+#: ../ui.py:22 ../ui.py:39
 msgid "CF"
 msgstr "CF"
 
+#: ../ui.py:120 ../ui.py:355
 msgid "Cancel"
 msgstr "Annuleren"
 
+#: ../ui.py:115
 msgid "Create Autoinstall"
 msgstr "Maak een Autoinstall bestand aan"
 
+#: ../ui.py:113
 msgid "Daily automatic backup"
 msgstr "Elke dag automatisch een backup maken"
 
+#: ../ui.py:392
 msgid "Deselect"
 msgstr "Déselecteer"
 
+#: ../ui.py:188
 msgid "Disable"
 msgstr "Uit"
 
+#: ../ui.py:186
 msgid "Disabled"
 msgstr "Uit"
 
+#: ../ui.py:224
 msgid "Don't auto-restore this next time"
 msgstr "Zet de backup niet vanzelf terug de volgende keer"
 
+#: ../ui.py:328
 msgid "Done"
 msgstr "Gereed"
 
+#: ../ui.py:116
 msgid "EPG cache backup"
 msgstr "Backup de EPG-cache"
 
+#: ../ui.py:326
 msgid "Failed"
 msgstr "Mislukt"
 
+#: ../ui.py:20 ../ui.py:41
 msgid "Harddisk"
 msgstr "Harde schijf"
 
+#: ../ui.py:183
 msgid "Last backup date"
 msgstr "Datum vorige backup"
 
+#: ../ui.py:122
 msgid "Manual"
 msgstr "Handmatig"
 
+#: ../ui.py:168
 msgid "No backup present"
 msgstr "Geen backup aanwezig"
 
+#: ../ui.py:162
 msgid "No suitable media found, insert USB stick, flash card or harddisk."
 msgstr "Geen geschikt medium gevonden, USB stick, CF kaart of harddisk nodig."
 
+#: ../ui.py:109
 msgid "Nowhere"
 msgstr "Nergens"
 
+#: ../ui.py:121
 msgid "Ok"
 msgstr "Ok"
 
+#: ../ui.py:227
 msgid "Remove autoinstall list"
 msgstr "Verwijder de AutoInstall lijst"
 
+#: ../ui.py:228
 msgid "Restore"
 msgstr "Herstel de image"
 
+#: ../ui.py:220
 msgid "Run a backup now"
 msgstr "Maak nu een backup"
 
+#: ../ui.py:226
 msgid "Run autoinstall"
 msgstr "Start de AutoInstall"
 
+#: ../ui.py:252 ../ui.py:275 ../ui.py:298
 msgid "Running..."
 msgstr "Loopt"
 
+#: ../ui.py:23
 msgid "SD"
 msgstr "SD"
 
+#: ../ui.py:356
 msgid "Save"
 msgstr "Opslaan"
 
+#: ../ui.py:117
 msgid "Save previous backup"
 msgstr "Sla de vorige backup op"
 
+#: ../ui.py:394
 msgid "Select"
 msgstr "Kies"
 
+#: ../ui.py:219
 msgid "Select files to backup"
 msgstr "Kies de bestanden om te backuppen"
 
+#: ../ui.py:386
 msgid "Select files/folders to backup"
 msgstr "Kies de bestanden en mappen voor de backup"
 
+#: ../ui.py:288
 #, python-format
 msgid ""
 "This will reinstall all plugins from your backup on %s.\n"
@@ -123,6 +158,7 @@ msgstr ""
 "De backup wordt teruggezet vanaf %s.\n"
 "Nu herstellen en opnieuw opstarten?"
 
+#: ../ui.py:265
 #, python-format
 msgid ""
 "This will restore your backup on %s.\n"
@@ -131,8 +167,10 @@ msgstr ""
 "De backup wordt teruggezet vanaf %s.\n"
 "Nu herstellen en opnieuw opstarten?"
 
+#: ../ui.py:21
 msgid "USB"
 msgstr "USB"
 
+#: ../ui.py:36
 msgid "root"
 msgstr "root"

@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: AutoBackup\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-07 17:04+0200\n"
+"POT-Creation-Date: 2018-07-17 16:09+0200\n"
 "PO-Revision-Date: \n"
 "Last-Translator: neoatomic <neoatomic@users.noreply.github.com>\n"
 "Language-Team: \n"
@@ -14,110 +14,145 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Generator: Poedit 2.0.4\n"
 
+#: ../ui.py:96 ../ui.py:144
 msgid "AutoBackup Configuration"
 msgstr "Konfiguracja AutoBackup"
 
+#: ../plugin.py:125
 msgid "Automatic settings backup"
 msgstr "Automatyczna kopia zapasowa ustawień"
 
+#: ../ui.py:114
 msgid "Automatic start time"
 msgstr "Automatycznie twórz kopię zapasową o:"
 
+#: ../ui.py:221
 msgid "Backup EPG cache"
 msgstr "Wykonaj kopię zapasową EPG cache"
 
+#: ../ui.py:112
 msgid "Backup location"
 msgstr "Lokalizacja kopii zapasowej"
 
+#: ../ui.py:22 ../ui.py:39
 msgid "CF"
 msgstr "CF"
 
+#: ../ui.py:120 ../ui.py:355
 msgid "Cancel"
 msgstr "Anuluj"
 
+#: ../ui.py:115
 msgid "Create Autoinstall"
 msgstr "Twórz plik Autoinstall"
 
+#: ../ui.py:113
 msgid "Daily automatic backup"
 msgstr "Codzienna automatyczna kopia zapasowa"
 
+#: ../ui.py:392
 msgid "Deselect"
 msgstr "Odznacz"
 
+#: ../ui.py:188
 msgid "Disable"
 msgstr "Wyłącz"
 
+#: ../ui.py:186
 msgid "Disabled"
 msgstr "Wyłączone"
 
+#: ../ui.py:224
 msgid "Don't auto-restore this next time"
 msgstr "Nie przywracaj automatycznie następnym razem"
 
+#: ../ui.py:328
 msgid "Done"
 msgstr "Zrobione"
 
+#: ../ui.py:116
 msgid "EPG cache backup"
 msgstr "Kopia zapasowa EPG cache"
 
+#: ../ui.py:326
 msgid "Failed"
 msgstr "Nie powiodło się"
 
+#: ../ui.py:20 ../ui.py:41
 msgid "Harddisk"
 msgstr "HDD"
 
+#: ../ui.py:183
 msgid "Last backup date"
 msgstr "Data ostatniej kopii zapasowej"
 
+#: ../ui.py:122
 msgid "Manual"
 msgstr "Ręcznie"
 
+#: ../ui.py:168
 msgid "No backup present"
 msgstr "Nie znaleziono kopii zapasowej"
 
+#: ../ui.py:162
 msgid "No suitable media found, insert USB stick, flash card or harddisk."
 msgstr "Brak odpowiedniego nośnika, podłącz pena USB, kartę CF albo dysk twardy"
 
+#: ../ui.py:109
 msgid "Nowhere"
 msgstr "Nigdzie"
 
+#: ../ui.py:121
 msgid "Ok"
 msgstr "OK"
 
+#: ../ui.py:227
 msgid "Remove autoinstall list"
 msgstr "Usuń listę autoinstall"
 
+#: ../ui.py:228
 msgid "Restore"
 msgstr "Przywróć"
 
+#: ../ui.py:220
 msgid "Run a backup now"
 msgstr "Wykonaj kopię zapasową teraz"
 
+#: ../ui.py:226
 #, fuzzy
 msgid "Run autoinstall"
 msgstr "Usuń listę autoinstall"
 
+#: ../ui.py:252 ../ui.py:275 ../ui.py:298
 #, fuzzy
 msgid "Running..."
 msgstr "W toku"
 
+#: ../ui.py:23
 msgid "SD"
 msgstr "SD"
 
+#: ../ui.py:356
 msgid "Save"
 msgstr "Zapisz"
 
+#: ../ui.py:117
 msgid "Save previous backup"
 msgstr "Zapisuj poprzednią kopię zapasową"
 
+#: ../ui.py:394
 msgid "Select"
 msgstr "Wybierz"
 
+#: ../ui.py:219
 msgid "Select files to backup"
 msgstr "Wybierz pliki do kopii zapasowej"
 
+#: ../ui.py:386
 msgid "Select files/folders to backup"
 msgstr "Wybierz pliki/foldery do kopii zapasowej"
 
+#: ../ui.py:288
 #, fuzzy, python-format
 msgid ""
 "This will reinstall all plugins from your backup on %s.\n"
@@ -126,6 +161,7 @@ msgstr ""
 "Zostanie przywrócona kopia zapasowa z %s.\n"
 "Chcesz przywrócić te ustawienia i wykonać restart?"
 
+#: ../ui.py:265
 #, python-format
 msgid ""
 "This will restore your backup on %s.\n"
@@ -134,8 +170,10 @@ msgstr ""
 "Zostanie przywrócona kopia zapasowa z %s.\n"
 "Chcesz przywrócić te ustawienia i wykonać restart?"
 
+#: ../ui.py:21
 msgid "USB"
 msgstr "USB"
 
+#: ../ui.py:36
 msgid "root"
 msgstr ""
