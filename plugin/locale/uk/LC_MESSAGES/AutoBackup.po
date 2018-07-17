@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: AutoBackup\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-07 17:04+0200\n"
+"POT-Creation-Date: 2018-07-17 16:09+0200\n"
 "PO-Revision-Date: \n"
 "Last-Translator: neoatomic <neoatomic@users.noreply.github.com>\n"
 "Language-Team: http://gisclub.tv <irkoff@gmail.com>\n"
@@ -13,110 +13,145 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Generator: Poedit 1.8.7\n"
 
+#: ../ui.py:96 ../ui.py:144
 msgid "AutoBackup Configuration"
 msgstr "Налаштування AutoBackup"
 
+#: ../plugin.py:125
 msgid "Automatic settings backup"
 msgstr "Налаштування автоматичного резервного копіювання"
 
+#: ../ui.py:114
 msgid "Automatic start time"
 msgstr "Час автоматичного резервного копіювання"
 
+#: ../ui.py:221
 msgid "Backup EPG cache"
 msgstr ""
 
+#: ../ui.py:112
 msgid "Backup location"
 msgstr "Місце резервування"
 
+#: ../ui.py:22 ../ui.py:39
 msgid "CF"
 msgstr "CF"
 
+#: ../ui.py:120 ../ui.py:355
 msgid "Cancel"
 msgstr "Відмінити"
 
+#: ../ui.py:115
 msgid "Create Autoinstall"
 msgstr "Створення AutoInstall"
 
+#: ../ui.py:113
 msgid "Daily automatic backup"
 msgstr "Щоденно автоматичне резервне копіювання"
 
+#: ../ui.py:392
 msgid "Deselect"
 msgstr "Скасувати"
 
+#: ../ui.py:188
 msgid "Disable"
 msgstr "Заборонити"
 
+#: ../ui.py:186
 msgid "Disabled"
 msgstr "Заборонити"
 
+#: ../ui.py:224
 msgid "Don't auto-restore this next time"
 msgstr "Наступного разу автоматично не обновлювати"
 
+#: ../ui.py:328
 msgid "Done"
 msgstr "Закінчено"
 
+#: ../ui.py:116
 msgid "EPG cache backup"
 msgstr ""
 
+#: ../ui.py:326
 msgid "Failed"
 msgstr "Не вдалося"
 
+#: ../ui.py:20 ../ui.py:41
 msgid "Harddisk"
 msgstr "Жорсткий диск"
 
+#: ../ui.py:183
 msgid "Last backup date"
 msgstr "Дата останнього резервного копіювання"
 
+#: ../ui.py:122
 msgid "Manual"
 msgstr "Ручна"
 
+#: ../ui.py:168
 msgid "No backup present"
 msgstr "Відсутній backup"
 
+#: ../ui.py:162
 msgid "No suitable media found, insert USB stick, flash card or harddisk."
 msgstr ""
 
+#: ../ui.py:109
 msgid "Nowhere"
 msgstr "Ніколи"
 
+#: ../ui.py:121
 msgid "Ok"
 msgstr "Ok"
 
+#: ../ui.py:227
 msgid "Remove autoinstall list"
 msgstr ""
 
+#: ../ui.py:228
 msgid "Restore"
 msgstr "Оновити"
 
+#: ../ui.py:220
 msgid "Run a backup now"
 msgstr "Виконати резервне копіювання зараз"
 
+#: ../ui.py:226
 #, fuzzy
 msgid "Run autoinstall"
 msgstr "Створення AutoInstall"
 
+#: ../ui.py:252 ../ui.py:275 ../ui.py:298
 #, fuzzy
 msgid "Running..."
 msgstr "Запуск"
 
+#: ../ui.py:23
 msgid "SD"
 msgstr "SD"
 
+#: ../ui.py:356
 msgid "Save"
 msgstr "Зберегти"
 
+#: ../ui.py:117
 msgid "Save previous backup"
 msgstr ""
 
+#: ../ui.py:394
 msgid "Select"
 msgstr "Вибрати"
 
+#: ../ui.py:219
 msgid "Select files to backup"
 msgstr "Вибір файлів для резервн. копіювання."
 
+#: ../ui.py:386
 msgid "Select files/folders to backup"
 msgstr "Виберіть файли/папки для резервн. копіювання"
 
+#: ../ui.py:288
 #, fuzzy, python-format
 msgid ""
 "This will reinstall all plugins from your backup on %s.\n"
@@ -125,6 +160,7 @@ msgstr ""
 "Ви бажаєте відновити резервну копію з %s.\n"
 "Ви дійсно бажаєте, відновити ці настройки і перезавантажити?"
 
+#: ../ui.py:265
 #, python-format
 msgid ""
 "This will restore your backup on %s.\n"
@@ -133,8 +169,10 @@ msgstr ""
 "Ви бажаєте відновити резервну копію з %s.\n"
 "Ви дійсно бажаєте, відновити ці настройки і перезавантажити?"
 
+#: ../ui.py:21
 msgid "USB"
 msgstr ""
 
+#: ../ui.py:36
 msgid "root"
 msgstr ""

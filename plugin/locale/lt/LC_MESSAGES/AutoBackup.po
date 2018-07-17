@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: AutoBackup\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-07 17:04+0200\n"
+"POT-Creation-Date: 2018-07-17 16:09+0200\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Vytenis P. <vyteniui@gmail.com>\n"
 "Language-Team: Vytenis P. vyteniui@gmail.com\n"
@@ -14,110 +14,145 @@ msgstr ""
 "X-Generator: Poedit 2.0.4\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 
+#: ../ui.py:96 ../ui.py:144
 msgid "AutoBackup Configuration"
 msgstr "Automatinės atsarginės kopijos konfigūravimas"
 
+#: ../plugin.py:125
 msgid "Automatic settings backup"
 msgstr "Automatinė nustatymų atsarginė kopija"
 
+#: ../ui.py:114
 msgid "Automatic start time"
 msgstr "Automatiško paleidimo laikas"
 
+#: ../ui.py:221
 msgid "Backup EPG cache"
 msgstr "Kopijuoti EPG talpyklą"
 
+#: ../ui.py:112
 msgid "Backup location"
 msgstr "Atsarginės kopijos vieta"
 
+#: ../ui.py:22 ../ui.py:39
 msgid "CF"
 msgstr "CF"
 
+#: ../ui.py:120 ../ui.py:355
 msgid "Cancel"
 msgstr "Atšaukti"
 
+#: ../ui.py:115
 msgid "Create Autoinstall"
 msgstr "Sukurti autoįdiegimą"
 
+#: ../ui.py:113
 msgid "Daily automatic backup"
 msgstr "Kasdieninė automatinė atsarginė kopija"
 
+#: ../ui.py:392
 msgid "Deselect"
 msgstr "Atšaukti pasirinkimą"
 
+#: ../ui.py:188
 msgid "Disable"
 msgstr "Išjungti"
 
+#: ../ui.py:186
 msgid "Disabled"
 msgstr "Išjungtas"
 
+#: ../ui.py:224
 msgid "Don't auto-restore this next time"
 msgstr "Kitą kartą šio į autoatkūrimą neįtraukti"
 
+#: ../ui.py:328
 msgid "Done"
 msgstr "Atlikta"
 
+#: ../ui.py:116
 msgid "EPG cache backup"
 msgstr "EPG talpyklos atsarginė kopija"
 
+#: ../ui.py:326
 msgid "Failed"
 msgstr "Nepavyko"
 
+#: ../ui.py:20 ../ui.py:41
 msgid "Harddisk"
 msgstr "HDD"
 
+#: ../ui.py:183
 msgid "Last backup date"
 msgstr "Paskutinės atsarginės kopijos data"
 
+#: ../ui.py:122
 msgid "Manual"
 msgstr "Rankiniu būdu"
 
+#: ../ui.py:168
 msgid "No backup present"
 msgstr "Atsarginių kopijų nėra"
 
+#: ../ui.py:162
 msgid "No suitable media found, insert USB stick, flash card or harddisk."
 msgstr "Tinkamų laikmenų nerasta, įdėkite USB atmintinę, atminties kortelę, ar HDD."
 
+#: ../ui.py:109
 msgid "Nowhere"
 msgstr "Niekur"
 
+#: ../ui.py:121
 msgid "Ok"
 msgstr "Gerai"
 
+#: ../ui.py:227
 msgid "Remove autoinstall list"
 msgstr "Pašalinti autoinstaliacijos sąrašą"
 
+#: ../ui.py:228
 msgid "Restore"
 msgstr "Atkurti"
 
+#: ../ui.py:220
 msgid "Run a backup now"
 msgstr "Atlikti atsarginį kopijavimą dabar"
 
+#: ../ui.py:226
 #, fuzzy
 msgid "Run autoinstall"
 msgstr "Pašalinti autoinstaliacijos sąrašą"
 
+#: ../ui.py:252 ../ui.py:275 ../ui.py:298
 #, fuzzy
 msgid "Running..."
 msgstr "Veikia"
 
+#: ../ui.py:23
 msgid "SD"
 msgstr "SD"
 
+#: ../ui.py:356
 msgid "Save"
 msgstr "Įrašyti"
 
+#: ../ui.py:117
 msgid "Save previous backup"
 msgstr "Išsaugoti ankstesnę atsarginę kopiją"
 
+#: ../ui.py:394
 msgid "Select"
 msgstr "Pasirinkti"
 
+#: ../ui.py:219
 msgid "Select files to backup"
 msgstr "Pasirinkite failus atsarginei kopijai"
 
+#: ../ui.py:386
 msgid "Select files/folders to backup"
 msgstr "Pasirinkite failus ir katalogus atsarginei kopijai"
 
+#: ../ui.py:288
 #, fuzzy, python-format
 msgid ""
 "This will reinstall all plugins from your backup on %s.\n"
@@ -126,6 +161,7 @@ msgstr ""
 "Atsarginė kopija bus atkurta į %s.\n"
 "Ar tikrai norite atkurti šiuos nustatymus ir paleisti iš naujo?"
 
+#: ../ui.py:265
 #, python-format
 msgid ""
 "This will restore your backup on %s.\n"
@@ -134,8 +170,10 @@ msgstr ""
 "Atsarginė kopija bus atkurta į %s.\n"
 "Ar tikrai norite atkurti šiuos nustatymus ir paleisti iš naujo?"
 
+#: ../ui.py:21
 msgid "USB"
 msgstr "USB"
 
+#: ../ui.py:36
 msgid "root"
 msgstr "pagrindinis"
