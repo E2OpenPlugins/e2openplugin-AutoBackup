@@ -4,17 +4,20 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-07-17 16:09+0200\n"
 "PO-Revision-Date: \n"
-"Last-Translator: neoatomic <neoatomic@users.noreply.github.com>\n"
+"Last-Translator: MCelliot_g <mcelliot_g@hotmail.com>\n"
 "Language-Team: \n"
 "Language: el\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.8.7\n"
+"X-Generator: Poedit 2.2\n"
+
+msgid "Auto backup"
+msgstr "Αυτόματη εφεδρεία"
 
 #: ../ui.py:96 ../ui.py:144
 msgid "AutoBackup Configuration"
-msgstr "Αυτόματη ρύθμιση αντιγράφων ασφαλείας"
+msgstr "Ρυθμίσεις Αυτόματης εφεδρείας"
 
 #: ../plugin.py:125
 msgid "Automatic settings backup"
@@ -26,7 +29,7 @@ msgstr "Αυτόματη ώρα έναρξης"
 
 #: ../ui.py:221
 msgid "Backup EPG cache"
-msgstr ""
+msgstr "Εφεδρεία του EPG cache"
 
 #: ../ui.py:112
 msgid "Backup location"
@@ -58,7 +61,7 @@ msgstr "Απενεργοποίηση"
 
 #: ../ui.py:186
 msgid "Disabled"
-msgstr "Απενεργοποιήθηκε"
+msgstr "Ανενεργό"
 
 #: ../ui.py:224
 msgid "Don't auto-restore this next time"
@@ -70,7 +73,7 @@ msgstr "Ολοκληρώθηκε"
 
 #: ../ui.py:116
 msgid "EPG cache backup"
-msgstr ""
+msgstr "Αντίγραφο ασφαλείας του EPG cache"
 
 #: ../ui.py:326
 msgid "Failed"
@@ -82,7 +85,7 @@ msgstr "Σκληρός Δίσκος"
 
 #: ../ui.py:183
 msgid "Last backup date"
-msgstr "Τελευταία ημερομηνία δημιουργίας αντιγράφου ασφαλείας"
+msgstr "Τελευταία ημερομηνία εφεδρείας"
 
 #: ../ui.py:122
 msgid "Manual"
@@ -90,11 +93,13 @@ msgstr "Χειροκίνητα"
 
 #: ../ui.py:168
 msgid "No backup present"
-msgstr "Δεν υπάρχει αντιγράφο ασφαλείας"
+msgstr "Δεν υπάρχει αντίγραφο ασφαλείας"
 
 #: ../ui.py:162
 msgid "No suitable media found, insert USB stick, flash card or harddisk."
-msgstr "Δεν βρέθηκαν κατάλληλα μέσα, τοποθετήστε USB stick, flash κάρτα ή σκληρό δίσκο."
+msgstr ""
+"Δεν βρέθηκαν κατάλληλα μέσα, τοποθετήστε USB stick, flash κάρτα ή σκληρό "
+"δίσκο."
 
 #: ../ui.py:109
 msgid "Nowhere"
@@ -106,7 +111,7 @@ msgstr "ΟΚ"
 
 #: ../ui.py:227
 msgid "Remove autoinstall list"
-msgstr ""
+msgstr "Αφαίρεση λίστας αυτόματης εγκατάστασης"
 
 #: ../ui.py:228
 msgid "Restore"
@@ -117,14 +122,12 @@ msgid "Run a backup now"
 msgstr "Δημιουργία αντιγράφου ασφαλείας τώρα"
 
 #: ../ui.py:226
-#, fuzzy
 msgid "Run autoinstall"
-msgstr "Δημιουργία αυτόματης εγκατάστασης"
+msgstr "Εκτέλεση αυτόματης εγκατάστασης"
 
 #: ../ui.py:252 ../ui.py:275 ../ui.py:298
-#, fuzzy
 msgid "Running..."
-msgstr "Σε λειτουργία"
+msgstr "Σε εκτέλεση..."
 
 #: ../ui.py:23
 msgid "SD"
@@ -136,7 +139,7 @@ msgstr "Αποθήκευση"
 
 #: ../ui.py:117
 msgid "Save previous backup"
-msgstr ""
+msgstr "Αποθήκευση προηγούμενου αντιγράφου ασφαλείας"
 
 #: ../ui.py:394
 msgid "Select"
@@ -151,13 +154,14 @@ msgid "Select files/folders to backup"
 msgstr "Επιλογή αρχείων/φακέλων για το αντίγραφο ασφαλείας"
 
 #: ../ui.py:288
-#, fuzzy, python-format
+#, python-format
 msgid ""
 "This will reinstall all plugins from your backup on %s.\n"
 "Do you really want to reinstall?"
 msgstr ""
-"Αυτό θα επαναφέρει το αντίγραφο ασφαλείας σας στο %s.\n"
-"Είστε σίγουροι ότι θέλετε να γίνει επαναφορά αυτών των ρυθμίσεων και επανεκκίνηση;"
+"Αυτό θα επανεγκαταστήσει όλα τα πρόσθετα από το αντίγραφο ασφαλείας σας "
+"στο %s.\n"
+"Θέλετε σίγουρα να γίνει επανεγκατάσταση;"
 
 #: ../ui.py:265
 #, python-format
@@ -166,7 +170,8 @@ msgid ""
 "Do you really want to restore those settings and restart?"
 msgstr ""
 "Αυτό θα επαναφέρει το αντίγραφο ασφαλείας σας στο %s.\n"
-"Είστε σίγουροι ότι θέλετε να γίνει επαναφορά αυτών των ρυθμίσεων και επανεκκίνηση;"
+"Είστε σίγουροι ότι θέλετε να γίνει επαναφορά αυτών των ρυθμίσεων και "
+"επανεκκίνηση;"
 
 #: ../ui.py:21
 msgid "USB"
@@ -174,4 +179,4 @@ msgstr "USB"
 
 #: ../ui.py:36
 msgid "root"
-msgstr ""
+msgstr "root"
