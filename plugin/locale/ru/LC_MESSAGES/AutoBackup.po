@@ -174,3 +174,6 @@ msgstr "USB"
 #: ../ui.py:36
 msgid "root"
 msgstr "root"
+
+msgid "Auto backup"
+msgstr "Авто бэкап настроек"
