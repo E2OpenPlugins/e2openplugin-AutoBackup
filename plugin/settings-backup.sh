@@ -54,6 +54,11 @@ cp -f /etc/passwd /tmp && echo /tmp/passwd >> $RESTORE_TEMP
     grep -E ' cifs | nfs | swap |^UUID=|^LABEL=' /etc/fstab | sort -fd | uniq > /tmp/fstab && \
     echo /tmp/fstab >> $RESTORE_TEMP
 
+# backup of the security file on a VU Duo 4K
+if [ -d /usr/local/bp3 ]; then
+	tar -czf "$BACKUPDIR/backup/vuduo4k-security-data-$MACADDR.tar.gz" /usr/local/bp3   2> /dev/null
+fi
+
 crontab -l > /tmp/crontab 2> /dev/null && echo /tmp/crontab >> $RESTORE_TEMP
 
 tar -czf "$BACKUPDIR/backup/PLi-AutoBackup$MACADDR.tar.gz" --files-from=$RESTORE_TEMP 2> /dev/null
