@@ -1,0 +1,140 @@
+# Latvian translations for plugin AutoBackup.
+msgid ""
+msgstr ""
+"Project-Id-Version: AutoBackup\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-12-25 21:50+0200\n"
+"PO-Revision-Date: 2018-12-25 21:50+0200\n"
+"Last-Translator: Taapat <taapat@gmail.com>\n"
+"Language-Team: Taapat <taapat@gmail.com>\n"
+"Language: lv_LV\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Auto backup"
+msgstr "Dublējumkopija"
+
+msgid "AutoBackup Configuration"
+msgstr "Iestatījumi"
+
+msgid "Automatic settings backup"
+msgstr "Iestatījumu dublējumkopija"
+
+msgid "Automatic start time"
+msgstr "Dublējumkopijas izveidošanas laiks"
+
+msgid "Backup EPG cache"
+msgstr "Saglabāt EPG informāciju"
+
+msgid "Backup location"
+msgstr "Dublējumkopijas atrašanās vieta"
+
+msgid "CF"
+msgstr "CF"
+
+msgid "Cancel"
+msgstr "Atcelt"
+
+msgid "Create Autoinstall"
+msgstr "Lietot pēc imidža uzstādīšanas"
+
+msgid "Daily automatic backup"
+msgstr "Veidot dublējumkopiju katru dienu"
+
+msgid "Deselect"
+msgstr "Atcelt izvēli"
+
+msgid "Disable"
+msgstr "Izslēgt"
+
+msgid "Disabled"
+msgstr "Izslēgts"
+
+msgid "Don't auto-restore this next time"
+msgstr "Neizmantot pēc imidža uzstādīšanas"
+
+msgid "Done"
+msgstr "Dublējumkopija izveidota"
+
+msgid "EPG cache backup"
+msgstr "Saglabāt EPG informāciju"
+
+msgid "Failed"
+msgstr "Neizdevās izeidot dublējumkopiju"
+
+msgid "Harddisk"
+msgstr "Cietais disks"
+
+msgid "Last backup date"
+msgstr "Pēdējā dublējumkopija"
+
+msgid "Manual"
+msgstr "Manuāli"
+
+msgid "No backup present"
+msgstr "Dublējumkopijas nav atrastas"
+
+msgid "No suitable media found, insert USB stick, flash card or harddisk."
+msgstr "Nav atrasts piemērots datu nesējs. Pievienojiet USB zibatmiņu, SD karti vai cieto disku."
+
+msgid "Nowhere"
+msgstr "Nekur"
+
+msgid "Ok"
+msgstr "Labi"
+
+msgid "Remove autoinstall list"
+msgstr "Dzēst spraudņu sarakstu"
+
+msgid "Restore"
+msgstr "Uzstādīt dublējumkopiju"
+
+msgid "Run a backup now"
+msgstr "Izveidot dublējumkopiju tagad"
+
+msgid "Run autoinstall"
+msgstr "Uzstādīt spraudņus"
+
+msgid "Running..."
+msgstr "Darbojas..."
+
+msgid "SD"
+msgstr "SD"
+
+msgid "Save"
+msgstr "Sagalbāt"
+
+msgid "Save previous backup"
+msgstr "Sagalbāt iepriekšējo dublējumkopiju"
+
+msgid "Select"
+msgstr "Izvēlēties"
+
+msgid "Select files to backup"
+msgstr "Izvēlēties dublējumkopijas failus"
+
+msgid "Select files/folders to backup"
+msgstr "Izvēlieties dublējumkopijas failus vai mapes"
+
+#, python-format
+msgid ""
+"This will reinstall all plugins from your backup on %s.\n"
+"Do you really want to reinstall?"
+msgstr ""
+"Tiks uzstādīti visi spraudņi dublējumkopijā no %s.\n"
+"Vai tiešām vēlaties turpināt?"
+
+#, python-format
+msgid ""
+"This will restore your backup on %s.\n"
+"Do you really want to restore those settings and restart?"
+msgstr ""
+"Tiks uzstādīta dublējumkopija no %s.\n"
+"Vai tiešām vēlaties turpināt?"
+
+msgid "USB"
+msgstr "USB"
+
+msgid "root"
+msgstr "root"

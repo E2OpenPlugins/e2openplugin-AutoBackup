@@ -2,131 +2,168 @@ msgid ""
 msgstr ""
 "Project-Id-Version: AutoBackup\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-05-06 14:13+0200\n"
+"POT-Creation-Date: 2018-07-17 16:09+0200\n"
 "PO-Revision-Date: \n"
-"Last-Translator: neoatomic <neoatomic@users.noreply.github.com>\n"
+"Last-Translator: MCelliot_g <mcelliot_g@hotmail.com>\n"
 "Language-Team: \n"
 "Language: el\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.8.7\n"
+"X-Generator: Poedit 2.2\n"
 
-#: ../plugin/plugin.py:123
+msgid "Auto backup"
+msgstr "Αυτόματη εφεδρεία"
+
+#: ../ui.py:96 ../ui.py:144
+msgid "AutoBackup Configuration"
+msgstr "Ρυθμίσεις Αυτόματης εφεδρείας"
+
+#: ../plugin.py:125
 msgid "Automatic settings backup"
 msgstr "Αυτόματη δημιουργία αντιγράφων ασφαλείας των ρυθμίσεων"
 
-#: ../plugin/ui.py:18 ../plugin/ui.py:39
-msgid "Harddisk"
-msgstr "Σκληρός Δίσκος"
-
-#: ../plugin/ui.py:19
-msgid "USB"
-msgstr "USB"
-
-#: ../plugin/ui.py:20 ../plugin/ui.py:37
-msgid "CF"
-msgstr "CF"
-
-#: ../plugin/ui.py:21
-msgid "SD"
-msgstr "SD"
-
-#: ../plugin/ui.py:34
-msgid "root"
-msgstr ""
-
-#: ../plugin/ui.py:93 ../plugin/ui.py:140
-msgid "AutoBackup Configuration"
-msgstr "Αυτόματη ρύθμιση αντιγράφων ασφαλείας"
-
-#: ../plugin/ui.py:106
-msgid "Nowhere"
-msgstr "Πουθενά"
-
-#: ../plugin/ui.py:109
-msgid "Backup location"
-msgstr "Θέση αντιγράφων ασφαλείας"
-
-#: ../plugin/ui.py:110
-msgid "Daily automatic backup"
-msgstr "Καθημερινή αυτόματη δημιουργία αντιγράφων ασφαλείας"
-
-#: ../plugin/ui.py:111
+#: ../ui.py:114
 msgid "Automatic start time"
 msgstr "Αυτόματη ώρα έναρξης"
 
-#: ../plugin/ui.py:112
-msgid "Create Autoinstall"
-msgstr "Δημιουργία αυτόματης εγκατάστασης"
+#: ../ui.py:221
+msgid "Backup EPG cache"
+msgstr "Εφεδρεία του EPG cache"
 
-#: ../plugin/ui.py:113
-msgid "EPG cache backup"
-msgstr ""
+#: ../ui.py:112
+msgid "Backup location"
+msgstr "Θέση αντιγράφων ασφαλείας"
 
-#: ../plugin/ui.py:116 ../plugin/ui.py:328
+#: ../ui.py:22 ../ui.py:39
+msgid "CF"
+msgstr "CF"
+
+#: ../ui.py:120 ../ui.py:355
 msgid "Cancel"
 msgstr "Ακύρωση"
 
-#: ../plugin/ui.py:117
-msgid "Ok"
-msgstr "ΟΚ"
+#: ../ui.py:115
+msgid "Create Autoinstall"
+msgstr "Δημιουργία αυτόματης εγκατάστασης"
 
-#: ../plugin/ui.py:118
+#: ../ui.py:113
+msgid "Daily automatic backup"
+msgstr "Καθημερινή αυτόματη δημιουργία αντιγράφων ασφαλείας"
+
+#: ../ui.py:392
+msgid "Deselect"
+msgstr "Αποεπιλογή"
+
+#: ../ui.py:188
+msgid "Disable"
+msgstr "Απενεργοποίηση"
+
+#: ../ui.py:186
+msgid "Disabled"
+msgstr "Ανενεργό"
+
+#: ../ui.py:224
+msgid "Don't auto-restore this next time"
+msgstr "Μην γίνει αυτόματη επαναφορά για αυτό την επόμενη φορά"
+
+#: ../ui.py:328
+msgid "Done"
+msgstr "Ολοκληρώθηκε"
+
+#: ../ui.py:116
+msgid "EPG cache backup"
+msgstr "Αντίγραφο ασφαλείας του EPG cache"
+
+#: ../ui.py:326
+msgid "Failed"
+msgstr "Αποτυχία"
+
+#: ../ui.py:20 ../ui.py:41
+msgid "Harddisk"
+msgstr "Σκληρός Δίσκος"
+
+#: ../ui.py:183
+msgid "Last backup date"
+msgstr "Τελευταία ημερομηνία εφεδρείας"
+
+#: ../ui.py:122
 msgid "Manual"
 msgstr "Χειροκίνητα"
 
-#: ../plugin/ui.py:158
+#: ../ui.py:168
+msgid "No backup present"
+msgstr "Δεν υπάρχει αντίγραφο ασφαλείας"
+
+#: ../ui.py:162
 msgid "No suitable media found, insert USB stick, flash card or harddisk."
 msgstr ""
 "Δεν βρέθηκαν κατάλληλα μέσα, τοποθετήστε USB stick, flash κάρτα ή σκληρό "
 "δίσκο."
 
-#: ../plugin/ui.py:164
-msgid "No backup present"
-msgstr "Δεν υπάρχει αντιγράφο ασφαλείας"
+#: ../ui.py:109
+msgid "Nowhere"
+msgstr "Πουθενά"
 
-#: ../plugin/ui.py:179
-msgid "Last backup date"
-msgstr "Τελευταία ημερομηνία δημιουργίας αντιγράφου ασφαλείας"
+#: ../ui.py:121
+msgid "Ok"
+msgstr "ΟΚ"
 
-#: ../plugin/ui.py:182
-msgid "Disabled"
-msgstr "Απενεργοποιήθηκε"
-
-#: ../plugin/ui.py:184
-msgid "Disable"
-msgstr "Απενεργοποίηση"
-
-#: ../plugin/ui.py:215
-msgid "Select files to backup"
-msgstr "Επιλογή αρχείων για δημιουργία αντιγράφου ασφαλείας"
-
-#: ../plugin/ui.py:216
-msgid "Run a backup now"
-msgstr "Δημιουργία αντιγράφου ασφαλείας τώρα"
-
-#: ../plugin/ui.py:217
-msgid "Backup EPG cache"
-msgstr ""
-
-#: ../plugin/ui.py:220
-msgid "Don't auto-restore this next time"
-msgstr "Μην γίνει αυτόματη επαναφορά για αυτό την επόμενη φορά"
-
-#: ../plugin/ui.py:222
+#: ../ui.py:227
 msgid "Remove autoinstall list"
-msgstr ""
+msgstr "Αφαίρεση λίστας αυτόματης εγκατάστασης"
 
-#: ../plugin/ui.py:223
+#: ../ui.py:228
 msgid "Restore"
 msgstr "Επαναφορά"
 
-#: ../plugin/ui.py:247 ../plugin/ui.py:270
-msgid "Running"
-msgstr "Σε λειτουργία"
+#: ../ui.py:220
+msgid "Run a backup now"
+msgstr "Δημιουργία αντιγράφου ασφαλείας τώρα"
 
-#: ../plugin/ui.py:260
+#: ../ui.py:226
+msgid "Run autoinstall"
+msgstr "Εκτέλεση αυτόματης εγκατάστασης"
+
+#: ../ui.py:252 ../ui.py:275 ../ui.py:298
+msgid "Running..."
+msgstr "Σε εκτέλεση..."
+
+#: ../ui.py:23
+msgid "SD"
+msgstr "SD"
+
+#: ../ui.py:356
+msgid "Save"
+msgstr "Αποθήκευση"
+
+#: ../ui.py:117
+msgid "Save previous backup"
+msgstr "Αποθήκευση προηγούμενου αντιγράφου ασφαλείας"
+
+#: ../ui.py:394
+msgid "Select"
+msgstr "Επιλογή"
+
+#: ../ui.py:219
+msgid "Select files to backup"
+msgstr "Επιλογή αρχείων για δημιουργία αντιγράφου ασφαλείας"
+
+#: ../ui.py:386
+msgid "Select files/folders to backup"
+msgstr "Επιλογή αρχείων/φακέλων για το αντίγραφο ασφαλείας"
+
+#: ../ui.py:288
+#, python-format
+msgid ""
+"This will reinstall all plugins from your backup on %s.\n"
+"Do you really want to reinstall?"
+msgstr ""
+"Αυτό θα επανεγκαταστήσει όλα τα πρόσθετα από το αντίγραφο ασφαλείας σας "
+"στο %s.\n"
+"Θέλετε σίγουρα να γίνει επανεγκατάσταση;"
+
+#: ../ui.py:265
 #, python-format
 msgid ""
 "This will restore your backup on %s.\n"
@@ -136,29 +173,10 @@ msgstr ""
 "Είστε σίγουροι ότι θέλετε να γίνει επαναφορά αυτών των ρυθμίσεων και "
 "επανεκκίνηση;"
 
-#: ../plugin/ui.py:298
-msgid "Failed"
-msgstr "Αποτυχία"
+#: ../ui.py:21
+msgid "USB"
+msgstr "USB"
 
-#: ../plugin/ui.py:300
-msgid "Done"
-msgstr "Ολοκληρώθηκε"
-
-#: ../plugin/ui.py:329
-msgid "Save"
-msgstr "Αποθήκευση"
-
-#: ../plugin/ui.py:359
-msgid "Select files/folders to backup"
-msgstr "Επιλογή αρχείων/φακέλων για το αντίγραφο ασφαλείας"
-
-#: ../plugin/ui.py:365
-msgid "Deselect"
-msgstr "Αποεπιλογή"
-
-#: ../plugin/ui.py:367
-msgid "Select"
-msgstr "Επιλογή"
-
-msgid "Save previous backup"
-msgstr ""
+#: ../ui.py:36
+msgid "root"
+msgstr "root"

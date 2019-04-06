@@ -122,10 +122,12 @@ def autostart(reason, session=None, **kwargs):
 			if autoStartTimer is None:
 				autoStartTimer = AutoStartTimer(session)
 
-description = _("Automatic settings backup")
+def checkmenu(menuid):
+	return [(_("Auto backup"), main, "autobackup", 8)] if menuid == "setup" else []
 
 def Plugins(**kwargs):
-	result = [
+	description = _("Automatic settings backup")
+	return [
 		PluginDescriptor(
 			name="AutoBackup",
 			description = description,
@@ -133,11 +135,10 @@ def Plugins(**kwargs):
 			fnc = autostart
 		),
 		PluginDescriptor(
-			name="AutoBackup",
-			description = description,
-			where = PluginDescriptor.WHERE_PLUGINMENU,
-			icon = 'plugin.png',
-			fnc = main
-		),
+			name= "Autobackup",
+			description=description,
+			where = PluginDescriptor.WHERE_MENU,
+			needsRestart=False,
+			fnc=checkmenu
+		)
 	]
-	return result
