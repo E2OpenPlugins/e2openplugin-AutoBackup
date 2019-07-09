@@ -5,13 +5,13 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-07-17 16:09+0200\n"
 "PO-Revision-Date: \n"
-"Last-Translator: Frans van Gils <voorzitter@openpli.org>\n"
+"Last-Translator: Frenske <voorzitter@openpli.org>\n"
 "Language-Team: PLi <ims21@users.sourceforge.net>\n"
 "Language: nl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.5.7\n"
+"X-Generator: Poedit 2.2.3\n"
 
 #: ../ui.py:96 ../ui.py:144
 msgid "AutoBackup Configuration"
@@ -31,7 +31,7 @@ msgstr "Backup EPG-cache"
 
 #: ../ui.py:112
 msgid "Backup location"
-msgstr "Plaats de backup hier"
+msgstr "Kies de locatie voor de backup"
 
 #: ../ui.py:22 ../ui.py:39
 msgid "CF"
@@ -55,11 +55,11 @@ msgstr "Déselecteer"
 
 #: ../ui.py:188
 msgid "Disable"
-msgstr "Uit"
+msgstr "Déactiveren"
 
 #: ../ui.py:186
 msgid "Disabled"
-msgstr "Uit"
+msgstr "Uitgeschakeld!"
 
 #: ../ui.py:224
 msgid "Don't auto-restore this next time"
@@ -103,7 +103,7 @@ msgstr "Nergens"
 
 #: ../ui.py:121
 msgid "Ok"
-msgstr "Ok"
+msgstr "Bevestigen"
 
 #: ../ui.py:227
 msgid "Remove autoinstall list"
