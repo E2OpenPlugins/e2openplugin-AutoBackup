@@ -1,0 +1,181 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-07-17 16:09+0200\n"
+"PO-Revision-Date: 2019-07-25 09:28+0200\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.2.3\n"
+"Last-Translator: \n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Language: vi\n"
+
+#: ../ui.py:96 ../ui.py:144
+msgid "AutoBackup Configuration"
+msgstr "Cấu hình AutoBackup"
+
+#: ../plugin.py:125
+msgid "Automatic settings backup"
+msgstr "Sao lưu cài đặt tự động"
+
+#: ../ui.py:114
+msgid "Automatic start time"
+msgstr "Thời gian bắt đầu tự động"
+
+#: ../ui.py:221
+msgid "Backup EPG cache"
+msgstr "Sao lưu bộ đệm EPG"
+
+#: ../ui.py:112
+msgid "Backup location"
+msgstr "Vị trí dự phòng"
+
+#: ../ui.py:22 ../ui.py:39
+msgid "CF"
+msgstr "CF"
+
+#: ../ui.py:120 ../ui.py:355
+msgid "Cancel"
+msgstr "Hủy bỏ"
+
+#: ../ui.py:115
+msgid "Create Autoinstall"
+msgstr "Tạo tự động cài đặt"
+
+#: ../ui.py:113
+msgid "Daily automatic backup"
+msgstr "Sao lưu tự động hàng ngày"
+
+#: ../ui.py:392
+msgid "Deselect"
+msgstr "Bỏ chọn"
+
+#: ../ui.py:188
+msgid "Disable"
+msgstr "Vô hiệu hóa"
+
+#: ../ui.py:186
+msgid "Disabled"
+msgstr "Cho phép/không cho phép"
+
+#: ../ui.py:224
+msgid "Don't auto-restore this next time"
+msgstr "Không tự động khôi phục lần sau"
+
+#: ../ui.py:328
+msgid "Done"
+msgstr "Làm xong"
+
+#: ../ui.py:116
+msgid "EPG cache backup"
+msgstr "Sao lưu bộ đệm EPG"
+
+#: ../ui.py:326
+msgid "Failed"
+msgstr "Thất bại"
+
+#: ../ui.py:20 ../ui.py:41
+msgid "Harddisk"
+msgstr "Ổ đĩa cứng"
+
+#: ../ui.py:183
+msgid "Last backup date"
+msgstr "Ngày sao lưu cuối cùng"
+
+#: ../ui.py:122
+msgid "Manual"
+msgstr "Hướng dẫn sử dụng"
+
+#: ../ui.py:168
+msgid "No backup present"
+msgstr "Không có bản sao lưu"
+
+#: ../ui.py:162
+msgid "No suitable media found, insert USB stick, flash card or harddisk."
+msgstr "Không tìm thấy phương tiện phù hợp, cắm thẻ nhớ USB, thẻ flash hoặc ổ cứng."
+
+#: ../ui.py:109
+msgid "Nowhere"
+msgstr "Không nơi nào"
+
+#: ../ui.py:121
+msgid "Ok"
+msgstr "Đồng ý"
+
+#: ../ui.py:227
+msgid "Remove autoinstall list"
+msgstr "Xóa danh sách cài đặt tự động"
+
+#: ../ui.py:228
+msgid "Restore"
+msgstr "Khôi phục"
+
+#: ../ui.py:220
+msgid "Run a backup now"
+msgstr "Chạy một bản sao lưu ngay bây giờ"
+
+#: ../ui.py:226
+msgid "Run autoinstall"
+msgstr "Chạy tự động cài đặt"
+
+#: ../ui.py:252 ../ui.py:275 ../ui.py:298
+msgid "Running..."
+msgstr "Đang chạy..."
+
+#: ../ui.py:23
+msgid "SD"
+msgstr "SD"
+
+#: ../ui.py:356
+msgid "Save"
+msgstr "Lưu lại"
+
+#: ../ui.py:117
+msgid "Save previous backup"
+msgstr "Lưu bản sao lưu trước"
+
+#: ../ui.py:394
+msgid "Select"
+msgstr "Lựa chọn"
+
+#: ../ui.py:219
+msgid "Select files to backup"
+msgstr "Chọn tập tin để sao lưu"
+
+#: ../ui.py:386
+msgid "Select files/folders to backup"
+msgstr "Chọn tập tin / thư mục để sao lưu"
+
+#: ../ui.py:288
+#, python-format
+msgid ""
+"This will reinstall all plugins from your backup on %s.\n"
+"Do you really want to reinstall?"
+msgstr ""
+"Điều này sẽ cài đặt lại tất cả các plugin từ bản sao lưu của bạn trên %s.\n"
+"Bạn có thực sự muốn cài đặt lại?"
+
+#: ../ui.py:265
+#, python-format
+msgid ""
+"This will restore your backup on %s.\n"
+"Do you really want to restore those settings and restart?"
+msgstr ""
+"Điều này sẽ khôi phục lại bản sao lưu của bạn trên %s.\n"
+"Bạn có thực sự muốn khôi phục các cài đặt đó và khởi động lại không?"
+
+#: ../ui.py:21
+msgid "USB"
+msgstr "USB"
+
+#: ../ui.py:36
+msgid "root"
+msgstr "nguồn gốc"
