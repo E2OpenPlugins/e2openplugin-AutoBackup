@@ -1,4 +1,3 @@
-# SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
@@ -7,9 +6,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2-plugin-extensions-autobackup\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-07-17 16:09+0200\n"
-"PO-Revision-Date: 2016-05-06 14:13+0200\n"
-"Last-Translator: neoatomic <neoatomic@users.noreply.github.com>\n"
+"POT-Creation-Date: 2019-07-25 10:26+0200\n"
+"PO-Revision-Date: 2019-07-25 21:34+0200\n"
+"Last-Translator: Pike_Bishop <alfredzngr023@gmail.com>\n"
 "Language-Team: daddelfalk\n"
 "Language: de_DE\n"
 "MIME-Version: 1.0\n"
@@ -17,201 +16,165 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Poedit-SourceCharset: iso-8859-15\n"
-"X-Generator: Poedit 1.8.7\n"
+"X-Generator: Poedit 1.8.3\n"
 
 #
-#: ../ui.py:96 ../ui.py:144
+msgid "Auto backup"
+msgstr "Auto-Backup"
+
+#
 msgid "AutoBackup Configuration"
-msgstr "AutoBackup Konfiguration"
+msgstr "Auto-Backup Konfiguration"
 
 #
-#: ../plugin.py:125
 msgid "Automatic settings backup"
 msgstr "Automatische Sicherung der Einstellungen"
 
 #
-#: ../ui.py:114
 msgid "Automatic start time"
 msgstr "Automatische Startzeit"
 
-#: ../ui.py:221
 msgid "Backup EPG cache"
-msgstr ""
+msgstr "Sichere EPG-Cache"
 
 #
-#: ../ui.py:112
 msgid "Backup location"
 msgstr "Sicherungs-Ort"
 
 #
-#: ../ui.py:22 ../ui.py:39
 msgid "CF"
 msgstr "CF"
 
 #
-#: ../ui.py:120 ../ui.py:355
 msgid "Cancel"
 msgstr "Abbrechen"
 
 #
-#: ../ui.py:115
 msgid "Create Autoinstall"
-msgstr "Erstelle Automatische Installation"
+msgstr "Erstelle Auto-Installation"
 
 #
-#: ../ui.py:113
 msgid "Daily automatic backup"
 msgstr "Automatische tägliche Sicherung"
 
 #
-#: ../ui.py:392
 msgid "Deselect"
 msgstr "Markierung aufheben"
 
 #
-#: ../ui.py:188
 msgid "Disable"
 msgstr "Deaktivieren"
 
 #
-#: ../ui.py:186
 msgid "Disabled"
 msgstr "Deaktiviert"
 
 #
-#: ../ui.py:224
 msgid "Don't auto-restore this next time"
 msgstr "Nächstes Mal keine automatische Wiederherstellung"
 
 #
-#: ../ui.py:328
 msgid "Done"
-msgstr "Beendet"
+msgstr "Fertig"
 
-#: ../ui.py:116
 msgid "EPG cache backup"
-msgstr ""
+msgstr "EPG-Cache Sicherung"
 
 #
-#: ../ui.py:326
 msgid "Failed"
 msgstr "Fehlgeschlagen"
 
 #
-#: ../ui.py:20 ../ui.py:41
 msgid "Harddisk"
 msgstr "Festplatte"
 
 #
-#: ../ui.py:183
 msgid "Last backup date"
 msgstr "Letztes Sicherungsdatum"
 
 #
-#: ../ui.py:122
 msgid "Manual"
 msgstr "Manuell"
 
 #
-#: ../ui.py:168
 msgid "No backup present"
 msgstr "Keine Sicherung vorhanden"
 
 #
-#: ../ui.py:162
 msgid "No suitable media found, insert USB stick, flash card or harddisk."
 msgstr "Kein passendes Sicherungsmedium gefunden. Bitte einen USB-Stick, CF oder Festplatte anstecken."
 
 #
-#: ../ui.py:109
 msgid "Nowhere"
-msgstr "Nirgends"
+msgstr "Nirgendwo"
 
 #
-#: ../ui.py:121
 msgid "Ok"
 msgstr "OK"
 
-#: ../ui.py:227
 msgid "Remove autoinstall list"
-msgstr ""
+msgstr "Lösche Auto-Installations Liste"
 
 #
-#: ../ui.py:228
 msgid "Restore"
 msgstr "Wiederherstellen"
 
 #
-#: ../ui.py:220
 msgid "Run a backup now"
 msgstr "Jetzt eine Sicherung starten"
 
 #
-#: ../ui.py:226
-#, fuzzy
 msgid "Run autoinstall"
-msgstr "Erstelle Automatische Installation"
+msgstr "Erstelle Auto-Installation"
 
 #
-#: ../ui.py:252 ../ui.py:275 ../ui.py:298
-#, fuzzy
 msgid "Running..."
-msgstr "Wird ausgeführt"
+msgstr "Wird ausgeführt ..."
 
 #
-#: ../ui.py:23
 msgid "SD"
 msgstr "SD"
 
 #
-#: ../ui.py:356
 msgid "Save"
 msgstr "Speichern"
 
-#: ../ui.py:117
 msgid "Save previous backup"
-msgstr ""
+msgstr "Sichere vorhergehendes Backup"
 
 #
-#: ../ui.py:394
 msgid "Select"
 msgstr "Auswählen"
 
 #
-#: ../ui.py:219
 msgid "Select files to backup"
 msgstr "Dateien zum Sichern auswählen"
 
 #
-#: ../ui.py:386
 msgid "Select files/folders to backup"
-msgstr "Wählen Sie Dateien/Ordner für die Sicherung"
+msgstr "Wählen Sie die Dateien / Ordner für die Sicherung"
 
 #
-#: ../ui.py:288
-#, fuzzy, python-format
+#, python-format
 msgid ""
 "This will reinstall all plugins from your backup on %s.\n"
 "Do you really want to reinstall?"
 msgstr ""
-"Damit wird Ihre Sicherung aus %s wiederhergestellt.\n"
-"Wollen Sie die Einstellungen wirklich wiederherstellen und neu starten?"
+"Damit werden alle Plugins aus der Sicherung neu installiert auf  %s.\n"
+"Möchten Sie wirklich neu installieren ?"
 
 #
-#: ../ui.py:265
 #, python-format
 msgid ""
 "This will restore your backup on %s.\n"
 "Do you really want to restore those settings and restart?"
 msgstr ""
 "Damit wird Ihre Sicherung aus %s wiederhergestellt.\n"
-"Wollen Sie die Einstellungen wirklich wiederherstellen und neu starten?"
+"Möchten Sie die Einstellungen wirklich wiederherstellen und neu starten ?"
 
 #
-#: ../ui.py:21
 msgid "USB"
 msgstr "USB"
 
-#: ../ui.py:36
 msgid "root"
-msgstr ""
+msgstr "Hauptverzeichnis"
