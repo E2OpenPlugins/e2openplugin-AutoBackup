@@ -1,0 +1,174 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: enigma2-plugin-extensions-autobackup\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-07-17 16:09+0200\n"
+"PO-Revision-Date: 2020-04-27 19:00+0100\n"
+"Last-Translator: esmos <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: tr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../ui.py:96 ../ui.py:144
+msgid "AutoBackup Configuration"
+msgstr "Otomatik Yedekleme Yapılandırması"
+
+#: ../plugin.py:125
+msgid "Automatic settings backup"
+msgstr "Otomatik ayar yedekleme"
+
+#: ../ui.py:114
+msgid "Automatic start time"
+msgstr "Otomatik başlama zamanı"
+
+#: ../ui.py:221
+msgid "Backup EPG cache"
+msgstr "Yedek EPG önbelleği"
+
+#: ../ui.py:112
+msgid "Backup location"
+msgstr "Yedekleme yeri"
+
+#: ../ui.py:22 ../ui.py:39
+msgid "CF"
+msgstr ""
+
+#: ../ui.py:120 ../ui.py:355
+msgid "Cancel"
+msgstr "İptal et"
+
+#: ../ui.py:115
+msgid "Create Autoinstall"
+msgstr "Otomatik Yükleme Oluştur"
+
+#: ../ui.py:113
+msgid "Daily automatic backup"
+msgstr "Günlük otomatik yedekleme"
+
+#: ../ui.py:392
+msgid "Deselect"
+msgstr "Seçimini kaldır"
+
+#: ../ui.py:188
+msgid "Disable"
+msgstr "Devre Dışı"
+
+#: ../ui.py:186
+msgid "Disabled"
+msgstr "Devre Dışı edildi"
+
+#: ../ui.py:224
+msgid "Don't auto-restore this next time"
+msgstr "Bir dahaki sefere otomatik olarak geri yükleme"
+
+#: ../ui.py:328
+msgid "Done"
+msgstr "Bitti"
+
+#: ../ui.py:116
+msgid "EPG cache backup"
+msgstr "EPG önbellek yedeklemesi"
+
+#: ../ui.py:326
+msgid "Failed"
+msgstr "Başarısız oldu"
+
+#: ../ui.py:20 ../ui.py:41
+msgid "Harddisk"
+msgstr "Hard disk"
+
+#: ../ui.py:183
+msgid "Last backup date"
+msgstr "Son yedekleme tarihi"
+
+#: ../ui.py:122
+msgid "Manual"
+msgstr "manuel (elle)"
+
+#: ../ui.py:168
+msgid "No backup present"
+msgstr "Yedek yok"
+
+#: ../ui.py:162
+msgid "No suitable media found, insert USB stick, flash card or harddisk."
+msgstr "Uygun ortam bulunamadı, USB, flash kart veya sabit disk takın."
+
+#: ../ui.py:109
+msgid "Nowhere"
+msgstr "Hiçbir yerde"
+
+#: ../ui.py:121
+msgid "Ok"
+msgstr "OK"
+
+#: ../ui.py:227
+msgid "Remove autoinstall list"
+msgstr "Otomatik kurulum listesini kaldır"
+
+#: ../ui.py:228
+msgid "Restore"
+msgstr "Onarmak (düzelt)"
+
+#: ../ui.py:220
+msgid "Run a backup now"
+msgstr "Şimdi bir yedek çalıştırın"
+
+#: ../ui.py:226
+msgid "Run autoinstall"
+msgstr "Otomatik yüklemeyi çalıştır"
+
+#: ../ui.py:252 ../ui.py:275 ../ui.py:298
+msgid "Running..."
+msgstr "Çalıştırılıyor..."
+
+#: ../ui.py:23
+msgid "SD"
+msgstr ""
+
+#: ../ui.py:356
+msgid "Save"
+msgstr "Kaydet"
+
+#: ../ui.py:117
+msgid "Save previous backup"
+msgstr "Önceki yedeklemeyi kaydet"
+
+#: ../ui.py:394
+msgid "Select"
+msgstr "Seç"
+
+#: ../ui.py:219
+msgid "Select files to backup"
+msgstr "Yedeklenecek dosyaları seçin"
+
+#: ../ui.py:386
+msgid "Select files/folders to backup"
+msgstr "Yedeklenecek dosyaları/klasörleri seçin"
+
+#: ../ui.py:288
+#, python-format
+msgid ""
+"This will reinstall all plugins from your backup on %s.\n"
+"Do you really want to reinstall?"
+msgstr ""
+"Bu işlem, yedeklemenizdeki tüm eklentileri yeniden yükler %s.\n"
+"Gerçekten yeniden yüklemek istiyor musunuz?"
+
+#: ../ui.py:265
+#, python-format
+msgid ""
+"This will restore your backup on %s.\n"
+"Do you really want to restore those settings and restart?"
+msgstr ""
+"Bu, üzerindeki yedeklemenizi geri yükler %s.\n"
+"Bu ayarları gerçekten geri yüklemek ve yeniden başlatmak istiyor musunuz?"
+
+#: ../ui.py:21
+msgid "USB"
+msgstr ""
+
+#: ../ui.py:36
+msgid "root"
+msgstr ""
