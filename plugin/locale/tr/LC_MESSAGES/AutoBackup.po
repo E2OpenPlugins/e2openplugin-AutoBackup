@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2-plugin-extensions-autobackup\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-07-17 16:09+0200\n"
+"POT-Creation-Date: 2020-04-28 19:10+0200\n"
 "PO-Revision-Date: 2020-04-27 19:00+0100\n"
 "Last-Translator: esmos <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -11,11 +11,15 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
+#: ../plugin.py:126
+msgid "Auto backup"
+msgstr "Otomatik ayar yedekleme"
+
 #: ../ui.py:96 ../ui.py:144
 msgid "AutoBackup Configuration"
 msgstr "Otomatik Yedekleme Yapılandırması"
 
-#: ../plugin.py:125
+#: ../plugin.py:129
 msgid "Automatic settings backup"
 msgstr "Otomatik ayar yedekleme"
 
