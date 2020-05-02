@@ -156,30 +156,16 @@ class Config(ConfigListScreen,Screen):
 		return SetupSummary
 
 	def changedWhere(self, cfg):
-		self.isActive = False
-		self.hasAutoinstall = False
 		if not cfg.value:
 			self["status"].setText(_("No suitable media found, insert USB stick, flash card or harddisk."))
-			self.isActive = False
 		else:
 			config.plugins.autobackup.where.value = cfg.value
 			path = os.path.join(cfg.value, 'backup')
 			if not os.path.exists(path):
 				self["status"].setText(_("No backup present"))
 			else:
-				self.hasAutoinstall = os.path.exists(os.path.join(path, "autoinstall"))
 				try:
 					st = os.stat(os.path.join(path, ".timestamp"))
-					try:
-						macaddr = open('/sys/class/net/eth0/address').read().strip().replace(':','')
-						fn = "AutoBackup%s.tar.gz" % macaddr
-						st = os.stat(os.path.join(path, fn))
-						if not self.hasAutoinstall:
-							self.hasAutoinstall = os.path.exists(os.path.join(path, "autoinstall" + macaddr))
-					except:
-						# No box-specific backup found
-						pass
-					self.isActive = True
 					self["status"].setText(_("Last backup date") + ": " + " ".join(FuzzyTime(st.st_mtime, inPast=True)))
 				except Exception, ex:
 					print "Failed to stat %s: %s" % (path, ex)
@@ -203,12 +189,10 @@ class Config(ConfigListScreen,Screen):
 			(_("Select files to backup"), self.selectFiles),
 			(_("Run a backup now"), self.dobackup),
 			(_("Backup EPG cache"), self.doepgcachebackup),
+			(_("Run autoinstall"), self.doautoinstall),
+			(_("Remove autoinstall list"), self.doremoveautoinstall),
+			(_("Restore"), self.dorestore),
 		]
-		if self.isActive:
-			if self.hasAutoinstall:
-				lst.append((_("Run autoinstall"), self.doautoinstall))
-				lst.append((_("Remove autoinstall list"), self.doremoveautoinstall))
-			lst.append((_("Restore"), self.dorestore))
 		self.session.openWithCallback(self.menuDone, ChoiceBox, list = lst)
 
 	def menuDone(self, result):
