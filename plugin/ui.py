@@ -120,7 +120,7 @@ class Config(ConfigListScreen,Screen):
 		self["key_red"] = Button(_("Cancel"))
 		self["key_green"] = Button(_("Ok"))
 		self["key_yellow"] = Button(_("Manual"))
-		self["key_blue"] = Button("")
+		self["key_blue"] = Button(_("Options/Restore"))
 		self["statusbar"] = Label()
 		self["status"] = ScrollLabel('', showscrollbar=False)
 		self["setupActions"] = ActionMap(["SetupActions", "ColorActions", "MenuActions"],
@@ -128,6 +128,7 @@ class Config(ConfigListScreen,Screen):
 			"red": self.cancel,
 			"green": self.save,
 			"yellow": self.dobackup,
+			"blue": self.menu,
 			"save": self.save,
 			"cancel": self.cancel,
 			"ok": self.save,
