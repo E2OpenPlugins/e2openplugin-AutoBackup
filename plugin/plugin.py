@@ -72,6 +72,7 @@ class AutoStartTimer:
 		self.timer = enigma.eTimer() 
 		self.timer.callback.append(self.onTimer)
 		self.update()
+
 	def getWakeTime(self):
 		if config.plugins.autobackup.enabled.value:
 			clock = config.plugins.autobackup.wakeup.value
@@ -81,6 +82,7 @@ class AutoStartTimer:
 					clock[0], clock[1], 0, now.tm_wday, now.tm_yday, now.tm_isdst)))
 		else:
 			return -1
+
 	def update(self, atLeast = 0):
 		self.timer.stop()
 		wake = self.getWakeTime()
@@ -102,6 +104,7 @@ class AutoStartTimer:
 		else:
 			wake = -1
 		return wake
+
 	def onTimer(self):
 		self.timer.stop()
 		now = int(time.time())
