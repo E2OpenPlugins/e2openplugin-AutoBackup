@@ -15,6 +15,8 @@ from Components.ScrollLabel import ScrollLabel
 from Screens.ChoiceBox import ChoiceBox
 from Screens.MessageBox import MessageBox
 from Tools.FuzzyDate import FuzzyTime
+from Screens.Standby import getReasons
+from Tools.BoundFunction import boundFunction
 
 FRIENDLY = {
 	"/media/hdd": _("Harddisk"),
@@ -239,10 +241,20 @@ class Config(ConfigListScreen,Screen):
 			self.session.open(MessageBox, _("No settings backups found"), type = MessageBox.TYPE_ERROR, timeout = 10)
 			return
 		backupList.sort(key = lambda b: b[2], reverse = True)
-		self.session.openWithCallback(self.dorestorenow, MessageBox, _("Choose settings backup which should be restored.\nDo you really want to restore these settings and restart?"), list = backupList)
+		self.session.openWithCallback(self.dorestorenow_reason, MessageBox, _("Choose settings backup which should be restored.\nDo you really want to restore these settings and restart?"), list = backupList)
 
-	def dorestorenow(self, path):
+	def dorestorenow_reason(self, path):
 		if not path:
+			return
+		reason = getReasons(self.session)
+		if reason:
+			text = reason + "\n" + _("Do you want to restore your settings?")
+			self.session.openWithCallback(boundFunction(self.dorestorenow, path), MessageBox, text, simple=True)
+		else:
+			self.dorestorenow(path)
+
+	def dorestorenow(self, path, answer=True):
+		if not path or not answer:
 			return
 		self.data = ''
 		self.showOutput()
