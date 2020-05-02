@@ -128,7 +128,6 @@ class Config(ConfigListScreen,Screen):
 			"red": self.cancel,
 			"green": self.save,
 			"yellow": self.dobackup,
-			"blue": self.disable,
 			"save": self.save,
 			"cancel": self.cancel,
 			"ok": self.save,
@@ -184,21 +183,6 @@ class Config(ConfigListScreen,Screen):
 				except Exception, ex:
 					print "Failed to stat %s: %s" % (path, ex)
 					self["status"].setText(_("Disabled"))
-		if self.isActive:
-			self["key_blue"].setText(_("Disable"))
-		else:
-			self["key_blue"].setText("")
-
-	def disable(self):
-		cfg = self.cfgwhere
-		if not cfg.value:
-			return
-		path = os.path.join(cfg.value, 'backup', ".timestamp")
-		try:
-			os.unlink(path)
-		except:
-			pass
-		self.changedWhere(cfg)
 
 	def __onClose(self):
 		self.cfgwhere.notifiers.remove(self.changedWhere)
