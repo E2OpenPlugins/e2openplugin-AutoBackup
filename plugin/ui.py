@@ -161,14 +161,15 @@ class Config(ConfigListScreen,Screen):
 		else:
 			config.plugins.autobackup.where.value = cfg.value
 			path = os.path.join(cfg.value, 'backup')
-			if not os.path.exists(path):
-				self["status"].setText(_("No backup present"))
-			else:
-				try:
+			try:
+				if os.path.isfile(os.path.join(path, ".timestamp")) and os.path.isfile(os.path.join(path, "PLi-AutoBackup.tar.gz")):
 					st = os.stat(os.path.join(path, ".timestamp"))
 					self["status"].setText(_("Last backup date") + ": " + " ".join(FuzzyTime(st.st_mtime, inPast=True)))
-				except Exception, ex:
-					print "Failed to stat %s: %s" % (path, ex)
+				else:
+					self["status"].setText(_("No backup present"))
+			except Exception, ex:
+				print "Failed to stat %s: %s" % (path, ex)
+				self["status"].setText(_("No backup present"))
 
 	def __onClose(self):
 		self.cfgwhere.notifiers.remove(self.changedWhere)
