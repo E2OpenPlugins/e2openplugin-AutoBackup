@@ -38,7 +38,7 @@ def getLocationChoices():
 			if items[0].startswith('/dev/hdc'):
 				desc = _("CF")
 			elif items[0].startswith('/dev/hda'):
-				desk = _("Harddisk")
+				desc = _("Harddisk")
 			result.append((items[1], desc))
 	return result
 
