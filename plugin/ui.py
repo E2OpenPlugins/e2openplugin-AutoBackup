@@ -239,56 +239,85 @@ class Config(ConfigListScreen,Screen):
 			self.showOutput()
 
 	def dorestore(self):
-		where = self.cfgwhere.value
-		if not where:
-			return
-		if not self.isActive:
-			return
-		self.session.openWithCallback(self.dorestorenow, MessageBox,
-			_("This will restore your backup on %s.\nDo you really want to restore those settings and restart?") % where)
+		backupList = []
+		foundBackupLocations = [media for media in os.listdir("/media/") if os.path.isdir(os.path.join("/media/", media))]
+		for backupMedia in foundBackupLocations:
+			path = "/media/%s/backup/" % backupMedia
+			if os.path.isfile(path + "PLi-AutoBackup.tar.gz") and os.path.isfile(path + ".timestamp"):
+				try:
+					st = os.stat(os.path.join(path, ".timestamp"))
+					backupList.append(("/media/%s " % backupMedia + _("from: ") + " ".join(FuzzyTime(st.st_mtime, inPast=True)), "/media/%s" % backupMedia, st.st_mtime))
+				except Exception, ex:
+					print "Failed to stat %s: %s" % (path, ex)
 
-	def dorestorenow(self, confirm):
-		if not confirm:
+		if not backupList:
+			self.session.open(MessageBox, _("No settings backups found"), type = MessageBox.TYPE_ERROR, timeout = 10)
 			return
-		where = self.cfgwhere.value
-		if not where:
-			return # huh?
+		backupList.sort(key = lambda b: b[2], reverse = True)
+		self.session.openWithCallback(self.dorestorenow, MessageBox, _("Choose settings backup which should be restored.\nDo you really want to restore these settings and restart?"), list = backupList)
+
+	def dorestorenow(self, path):
+		if not path:
+			return
 		self.data = ''
 		self.showOutput()
 		self["statusbar"].setText(_('Running...'))
-		cmd = '/etc/init.d/settings-restore.sh ' + where + ' ; killall -9 enigma2'
+		cmd = '/etc/init.d/settings-restore.sh ' + path + ' ; killall -9 enigma2'
 		if self.container.execute(cmd):
 			print "[AutoBackup] failed to execute"
 			self.showOutput()
 
 	def doautoinstall(self):
-		where = self.cfgwhere.value
-		if not where:
-			return
-		if not self.isActive:
-			return
-		self.session.openWithCallback(self.doautoinstallnow, MessageBox,
-			_("This will reinstall all plugins from your backup on %s.\nDo you really want to reinstall?") % where)
+		backupList = []
+		foundBackupLocations = [media for media in os.listdir("/media/") if os.path.isdir(os.path.join("/media/", media))]
+		for backupMedia in foundBackupLocations:
+			path = "/media/%s/backup/" % backupMedia
+			if os.path.isfile(path + "autoinstall") and os.path.isfile(path + ".timestamp"):
+				try:
+					st = os.stat(os.path.join(path, ".timestamp"))
+					backupList.append(("/media/%s " % backupMedia + _("from: ") + " ".join(FuzzyTime(st.st_mtime, inPast=True)), "/media/%s" % backupMedia, st.st_mtime))
+				except Exception, ex:
+					print "Failed to stat %s: %s" % (path, ex)
 
-	def doautoinstallnow(self, confirm):
-		if not confirm:
+		if not backupList:
+			self.session.open(MessageBox, _("No autoinstall list found"), type = MessageBox.TYPE_ERROR, timeout = 10)
 			return
-		where = self.cfgwhere.value
-		if not where:
-			return # huh?
+		backupList.sort(key = lambda b: b[2], reverse = True)
+		self.session.openWithCallback(self.doautoinstallnow, MessageBox, _("Choose a backup.\nThis will reinstall all plugins from your backup.\nDo you really want to reinstall?"), list = backupList)
+
+	def doautoinstallnow(self, path):
+		if not path:
+			return
 		self.data = ''
 		self.showOutput()
 		self["statusbar"].setText(_('Running...'))
-		cmd = 'opkg update && while read f o; do opkg install $o $f; done < ' + where + '/backup/autoinstall'
+		cmd = 'opkg update && while read f o; do opkg install $o $f; done < ' + path + '/backup/autoinstall'
 		if self.container.execute(cmd):
 			print "[AutoInstall] failed to execute"
 			self.showOutput()
 
 	def doremoveautoinstall(self):
-		cfg = self.cfgwhere
-		if not cfg.value:
+		backupList = []
+		foundBackupLocations = [media for media in os.listdir("/media/") if os.path.isdir(os.path.join("/media/", media))]
+		for backupMedia in foundBackupLocations:
+			path = "/media/%s/backup/" % backupMedia
+			if os.path.isfile(path + "autoinstall") and os.path.isfile(path + ".timestamp"):
+				try:
+					st = os.stat(os.path.join(path, ".timestamp"))
+					backupList.append(("/media/%s " % backupMedia + _("from: ") + " ".join(FuzzyTime(st.st_mtime, inPast=True)), "/media/%s" % backupMedia, st.st_mtime))
+				except Exception, ex:
+					print "Failed to stat %s: %s" % (path, ex)
+
+		if not backupList:
+			self.session.open(MessageBox, _("No autoinstall list found"), type = MessageBox.TYPE_ERROR, timeout = 10)
 			return
-		path = os.path.join(cfg.value, 'backup', "autoinstall")
+		backupList.sort(key = lambda b: b[2], reverse = True)
+		self.session.openWithCallback(self.doremoveautoinstallnow, MessageBox, _("Choose a backup.\nThis will delete autoinstall list.\nDo you really want to continue?"), list = backupList)
+
+	def doremoveautoinstallnow(self, path):
+		if not path:
+			return
+		path = os.path.join(path, 'backup', "autoinstall")
 		try:
 			os.unlink(path)
 		except:
@@ -298,7 +327,6 @@ class Config(ConfigListScreen,Screen):
 			os.unlink(path + macaddr)
 		except:
 			pass
-		self.changedWhere(cfg)
 
 	def doepgcachebackup(self):
 		enigma.eEPGCache.getInstance().save()
