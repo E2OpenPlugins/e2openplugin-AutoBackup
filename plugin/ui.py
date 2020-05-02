@@ -182,7 +182,6 @@ class Config(ConfigListScreen,Screen):
 					self["status"].setText(_("Last backup date") + ": " + " ".join(FuzzyTime(st.st_mtime, inPast=True)))
 				except Exception, ex:
 					print "Failed to stat %s: %s" % (path, ex)
-					self["status"].setText(_("Disabled"))
 
 	def __onClose(self):
 		self.cfgwhere.notifiers.remove(self.changedWhere)
@@ -205,7 +204,6 @@ class Config(ConfigListScreen,Screen):
 			(_("Backup EPG cache"), self.doepgcachebackup),
 		]
 		if self.isActive:
-			lst.append((_("Don't auto-restore this next time"), self.disable))
 			if self.hasAutoinstall:
 				lst.append((_("Run autoinstall"), self.doautoinstall))
 				lst.append((_("Remove autoinstall list"), self.doremoveautoinstall))
