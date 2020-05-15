@@ -103,7 +103,7 @@ msgid "Nowhere"
 msgstr "Niekur"
 
 #: ../ui.py:121
-msgid "Ok"
+msgid "OK"
 msgstr "Gerai"
 
 #: ../ui.py:227

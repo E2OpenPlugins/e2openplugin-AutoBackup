@@ -81,7 +81,7 @@ msgstr "Nav atrasts piemērots datu nesējs. Pievienojiet USB zibatmiņu, SD kar
 msgid "Nowhere"
 msgstr "Nekur"
 
-msgid "Ok"
+msgid "OK"
 msgstr "Labi"
 
 msgid "Remove autoinstall list"

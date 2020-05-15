@@ -107,7 +107,7 @@ msgid "Nowhere"
 msgstr "Không nơi nào"
 
 #: ../ui.py:121
-msgid "Ok"
+msgid "OK"
 msgstr "Đồng ý"
 
 #: ../ui.py:227

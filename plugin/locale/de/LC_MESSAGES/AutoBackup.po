@@ -109,7 +109,7 @@ msgid "Nowhere"
 msgstr "Nirgendwo"
 
 #
-msgid "Ok"
+msgid "OK"
 msgstr "OK"
 
 msgid "Remove autoinstall list"

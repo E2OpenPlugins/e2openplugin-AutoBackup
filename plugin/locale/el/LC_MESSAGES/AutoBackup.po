@@ -106,7 +106,7 @@ msgid "Nowhere"
 msgstr "Πουθενά"
 
 #: ../ui.py:121
-msgid "Ok"
+msgid "OK"
 msgstr "ΟΚ"
 
 #: ../ui.py:227

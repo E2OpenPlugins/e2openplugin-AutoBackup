@@ -109,7 +109,7 @@ msgid "Nowhere"
 msgstr "Ukjent"
 
 #: ../ui.py:121
-msgid "Ok"
+msgid "OK"
 msgstr "Ok"
 
 #: ../ui.py:227

@@ -122,7 +122,7 @@ msgstr "هیچ کجا "
 
 #
 #: ../ui.py:121
-msgid "Ok"
+msgid "OK"
 msgstr "کار تایید می شود "
 
 #: ../ui.py:227

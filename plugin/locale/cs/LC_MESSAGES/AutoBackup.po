@@ -91,7 +91,7 @@ msgid "Cancel"
 msgstr "Zavřít"
 
 #: ui.py:123
-msgid "Ok"
+msgid "OK"
 msgstr "Ok"
 
 #

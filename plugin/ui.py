@@ -120,7 +120,7 @@ class Config(ConfigListScreen,Screen):
 			]
 		ConfigListScreen.__init__(self, configList, session=session, on_change = self.changedEntry)
 		self["key_red"] = Button(_("Cancel"))
-		self["key_green"] = Button(_("Ok"))
+		self["key_green"] = Button(_("OK"))
 		self["key_yellow"] = Button(_("Manual"))
 		self["key_blue"] = Button(_("Options/Restore"))
 		self["statusbar"] = Label()

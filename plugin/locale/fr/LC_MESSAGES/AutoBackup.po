@@ -106,7 +106,7 @@ msgid "Nowhere"
 msgstr "Nulle part"
 
 #: ../ui.py:121
-msgid "Ok"
+msgid "OK"
 msgstr "Ok"
 
 #: ../ui.py:227

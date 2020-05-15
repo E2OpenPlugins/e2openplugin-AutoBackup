@@ -84,7 +84,7 @@ msgstr ""
 msgid "Nowhere"
 msgstr "Никъде"
 
-msgid "Ok"
+msgid "OK"
 msgstr "Ок"
 
 msgid "Remove autoinstall list"
