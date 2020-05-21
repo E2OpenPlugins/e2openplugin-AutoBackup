@@ -1,0 +1,156 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-07-17 16:09+0200\n"
+"PO-Revision-Date: 2020-05-19 21:25+0100\n"
+"Last-Translator: Pereiira69 <pereira69@gmail.com>\n"
+"Language-Team: \n"
+"Language: pt\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: Poedit 2.3.1\n"
+
+msgid "Auto backup"
+msgstr "Backup Automático"
+
+msgid "AutoBackup Configuration"
+msgstr "Configuração de backup automático"
+
+msgid "Automatic settings backup"
+msgstr "Backup automático de configurações"
+
+msgid "Automatic start time"
+msgstr "Hora de início automática"
+
+msgid "Backup EPG cache"
+msgstr "Backup EPG cache"
+
+msgid "Backup location"
+msgstr "Local de backup"
+
+msgid "CF"
+msgstr "CF"
+
+msgid "Cancel"
+msgstr "Cancelar"
+
+msgid ""
+"Choose a backup.\n"
+"This will delete autoinstall list.\n"
+"Do you really want to continue?"
+msgstr ""
+"Escolha um backup.\n"
+"Isto excluirá a lista de instalação automática.\n"
+"Deseja mesmo continuar?"
+
+msgid ""
+"Choose a backup.\n"
+"This will reinstall all plugins from your backup.\n"
+"Do you really want to reinstall?"
+msgstr ""
+"Escolha um backup.\n"
+"Isso reinstalará todos os plugins do seu backup.\n"
+"Deseja mesmo reinstalar?"
+
+msgid ""
+"Choose settings backup which should be restored.\n"
+"Do you really want to restore these settings and restart?"
+msgstr ""
+"Escolha configurações de backup que devem ser restauradas.\n"
+"Deseja realmente restaurar essas configurações e reiniciar?"
+
+msgid "Create Autoinstall"
+msgstr "Criar instalação automática"
+
+msgid "Daily automatic backup"
+msgstr "Backup automático diário"
+
+msgid "Deselect"
+msgstr "Desmarcar"
+
+msgid "Do you want to restore your settings?"
+msgstr "Deseja restaurar suas configurações?"
+
+msgid "Done"
+msgstr "Feito"
+
+msgid "EPG cache backup"
+msgstr "EPG cache backup"
+
+msgid "Failed"
+msgstr "Falhou"
+
+msgid "Harddisk"
+msgstr "Disco rígido"
+
+msgid "Last backup date"
+msgstr "Data do último backup"
+
+msgid "Manual"
+msgstr "Manual"
+
+msgid "No autoinstall list found"
+msgstr "Nenhuma lista de instalação automática encontrada"
+
+msgid "No backup present"
+msgstr "Nenhum backup presente"
+
+msgid "No settings backups found"
+msgstr "Nenhum backup de configuração encontrado"
+
+msgid "No suitable media found, insert USB stick, flash card or harddisk."
+msgstr "Nenhuma mídia adequada encontrada, insira o pen drive, cartão flash ou disco rígido."
+
+msgid "Nowhere"
+msgstr "Em nenhum Lugar"
+
+msgid "OK"
+msgstr "OK"
+
+msgid "Options/Restore"
+msgstr "Opções / Restaurar"
+
+msgid "Remove autoinstall list"
+msgstr "Remover lista de instalação automática"
+
+msgid "Restore"
+msgstr "Restaurar"
+
+msgid "Run a backup now"
+msgstr "Execute um backup agora"
+
+msgid "Run autoinstall"
+msgstr "Execute a instalação automática"
+
+msgid "Running..."
+msgstr "Em funcionamento..."
+
+msgid "SD"
+msgstr "SD"
+
+msgid "Save"
+msgstr "salvar"
+
+msgid "Save previous backup"
+msgstr "Salvar backup anterior"
+
+msgid "Select"
+msgstr "Selecione"
+
+msgid "Select files to backup"
+msgstr "Selecionar arquivos para backup"
+
+msgid "Select files/folders to backup"
+msgstr "Selecionar arquivos / pastas para backup"
+
+msgid "USB"
+msgstr "USB"
+
+msgid "from: "
+msgstr "de:"
+
+msgid "root"
+msgstr "root"
