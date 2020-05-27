@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2-plugin-extensions-autobackup\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-28 19:10+0200\n"
+"POT-Creation-Date: 2020-05-27 18:54+0200\n"
 "PO-Revision-Date: 2020-04-27 19:00+0100\n"
 "Last-Translator: esmos <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -11,168 +11,187 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../plugin.py:126
+#: ../plugin.py:129
 msgid "Auto backup"
 msgstr "Otomatik ayar yedekleme"
 
-#: ../ui.py:96 ../ui.py:144
+#: ../ui.py:98 ../ui.py:146
 msgid "AutoBackup Configuration"
 msgstr "Otomatik Yedekleme Yapılandırması"
 
-#: ../plugin.py:129
+#: ../plugin.py:132
 msgid "Automatic settings backup"
 msgstr "Otomatik ayar yedekleme"
 
-#: ../ui.py:114
+#: ../ui.py:116
 msgid "Automatic start time"
 msgstr "Otomatik başlama zamanı"
 
-#: ../ui.py:221
+#: ../ui.py:194
 msgid "Backup EPG cache"
 msgstr "Yedek EPG önbelleği"
 
-#: ../ui.py:112
+#: ../ui.py:114
 msgid "Backup location"
 msgstr "Yedekleme yeri"
 
-#: ../ui.py:22 ../ui.py:39
+#: ../ui.py:24 ../ui.py:41
 msgid "CF"
 msgstr ""
 
-#: ../ui.py:120 ../ui.py:355
+#: ../ui.py:122 ../ui.py:363
 msgid "Cancel"
 msgstr "İptal et"
 
-#: ../ui.py:115
-msgid "Create Autoinstall"
-msgstr "Otomatik Yükleme Oluştur"
-
-#: ../ui.py:113
-msgid "Daily automatic backup"
-msgstr "Günlük otomatik yedekleme"
-
-#: ../ui.py:392
-msgid "Deselect"
-msgstr "Seçimini kaldır"
-
-#: ../ui.py:188
-msgid "Disable"
-msgstr "Devre Dışı"
-
-#: ../ui.py:186
-msgid "Disabled"
-msgstr "Devre Dışı edildi"
-
-#: ../ui.py:224
-msgid "Don't auto-restore this next time"
-msgstr "Bir dahaki sefere otomatik olarak geri yükleme"
-
-#: ../ui.py:328
-msgid "Done"
-msgstr "Bitti"
-
-#: ../ui.py:116
-msgid "EPG cache backup"
-msgstr "EPG önbellek yedeklemesi"
-
-#: ../ui.py:326
-msgid "Failed"
-msgstr "Başarısız oldu"
-
-#: ../ui.py:20 ../ui.py:41
-msgid "Harddisk"
-msgstr "Hard disk"
-
-#: ../ui.py:183
-msgid "Last backup date"
-msgstr "Son yedekleme tarihi"
-
-#: ../ui.py:122
-msgid "Manual"
-msgstr "manuel (elle)"
-
-#: ../ui.py:168
-msgid "No backup present"
-msgstr "Yedek yok"
-
-#: ../ui.py:162
-msgid "No suitable media found, insert USB stick, flash card or harddisk."
-msgstr "Uygun ortam bulunamadı, USB, flash kart veya sabit disk takın."
-
-#: ../ui.py:109
-msgid "Nowhere"
-msgstr "Hiçbir yerde"
-
-#: ../ui.py:121
-msgid "OK"
-msgstr "OK"
-
-#: ../ui.py:227
-msgid "Remove autoinstall list"
-msgstr "Otomatik kurulum listesini kaldır"
-
-#: ../ui.py:228
-msgid "Restore"
-msgstr "Onarmak (düzelt)"
-
-#: ../ui.py:220
-msgid "Run a backup now"
-msgstr "Şimdi bir yedek çalıştırın"
-
-#: ../ui.py:226
-msgid "Run autoinstall"
-msgstr "Otomatik yüklemeyi çalıştır"
-
-#: ../ui.py:252 ../ui.py:275 ../ui.py:298
-msgid "Running..."
-msgstr "Çalıştırılıyor..."
-
-#: ../ui.py:23
-msgid "SD"
+#: ../ui.py:312
+msgid ""
+"Choose a backup.\n"
+"This will delete autoinstall list.\n"
+"Do you really want to continue?"
 msgstr ""
 
-#: ../ui.py:356
-msgid "Save"
-msgstr "Kaydet"
-
-#: ../ui.py:117
-msgid "Save previous backup"
-msgstr "Önceki yedeklemeyi kaydet"
-
-#: ../ui.py:394
-msgid "Select"
-msgstr "Seç"
-
-#: ../ui.py:219
-msgid "Select files to backup"
-msgstr "Yedeklenecek dosyaları seçin"
-
-#: ../ui.py:386
-msgid "Select files/folders to backup"
-msgstr "Yedeklenecek dosyaları/klasörleri seçin"
-
-#: ../ui.py:288
-#, python-format
+#: ../ui.py:283
+#, fuzzy
 msgid ""
-"This will reinstall all plugins from your backup on %s.\n"
+"Choose a backup.\n"
+"This will reinstall all plugins from your backup.\n"
 "Do you really want to reinstall?"
 msgstr ""
 "Bu işlem, yedeklemenizdeki tüm eklentileri yeniden yükler %s.\n"
 "Gerçekten yeniden yüklemek istiyor musunuz?"
 
-#: ../ui.py:265
-#, python-format
+#: ../ui.py:244
+#, fuzzy
 msgid ""
-"This will restore your backup on %s.\n"
-"Do you really want to restore those settings and restart?"
+"Choose settings backup which should be restored.\n"
+"Do you really want to restore these settings and restart?"
 msgstr ""
 "Bu, üzerindeki yedeklemenizi geri yükler %s.\n"
 "Bu ayarları gerçekten geri yüklemek ve yeniden başlatmak istiyor musunuz?"
 
-#: ../ui.py:21
+#: ../ui.py:117
+msgid "Create Autoinstall"
+msgstr "Otomatik Yükleme Oluştur"
+
+#: ../ui.py:115
+msgid "Daily automatic backup"
+msgstr "Günlük otomatik yedekleme"
+
+#: ../ui.py:400
+msgid "Deselect"
+msgstr "Seçimini kaldır"
+
+#: ../ui.py:251
+msgid "Do you want to restore your settings?"
+msgstr ""
+
+#: ../ui.py:336
+msgid "Done"
+msgstr "Bitti"
+
+#: ../ui.py:118
+msgid "EPG cache backup"
+msgstr "EPG önbellek yedeklemesi"
+
+#: ../ui.py:334
+msgid "Failed"
+msgstr "Başarısız oldu"
+
+#: ../ui.py:22 ../ui.py:43
+msgid "Harddisk"
+msgstr "Hard disk"
+
+#: ../ui.py:169
+msgid "Last backup date"
+msgstr "Son yedekleme tarihi"
+
+#: ../ui.py:124
+msgid "Manual"
+msgstr "manuel (elle)"
+
+#: ../ui.py:280 ../ui.py:309
+#, fuzzy
+msgid "No autoinstall list found"
+msgstr "Otomatik kurulum listesini kaldır"
+
+#: ../ui.py:171 ../ui.py:174
+msgid "No backup present"
+msgstr "Yedek yok"
+
+#: ../ui.py:241
+#, fuzzy
+msgid "No settings backups found"
+msgstr "Otomatik ayar yedekleme"
+
+#: ../ui.py:162
+msgid "No suitable media found, insert USB stick, flash card or harddisk."
+msgstr "Uygun ortam bulunamadı, USB, flash kart veya sabit disk takın."
+
+#: ../ui.py:111
+msgid "Nowhere"
+msgstr "Hiçbir yerde"
+
+#: ../ui.py:123
+msgid "OK"
+msgstr "OK"
+
+#: ../ui.py:125
+#, fuzzy
+msgid "Options/Restore"
+msgstr "Onarmak (düzelt)"
+
+#: ../ui.py:196
+msgid "Remove autoinstall list"
+msgstr "Otomatik kurulum listesini kaldır"
+
+#: ../ui.py:197
+msgid "Restore"
+msgstr "Onarmak (düzelt)"
+
+#: ../ui.py:193
+msgid "Run a backup now"
+msgstr "Şimdi bir yedek çalıştırın"
+
+#: ../ui.py:195
+msgid "Run autoinstall"
+msgstr "Otomatik yüklemeyi çalıştır"
+
+#: ../ui.py:222 ../ui.py:261 ../ui.py:290
+msgid "Running..."
+msgstr "Çalıştırılıyor..."
+
+#: ../ui.py:25
+msgid "SD"
+msgstr ""
+
+#: ../ui.py:364
+msgid "Save"
+msgstr "Kaydet"
+
+#: ../ui.py:119
+msgid "Save previous backup"
+msgstr "Önceki yedeklemeyi kaydet"
+
+#: ../ui.py:402
+msgid "Select"
+msgstr "Seç"
+
+#: ../ui.py:192
+msgid "Select files to backup"
+msgstr "Yedeklenecek dosyaları seçin"
+
+#: ../ui.py:394
+msgid "Select files/folders to backup"
+msgstr "Yedeklenecek dosyaları/klasörleri seçin"
+
+#: ../ui.py:23
 msgid "USB"
 msgstr ""
 
-#: ../ui.py:36
+#: ../ui.py:236 ../ui.py:275 ../ui.py:304
+msgid "from: "
+msgstr ""
+
+#: ../ui.py:38
 msgid "root"
 msgstr ""

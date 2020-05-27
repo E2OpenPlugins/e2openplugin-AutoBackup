@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-07-17 16:09+0200\n"
+"POT-Creation-Date: 2020-05-27 18:54+0200\n"
 "PO-Revision-Date: 2017-12-26 15:42+0100\n"
 "Last-Translator: GeirJ. <dummy@dummy.com>\n"
 "Language-Team: \n"
@@ -20,166 +20,190 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Poedit-SearchPath-0: ..\n"
 
-#: ../ui.py:96 ../ui.py:144
+#: ../plugin.py:129
+#, fuzzy
+msgid "Auto backup"
+msgstr "Automatisk sikkerhetskopi av innstillinger"
+
+#: ../ui.py:98 ../ui.py:146
 msgid "AutoBackup Configuration"
 msgstr "AutoBackup-konfigurasjon"
 
-#: ../plugin.py:125
+#: ../plugin.py:132
 msgid "Automatic settings backup"
 msgstr "Automatisk sikkerhetskopi av innstillinger"
 
-#: ../ui.py:114
+#: ../ui.py:116
 msgid "Automatic start time"
 msgstr "Automatisk start tid"
 
-#: ../ui.py:221
+#: ../ui.py:194
 msgid "Backup EPG cache"
 msgstr "Sikkerhetskopier EPG lager"
 
-#: ../ui.py:112
+#: ../ui.py:114
 msgid "Backup location"
 msgstr "Sted for sikkerhetskopi"
 
-#: ../ui.py:22 ../ui.py:39
+#: ../ui.py:24 ../ui.py:41
 msgid "CF"
 msgstr "CF"
 
-#: ../ui.py:120 ../ui.py:355
+#: ../ui.py:122 ../ui.py:363
 msgid "Cancel"
 msgstr "Avbryt"
 
-#: ../ui.py:115
-msgid "Create Autoinstall"
-msgstr "Opprett autoinstall"
-
-#: ../ui.py:113
-msgid "Daily automatic backup"
-msgstr "Daglig automatisk sikkerhetskopiering"
-
-#: ../ui.py:392
-msgid "Deselect"
-msgstr "Opphev"
-
-#: ../ui.py:188
-msgid "Disable"
-msgstr "Frakoble"
-
-#: ../ui.py:186
-msgid "Disabled"
-msgstr "Frakoblet"
-
-#: ../ui.py:224
-msgid "Don't auto-restore this next time"
-msgstr "Ikke ta auto gjenoppretting neste gang"
-
-#: ../ui.py:328
-msgid "Done"
-msgstr "Ok"
-
-#: ../ui.py:116
-msgid "EPG cache backup"
-msgstr "Sikkerhetskopier EPG lager"
-
-#: ../ui.py:326
-msgid "Failed"
-msgstr "Feilet"
-
-#: ../ui.py:20 ../ui.py:41
-msgid "Harddisk"
-msgstr "Harddisk"
-
-#: ../ui.py:183
-msgid "Last backup date"
-msgstr "Siste dato for sikkerhetskopi"
-
-#: ../ui.py:122
-msgid "Manual"
-msgstr "Manuell"
-
-#: ../ui.py:168
-msgid "No backup present"
-msgstr "Finner ingen sikkerhetskopi"
-
-#: ../ui.py:162
-msgid "No suitable media found, insert USB stick, flash card or harddisk."
-msgstr "Ikke noe passende media funnet. Sett inn USB pinne, minnekort eller harddisk"
-
-#: ../ui.py:109
-msgid "Nowhere"
-msgstr "Ukjent"
-
-#: ../ui.py:121
-msgid "OK"
-msgstr "Ok"
-
-#: ../ui.py:227
-msgid "Remove autoinstall list"
-msgstr "Fjern autoinstall mappe"
-
-#: ../ui.py:228
-msgid "Restore"
-msgstr "Gjenopprett"
-
-#: ../ui.py:220
-msgid "Run a backup now"
-msgstr "Ta en sikkerhetskopi nå"
-
-#: ../ui.py:226
-#, fuzzy
-msgid "Run autoinstall"
-msgstr "Fjern autoinstall mappe"
-
-#: ../ui.py:252 ../ui.py:275 ../ui.py:298
-#, fuzzy
-msgid "Running..."
-msgstr "Kjører"
-
-#: ../ui.py:23
-msgid "SD"
-msgstr "SD"
-
-#: ../ui.py:356
-msgid "Save"
-msgstr "Lagre"
-
-#: ../ui.py:117
-msgid "Save previous backup"
-msgstr "Lagre forrige sikkerhetskopi"
-
-#: ../ui.py:394
-msgid "Select"
-msgstr "Velg"
-
-#: ../ui.py:219
-msgid "Select files to backup"
-msgstr "Velg filer til sikkerhetskopi"
-
-#: ../ui.py:386
-msgid "Select files/folders to backup"
-msgstr "Velg filer/mapper til sikkerhetskopi"
-
-#: ../ui.py:288
-#, fuzzy, python-format
+#: ../ui.py:312
 msgid ""
-"This will reinstall all plugins from your backup on %s.\n"
+"Choose a backup.\n"
+"This will delete autoinstall list.\n"
+"Do you really want to continue?"
+msgstr ""
+
+#: ../ui.py:283
+#, fuzzy
+msgid ""
+"Choose a backup.\n"
+"This will reinstall all plugins from your backup.\n"
 "Do you really want to reinstall?"
 msgstr ""
 "Dette vil gjenopprette din sikkerhetskopi på %s.\n"
 "Vil du virkelig gjenopprette innstillingene og starte på nytt?"
 
-#: ../ui.py:265
-#, python-format
+#: ../ui.py:244
+#, fuzzy
 msgid ""
-"This will restore your backup on %s.\n"
-"Do you really want to restore those settings and restart?"
+"Choose settings backup which should be restored.\n"
+"Do you really want to restore these settings and restart?"
 msgstr ""
 "Dette vil gjenopprette din sikkerhetskopi på %s.\n"
 "Vil du virkelig gjenopprette innstillingene og starte på nytt?"
 
-#: ../ui.py:21
+#: ../ui.py:117
+msgid "Create Autoinstall"
+msgstr "Opprett autoinstall"
+
+#: ../ui.py:115
+msgid "Daily automatic backup"
+msgstr "Daglig automatisk sikkerhetskopiering"
+
+#: ../ui.py:400
+msgid "Deselect"
+msgstr "Opphev"
+
+#: ../ui.py:251
+msgid "Do you want to restore your settings?"
+msgstr ""
+
+#: ../ui.py:336
+msgid "Done"
+msgstr "Ok"
+
+#: ../ui.py:118
+msgid "EPG cache backup"
+msgstr "Sikkerhetskopier EPG lager"
+
+#: ../ui.py:334
+msgid "Failed"
+msgstr "Feilet"
+
+#: ../ui.py:22 ../ui.py:43
+msgid "Harddisk"
+msgstr "Harddisk"
+
+#: ../ui.py:169
+msgid "Last backup date"
+msgstr "Siste dato for sikkerhetskopi"
+
+#: ../ui.py:124
+msgid "Manual"
+msgstr "Manuell"
+
+#: ../ui.py:280 ../ui.py:309
+#, fuzzy
+msgid "No autoinstall list found"
+msgstr "Fjern autoinstall mappe"
+
+#: ../ui.py:171 ../ui.py:174
+msgid "No backup present"
+msgstr "Finner ingen sikkerhetskopi"
+
+#: ../ui.py:241
+#, fuzzy
+msgid "No settings backups found"
+msgstr "Automatisk sikkerhetskopi av innstillinger"
+
+#: ../ui.py:162
+msgid "No suitable media found, insert USB stick, flash card or harddisk."
+msgstr "Ikke noe passende media funnet. Sett inn USB pinne, minnekort eller harddisk"
+
+#: ../ui.py:111
+msgid "Nowhere"
+msgstr "Ukjent"
+
+#: ../ui.py:123
+msgid "OK"
+msgstr "Ok"
+
+#: ../ui.py:125
+#, fuzzy
+msgid "Options/Restore"
+msgstr "Gjenopprett"
+
+#: ../ui.py:196
+msgid "Remove autoinstall list"
+msgstr "Fjern autoinstall mappe"
+
+#: ../ui.py:197
+msgid "Restore"
+msgstr "Gjenopprett"
+
+#: ../ui.py:193
+msgid "Run a backup now"
+msgstr "Ta en sikkerhetskopi nå"
+
+#: ../ui.py:195
+#, fuzzy
+msgid "Run autoinstall"
+msgstr "Fjern autoinstall mappe"
+
+#: ../ui.py:222 ../ui.py:261 ../ui.py:290
+#, fuzzy
+msgid "Running..."
+msgstr "Kjører"
+
+#: ../ui.py:25
+msgid "SD"
+msgstr "SD"
+
+#: ../ui.py:364
+msgid "Save"
+msgstr "Lagre"
+
+#: ../ui.py:119
+msgid "Save previous backup"
+msgstr "Lagre forrige sikkerhetskopi"
+
+#: ../ui.py:402
+msgid "Select"
+msgstr "Velg"
+
+#: ../ui.py:192
+msgid "Select files to backup"
+msgstr "Velg filer til sikkerhetskopi"
+
+#: ../ui.py:394
+msgid "Select files/folders to backup"
+msgstr "Velg filer/mapper til sikkerhetskopi"
+
+#: ../ui.py:23
 msgid "USB"
 msgstr "USB"
 
-#: ../ui.py:36
+#: ../ui.py:236 ../ui.py:275 ../ui.py:304
+msgid "from: "
+msgstr ""
+
+#: ../ui.py:38
 msgid "root"
 msgstr "rot"

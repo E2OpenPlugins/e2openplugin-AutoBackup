@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2-plugin-extensions-autobackup\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-07-24 22:04+0200\n"
-"PO-Revision-Date: 2019-07-24 22:04+0200\n"
+"POT-Creation-Date: 2020-05-27 18:54+0200\n"
+"PO-Revision-Date: 2020-05-27 18:58+0200\n"
 "Last-Translator: Pr2\n"
 "Language-Team: french\n"
 "Language: fr\n"
@@ -11,170 +11,188 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Poedit 2.2.3\n"
+"X-Generator: Poedit 2.0.6\n"
 
-#: ../plugin.py:126
+#: ../plugin.py:129
 msgid "Auto backup"
 msgstr "Sauvegarde automatique"
 
-#: ../ui.py:96 ../ui.py:144
+#: ../ui.py:98 ../ui.py:146
 msgid "AutoBackup Configuration"
 msgstr "Configuration de AutoBackup"
 
-#: ../plugin.py:129
+#: ../plugin.py:132
 msgid "Automatic settings backup"
 msgstr "Sauvegarde automatique des réglages"
 
-#: ../ui.py:114
+#: ../ui.py:116
 msgid "Automatic start time"
 msgstr "Heure de lancement automatique"
 
-#: ../ui.py:221
+#: ../ui.py:194
 msgid "Backup EPG cache"
 msgstr "Sauvegarder le cache EPG"
 
-#: ../ui.py:112
+#: ../ui.py:114
 msgid "Backup location"
 msgstr "Emplacement de la sauvegarde"
 
-#: ../ui.py:22 ../ui.py:39
+#: ../ui.py:24 ../ui.py:41
 msgid "CF"
 msgstr "CF"
 
-#: ../ui.py:120 ../ui.py:355
+#: ../ui.py:122 ../ui.py:363
 msgid "Cancel"
 msgstr "Annuler"
 
-#: ../ui.py:115
+#: ../ui.py:312
+msgid ""
+"Choose a backup.\n"
+"This will delete autoinstall list.\n"
+"Do you really want to continue?"
+msgstr ""
+"Choisir une sauvegarde.\n"
+"Cela effacera la liste autoinstall.\n"
+"Voulez-vous vraiment continuer?"
+
+#: ../ui.py:283
+msgid ""
+"Choose a backup.\n"
+"This will reinstall all plugins from your backup.\n"
+"Do you really want to reinstall?"
+msgstr ""
+"Choisir une sauvegarde.\n"
+"Ceci va réinstaller tous les plugins/extensions de votre sauvegarde sur.\n"
+"Voulez-vous vraiment les réinstaller?"
+
+#: ../ui.py:244
+msgid ""
+"Choose settings backup which should be restored.\n"
+"Do you really want to restore these settings and restart?"
+msgstr ""
+"Choisir les paramètres de la sauvegarde que vous voulez restaurer.\n"
+"Voulez-vous vraiment restaurer ces réglages et redémarrer?"
+
+#: ../ui.py:117
 msgid "Create Autoinstall"
 msgstr "Créer une installation automatique"
 
-#: ../ui.py:113
+#: ../ui.py:115
 msgid "Daily automatic backup"
 msgstr "Sauvegarde automatique quotidienne"
 
-#: ../ui.py:392
+#: ../ui.py:400
 msgid "Deselect"
 msgstr "Désélectionner"
 
-#: ../ui.py:188
-msgid "Disable"
-msgstr "Supprimer"
+#: ../ui.py:251
+msgid "Do you want to restore your settings?"
+msgstr "Voulez-vous restaurer les paramètres?"
 
-#: ../ui.py:186
-msgid "Disabled"
-msgstr "Supprimé"
-
-#: ../ui.py:224
-msgid "Don't auto-restore this next time"
-msgstr "Pas de restauration auto la prochaine fois"
-
-#: ../ui.py:328
+#: ../ui.py:336
 msgid "Done"
 msgstr "Effectué"
 
-#: ../ui.py:116
+#: ../ui.py:118
 msgid "EPG cache backup"
 msgstr "Sauvegarde du cache EPG"
 
-#: ../ui.py:326
+#: ../ui.py:334
 msgid "Failed"
 msgstr "Echoué"
 
-#: ../ui.py:20 ../ui.py:41
+#: ../ui.py:22 ../ui.py:43
 msgid "Harddisk"
 msgstr "Disque dur"
 
-#: ../ui.py:183
+#: ../ui.py:169
 msgid "Last backup date"
 msgstr "Date de la dernière sauvegarde"
 
-#: ../ui.py:122
+#: ../ui.py:124
 msgid "Manual"
 msgstr "Manuel"
 
-#: ../ui.py:168
+#: ../ui.py:280 ../ui.py:309
+msgid "No autoinstall list found"
+msgstr "Pas de fichier d’auto-installation trouvé"
+
+#: ../ui.py:171 ../ui.py:174
 msgid "No backup present"
 msgstr "Aucune sauvegarde présente"
+
+#: ../ui.py:241
+msgid "No settings backups found"
+msgstr "Pas de sauvegarde de paramètres trouvé"
 
 #: ../ui.py:162
 msgid "No suitable media found, insert USB stick, flash card or harddisk."
 msgstr "Aucun média approprié trouvé, insérez une clé USB, carte flash ou disque dur."
 
-#: ../ui.py:109
+#: ../ui.py:111
 msgid "Nowhere"
 msgstr "Nulle part"
 
-#: ../ui.py:121
+#: ../ui.py:123
 msgid "OK"
 msgstr "Ok"
 
-#: ../ui.py:227
+#: ../ui.py:125
+msgid "Options/Restore"
+msgstr "Options/Restaurer"
+
+#: ../ui.py:196
 msgid "Remove autoinstall list"
 msgstr "Enlever la liste d’auto-installation"
 
-#: ../ui.py:228
+#: ../ui.py:197
 msgid "Restore"
 msgstr "Restaurer"
 
-#: ../ui.py:220
+#: ../ui.py:193
 msgid "Run a backup now"
 msgstr "Lancer une sauvegarde maintenant"
 
-#: ../ui.py:226
+#: ../ui.py:195
 msgid "Run autoinstall"
 msgstr "Exécuter l’auto-installation"
 
-#: ../ui.py:252 ../ui.py:275 ../ui.py:298
+#: ../ui.py:222 ../ui.py:261 ../ui.py:290
 msgid "Running..."
 msgstr "En cours d’exécution…"
 
-#: ../ui.py:23
+#: ../ui.py:25
 msgid "SD"
 msgstr "SD"
 
-#: ../ui.py:356
+#: ../ui.py:364
 msgid "Save"
 msgstr "Sauvegarder"
 
-#: ../ui.py:117
+#: ../ui.py:119
 msgid "Save previous backup"
 msgstr "Enregistrer la sauvegarde précédente"
 
-#: ../ui.py:394
+#: ../ui.py:402
 msgid "Select"
 msgstr "Sélectionner"
 
-#: ../ui.py:219
+#: ../ui.py:192
 msgid "Select files to backup"
 msgstr "Sélectionner les fichiers à sauvegarder"
 
-#: ../ui.py:386
+#: ../ui.py:394
 msgid "Select files/folders to backup"
 msgstr "Sélectionner les fichiers/dossiers à sauvegarder"
 
-#: ../ui.py:288
-#, python-format
-msgid ""
-"This will reinstall all plugins from your backup on %s.\n"
-"Do you really want to reinstall?"
-msgstr ""
-"Ceci va réinstaller tous les plugins/extensions de votre sauvegarde sur %s.\n"
-"Voulez-vous vraiment les réinstaller?"
-
-#: ../ui.py:265
-#, python-format
-msgid ""
-"This will restore your backup on %s.\n"
-"Do you really want to restore those settings and restart?"
-msgstr ""
-"Ceci va restaurer votre sauvegarde sur %s.\n"
-"Voulez-vous vraiment restaurer ces réglages et redémarrer?"
-
-#: ../ui.py:21
+#: ../ui.py:23
 msgid "USB"
 msgstr "USB"
 
-#: ../ui.py:36
+#: ../ui.py:236 ../ui.py:275 ../ui.py:304
+msgid "from: "
+msgstr "De: "
+
+#: ../ui.py:38
 msgid "root"
 msgstr "racine"

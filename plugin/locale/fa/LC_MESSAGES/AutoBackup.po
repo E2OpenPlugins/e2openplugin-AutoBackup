@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: auto backup Persian Translation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-07-17 16:09+0200\n"
+"POT-Creation-Date: 2020-05-27 18:54+0200\n"
 "PO-Revision-Date: 2016-05-06 14:13+0200\n"
 "Last-Translator: neoatomic <neoatomic@users.noreply.github.com>\n"
 "Language-Team: Persian Professionals <persianpros@yahoo.com>\n"
@@ -13,102 +13,137 @@ msgstr ""
 "X-Generator: Poedit 1.8.7\n"
 
 #
-#: ../ui.py:96 ../ui.py:144
+#: ../plugin.py:129
+#, fuzzy
+msgid "Auto backup"
+msgstr "تهیه یک نسخه پشتیبان از لیست تنظیمات"
+
+#
+#: ../ui.py:98 ../ui.py:146
 msgid "AutoBackup Configuration"
 msgstr "پیکربندی خودکار به منظور تهیه نسخه پشتیبان"
 
 #
-#: ../plugin.py:125
+#: ../plugin.py:132
 msgid "Automatic settings backup"
 msgstr "تهیه یک نسخه پشتیبان از لیست تنظیمات"
 
 #
-#: ../ui.py:114
+#: ../ui.py:116
 msgid "Automatic start time"
 msgstr "تنظیم زمان برای شروع خودکار"
 
-#: ../ui.py:221
+#: ../ui.py:194
 msgid "Backup EPG cache"
 msgstr ""
 
 #
-#: ../ui.py:112
+#: ../ui.py:114
 msgid "Backup location"
 msgstr "محل ذخیره سازی نسخه پشتیبان"
 
 #
-#: ../ui.py:22 ../ui.py:39
+#: ../ui.py:24 ../ui.py:41
 msgid "CF"
 msgstr "کارت حافظه از نوع از نوع سی اف"
 
 #
-#: ../ui.py:120 ../ui.py:355
+#: ../ui.py:122 ../ui.py:363
 msgid "Cancel"
 msgstr "لغو کردن"
 
+#: ../ui.py:312
+msgid ""
+"Choose a backup.\n"
+"This will delete autoinstall list.\n"
+"Do you really want to continue?"
+msgstr ""
+
 #
-#: ../ui.py:115
+#: ../ui.py:283
+#, fuzzy
+msgid ""
+"Choose a backup.\n"
+"This will reinstall all plugins from your backup.\n"
+"Do you really want to reinstall?"
+msgstr ""
+"فایل شما بازگردانی خواهد شد %s.\n"
+" آیا واقعا قصد بازگردانی تنظیمات و راه اندازی مجدد را دارید ؟"
+
+#
+#: ../ui.py:244
+#, fuzzy
+msgid ""
+"Choose settings backup which should be restored.\n"
+"Do you really want to restore these settings and restart?"
+msgstr ""
+"فایل شما بازگردانی خواهد شد %s.\n"
+" آیا واقعا قصد بازگردانی تنظیمات و راه اندازی مجدد را دارید ؟"
+
+#
+#: ../ui.py:117
 msgid "Create Autoinstall"
 msgstr "ایجاد یک نصب خودکار"
 
 #
-#: ../ui.py:113
+#: ../ui.py:115
 msgid "Daily automatic backup"
 msgstr "تهیه نسخه پشتیبان بصورت روزانه"
 
 #
-#: ../ui.py:392
+#: ../ui.py:400
 msgid "Deselect"
 msgstr "لغو مورد انتخاب شده"
 
-#
-#: ../ui.py:188
-msgid "Disable"
-msgstr "غیر فعال"
+#: ../ui.py:251
+msgid "Do you want to restore your settings?"
+msgstr ""
 
 #
-#: ../ui.py:186
-msgid "Disabled"
-msgstr "غیر فعال گردید"
-
-#
-#: ../ui.py:224
-msgid "Don't auto-restore this next time"
-msgstr "برای بار بعدی بصورت خودکار بازگردانی نکن "
-
-#
-#: ../ui.py:328
+#: ../ui.py:336
 msgid "Done"
 msgstr "عملیتات انجام گردد"
 
-#: ../ui.py:116
+#: ../ui.py:118
 msgid "EPG cache backup"
 msgstr ""
 
 #
-#: ../ui.py:326
+#: ../ui.py:334
 msgid "Failed"
 msgstr "عملیات ناموفق"
 
 #
-#: ../ui.py:20 ../ui.py:41
+#: ../ui.py:22 ../ui.py:43
 msgid "Harddisk"
 msgstr "هارد دیسک"
 
 #
-#: ../ui.py:183
+#: ../ui.py:169
 msgid "Last backup date"
 msgstr "زمان آخرین تهیه نسخه پشتیبان"
 
 #
-#: ../ui.py:122
+#: ../ui.py:124
 msgid "Manual"
 msgstr "کار بصورت دستی "
 
 #
-#: ../ui.py:168
+#: ../ui.py:280 ../ui.py:309
+#, fuzzy
+msgid "No autoinstall list found"
+msgstr "ایجاد یک نصب خودکار"
+
+#
+#: ../ui.py:171 ../ui.py:174
 msgid "No backup present"
 msgstr "در حال حاضر هیچ نسخه پشتیبانی وجود ندارد"
+
+#
+#: ../ui.py:241
+#, fuzzy
+msgid "No settings backups found"
+msgstr "تهیه یک نسخه پشتیبان از لیست تنظیمات"
 
 #
 #: ../ui.py:162
@@ -116,95 +151,85 @@ msgid "No suitable media found, insert USB stick, flash card or harddisk."
 msgstr "هیچ رسانه مناسبی یافت نگردید پس فلش مموری یا کارت حافظه یا هارد دیسک را متصل کنید"
 
 #
-#: ../ui.py:109
+#: ../ui.py:111
 msgid "Nowhere"
 msgstr "هیچ کجا "
 
 #
-#: ../ui.py:121
+#: ../ui.py:123
 msgid "OK"
 msgstr "کار تایید می شود "
 
-#: ../ui.py:227
+#
+#: ../ui.py:125
+#, fuzzy
+msgid "Options/Restore"
+msgstr "بازگردان کردن"
+
+#: ../ui.py:196
 msgid "Remove autoinstall list"
 msgstr ""
 
 #
-#: ../ui.py:228
+#: ../ui.py:197
 msgid "Restore"
 msgstr "بازگردان کردن"
 
 #
-#: ../ui.py:220
+#: ../ui.py:193
 msgid "Run a backup now"
 msgstr "در حال اجرای نسخه پشتیبان"
 
 #
-#: ../ui.py:226
+#: ../ui.py:195
 #, fuzzy
 msgid "Run autoinstall"
 msgstr "ایجاد یک نصب خودکار"
 
 #
-#: ../ui.py:252 ../ui.py:275 ../ui.py:298
+#: ../ui.py:222 ../ui.py:261 ../ui.py:290
 #, fuzzy
 msgid "Running..."
 msgstr "عملیات در حال اجرا است"
 
 #
-#: ../ui.py:23
+#: ../ui.py:25
 msgid "SD"
 msgstr "کارت حافظه از نوع اس دی"
 
 #
-#: ../ui.py:356
+#: ../ui.py:364
 msgid "Save"
 msgstr "ذخیره سازی عملیات"
 
-#: ../ui.py:117
+#: ../ui.py:119
 msgid "Save previous backup"
 msgstr ""
 
 #
-#: ../ui.py:394
+#: ../ui.py:402
 msgid "Select"
 msgstr "انتخاب کردن"
 
 #
-#: ../ui.py:219
+#: ../ui.py:192
 msgid "Select files to backup"
 msgstr "پوشه مورد نظر جهت ذخیره سازی نسخه پشتیبان را انتخاب کنید"
 
 #
-#: ../ui.py:386
+#: ../ui.py:394
 msgid "Select files/folders to backup"
 msgstr "فایل و پوشه مورد نظر را جهت ذخیره سازی نسخه پشتیبان انتخاب کنید"
 
 #
-#: ../ui.py:288
-#, fuzzy, python-format
-msgid ""
-"This will reinstall all plugins from your backup on %s.\n"
-"Do you really want to reinstall?"
-msgstr ""
-"فایل شما بازگردانی خواهد شد %s.\n"
-" آیا واقعا قصد بازگردانی تنظیمات و راه اندازی مجدد را دارید ؟"
-
-#
-#: ../ui.py:265
-#, python-format
-msgid ""
-"This will restore your backup on %s.\n"
-"Do you really want to restore those settings and restart?"
-msgstr ""
-"فایل شما بازگردانی خواهد شد %s.\n"
-" آیا واقعا قصد بازگردانی تنظیمات و راه اندازی مجدد را دارید ؟"
-
-#
-#: ../ui.py:21
+#: ../ui.py:23
 msgid "USB"
 msgstr "فلش مموری"
 
-#: ../ui.py:36
+#: ../ui.py:236 ../ui.py:275 ../ui.py:304
+msgid "from: "
+msgstr ""
+
+#: ../ui.py:38
 msgid "root"
 msgstr ""
