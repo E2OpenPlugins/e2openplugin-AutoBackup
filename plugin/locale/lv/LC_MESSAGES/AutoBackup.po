@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: AutoBackup\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-25 21:50+0200\n"
+"POT-Creation-Date: 2020-05-27 18:54+0200\n"
 "PO-Revision-Date: 2018-12-25 21:50+0200\n"
 "Last-Translator: Taapat <taapat@gmail.com>\n"
 "Language-Team: Taapat <taapat@gmail.com>\n"
@@ -12,129 +12,187 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
+#: ../plugin.py:129
 msgid "Auto backup"
 msgstr "Dublējumkopija"
 
+#: ../ui.py:98 ../ui.py:146
 msgid "AutoBackup Configuration"
 msgstr "Iestatījumi"
 
+#: ../plugin.py:132
 msgid "Automatic settings backup"
 msgstr "Iestatījumu dublējumkopija"
 
+#: ../ui.py:116
 msgid "Automatic start time"
 msgstr "Dublējumkopijas izveidošanas laiks"
 
+#: ../ui.py:194
 msgid "Backup EPG cache"
 msgstr "Saglabāt EPG informāciju"
 
+#: ../ui.py:114
 msgid "Backup location"
 msgstr "Dublējumkopijas atrašanās vieta"
 
+#: ../ui.py:24 ../ui.py:41
 msgid "CF"
 msgstr "CF"
 
+#: ../ui.py:122 ../ui.py:363
 msgid "Cancel"
 msgstr "Atcelt"
 
-msgid "Create Autoinstall"
-msgstr "Lietot pēc imidža uzstādīšanas"
-
-msgid "Daily automatic backup"
-msgstr "Veidot dublējumkopiju katru dienu"
-
-msgid "Deselect"
-msgstr "Atcelt izvēli"
-
-msgid "Disable"
-msgstr "Izslēgt"
-
-msgid "Disabled"
-msgstr "Izslēgts"
-
-msgid "Don't auto-restore this next time"
-msgstr "Neizmantot pēc imidža uzstādīšanas"
-
-msgid "Done"
-msgstr "Dublējumkopija izveidota"
-
-msgid "EPG cache backup"
-msgstr "Saglabāt EPG informāciju"
-
-msgid "Failed"
-msgstr "Neizdevās izeidot dublējumkopiju"
-
-msgid "Harddisk"
-msgstr "Cietais disks"
-
-msgid "Last backup date"
-msgstr "Pēdējā dublējumkopija"
-
-msgid "Manual"
-msgstr "Manuāli"
-
-msgid "No backup present"
-msgstr "Dublējumkopijas nav atrastas"
-
-msgid "No suitable media found, insert USB stick, flash card or harddisk."
-msgstr "Nav atrasts piemērots datu nesējs. Pievienojiet USB zibatmiņu, SD karti vai cieto disku."
-
-msgid "Nowhere"
-msgstr "Nekur"
-
-msgid "OK"
-msgstr "Labi"
-
-msgid "Remove autoinstall list"
-msgstr "Dzēst spraudņu sarakstu"
-
-msgid "Restore"
-msgstr "Uzstādīt dublējumkopiju"
-
-msgid "Run a backup now"
-msgstr "Izveidot dublējumkopiju tagad"
-
-msgid "Run autoinstall"
-msgstr "Uzstādīt spraudņus"
-
-msgid "Running..."
-msgstr "Darbojas..."
-
-msgid "SD"
-msgstr "SD"
-
-msgid "Save"
-msgstr "Sagalbāt"
-
-msgid "Save previous backup"
-msgstr "Sagalbāt iepriekšējo dublējumkopiju"
-
-msgid "Select"
-msgstr "Izvēlēties"
-
-msgid "Select files to backup"
-msgstr "Izvēlēties dublējumkopijas failus"
-
-msgid "Select files/folders to backup"
-msgstr "Izvēlieties dublējumkopijas failus vai mapes"
-
-#, python-format
+#: ../ui.py:312
 msgid ""
-"This will reinstall all plugins from your backup on %s.\n"
+"Choose a backup.\n"
+"This will delete autoinstall list.\n"
+"Do you really want to continue?"
+msgstr ""
+
+#: ../ui.py:283
+#, fuzzy
+msgid ""
+"Choose a backup.\n"
+"This will reinstall all plugins from your backup.\n"
 "Do you really want to reinstall?"
 msgstr ""
 "Tiks uzstādīti visi spraudņi dublējumkopijā no %s.\n"
 "Vai tiešām vēlaties turpināt?"
 
-#, python-format
+#: ../ui.py:244
+#, fuzzy
 msgid ""
-"This will restore your backup on %s.\n"
-"Do you really want to restore those settings and restart?"
+"Choose settings backup which should be restored.\n"
+"Do you really want to restore these settings and restart?"
 msgstr ""
 "Tiks uzstādīta dublējumkopija no %s.\n"
 "Vai tiešām vēlaties turpināt?"
 
+#: ../ui.py:117
+msgid "Create Autoinstall"
+msgstr "Lietot pēc imidža uzstādīšanas"
+
+#: ../ui.py:115
+msgid "Daily automatic backup"
+msgstr "Veidot dublējumkopiju katru dienu"
+
+#: ../ui.py:400
+msgid "Deselect"
+msgstr "Atcelt izvēli"
+
+#: ../ui.py:251
+msgid "Do you want to restore your settings?"
+msgstr ""
+
+#: ../ui.py:336
+msgid "Done"
+msgstr "Dublējumkopija izveidota"
+
+#: ../ui.py:118
+msgid "EPG cache backup"
+msgstr "Saglabāt EPG informāciju"
+
+#: ../ui.py:334
+msgid "Failed"
+msgstr "Neizdevās izeidot dublējumkopiju"
+
+#: ../ui.py:22 ../ui.py:43
+msgid "Harddisk"
+msgstr "Cietais disks"
+
+#: ../ui.py:169
+msgid "Last backup date"
+msgstr "Pēdējā dublējumkopija"
+
+#: ../ui.py:124
+msgid "Manual"
+msgstr "Manuāli"
+
+#: ../ui.py:280 ../ui.py:309
+#, fuzzy
+msgid "No autoinstall list found"
+msgstr "Dzēst spraudņu sarakstu"
+
+#: ../ui.py:171 ../ui.py:174
+msgid "No backup present"
+msgstr "Dublējumkopijas nav atrastas"
+
+#: ../ui.py:241
+#, fuzzy
+msgid "No settings backups found"
+msgstr "Iestatījumu dublējumkopija"
+
+#: ../ui.py:162
+msgid "No suitable media found, insert USB stick, flash card or harddisk."
+msgstr "Nav atrasts piemērots datu nesējs. Pievienojiet USB zibatmiņu, SD karti vai cieto disku."
+
+#: ../ui.py:111
+msgid "Nowhere"
+msgstr "Nekur"
+
+#: ../ui.py:123
+msgid "OK"
+msgstr "Labi"
+
+#: ../ui.py:125
+#, fuzzy
+msgid "Options/Restore"
+msgstr "Uzstādīt dublējumkopiju"
+
+#: ../ui.py:196
+msgid "Remove autoinstall list"
+msgstr "Dzēst spraudņu sarakstu"
+
+#: ../ui.py:197
+msgid "Restore"
+msgstr "Uzstādīt dublējumkopiju"
+
+#: ../ui.py:193
+msgid "Run a backup now"
+msgstr "Izveidot dublējumkopiju tagad"
+
+#: ../ui.py:195
+msgid "Run autoinstall"
+msgstr "Uzstādīt spraudņus"
+
+#: ../ui.py:222 ../ui.py:261 ../ui.py:290
+msgid "Running..."
+msgstr "Darbojas..."
+
+#: ../ui.py:25
+msgid "SD"
+msgstr "SD"
+
+#: ../ui.py:364
+msgid "Save"
+msgstr "Sagalbāt"
+
+#: ../ui.py:119
+msgid "Save previous backup"
+msgstr "Sagalbāt iepriekšējo dublējumkopiju"
+
+#: ../ui.py:402
+msgid "Select"
+msgstr "Izvēlēties"
+
+#: ../ui.py:192
+msgid "Select files to backup"
+msgstr "Izvēlēties dublējumkopijas failus"
+
+#: ../ui.py:394
+msgid "Select files/folders to backup"
+msgstr "Izvēlieties dublējumkopijas failus vai mapes"
+
+#: ../ui.py:23
 msgid "USB"
 msgstr "USB"
 
+#: ../ui.py:236 ../ui.py:275 ../ui.py:304
+msgid "from: "
+msgstr ""
+
+#: ../ui.py:38
 msgid "root"
 msgstr "root"
