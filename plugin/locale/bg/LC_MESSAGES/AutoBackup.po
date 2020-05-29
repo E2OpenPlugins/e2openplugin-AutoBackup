@@ -51,24 +51,25 @@ msgid ""
 "This will delete autoinstall list.\n"
 "Do you really want to continue?"
 msgstr ""
+"Това ще изтрие файловете с автоинсталация.\n"
+"Искате ли да продължите?"
 
 #: ../ui.py:283
-#, fuzzy
 msgid ""
 "Choose a backup.\n"
 "This will reinstall all plugins from your backup.\n"
 "Do you really want to reinstall?"
 msgstr ""
-"Това ще възстанови вашето резервно копие на %s.\n"
-"Искате ли да възстановите тези настройки и да рестартирате?"
+"Изберете резервно копие.\n"
+"Това ще преинсталира всички плъгини от резервното копие.\n"
+"Искате ли да преинсталирате?"
 
 #: ../ui.py:244
-#, fuzzy
 msgid ""
 "Choose settings backup which should be restored.\n"
 "Do you really want to restore these settings and restart?"
 msgstr ""
-"Това ще възстанови вашето резервно копие на %s.\n"
+"Изберете кое резервно копие с настройки да се възстанови.\n"
 "Искате ли да възстановите тези настройки и да рестартирате?"
 
 #: ../ui.py:117
@@ -85,7 +86,7 @@ msgstr "Отмяна Избор"
 
 #: ../ui.py:251
 msgid "Do you want to restore your settings?"
-msgstr ""
+msgstr "Искате ли да се възстановят вашите настройки?"
 
 #: ../ui.py:336
 msgid "Done"
@@ -112,18 +113,16 @@ msgid "Manual"
 msgstr "Ръчно"
 
 #: ../ui.py:280 ../ui.py:309
-#, fuzzy
 msgid "No autoinstall list found"
-msgstr "Изтрий файловете за автоинсталация"
+msgstr "Не са открити файловете с автоинсталация"
 
 #: ../ui.py:171 ../ui.py:174
 msgid "No backup present"
 msgstr "Не е открито резервно копие"
 
 #: ../ui.py:241
-#, fuzzy
 msgid "No settings backups found"
-msgstr "Настройки за Автоматично резервно копие"
+msgstr "Не са открити файловете с копие на настройките"
 
 #: ../ui.py:162
 msgid "No suitable media found, insert USB stick, flash card or harddisk."
@@ -138,9 +137,8 @@ msgid "OK"
 msgstr "Ок"
 
 #: ../ui.py:125
-#, fuzzy
 msgid "Options/Restore"
-msgstr "Възстанови"
+msgstr "Опции/Възстанови"
 
 #: ../ui.py:196
 msgid "Remove autoinstall list"
@@ -155,13 +153,12 @@ msgid "Run a backup now"
 msgstr "Направи резервно копие сега"
 
 #: ../ui.py:195
-#, fuzzy
 msgid "Run autoinstall"
-msgstr "Изтрий файловете за автоинсталация"
+msgstr "Направи автоинсталация"
 
 #: ../ui.py:222 ../ui.py:261 ../ui.py:290
 msgid "Running..."
-msgstr ""
+msgstr "Изпълнява се..."
 
 #: ../ui.py:25
 msgid "SD"
@@ -193,7 +190,7 @@ msgstr "USB"
 
 #: ../ui.py:236 ../ui.py:275 ../ui.py:304
 msgid "from: "
-msgstr ""
+msgstr "от: "
 
 #: ../ui.py:38
 msgid "root"
