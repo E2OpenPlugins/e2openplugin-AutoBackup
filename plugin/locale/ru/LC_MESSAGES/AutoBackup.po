@@ -51,24 +51,26 @@ msgid ""
 "This will delete autoinstall list.\n"
 "Do you really want to continue?"
 msgstr ""
+"Выберите бэкап.\n"
+"Это удалит список автоинсталляции.\n"
+"Вы действительно хотите продолжить?"
 
 #: ../ui.py:283
-#, fuzzy
 msgid ""
 "Choose a backup.\n"
 "This will reinstall all plugins from your backup.\n"
 "Do you really want to reinstall?"
 msgstr ""
-"Это переустановит все плагины, доступные на фиде, из Вашего бекапа на %s.\n"
-"Вы действительно хотите выполнить переустановку плагинов?"
+"Выберите бэкап.\n"
+"Это переустановит все плагины из Вашего бэкапа.\n"
+"Вы действительно хотите переустановить?"
 
 #: ../ui.py:244
-#, fuzzy
 msgid ""
 "Choose settings backup which should be restored.\n"
 "Do you really want to restore these settings and restart?"
 msgstr ""
-"Это позволит восстановить резервную копию %s.\n"
+"Выберите настройки резервного копирования, которые должны быть восстановлены.\n"
 "Вы действительно хотите восстановить эти настройки и сделать рестарт?"
 
 #: ../ui.py:117
@@ -85,7 +87,7 @@ msgstr "Не выбирать"
 
 #: ../ui.py:251
 msgid "Do you want to restore your settings?"
-msgstr ""
+msgstr "Вы хотите восстановить настройки?"
 
 #: ../ui.py:336
 msgid "Done"
@@ -112,9 +114,8 @@ msgid "Manual"
 msgstr "В ручную"
 
 #: ../ui.py:280 ../ui.py:309
-#, fuzzy
 msgid "No autoinstall list found"
-msgstr "Удалить файлы автоинсталляции"
+msgstr "Не найден список автоинсталляции"
 
 #: ../ui.py:171 ../ui.py:174
 msgid "No backup present"
@@ -192,7 +193,7 @@ msgstr "USB"
 
 #: ../ui.py:236 ../ui.py:275 ../ui.py:304
 msgid "from: "
-msgstr ""
+msgstr "от:"
 
 #: ../ui.py:38
 msgid "root"
