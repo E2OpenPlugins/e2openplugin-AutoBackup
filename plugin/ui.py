@@ -1,8 +1,10 @@
+from __future__ import absolute_import
+from __future__ import print_function
 ##################################
 ##################################
 # Configuration GUI
 from . import _
-import plugin
+from . import plugin
 import os
 import enigma
 from Components.config import config, configfile, getConfigListEntry, ConfigSelection
@@ -65,10 +67,10 @@ def saveSelectedFiles(files):
 			if fn not in standard:
 				f.write(fn + '\n')
 		f.close()
-	except Exception, ex:
-		print "[AutoBackup] Failed to write /etc/backup.cfg", ex
+	except Exception as ex:
+		print("[AutoBackup] Failed to write /etc/backup.cfg", ex)
 
-class Config(ConfigListScreen,Screen):
+class Config(ConfigListScreen, Screen):
 	skin = """
 <screen position="center,center" size="560,400" title="AutoBackup Configuration" >
 	<ePixmap name="red"    position="0,0"   zPosition="2" size="140,40" pixmap="skin_default/buttons/red.png" transparent="1" alphatest="on" />
@@ -102,7 +104,7 @@ class Config(ConfigListScreen,Screen):
 		if choices:
 			currentwhere = cfg.where.value
 			defaultchoice = choices[0][0]
-			for k,v in choices:
+			for k, v in choices:
 				if k == currentwhere:
 					defaultchoice = k
 					break
@@ -169,8 +171,8 @@ class Config(ConfigListScreen,Screen):
 					self["status"].setText(_("Last backup date") + ": " + " ".join(FuzzyTime(st.st_mtime, inPast=True)))
 				else:
 					self["status"].setText(_("No backup present"))
-			except Exception, ex:
-				print "Failed to stat %s: %s" % (path, ex)
+			except Exception as ex:
+				print("Failed to stat %s: %s" % (path, ex))
 				self["status"].setText(_("No backup present"))
 
 	def __onClose(self):
@@ -180,12 +182,12 @@ class Config(ConfigListScreen,Screen):
 		config.plugins.autobackup.where.value = self.cfgwhere.value
 		config.plugins.autobackup.where.save()
 		self.saveAll()
-		self.close(True,self.session)
+		self.close(True, self.session)
 
 	def cancel(self):
 		for x in self["config"].list:
 			x[1].cancel()
-		self.close(False,self.session)
+		self.close(False, self.session)
 
 	def menu(self):
 		lst = [
@@ -222,7 +224,7 @@ class Config(ConfigListScreen,Screen):
 		self["statusbar"].setText(_('Running...'))
 		cmd = plugin.backupCommand()
 		if self.container.execute(cmd):
-			print "[AutoBackup] failed to execute"
+			print("[AutoBackup] failed to execute")
 			self.showOutput()
 
 	def dorestore(self):
@@ -234,8 +236,8 @@ class Config(ConfigListScreen,Screen):
 				try:
 					st = os.stat(os.path.join(path, ".timestamp"))
 					backupList.append(("/media/%s " % backupMedia + _("from: ") + " ".join(FuzzyTime(st.st_mtime, inPast=True)), "/media/%s" % backupMedia, st.st_mtime))
-				except Exception, ex:
-					print "Failed to stat %s: %s" % (path, ex)
+				except Exception as ex:
+					print("Failed to stat %s: %s" % (path, ex))
 
 		if not backupList:
 			self.session.open(MessageBox, _("No settings backups found"), type = MessageBox.TYPE_ERROR, timeout = 10)
@@ -261,7 +263,7 @@ class Config(ConfigListScreen,Screen):
 		self["statusbar"].setText(_('Running...'))
 		cmd = '/etc/init.d/settings-restore.sh ' + path + ' ; killall -9 enigma2'
 		if self.container.execute(cmd):
-			print "[AutoBackup] failed to execute"
+			print("[AutoBackup] failed to execute")
 			self.showOutput()
 
 	def doautoinstall(self):
@@ -273,8 +275,8 @@ class Config(ConfigListScreen,Screen):
 				try:
 					st = os.stat(os.path.join(path, ".timestamp"))
 					backupList.append(("/media/%s " % backupMedia + _("from: ") + " ".join(FuzzyTime(st.st_mtime, inPast=True)), "/media/%s" % backupMedia, st.st_mtime))
-				except Exception, ex:
-					print "Failed to stat %s: %s" % (path, ex)
+				except Exception as ex:
+					print("Failed to stat %s: %s" % (path, ex))
 
 		if not backupList:
 			self.session.open(MessageBox, _("No autoinstall list found"), type = MessageBox.TYPE_ERROR, timeout = 10)
@@ -290,7 +292,7 @@ class Config(ConfigListScreen,Screen):
 		self["statusbar"].setText(_('Running...'))
 		cmd = 'opkg update && while read f o; do opkg install $o $f; done < ' + path + '/backup/autoinstall'
 		if self.container.execute(cmd):
-			print "[AutoInstall] failed to execute"
+			print("[AutoInstall] failed to execute")
 			self.showOutput()
 
 	def doremoveautoinstall(self):
@@ -302,8 +304,8 @@ class Config(ConfigListScreen,Screen):
 				try:
 					st = os.stat(os.path.join(path, ".timestamp"))
 					backupList.append(("/media/%s " % backupMedia + _("from: ") + " ".join(FuzzyTime(st.st_mtime, inPast=True)), "/media/%s" % backupMedia, st.st_mtime))
-				except Exception, ex:
-					print "Failed to stat %s: %s" % (path, ex)
+				except Exception as ex:
+					print("Failed to stat %s: %s" % (path, ex))
 
 		if not backupList:
 			self.session.open(MessageBox, _("No autoinstall list found"), type = MessageBox.TYPE_ERROR, timeout = 10)
@@ -320,7 +322,7 @@ class Config(ConfigListScreen,Screen):
 		except:
 			pass
 		try:
-			macaddr = open('/sys/class/net/eth0/address').read().strip().replace(':','')
+			macaddr = open('/sys/class/net/eth0/address').read().strip().replace(':', '')
 			os.unlink(path + macaddr)
 		except:
 			pass
@@ -329,7 +331,7 @@ class Config(ConfigListScreen,Screen):
 		enigma.eEPGCache.getInstance().save()
 
 	def appClosed(self, retval):
-		print "[AutoBackup] done:", retval
+		print("[AutoBackup] done:", retval)
 		if retval:
 			txt = _("Failed")
 		else:
@@ -340,7 +342,7 @@ class Config(ConfigListScreen,Screen):
 		self.changedWhere(self.cfgwhere)
 
 	def dataAvail(self, s):
-		print "[AutoBackup]", s.strip()
+		print("[AutoBackup]", s.strip())
 		self["status"].appendText(s)
 
 class BackupSelection(Screen):

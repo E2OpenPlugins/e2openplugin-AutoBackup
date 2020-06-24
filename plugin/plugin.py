@@ -1,3 +1,5 @@
+from __future__ import absolute_import
+from __future__ import print_function
 from . import _
 import time
 import os
@@ -40,22 +42,22 @@ def runBackup():
 			global container  # Need to keep a ref alive...
 			def appClosed(retval):
 				global container
-				print "[AutoBackup] complete, result:", retval
+				print("[AutoBackup] complete, result:", retval)
 				container = None
 			def dataAvail(data):
-				print "[AutoBackup]", data.rstrip()
-			print "[AutoBackup] start daily backup"
+				print("[AutoBackup]", data.rstrip())
+			print("[AutoBackup] start daily backup")
 			cmd = backupCommand()
 			container = enigma.eConsoleAppContainer()
 			if container.execute(cmd):
-				raise Exception, "failed to execute:" + cmd
+				raise (Exception, "failed to execute:" + cmd)
 			container.appClosed.append(appClosed)
 			container.dataAvail.append(dataAvail)
-		except Exception, e:
-			print "[AutoBackup] FAIL:", e
+		except Exception as e:
+			print("[AutoBackup] FAIL:", e)
 
 def main(session, **kwargs):
-	import ui
+	from . import ui
 	session.openWithCallback(doneConfiguring, ui.Config)
 
 def doneConfiguring(session, retval):
