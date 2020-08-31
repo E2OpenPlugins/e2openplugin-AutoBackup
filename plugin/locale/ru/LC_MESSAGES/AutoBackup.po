@@ -139,9 +139,9 @@ msgid "OK"
 msgstr "Ок"
 
 #: ../ui.py:125
-#, fuzzy
+
 msgid "Options/Restore"
-msgstr "Восстановить"
+msgstr "Опции"
 
 #: ../ui.py:196
 msgid "Remove autoinstall list"
