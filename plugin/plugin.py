@@ -9,7 +9,7 @@ from Components.config import config, \
 
 #Set default configuration
 config.plugins.autobackup = ConfigSubsection()
-config.plugins.autobackup.wakeup = ConfigClock(default=((3*60) + 0) * 60) # 3:00
+config.plugins.autobackup.wakeup = ConfigClock(default=((3 * 60) + 0) * 60) # 3:00
 config.plugins.autobackup.enabled = ConfigEnableDisable(default=False)
 config.plugins.autobackup.autoinstall = ConfigOnOff(default=True)
 config.plugins.autobackup.where = ConfigText(default="/media/hdd")
@@ -90,7 +90,7 @@ class AutoStartTimer:
 		if wake > 0:
 			if wake < now + atLeast:
 				# Tomorrow.
-				wake += 24*3600
+				wake += 24 * 3600
 			next = wake - now
 			# it could be that we do not have the correct system time yet,
 			# limit the update interval to 1h, to make sure we try again soon
