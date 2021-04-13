@@ -24,6 +24,8 @@ FRIENDLY = {
 	"/media/cf": _("CF"),
 	"/media/mmc1": _("SD"),
 	}
+
+
 def getLocationChoices():
 	result = []
 	for line in open('/proc/mounts', 'r'):
@@ -44,8 +46,10 @@ def getLocationChoices():
 			result.append((items[1], desc))
 	return result
 
+
 def getStandardFiles():
 	return [os.path.normpath(n.strip()) for n in open('/usr/lib/enigma2/python/Plugins/Extensions/AutoBackup/backup.cfg', 'r')]
+
 
 def getSelectedFiles():
 	result = getStandardFiles()
@@ -55,6 +59,7 @@ def getSelectedFiles():
 		# ignore missing user cfg file
 		pass
 	return result
+
 
 def saveSelectedFiles(files):
 	standard = getStandardFiles()
@@ -68,7 +73,8 @@ def saveSelectedFiles(files):
 	except Exception, ex:
 		print "[AutoBackup] Failed to write /etc/backup.cfg", ex
 
-class Config(ConfigListScreen,Screen):
+
+class Config(ConfigListScreen, Screen):
 	skin = """
 <screen position="center,center" size="560,400" title="AutoBackup Configuration" >
 	<ePixmap name="red"    position="0,0"   zPosition="2" size="140,40" pixmap="skin_default/buttons/red.png" transparent="1" alphatest="on" />
@@ -92,17 +98,17 @@ class Config(ConfigListScreen,Screen):
 	</widget>
 </screen>"""
 
-	def __init__(self, session, args = 0):
+	def __init__(self, session, args=0):
 		self.session = session
 		self.skinName = ["Config_AutoBackup", "Config"]
 		self.setup_title = _("AutoBackup Configuration")
 		Screen.__init__(self, session)
 		cfg = config.plugins.autobackup
-		choices=getLocationChoices()
+		choices = getLocationChoices()
 		if choices:
 			currentwhere = cfg.where.value
 			defaultchoice = choices[0][0]
-			for k,v in choices:
+			for k, v in choices:
 				if k == currentwhere:
 					defaultchoice = k
 					break
@@ -114,11 +120,11 @@ class Config(ConfigListScreen,Screen):
 			getConfigListEntry(_("Backup location"), self.cfgwhere),
 			getConfigListEntry(_("Daily automatic backup"), cfg.enabled),
 			getConfigListEntry(_("Automatic start time"), cfg.wakeup),
-			getConfigListEntry (_("Create Autoinstall"), cfg.autoinstall),
-			getConfigListEntry (_("EPG cache backup"), cfg.epgcache),
-			getConfigListEntry (_("Save previous backup"), cfg.prevbackup),
+			getConfigListEntry(_("Create Autoinstall"), cfg.autoinstall),
+			getConfigListEntry(_("EPG cache backup"), cfg.epgcache),
+			getConfigListEntry(_("Save previous backup"), cfg.prevbackup),
 			]
-		ConfigListScreen.__init__(self, configList, session=session, on_change = self.changedEntry)
+		ConfigListScreen.__init__(self, configList, session=session, on_change=self.changedEntry)
 		self["key_red"] = Button(_("Cancel"))
 		self["key_green"] = Button(_("OK"))
 		self["key_yellow"] = Button(_("Manual"))
@@ -149,10 +155,13 @@ class Config(ConfigListScreen,Screen):
 	def changedEntry(self):
 		for x in self.onChangedEntry:
 			x()
+
 	def getCurrentEntry(self):
 		return self["config"].getCurrent()[0]
+
 	def getCurrentValue(self):
 		return str(self["config"].getCurrent()[1].getText())
+
 	def createSummary(self):
 		from Screens.Setup import SetupSummary
 		return SetupSummary
@@ -180,12 +189,12 @@ class Config(ConfigListScreen,Screen):
 		config.plugins.autobackup.where.value = self.cfgwhere.value
 		config.plugins.autobackup.where.save()
 		self.saveAll()
-		self.close(True,self.session)
+		self.close(True, self.session)
 
 	def cancel(self):
 		for x in self["config"].list:
 			x[1].cancel()
-		self.close(False,self.session)
+		self.close(False, self.session)
 
 	def menu(self):
 		lst = [
@@ -196,7 +205,7 @@ class Config(ConfigListScreen,Screen):
 			(_("Remove autoinstall list"), self.doremoveautoinstall),
 			(_("Restore"), self.dorestore),
 		]
-		self.session.openWithCallback(self.menuDone, ChoiceBox, list = lst)
+		self.session.openWithCallback(self.menuDone, ChoiceBox, list=lst)
 
 	def menuDone(self, result):
 		if not result or not result[1]:
@@ -238,10 +247,10 @@ class Config(ConfigListScreen,Screen):
 					print "Failed to stat %s: %s" % (path, ex)
 
 		if not backupList:
-			self.session.open(MessageBox, _("No settings backups found"), type = MessageBox.TYPE_ERROR, timeout = 10)
+			self.session.open(MessageBox, _("No settings backups found"), type=MessageBox.TYPE_ERROR, timeout=10)
 			return
-		backupList.sort(key = lambda b: b[2], reverse = True)
-		self.session.openWithCallback(self.dorestorenow_reason, MessageBox, _("Choose settings backup which should be restored.\nDo you really want to restore these settings and restart?"), list = backupList)
+		backupList.sort(key=lambda b: b[2], reverse=True)
+		self.session.openWithCallback(self.dorestorenow_reason, MessageBox, _("Choose settings backup which should be restored.\nDo you really want to restore these settings and restart?"), list=backupList)
 
 	def dorestorenow_reason(self, path):
 		if not path:
@@ -277,10 +286,10 @@ class Config(ConfigListScreen,Screen):
 					print "Failed to stat %s: %s" % (path, ex)
 
 		if not backupList:
-			self.session.open(MessageBox, _("No autoinstall list found"), type = MessageBox.TYPE_ERROR, timeout = 10)
+			self.session.open(MessageBox, _("No autoinstall list found"), type=MessageBox.TYPE_ERROR, timeout=10)
 			return
-		backupList.sort(key = lambda b: b[2], reverse = True)
-		self.session.openWithCallback(self.doautoinstallnow, MessageBox, _("Choose a backup.\nThis will reinstall all plugins from your backup.\nDo you really want to reinstall?"), list = backupList)
+		backupList.sort(key=lambda b: b[2], reverse=True)
+		self.session.openWithCallback(self.doautoinstallnow, MessageBox, _("Choose a backup.\nThis will reinstall all plugins from your backup.\nDo you really want to reinstall?"), list=backupList)
 
 	def doautoinstallnow(self, path):
 		if not path:
@@ -306,10 +315,10 @@ class Config(ConfigListScreen,Screen):
 					print "Failed to stat %s: %s" % (path, ex)
 
 		if not backupList:
-			self.session.open(MessageBox, _("No autoinstall list found"), type = MessageBox.TYPE_ERROR, timeout = 10)
+			self.session.open(MessageBox, _("No autoinstall list found"), type=MessageBox.TYPE_ERROR, timeout=10)
 			return
-		backupList.sort(key = lambda b: b[2], reverse = True)
-		self.session.openWithCallback(self.doremoveautoinstallnow, MessageBox, _("Choose a backup.\nThis will delete autoinstall list.\nDo you really want to continue?"), list = backupList)
+		backupList.sort(key=lambda b: b[2], reverse=True)
+		self.session.openWithCallback(self.doremoveautoinstallnow, MessageBox, _("Choose a backup.\nThis will delete autoinstall list.\nDo you really want to continue?"), list=backupList)
 
 	def doremoveautoinstallnow(self, path):
 		if not path:
@@ -320,7 +329,7 @@ class Config(ConfigListScreen,Screen):
 		except:
 			pass
 		try:
-			macaddr = open('/sys/class/net/eth0/address').read().strip().replace(':','')
+			macaddr = open('/sys/class/net/eth0/address').read().strip().replace(':', '')
 			os.unlink(path + macaddr)
 		except:
 			pass
@@ -342,6 +351,7 @@ class Config(ConfigListScreen,Screen):
 	def dataAvail(self, s):
 		print "[AutoBackup]", s.strip()
 		self["status"].appendText(s)
+
 
 class BackupSelection(Screen):
 	skin = """
@@ -366,7 +376,7 @@ class BackupSelection(Screen):
 		selectedFiles = getSelectedFiles()
 		defaultDir = '/'
 		inhibitDirs = ["/bin", "/boot", "/dev", "/autofs", "/lib", "/proc", "/sbin", "/sys", "/hdd", "/tmp", "/mnt", "/media"]
-		self.filelist = MultiFileSelectList(selectedFiles, defaultDir, inhibitDirs = inhibitDirs )
+		self.filelist = MultiFileSelectList(selectedFiles, defaultDir, inhibitDirs=inhibitDirs)
 		self["checkList"] = self.filelist
 		self["actions"] = ActionMap(["DirectionActions", "OkCancelActions", "ShortcutActions"],
 		{
@@ -414,4 +424,3 @@ class BackupSelection(Screen):
 	def okClicked(self):
 		if self.filelist.canDescent():
 			self.filelist.descent()
-
