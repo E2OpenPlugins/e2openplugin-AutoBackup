@@ -68,7 +68,7 @@ def saveSelectedFiles(files):
 	except Exception, ex:
 		print "[AutoBackup] Failed to write /etc/backup.cfg", ex
 
-class Config(ConfigListScreen,Screen):
+class Config(ConfigListScreen, Screen):
 	skin = """
 <screen position="center,center" size="560,400" title="AutoBackup Configuration" >
 	<ePixmap name="red"    position="0,0"   zPosition="2" size="140,40" pixmap="skin_default/buttons/red.png" transparent="1" alphatest="on" />
@@ -102,7 +102,7 @@ class Config(ConfigListScreen,Screen):
 		if choices:
 			currentwhere = cfg.where.value
 			defaultchoice = choices[0][0]
-			for k,v in choices:
+			for k, v in choices:
 				if k == currentwhere:
 					defaultchoice = k
 					break
@@ -180,12 +180,12 @@ class Config(ConfigListScreen,Screen):
 		config.plugins.autobackup.where.value = self.cfgwhere.value
 		config.plugins.autobackup.where.save()
 		self.saveAll()
-		self.close(True,self.session)
+		self.close(True, self.session)
 
 	def cancel(self):
 		for x in self["config"].list:
 			x[1].cancel()
-		self.close(False,self.session)
+		self.close(False, self.session)
 
 	def menu(self):
 		lst = [
@@ -320,7 +320,7 @@ class Config(ConfigListScreen,Screen):
 		except:
 			pass
 		try:
-			macaddr = open('/sys/class/net/eth0/address').read().strip().replace(':','')
+			macaddr = open('/sys/class/net/eth0/address').read().strip().replace(':', '')
 			os.unlink(path + macaddr)
 		except:
 			pass
