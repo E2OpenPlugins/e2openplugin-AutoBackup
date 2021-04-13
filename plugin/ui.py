@@ -114,9 +114,9 @@ class Config(ConfigListScreen,Screen):
 			getConfigListEntry(_("Backup location"), self.cfgwhere),
 			getConfigListEntry(_("Daily automatic backup"), cfg.enabled),
 			getConfigListEntry(_("Automatic start time"), cfg.wakeup),
-			getConfigListEntry (_("Create Autoinstall"), cfg.autoinstall),
-			getConfigListEntry (_("EPG cache backup"), cfg.epgcache),
-			getConfigListEntry (_("Save previous backup"), cfg.prevbackup),
+			getConfigListEntry(_("Create Autoinstall"), cfg.autoinstall),
+			getConfigListEntry(_("EPG cache backup"), cfg.epgcache),
+			getConfigListEntry(_("Save previous backup"), cfg.prevbackup),
 			]
 		ConfigListScreen.__init__(self, configList, session=session, on_change=self.changedEntry)
 		self["key_red"] = Button(_("Cancel"))
@@ -366,7 +366,7 @@ class BackupSelection(Screen):
 		selectedFiles = getSelectedFiles()
 		defaultDir = '/'
 		inhibitDirs = ["/bin", "/boot", "/dev", "/autofs", "/lib", "/proc", "/sbin", "/sys", "/hdd", "/tmp", "/mnt", "/media"]
-		self.filelist = MultiFileSelectList(selectedFiles, defaultDir, inhibitDirs=inhibitDirs )
+		self.filelist = MultiFileSelectList(selectedFiles, defaultDir, inhibitDirs=inhibitDirs)
 		self["checkList"] = self.filelist
 		self["actions"] = ActionMap(["DirectionActions", "OkCancelActions", "ShortcutActions"],
 		{

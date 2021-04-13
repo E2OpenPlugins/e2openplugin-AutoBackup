@@ -2,7 +2,7 @@ from distutils.core import setup
 import setup_translate
 
 pkg = 'Extensions.AutoBackup'
-setup (name='enigma2-plugin-extensions-autobackup',
+setup(name='enigma2-plugin-extensions-autobackup',
        version='0.1',
        description='AutoBackup',
        package_dir={pkg: 'plugin'},
