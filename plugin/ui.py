@@ -424,4 +424,3 @@ class BackupSelection(Screen):
 	def okClicked(self):
 		if self.filelist.canDescent():
 			self.filelist.descent()
-

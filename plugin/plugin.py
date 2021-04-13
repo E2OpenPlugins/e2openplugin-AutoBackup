@@ -76,7 +76,7 @@ def doneConfiguring(session, retval):
 class AutoStartTimer:
 	def __init__(self, session):
 		self.session = session
-		self.timer = enigma.eTimer() 
+		self.timer = enigma.eTimer()
 		self.timer.callback.append(self.onTimer)
 		self.update()
 
@@ -119,7 +119,7 @@ class AutoStartTimer:
 		# If we're close enough, we're okay...
 		atLeast = 0
 		if abs(wake - now) < 60:
-			runBackup() 
+			runBackup()
 			atLeast = 60
 		self.update(atLeast)
 
