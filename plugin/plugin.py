@@ -9,12 +9,12 @@ from Components.config import config, \
 
 #Set default configuration
 config.plugins.autobackup = ConfigSubsection()
-config.plugins.autobackup.wakeup = ConfigClock(default = ((3*60) + 0) * 60) # 3:00
-config.plugins.autobackup.enabled = ConfigEnableDisable(default = False)
-config.plugins.autobackup.autoinstall = ConfigOnOff(default = True)
-config.plugins.autobackup.where = ConfigText(default = "/media/hdd")
-config.plugins.autobackup.epgcache = ConfigOnOff(default = False)
-config.plugins.autobackup.prevbackup = NoSave(ConfigOnOff(default = False))
+config.plugins.autobackup.wakeup = ConfigClock(default=((3*60) + 0) * 60) # 3:00
+config.plugins.autobackup.enabled = ConfigEnableDisable(default=False)
+config.plugins.autobackup.autoinstall = ConfigOnOff(default=True)
+config.plugins.autobackup.where = ConfigText(default="/media/hdd")
+config.plugins.autobackup.epgcache = ConfigOnOff(default=False)
+config.plugins.autobackup.prevbackup = NoSave(ConfigOnOff(default=False))
 
 # Global variables
 autoStartTimer = None
@@ -83,7 +83,7 @@ class AutoStartTimer:
 		else:
 			return -1
 
-	def update(self, atLeast = 0):
+	def update(self, atLeast=0):
 		self.timer.stop()
 		wake = self.getWakeTime()
 		now = int(time.time())
@@ -133,14 +133,14 @@ def Plugins(**kwargs):
 	return [
 		PluginDescriptor(
 			name="AutoBackup",
-			description = description,
-			where = [PluginDescriptor.WHERE_AUTOSTART, PluginDescriptor.WHERE_SESSIONSTART],
-			fnc = autostart
+			description=description,
+			where=[PluginDescriptor.WHERE_AUTOSTART, PluginDescriptor.WHERE_SESSIONSTART],
+			fnc=autostart
 		),
 		PluginDescriptor(
-			name= "Autobackup",
+			name="Autobackup",
 			description=description,
-			where = PluginDescriptor.WHERE_MENU,
+			where=PluginDescriptor.WHERE_MENU,
 			needsRestart=False,
 			fnc=checkmenu
 		)

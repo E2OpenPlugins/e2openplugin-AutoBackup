@@ -92,7 +92,7 @@ class Config(ConfigListScreen,Screen):
 	</widget>
 </screen>"""
 
-	def __init__(self, session, args = 0):
+	def __init__(self, session, args=0):
 		self.session = session
 		self.skinName = ["Config_AutoBackup", "Config"]
 		self.setup_title = _("AutoBackup Configuration")
@@ -118,7 +118,7 @@ class Config(ConfigListScreen,Screen):
 			getConfigListEntry (_("EPG cache backup"), cfg.epgcache),
 			getConfigListEntry (_("Save previous backup"), cfg.prevbackup),
 			]
-		ConfigListScreen.__init__(self, configList, session=session, on_change = self.changedEntry)
+		ConfigListScreen.__init__(self, configList, session=session, on_change=self.changedEntry)
 		self["key_red"] = Button(_("Cancel"))
 		self["key_green"] = Button(_("OK"))
 		self["key_yellow"] = Button(_("Manual"))
@@ -196,7 +196,7 @@ class Config(ConfigListScreen,Screen):
 			(_("Remove autoinstall list"), self.doremoveautoinstall),
 			(_("Restore"), self.dorestore),
 		]
-		self.session.openWithCallback(self.menuDone, ChoiceBox, list = lst)
+		self.session.openWithCallback(self.menuDone, ChoiceBox, list=lst)
 
 	def menuDone(self, result):
 		if not result or not result[1]:
@@ -238,10 +238,10 @@ class Config(ConfigListScreen,Screen):
 					print "Failed to stat %s: %s" % (path, ex)
 
 		if not backupList:
-			self.session.open(MessageBox, _("No settings backups found"), type = MessageBox.TYPE_ERROR, timeout = 10)
+			self.session.open(MessageBox, _("No settings backups found"), type=MessageBox.TYPE_ERROR, timeout=10)
 			return
-		backupList.sort(key = lambda b: b[2], reverse = True)
-		self.session.openWithCallback(self.dorestorenow_reason, MessageBox, _("Choose settings backup which should be restored.\nDo you really want to restore these settings and restart?"), list = backupList)
+		backupList.sort(key=lambda b: b[2], reverse=True)
+		self.session.openWithCallback(self.dorestorenow_reason, MessageBox, _("Choose settings backup which should be restored.\nDo you really want to restore these settings and restart?"), list=backupList)
 
 	def dorestorenow_reason(self, path):
 		if not path:
@@ -277,10 +277,10 @@ class Config(ConfigListScreen,Screen):
 					print "Failed to stat %s: %s" % (path, ex)
 
 		if not backupList:
-			self.session.open(MessageBox, _("No autoinstall list found"), type = MessageBox.TYPE_ERROR, timeout = 10)
+			self.session.open(MessageBox, _("No autoinstall list found"), type=MessageBox.TYPE_ERROR, timeout=10)
 			return
-		backupList.sort(key = lambda b: b[2], reverse = True)
-		self.session.openWithCallback(self.doautoinstallnow, MessageBox, _("Choose a backup.\nThis will reinstall all plugins from your backup.\nDo you really want to reinstall?"), list = backupList)
+		backupList.sort(key=lambda b: b[2], reverse=True)
+		self.session.openWithCallback(self.doautoinstallnow, MessageBox, _("Choose a backup.\nThis will reinstall all plugins from your backup.\nDo you really want to reinstall?"), list=backupList)
 
 	def doautoinstallnow(self, path):
 		if not path:
@@ -306,10 +306,10 @@ class Config(ConfigListScreen,Screen):
 					print "Failed to stat %s: %s" % (path, ex)
 
 		if not backupList:
-			self.session.open(MessageBox, _("No autoinstall list found"), type = MessageBox.TYPE_ERROR, timeout = 10)
+			self.session.open(MessageBox, _("No autoinstall list found"), type=MessageBox.TYPE_ERROR, timeout=10)
 			return
-		backupList.sort(key = lambda b: b[2], reverse = True)
-		self.session.openWithCallback(self.doremoveautoinstallnow, MessageBox, _("Choose a backup.\nThis will delete autoinstall list.\nDo you really want to continue?"), list = backupList)
+		backupList.sort(key=lambda b: b[2], reverse=True)
+		self.session.openWithCallback(self.doremoveautoinstallnow, MessageBox, _("Choose a backup.\nThis will delete autoinstall list.\nDo you really want to continue?"), list=backupList)
 
 	def doremoveautoinstallnow(self, path):
 		if not path:
@@ -366,7 +366,7 @@ class BackupSelection(Screen):
 		selectedFiles = getSelectedFiles()
 		defaultDir = '/'
 		inhibitDirs = ["/bin", "/boot", "/dev", "/autofs", "/lib", "/proc", "/sbin", "/sys", "/hdd", "/tmp", "/mnt", "/media"]
-		self.filelist = MultiFileSelectList(selectedFiles, defaultDir, inhibitDirs = inhibitDirs )
+		self.filelist = MultiFileSelectList(selectedFiles, defaultDir, inhibitDirs=inhibitDirs )
 		self["checkList"] = self.filelist
 		self["actions"] = ActionMap(["DirectionActions", "OkCancelActions", "ShortcutActions"],
 		{
