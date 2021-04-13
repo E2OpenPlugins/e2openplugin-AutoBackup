@@ -33,15 +33,18 @@ def backupCommand():
 	cmd += " " + str(int(config.plugins.autobackup.prevbackup.value))
 	return cmd
 
+
 def runBackup():
 	destination = config.plugins.autobackup.where.value
 	if destination:
 		try:
 			global container  # Need to keep a ref alive...
+
 			def appClosed(retval):
 				global container
 				print "[AutoBackup] complete, result:", retval
 				container = None
+
 			def dataAvail(data):
 				print "[AutoBackup]", data.rstrip()
 			print "[AutoBackup] start daily backup"
@@ -54,9 +57,11 @@ def runBackup():
 		except Exception, e:
 			print "[AutoBackup] FAIL:", e
 
+
 def main(session, **kwargs):
 	import ui
 	session.openWithCallback(doneConfiguring, ui.Config)
+
 
 def doneConfiguring(session, retval):
 	"user has closed configuration, check new values...."
@@ -66,6 +71,8 @@ def doneConfiguring(session, retval):
 
 ##################################
 # Autostart section
+
+
 class AutoStartTimer:
 	def __init__(self, session):
 		self.session = session
@@ -125,8 +132,10 @@ def autostart(reason, session=None, **kwargs):
 			if autoStartTimer is None:
 				autoStartTimer = AutoStartTimer(session)
 
+
 def checkmenu(menuid):
 	return [(_("Auto backup"), main, "autobackup", 8)] if menuid == "setup" else []
+
 
 def Plugins(**kwargs):
 	description = _("Automatic settings backup")

@@ -24,6 +24,8 @@ FRIENDLY = {
 	"/media/cf": _("CF"),
 	"/media/mmc1": _("SD"),
 	}
+
+
 def getLocationChoices():
 	result = []
 	for line in open('/proc/mounts', 'r'):
@@ -44,8 +46,10 @@ def getLocationChoices():
 			result.append((items[1], desc))
 	return result
 
+
 def getStandardFiles():
 	return [os.path.normpath(n.strip()) for n in open('/usr/lib/enigma2/python/Plugins/Extensions/AutoBackup/backup.cfg', 'r')]
+
 
 def getSelectedFiles():
 	result = getStandardFiles()
@@ -55,6 +59,7 @@ def getSelectedFiles():
 		# ignore missing user cfg file
 		pass
 	return result
+
 
 def saveSelectedFiles(files):
 	standard = getStandardFiles()
@@ -67,6 +72,7 @@ def saveSelectedFiles(files):
 		f.close()
 	except Exception, ex:
 		print "[AutoBackup] Failed to write /etc/backup.cfg", ex
+
 
 class Config(ConfigListScreen, Screen):
 	skin = """
@@ -149,10 +155,13 @@ class Config(ConfigListScreen, Screen):
 	def changedEntry(self):
 		for x in self.onChangedEntry:
 			x()
+
 	def getCurrentEntry(self):
 		return self["config"].getCurrent()[0]
+
 	def getCurrentValue(self):
 		return str(self["config"].getCurrent()[1].getText())
+
 	def createSummary(self):
 		from Screens.Setup import SetupSummary
 		return SetupSummary
@@ -342,6 +351,7 @@ class Config(ConfigListScreen, Screen):
 	def dataAvail(self, s):
 		print "[AutoBackup]", s.strip()
 		self["status"].appendText(s)
+
 
 class BackupSelection(Screen):
 	skin = """
