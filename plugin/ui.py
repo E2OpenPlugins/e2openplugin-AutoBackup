@@ -378,6 +378,7 @@ class BackupSelection(Screen):
 		inhibitDirs = ["/bin", "/boot", "/dev", "/autofs", "/lib", "/proc", "/sbin", "/sys", "/hdd", "/tmp", "/mnt", "/media"]
 		self.filelist = MultiFileSelectList(selectedFiles, defaultDir, inhibitDirs=inhibitDirs)
 		self["checkList"] = self.filelist
+		self.prev_files = selectedFiles
 		self["actions"] = ActionMap(["DirectionActions", "OkCancelActions", "ShortcutActions"],
 		{
 			"cancel": self.exit,
@@ -419,7 +420,14 @@ class BackupSelection(Screen):
 		self.close(None)
 
 	def exit(self):
-		self.close(None)
+		if self.prev_files != [os.path.normpath(n.strip()) for n in self["checkList"].getSelectedList()]:
+			self.session.openWithCallback(self.exitConfirm, MessageBox, _("Really close without saving settings?"))
+		else:
+			self.close(None)
+
+	def exitConfirm(self, result):
+		if result:
+			self.close(None)
 
 	def okClicked(self):
 		if self.filelist.canDescent():
