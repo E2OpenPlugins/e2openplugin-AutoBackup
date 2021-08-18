@@ -122,9 +122,8 @@ msgid "No backup present"
 msgstr "Не найден бэкап"
 
 #: ../ui.py:250
-#, fuzzy
 msgid "No settings backups found"
-msgstr "Автоматический бэкап настроек"
+msgstr "Не найден бэкап настроек"
 
 #: ../ui.py:171
 msgid "No suitable media found, insert USB stick, flash card or harddisk."
