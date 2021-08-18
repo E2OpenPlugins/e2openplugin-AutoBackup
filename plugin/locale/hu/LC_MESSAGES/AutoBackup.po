@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-06-02 11:30+0200\n"
+"POT-Creation-Date: 2021-08-18 06:17+0300\n"
 "PO-Revision-Date: 2020-06-02 09:52+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -18,39 +18,39 @@ msgstr ""
 "X-Generator: Poedit 2.3.1\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: ../plugin.py:129
+#: ../plugin.py:137
 msgid "Auto backup"
 msgstr "Automatikus biztonsági mentés"
 
-#: ../ui.py:98 ../ui.py:146
+#: ../ui.py:104 ../ui.py:152
 msgid "AutoBackup Configuration"
 msgstr "Automatikus mentés beállításai"
 
-#: ../plugin.py:132
+#: ../plugin.py:141
 msgid "Automatic settings backup"
 msgstr "Automatikus beállításmentés"
 
-#: ../ui.py:116
+#: ../ui.py:122
 msgid "Automatic start time"
 msgstr "Automatikus kezdési idő"
 
-#: ../ui.py:194
+#: ../ui.py:203
 msgid "Backup EPG cache"
 msgstr "EPG cache biztonsági mentése"
 
-#: ../ui.py:114
+#: ../ui.py:120
 msgid "Backup location"
 msgstr "Biztonsági mentés helye"
 
-#: ../ui.py:24 ../ui.py:41
+#: ../ui.py:24 ../ui.py:43
 msgid "CF"
 msgstr "CF"
 
-#: ../ui.py:122 ../ui.py:363
+#: ../ui.py:128 ../ui.py:373
 msgid "Cancel"
 msgstr "Mégsem"
 
-#: ../ui.py:312
+#: ../ui.py:321
 msgid ""
 "Choose a backup.\n"
 "This will delete autoinstall list.\n"
@@ -60,7 +60,7 @@ msgstr ""
 "Ez törölni fogja az automatikus telepítő listát.\n"
 "Biztosan folytatja?"
 
-#: ../ui.py:283
+#: ../ui.py:292
 msgid ""
 "Choose a backup.\n"
 "This will reinstall all plugins from your backup.\n"
@@ -70,7 +70,7 @@ msgstr ""
 "Ez újratelepíti az összes plugint a biztonsági mentésből.\n"
 "Biztosan folytatja?"
 
-#: ../ui.py:244
+#: ../ui.py:253
 msgid ""
 "Choose settings backup which should be restored.\n"
 "Do you really want to restore these settings and restart?"
@@ -78,91 +78,91 @@ msgstr ""
 "Válassza ki a beállításmentést, amelyeket vissza szeretne állítani.\n"
 "Valóban ezeket szeretné visszaállítani, és újraindítani a készüléket?"
 
-#: ../ui.py:117
+#: ../ui.py:123
 msgid "Create Autoinstall"
 msgstr "Automatikus telepítő készítése"
 
-#: ../ui.py:115
+#: ../ui.py:121
 msgid "Daily automatic backup"
 msgstr "Automatikus biztonsági mentés naponta"
 
-#: ../ui.py:400
+#: ../ui.py:411
 msgid "Deselect"
 msgstr "Kiválasztás megszüntetése"
 
-#: ../ui.py:251
+#: ../ui.py:260
 msgid "Do you want to restore your settings?"
 msgstr "Vissza szeretné állítani a beállításait?"
 
-#: ../ui.py:336
+#: ../ui.py:345
 msgid "Done"
 msgstr "Kész"
 
-#: ../ui.py:118
+#: ../ui.py:124
 msgid "EPG cache backup"
 msgstr "EPG cache biztonsági mentése"
 
-#: ../ui.py:334
+#: ../ui.py:343
 msgid "Failed"
 msgstr "Sikertelen"
 
-#: ../ui.py:22 ../ui.py:43
+#: ../ui.py:22 ../ui.py:45
 msgid "Harddisk"
 msgstr "Merevlemez"
 
-#: ../ui.py:169
+#: ../ui.py:178
 msgid "Last backup date"
 msgstr "Utolsó biztonsági mentés dátuma"
 
-#: ../ui.py:124
+#: ../ui.py:130
 msgid "Manual"
 msgstr "Kézi"
 
-#: ../ui.py:280 ../ui.py:309
+#: ../ui.py:289 ../ui.py:318
 msgid "No autoinstall list found"
 msgstr "Nem található automatikus telepítő lista"
 
-#: ../ui.py:171 ../ui.py:174
+#: ../ui.py:180 ../ui.py:183
 msgid "No backup present"
 msgstr "Nem található biztonsági mentés"
 
-#: ../ui.py:241
+#: ../ui.py:250
 msgid "No settings backups found"
 msgstr "Nincsenek beállításmentések"
 
-#: ../ui.py:162
+#: ../ui.py:171
 msgid "No suitable media found, insert USB stick, flash card or harddisk."
 msgstr "Nem található megfelelő adathordozó! Csatlakoztasson egy pendrive-ot, memóriakártyát vagy merevlemezt."
 
-#: ../ui.py:111
+#: ../ui.py:117
 msgid "Nowhere"
 msgstr "Sehol"
 
-#: ../ui.py:123
+#: ../ui.py:129
 msgid "OK"
 msgstr "OK"
 
-#: ../ui.py:125
-msgid "Options/Restore"
-msgstr "Beállítások/Visszaállítás"
+#: ../ui.py:424
+msgid "Really close without saving settings?"
+msgstr ""
 
-#: ../ui.py:196
+#: ../ui.py:205
 msgid "Remove autoinstall list"
 msgstr "Automatikus telepítő lista eltávolítása"
 
-#: ../ui.py:197
+#: ../ui.py:131 ../ui.py:206
 msgid "Restore"
 msgstr "Visszaállítás"
 
-#: ../ui.py:193
+#: ../ui.py:202
 msgid "Run a backup now"
 msgstr "Biztonsági mentés indítása most"
 
-#: ../ui.py:195
+#: ../ui.py:204
 msgid "Run autoinstall"
 msgstr "Automatikus telepítő indítása"
 
-#: ../ui.py:222 ../ui.py:261 ../ui.py:290
+#: ../ui.py:231 ../ui.py:270 ../ui.py:299
 msgid "Running..."
 msgstr "Futtatás..."
 
@@ -170,23 +170,23 @@ msgstr "Futtatás..."
 msgid "SD"
 msgstr "SD"
 
-#: ../ui.py:364
+#: ../ui.py:374
 msgid "Save"
 msgstr "Mentés"
 
-#: ../ui.py:119
+#: ../ui.py:125
 msgid "Save previous backup"
 msgstr "Előző biztonsági mentés mentése"
 
-#: ../ui.py:402
+#: ../ui.py:413
 msgid "Select"
 msgstr "Kiválasztás"
 
-#: ../ui.py:192
+#: ../ui.py:201
 msgid "Select files to backup"
 msgstr "Fájlok kiválasztása a biztonsági mentéshez"
 
-#: ../ui.py:394
+#: ../ui.py:405
 msgid "Select files/folders to backup"
 msgstr "Fájlok/mappák kiválasztása a biztonsági mentéshez"
 
@@ -194,10 +194,10 @@ msgstr "Fájlok/mappák kiválasztása a biztonsági mentéshez"
 msgid "USB"
 msgstr "USB"
 
-#: ../ui.py:236 ../ui.py:275 ../ui.py:304
+#: ../ui.py:245 ../ui.py:284 ../ui.py:313
 msgid "from: "
 msgstr "innen: "
 
-#: ../ui.py:38
+#: ../ui.py:40
 msgid "root"
 msgstr "root"
