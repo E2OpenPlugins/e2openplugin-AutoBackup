@@ -75,7 +75,7 @@ msgstr ""
 
 #: ../ui.py:123
 msgid "Create Autoinstall"
-msgstr "Создать автоинсталляцию"
+msgstr "Создать автоинсталляцию (установленные ipk)"
 
 #: ../ui.py:121
 msgid "Daily automatic backup"
