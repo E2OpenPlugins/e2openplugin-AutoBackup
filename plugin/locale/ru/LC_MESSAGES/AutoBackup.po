@@ -75,7 +75,7 @@ msgstr ""
 
 #: ../ui.py:117
 msgid "Create Autoinstall"
-msgstr "Создать автоинсталляцию"
+msgstr "Создать автоинсталляцию (установленные ipk)"
 
 #: ../ui.py:115
 msgid "Daily automatic backup"
@@ -139,9 +139,8 @@ msgid "OK"
 msgstr "Ок"
 
 #: ../ui.py:125
-
-msgid "Options/Restore"
-msgstr "Опции"
+msgid "Really close without saving settings?"
+msgstr "Действительно закрыть без сохранения настроек?"
 
 #: ../ui.py:196
 msgid "Remove autoinstall list"
