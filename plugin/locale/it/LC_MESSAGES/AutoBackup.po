@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: AutoBackup\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-27 18:54+0200\n"
+"POT-Creation-Date: 2021-08-18 06:17+0300\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Gringo <openpli@tiscali.it>\n"
 "Language-Team: \n"
@@ -19,47 +19,47 @@ msgstr ""
 "X-Generator: Poedit 1.8.7.1\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 
-#: ../plugin.py:129
+#: ../plugin.py:137
 #, fuzzy
 msgid "Auto backup"
 msgstr "Backup automatico delle impostazioni"
 
-#: ../ui.py:98 ../ui.py:146
+#: ../ui.py:104 ../ui.py:152
 msgid "AutoBackup Configuration"
 msgstr "Configurazione AutoBackup"
 
-#: ../plugin.py:132
+#: ../plugin.py:141
 msgid "Automatic settings backup"
 msgstr "Backup automatico delle impostazioni"
 
-#: ../ui.py:116
+#: ../ui.py:122
 msgid "Automatic start time"
 msgstr "Orario di inizio dell'avvio automatico"
 
-#: ../ui.py:194
+#: ../ui.py:203
 msgid "Backup EPG cache"
 msgstr "Salvare cache EPG"
 
-#: ../ui.py:114
+#: ../ui.py:120
 msgid "Backup location"
 msgstr "Destinazione dei backup"
 
-#: ../ui.py:24 ../ui.py:41
+#: ../ui.py:24 ../ui.py:43
 msgid "CF"
 msgstr "Scheda CF"
 
-#: ../ui.py:122 ../ui.py:363
+#: ../ui.py:128 ../ui.py:373
 msgid "Cancel"
 msgstr "Annullare"
 
-#: ../ui.py:312
+#: ../ui.py:321
 msgid ""
 "Choose a backup.\n"
 "This will delete autoinstall list.\n"
 "Do you really want to continue?"
 msgstr ""
 
-#: ../ui.py:283
+#: ../ui.py:292
 #, fuzzy
 msgid ""
 "Choose a backup.\n"
@@ -69,7 +69,7 @@ msgstr ""
 "Tutti i plugin saranno reinstallati dal backup su %s.\n"
 "Si desidera veramente reinstallare?"
 
-#: ../ui.py:244
+#: ../ui.py:253
 #, fuzzy
 msgid ""
 "Choose settings backup which should be restored.\n"
@@ -78,94 +78,93 @@ msgstr ""
 "Il backup sarà ripristinato su %s.\n"
 "Si desidera veramente ripristinare le impostazioni e riavviare?"
 
-#: ../ui.py:117
+#: ../ui.py:123
 msgid "Create Autoinstall"
 msgstr "Creare un backup utilizzabile per il ripristino automatico"
 
-#: ../ui.py:115
+#: ../ui.py:121
 msgid "Daily automatic backup"
 msgstr "Backup giornaliero automatico"
 
-#: ../ui.py:400
+#: ../ui.py:411
 msgid "Deselect"
 msgstr "Deselezionare"
 
-#: ../ui.py:251
+#: ../ui.py:260
 msgid "Do you want to restore your settings?"
 msgstr ""
 
-#: ../ui.py:336
+#: ../ui.py:345
 msgid "Done"
 msgstr "Fatto"
 
-#: ../ui.py:118
+#: ../ui.py:124
 msgid "EPG cache backup"
 msgstr "Backup della cache EPG"
 
-#: ../ui.py:334
+#: ../ui.py:343
 msgid "Failed"
 msgstr "Non riuscito"
 
-#: ../ui.py:22 ../ui.py:43
+#: ../ui.py:22 ../ui.py:45
 msgid "Harddisk"
 msgstr "Disco rigido"
 
-#: ../ui.py:169
+#: ../ui.py:178
 msgid "Last backup date"
 msgstr "Data ultimo backup"
 
-#: ../ui.py:124
+#: ../ui.py:130
 msgid "Manual"
 msgstr "Manuale"
 
-#: ../ui.py:280 ../ui.py:309
+#: ../ui.py:289 ../ui.py:318
 #, fuzzy
 msgid "No autoinstall list found"
 msgstr "Rimuovere elenco ripristino automatico"
 
-#: ../ui.py:171 ../ui.py:174
+#: ../ui.py:180 ../ui.py:183
 msgid "No backup present"
 msgstr "Nessun backup presente"
 
-#: ../ui.py:241
+#: ../ui.py:250
 #, fuzzy
 msgid "No settings backups found"
 msgstr "Backup automatico delle impostazioni"
 
-#: ../ui.py:162
+#: ../ui.py:171
 msgid "No suitable media found, insert USB stick, flash card or harddisk."
 msgstr "Nessuna unità trovata, inserire una chiavetta USB, scheda flash o disco rigido."
 
-#: ../ui.py:111
+#: ../ui.py:117
 msgid "Nowhere"
 msgstr "Nessuna destinazione"
 
-#: ../ui.py:123
+#: ../ui.py:129
 msgid "OK"
 msgstr "OK"
 
-#: ../ui.py:125
-#, fuzzy
-msgid "Options/Restore"
-msgstr "Ripristinare"
+#: ../ui.py:424
+msgid "Really close without saving settings?"
+msgstr ""
 
-#: ../ui.py:196
+#: ../ui.py:205
 msgid "Remove autoinstall list"
 msgstr "Rimuovere elenco ripristino automatico"
 
-#: ../ui.py:197
+#: ../ui.py:131 ../ui.py:206
 msgid "Restore"
 msgstr "Ripristinare"
 
-#: ../ui.py:193
+#: ../ui.py:202
 msgid "Run a backup now"
 msgstr "Eseguire un backup adesso"
 
-#: ../ui.py:195
+#: ../ui.py:204
 msgid "Run autoinstall"
 msgstr "Eseguire un ripristino automatico"
 
-#: ../ui.py:222 ../ui.py:261 ../ui.py:290
+#: ../ui.py:231 ../ui.py:270 ../ui.py:299
 msgid "Running..."
 msgstr "In esecuzione..."
 
@@ -173,23 +172,23 @@ msgstr "In esecuzione..."
 msgid "SD"
 msgstr "Scheda SD"
 
-#: ../ui.py:364
+#: ../ui.py:374
 msgid "Save"
 msgstr "Salvare"
 
-#: ../ui.py:119
+#: ../ui.py:125
 msgid "Save previous backup"
 msgstr "Salvare backup precedente"
 
-#: ../ui.py:402
+#: ../ui.py:413
 msgid "Select"
 msgstr "Selezionare"
 
-#: ../ui.py:192
+#: ../ui.py:201
 msgid "Select files to backup"
 msgstr "Selezionare file da salvare"
 
-#: ../ui.py:394
+#: ../ui.py:405
 msgid "Select files/folders to backup"
 msgstr "Selezionare i file e le cartelle da includere nel backup"
 
@@ -197,10 +196,10 @@ msgstr "Selezionare i file e le cartelle da includere nel backup"
 msgid "USB"
 msgstr "Unità USB"
 
-#: ../ui.py:236 ../ui.py:275 ../ui.py:304
+#: ../ui.py:245 ../ui.py:284 ../ui.py:313
 msgid "from: "
 msgstr ""
 
-#: ../ui.py:38
+#: ../ui.py:40
 msgid "root"
 msgstr "root"
