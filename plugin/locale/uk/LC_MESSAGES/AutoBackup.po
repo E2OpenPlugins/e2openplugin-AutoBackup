@@ -11,7 +11,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Poedit 1.8.7\n"
+"X-Generator: Poedit 3.0\n"
 
 #: ../plugin.py:137
 msgid "Auto backup"
@@ -51,7 +51,7 @@ msgid ""
 "This will delete autoinstall list.\n"
 "Do you really want to continue?"
 msgstr ""
-""Виберіть резервну копію.\n"
+"\"Виберіть резервну копію.\n"
 "Буде видалено список автовстановлення. \n"
 "Ви дійсно хочете продовжити?"
 
