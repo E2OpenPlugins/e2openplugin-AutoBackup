@@ -10,18 +10,18 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Poedit 2.0.4\n"
+"Plural-Forms: nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
+"|| n%100>=20) ? 1 : 2;\n"
+"X-Generator: Poedit 2.4.2\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 
 #: ../plugin.py:137
-#, fuzzy
 msgid "Auto backup"
-msgstr "Automatinė nustatymų atsarginė kopija"
+msgstr "Automatinis atsarginis kopijavimas"
 
 #: ../ui.py:104 ../ui.py:152
 msgid "AutoBackup Configuration"
-msgstr "Automatinės atsarginės kopijos konfigūravimas"
+msgstr "AutoBackup konfigūravimas"
 
 #: ../plugin.py:141
 msgid "Automatic settings backup"
@@ -53,25 +53,27 @@ msgid ""
 "This will delete autoinstall list.\n"
 "Do you really want to continue?"
 msgstr ""
+"Pasirinkite atsarginę kopiją.\n"
+"Tai panaikins autoįdiegimo sąrašą.\n"
+"Ar tikrai norite tęsti?"
 
 #: ../ui.py:292
-#, fuzzy
 msgid ""
 "Choose a backup.\n"
 "This will reinstall all plugins from your backup.\n"
 "Do you really want to reinstall?"
 msgstr ""
-"Atsarginė kopija bus atkurta į %s.\n"
-"Ar tikrai norite atkurti šiuos nustatymus ir paleisti iš naujo?"
+"Pasirinkite atsarginę kopiją.\n"
+"Tai iš naujo įdiegs visus įskiepius iš atsarginės kopijos.\n"
+"Ar tikrai norite įdiegti iš naujo?"
 
 #: ../ui.py:253
-#, fuzzy
 msgid ""
 "Choose settings backup which should be restored.\n"
 "Do you really want to restore these settings and restart?"
 msgstr ""
-"Atsarginė kopija bus atkurta į %s.\n"
-"Ar tikrai norite atkurti šiuos nustatymus ir paleisti iš naujo?"
+"Pasirinkite nustatymų atsarginę kopiją, kuri turėtų būti atkurta.\n"
+"Ar tikrai norite atkurti šiuos parametrus ir paleisti iš naujo?"
 
 #: ../ui.py:123
 msgid "Create Autoinstall"
@@ -87,7 +89,7 @@ msgstr "Atšaukti pasirinkimą"
 
 #: ../ui.py:260
 msgid "Do you want to restore your settings?"
-msgstr ""
+msgstr "Jūs norite atkurti savus nustatymus?"
 
 #: ../ui.py:345
 msgid "Done"
@@ -114,22 +116,22 @@ msgid "Manual"
 msgstr "Rankiniu būdu"
 
 #: ../ui.py:289 ../ui.py:318
-#, fuzzy
 msgid "No autoinstall list found"
-msgstr "Pašalinti autoinstaliacijos sąrašą"
+msgstr "Autoinstaliacijos sąrašo nerasta"
 
 #: ../ui.py:180 ../ui.py:183
 msgid "No backup present"
 msgstr "Atsarginių kopijų nėra"
 
 #: ../ui.py:250
-#, fuzzy
 msgid "No settings backups found"
-msgstr "Automatinė nustatymų atsarginė kopija"
+msgstr "Nustatymų atsarginių kopijų nerasta"
 
 #: ../ui.py:171
 msgid "No suitable media found, insert USB stick, flash card or harddisk."
-msgstr "Tinkamų laikmenų nerasta, įdėkite USB atmintinę, atminties kortelę, ar HDD."
+msgstr ""
+"Tinkamų laikmenų nerasta, prijunkite USB atmintinę, atminties kortelę, ar "
+"HDD."
 
 #: ../ui.py:117
 msgid "Nowhere"
@@ -141,7 +143,7 @@ msgstr "Gerai"
 
 #: ../ui.py:424
 msgid "Really close without saving settings?"
-msgstr ""
+msgstr "Tikrai uždaryti, neišsaugant nustatymų?"
 
 #: ../ui.py:205
 msgid "Remove autoinstall list"
@@ -156,14 +158,12 @@ msgid "Run a backup now"
 msgstr "Atlikti atsarginį kopijavimą dabar"
 
 #: ../ui.py:204
-#, fuzzy
 msgid "Run autoinstall"
-msgstr "Pašalinti autoinstaliacijos sąrašą"
+msgstr "Vykdyti autoįdiegimą"
 
 #: ../ui.py:231 ../ui.py:270 ../ui.py:299
-#, fuzzy
 msgid "Running..."
-msgstr "Veikia"
+msgstr "veikia..."
 
 #: ../ui.py:25
 msgid "SD"
@@ -195,7 +195,7 @@ msgstr "USB"
 
 #: ../ui.py:245 ../ui.py:284 ../ui.py:313
 msgid "from: "
-msgstr ""
+msgstr "nuo: "
 
 #: ../ui.py:40
 msgid "root"
