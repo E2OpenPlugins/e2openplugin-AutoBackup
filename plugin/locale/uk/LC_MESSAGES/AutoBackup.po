@@ -4,8 +4,8 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-08-18 06:17+0300\n"
 "PO-Revision-Date: \n"
-"Last-Translator: neoatomic <neoatomic@users.noreply.github.com>\n"
-"Language-Team: http://gisclub.tv <irkoff@gmail.com>\n"
+"Last-Translator: kvinto\n"
+"Language-Team: http://gisclub.tv\n"
 "Language: uk_UA\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -14,9 +14,8 @@ msgstr ""
 "X-Generator: Poedit 1.8.7\n"
 
 #: ../plugin.py:137
-#, fuzzy
 msgid "Auto backup"
-msgstr "Налаштування автоматичного резервного копіювання"
+msgstr "Авто Бекап"
 
 #: ../ui.py:104 ../ui.py:152
 msgid "AutoBackup Configuration"
@@ -32,11 +31,11 @@ msgstr "Час автоматичного резервного копіюван�
 
 #: ../ui.py:203
 msgid "Backup EPG cache"
-msgstr ""
+msgstr "Резервне копіювання кешу EPG"
 
 #: ../ui.py:120
 msgid "Backup location"
-msgstr "Місце резервування"
+msgstr "Місце зберження"
 
 #: ../ui.py:24 ../ui.py:43
 msgid "CF"
@@ -52,25 +51,27 @@ msgid ""
 "This will delete autoinstall list.\n"
 "Do you really want to continue?"
 msgstr ""
+""Виберіть резервну копію.\n"
+"Буде видалено список автовстановлення. \n"
+"Ви дійсно хочете продовжити?"
 
 #: ../ui.py:292
-#, fuzzy
 msgid ""
 "Choose a backup.\n"
 "This will reinstall all plugins from your backup.\n"
 "Do you really want to reinstall?"
 msgstr ""
-"Ви бажаєте відновити резервну копію з %s.\n"
-"Ви дійсно бажаєте, відновити ці настройки і перезавантажити?"
+"Виберіть резервну копію.\n"
+"Дана дія перевстановить усі плагіни з Вашої резервної копії.\n"
+"Ви дійсно хочете перестановити?"
 
 #: ../ui.py:253
-#, fuzzy
 msgid ""
 "Choose settings backup which should be restored.\n"
 "Do you really want to restore these settings and restart?"
 msgstr ""
-"Ви бажаєте відновити резервну копію з %s.\n"
-"Ви дійсно бажаєте, відновити ці настройки і перезавантажити?"
+"Виберіть резервну копію налаштувань, яку потрібно відновити.\n"
+"Ви дійсно хочете відновити ці налаштування та перезапустити?"
 
 #: ../ui.py:123
 msgid "Create Autoinstall"
@@ -86,7 +87,7 @@ msgstr "Скасувати"
 
 #: ../ui.py:260
 msgid "Do you want to restore your settings?"
-msgstr ""
+msgstr "Відновити налаштування?"
 
 #: ../ui.py:345
 msgid "Done"
