@@ -51,7 +51,7 @@ msgid ""
 "This will delete autoinstall list.\n"
 "Do you really want to continue?"
 msgstr ""
-"\"Виберіть резервну копію.\n"
+"Виберіть резервну копію.\n"
 "Буде видалено список автовстановлення. \n"
 "Ви дійсно хочете продовжити?"
 
