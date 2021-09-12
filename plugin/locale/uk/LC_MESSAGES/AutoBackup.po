@@ -95,7 +95,7 @@ msgstr "Закінчено"
 
 #: ../ui.py:124
 msgid "EPG cache backup"
-msgstr ""
+msgstr "Резервне копіювання кешу EPG"
 
 #: ../ui.py:343
 msgid "Failed"
@@ -129,7 +129,7 @@ msgstr "Налаштування автоматичного резервного
 
 #: ../ui.py:171
 msgid "No suitable media found, insert USB stick, flash card or harddisk."
-msgstr ""
+msgstr "Не знайдено відповідного носія, вставте USB-накопичувач, флеш-карту, або жорсткий диск."
 
 #: ../ui.py:117
 msgid "Nowhere"
@@ -141,29 +141,27 @@ msgstr "Ok"
 
 #: ../ui.py:424
 msgid "Really close without saving settings?"
-msgstr ""
+msgstr "Дійсно закрити без збереження налаштувань?"
 
 #: ../ui.py:205
 msgid "Remove autoinstall list"
-msgstr ""
+msgstr "Видалити список автовстановлення"
 
 #: ../ui.py:131 ../ui.py:206
 msgid "Restore"
-msgstr "Оновити"
+msgstr "Відновлення"
 
 #: ../ui.py:202
 msgid "Run a backup now"
 msgstr "Виконати резервне копіювання зараз"
 
 #: ../ui.py:204
-#, fuzzy
 msgid "Run autoinstall"
-msgstr "Створення AutoInstall"
+msgstr "Запутити AutoInstall"
 
 #: ../ui.py:231 ../ui.py:270 ../ui.py:299
-#, fuzzy
 msgid "Running..."
-msgstr "Запуск"
+msgstr "Запуск..."
 
 #: ../ui.py:25
 msgid "SD"
@@ -175,7 +173,7 @@ msgstr "Зберегти"
 
 #: ../ui.py:125
 msgid "Save previous backup"
-msgstr ""
+msgstr "Зберегти попередню резервну копію"
 
 #: ../ui.py:413
 msgid "Select"
@@ -195,7 +193,7 @@ msgstr ""
 
 #: ../ui.py:245 ../ui.py:284 ../ui.py:313
 msgid "from: "
-msgstr ""
+msgstr "з: "
 
 #: ../ui.py:40
 msgid "root"
