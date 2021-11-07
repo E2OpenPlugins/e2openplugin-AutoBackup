@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2-plugin-extensions-autobackup\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-08-18 06:17+0300\n"
-"PO-Revision-Date: 2020-05-27 18:58+0200\n"
+"POT-Creation-Date: 2021-11-07 11:02+0100\n"
+"PO-Revision-Date: 2021-11-07 11:02+0100\n"
 "Last-Translator: Pr2\n"
 "Language-Team: french\n"
 "Language: fr\n"
@@ -11,7 +11,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Poedit 2.0.6\n"
+"X-Generator: Poedit 3.0\n"
 
 #: ../plugin.py:137
 msgid "Auto backup"
@@ -81,7 +81,7 @@ msgstr "Créer une installation automatique"
 msgid "Daily automatic backup"
 msgstr "Sauvegarde automatique quotidienne"
 
-#: ../ui.py:411
+#: ../ui.py:412
 msgid "Deselect"
 msgstr "Désélectionner"
 
@@ -137,9 +137,9 @@ msgstr "Nulle part"
 msgid "OK"
 msgstr "Ok"
 
-#: ../ui.py:424
+#: ../ui.py:426
 msgid "Really close without saving settings?"
-msgstr ""
+msgstr "Voulez-vous vraiment quitter sans sauver les paramètres?"
 
 #: ../ui.py:205
 msgid "Remove autoinstall list"
@@ -173,7 +173,7 @@ msgstr "Sauvegarder"
 msgid "Save previous backup"
 msgstr "Enregistrer la sauvegarde précédente"
 
-#: ../ui.py:413
+#: ../ui.py:414
 msgid "Select"
 msgstr "Sélectionner"
 
