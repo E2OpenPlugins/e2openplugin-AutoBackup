@@ -342,6 +342,7 @@ class Config(ConfigListScreen, Screen):
 		self.changedWhere(self.cfgwhere)
 
 	def dataAvail(self, s):
+		s = s.decode()
 		print("[AutoBackup]", s.strip())
 		self["status"].appendText(s)
 
