@@ -1,205 +1,219 @@
 # Italian translations for AutoBackup.
-# Signed-off-by: Gringo <openpli@tiscali.it>
+# Signed-off-by: Dario Croci <spaeleus@croci.org>
+# Signed-off-by: Signed-off-by: Gringo <openpli@tiscali.it>
 #
-# Updated by: Gringo <openpli@tiscali.it>
+# Updated by: Dario Croci <spaeleus@croci.org>
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: AutoBackup\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-08-18 06:17+0300\n"
+"POT-Creation-Date: 2022-01-28 14:59+0100\n"
 "PO-Revision-Date: \n"
-"Last-Translator: Gringo <openpli@tiscali.it>\n"
-"Language-Team: \n"
-"Language: it\n"
+"Last-Translator: Dario Croci <spaeleus@croci.org>\n"
+"Language-Team: Dario Croci <spaeleus@croci.org>\n"
+"Language: it_IT\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 1.8.7.1\n"
+"X-Generator: Poedit 3.0.1\n"
 "X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-Basepath: ../../../../../../../../..\n"
+"X-Poedit-SearchPath-0: .\n"
 
-#: ../plugin.py:137
-#, fuzzy
+#: lib/enigma2/python/Plugins/Extensions/AutoBackup/plugin.py:137
 msgid "Auto backup"
-msgstr "Backup automatico delle impostazioni"
+msgstr "Backup automatico"
 
-#: ../ui.py:104 ../ui.py:152
-msgid "AutoBackup Configuration"
-msgstr "Configurazione AutoBackup"
-
-#: ../plugin.py:141
+#: lib/enigma2/python/Plugins/Extensions/AutoBackup/plugin.py:141
 msgid "Automatic settings backup"
-msgstr "Backup automatico delle impostazioni"
+msgstr "Backup automatico impostazioni"
 
-#: ../ui.py:122
-msgid "Automatic start time"
-msgstr "Orario di inizio dell'avvio automatico"
+#: lib/enigma2/python/Plugins/Extensions/AutoBackup/ui.py:22
+#: lib/enigma2/python/Plugins/Extensions/AutoBackup/ui.py:45
+msgid "Harddisk"
+msgstr "Hard disk"
 
-#: ../ui.py:203
-msgid "Backup EPG cache"
-msgstr "Salvare cache EPG"
+#: lib/enigma2/python/Plugins/Extensions/AutoBackup/ui.py:23
+msgid "USB"
+msgstr "Unità USB"
 
-#: ../ui.py:120
-msgid "Backup location"
-msgstr "Destinazione dei backup"
-
-#: ../ui.py:24 ../ui.py:43
+#: lib/enigma2/python/Plugins/Extensions/AutoBackup/ui.py:24
+#: lib/enigma2/python/Plugins/Extensions/AutoBackup/ui.py:43
 msgid "CF"
 msgstr "Scheda CF"
 
-#: ../ui.py:128 ../ui.py:373
+#: lib/enigma2/python/Plugins/Extensions/AutoBackup/ui.py:25
+msgid "SD"
+msgstr "Scheda SD"
+
+#: lib/enigma2/python/Plugins/Extensions/AutoBackup/ui.py:40
+msgid "root"
+msgstr "root"
+
+#: lib/enigma2/python/Plugins/Extensions/AutoBackup/ui.py:104
+#: lib/enigma2/python/Plugins/Extensions/AutoBackup/ui.py:152
+msgid "AutoBackup Configuration"
+msgstr "Impostazioni di AutoBackup"
+
+#: lib/enigma2/python/Plugins/Extensions/AutoBackup/ui.py:117
+msgid "Nowhere"
+msgstr "Nessuna destinazione"
+
+#: lib/enigma2/python/Plugins/Extensions/AutoBackup/ui.py:120
+msgid "Backup location"
+msgstr "Destinazione backup"
+
+#: lib/enigma2/python/Plugins/Extensions/AutoBackup/ui.py:121
+msgid "Daily automatic backup"
+msgstr "Backup giornaliero automatico"
+
+#: lib/enigma2/python/Plugins/Extensions/AutoBackup/ui.py:122
+msgid "Automatic start time"
+msgstr "Ora inizio avvio automatico"
+
+#: lib/enigma2/python/Plugins/Extensions/AutoBackup/ui.py:123
+msgid "Create Autoinstall"
+msgstr "Creare un backup per il ripristino automatico"
+
+#: lib/enigma2/python/Plugins/Extensions/AutoBackup/ui.py:124
+msgid "EPG cache backup"
+msgstr "Backup della cache EPG"
+
+#: lib/enigma2/python/Plugins/Extensions/AutoBackup/ui.py:125
+msgid "Save previous backup"
+msgstr "Salvare il backup precedente"
+
+#: lib/enigma2/python/Plugins/Extensions/AutoBackup/ui.py:128
+#: lib/enigma2/python/Plugins/Extensions/AutoBackup/ui.py:373
 msgid "Cancel"
 msgstr "Annullare"
 
-#: ../ui.py:321
-msgid ""
-"Choose a backup.\n"
-"This will delete autoinstall list.\n"
-"Do you really want to continue?"
-msgstr ""
+#: lib/enigma2/python/Plugins/Extensions/AutoBackup/ui.py:129
+msgid "OK"
+msgstr "OK"
 
-#: ../ui.py:292
-#, fuzzy
+#: lib/enigma2/python/Plugins/Extensions/AutoBackup/ui.py:130
+msgid "Manual"
+msgstr "Manuale"
+
+#: lib/enigma2/python/Plugins/Extensions/AutoBackup/ui.py:131
+#: lib/enigma2/python/Plugins/Extensions/AutoBackup/ui.py:206
+msgid "Restore"
+msgstr "Ripristinare"
+
+#: lib/enigma2/python/Plugins/Extensions/AutoBackup/ui.py:171
+msgid "No suitable media found, insert USB stick, flash card or harddisk."
+msgstr ""
+"Nessun supporto adatto: inserire una chiave USB/scheda flash/hard disk."
+
+#: lib/enigma2/python/Plugins/Extensions/AutoBackup/ui.py:178
+msgid "Last backup date"
+msgstr "Data ultimo backup"
+
+#: lib/enigma2/python/Plugins/Extensions/AutoBackup/ui.py:180
+#: lib/enigma2/python/Plugins/Extensions/AutoBackup/ui.py:183
+msgid "No backup present"
+msgstr "Nessun backup presente"
+
+#: lib/enigma2/python/Plugins/Extensions/AutoBackup/ui.py:201
+msgid "Select files to backup"
+msgstr "Selezionare file di cui fare il backup"
+
+#: lib/enigma2/python/Plugins/Extensions/AutoBackup/ui.py:202
+msgid "Run a backup now"
+msgstr "Eseguire un backup ora"
+
+#: lib/enigma2/python/Plugins/Extensions/AutoBackup/ui.py:203
+msgid "Backup EPG cache"
+msgstr "Salvare cache EPG"
+
+#: lib/enigma2/python/Plugins/Extensions/AutoBackup/ui.py:204
+msgid "Run autoinstall"
+msgstr "Eseguire un ripristino automatico"
+
+#: lib/enigma2/python/Plugins/Extensions/AutoBackup/ui.py:205
+msgid "Remove autoinstall list"
+msgstr "Rimuovere elenco ripristino automatico"
+
+#: lib/enigma2/python/Plugins/Extensions/AutoBackup/ui.py:231
+#: lib/enigma2/python/Plugins/Extensions/AutoBackup/ui.py:270
+#: lib/enigma2/python/Plugins/Extensions/AutoBackup/ui.py:299
+msgid "Running..."
+msgstr "In esecuzione..."
+
+#: lib/enigma2/python/Plugins/Extensions/AutoBackup/ui.py:245
+#: lib/enigma2/python/Plugins/Extensions/AutoBackup/ui.py:284
+#: lib/enigma2/python/Plugins/Extensions/AutoBackup/ui.py:313
+msgid "from: "
+msgstr "da: "
+
+#: lib/enigma2/python/Plugins/Extensions/AutoBackup/ui.py:250
+msgid "No settings backups found"
+msgstr "Nessun backup impostazioni presente"
+
+#: lib/enigma2/python/Plugins/Extensions/AutoBackup/ui.py:253
+msgid ""
+"Choose settings backup which should be restored.\n"
+"Do you really want to restore these settings and restart?"
+msgstr ""
+"Selezionare il backup delle impostazioni da ripristinare.\n"
+"Eseguire il ripristino e riavviare?"
+
+#: lib/enigma2/python/Plugins/Extensions/AutoBackup/ui.py:260
+msgid "Do you want to restore your settings?"
+msgstr "Ripristinare le impostazioni?"
+
+#: lib/enigma2/python/Plugins/Extensions/AutoBackup/ui.py:289
+#: lib/enigma2/python/Plugins/Extensions/AutoBackup/ui.py:318
+msgid "No autoinstall list found"
+msgstr "Nessun elenco di ripristino automatico"
+
+#: lib/enigma2/python/Plugins/Extensions/AutoBackup/ui.py:292
 msgid ""
 "Choose a backup.\n"
 "This will reinstall all plugins from your backup.\n"
 "Do you really want to reinstall?"
 msgstr ""
-"Tutti i plugin saranno reinstallati dal backup su %s.\n"
-"Si desidera veramente reinstallare?"
+"Selezionare un backup.\n"
+"Tutti i plugin presenti nel backup verranno reinstallati.\n"
+"Eseguire il ripristino?"
 
-#: ../ui.py:253
-#, fuzzy
+#: lib/enigma2/python/Plugins/Extensions/AutoBackup/ui.py:321
 msgid ""
-"Choose settings backup which should be restored.\n"
-"Do you really want to restore these settings and restart?"
+"Choose a backup.\n"
+"This will delete autoinstall list.\n"
+"Do you really want to continue?"
 msgstr ""
-"Il backup sarà ripristinato su %s.\n"
-"Si desidera veramente ripristinare le impostazioni e riavviare?"
+"Selezionare un backup.\n"
+"L'elenco di ripristino automatico verrà rimosso.\n"
+"Procedere?"
 
-#: ../ui.py:123
-msgid "Create Autoinstall"
-msgstr "Creare un backup utilizzabile per il ripristino automatico"
+#: lib/enigma2/python/Plugins/Extensions/AutoBackup/ui.py:343
+msgid "Failed"
+msgstr "Fallito"
 
-#: ../ui.py:121
-msgid "Daily automatic backup"
-msgstr "Backup giornaliero automatico"
-
-#: ../ui.py:411
-msgid "Deselect"
-msgstr "Deselezionare"
-
-#: ../ui.py:260
-msgid "Do you want to restore your settings?"
-msgstr ""
-
-#: ../ui.py:345
+#: lib/enigma2/python/Plugins/Extensions/AutoBackup/ui.py:345
 msgid "Done"
 msgstr "Fatto"
 
-#: ../ui.py:124
-msgid "EPG cache backup"
-msgstr "Backup della cache EPG"
-
-#: ../ui.py:343
-msgid "Failed"
-msgstr "Non riuscito"
-
-#: ../ui.py:22 ../ui.py:45
-msgid "Harddisk"
-msgstr "Disco rigido"
-
-#: ../ui.py:178
-msgid "Last backup date"
-msgstr "Data ultimo backup"
-
-#: ../ui.py:130
-msgid "Manual"
-msgstr "Manuale"
-
-#: ../ui.py:289 ../ui.py:318
-#, fuzzy
-msgid "No autoinstall list found"
-msgstr "Rimuovere elenco ripristino automatico"
-
-#: ../ui.py:180 ../ui.py:183
-msgid "No backup present"
-msgstr "Nessun backup presente"
-
-#: ../ui.py:250
-#, fuzzy
-msgid "No settings backups found"
-msgstr "Backup automatico delle impostazioni"
-
-#: ../ui.py:171
-msgid "No suitable media found, insert USB stick, flash card or harddisk."
-msgstr "Nessuna unità trovata, inserire una chiavetta USB, scheda flash o disco rigido."
-
-#: ../ui.py:117
-msgid "Nowhere"
-msgstr "Nessuna destinazione"
-
-#: ../ui.py:129
-msgid "OK"
-msgstr "OK"
-
-#: ../ui.py:424
-msgid "Really close without saving settings?"
-msgstr ""
-
-#: ../ui.py:205
-msgid "Remove autoinstall list"
-msgstr "Rimuovere elenco ripristino automatico"
-
-#: ../ui.py:131 ../ui.py:206
-msgid "Restore"
-msgstr "Ripristinare"
-
-#: ../ui.py:202
-msgid "Run a backup now"
-msgstr "Eseguire un backup adesso"
-
-#: ../ui.py:204
-msgid "Run autoinstall"
-msgstr "Eseguire un ripristino automatico"
-
-#: ../ui.py:231 ../ui.py:270 ../ui.py:299
-msgid "Running..."
-msgstr "In esecuzione..."
-
-#: ../ui.py:25
-msgid "SD"
-msgstr "Scheda SD"
-
-#: ../ui.py:374
+#: lib/enigma2/python/Plugins/Extensions/AutoBackup/ui.py:374
 msgid "Save"
 msgstr "Salvare"
 
-#: ../ui.py:125
-msgid "Save previous backup"
-msgstr "Salvare backup precedente"
+#: lib/enigma2/python/Plugins/Extensions/AutoBackup/ui.py:405
+msgid "Select files/folders to backup"
+msgstr "Selezionare file/directory da includere nel backup"
 
-#: ../ui.py:413
+#: lib/enigma2/python/Plugins/Extensions/AutoBackup/ui.py:412
+msgid "Deselect"
+msgstr "Deselezionare"
+
+#: lib/enigma2/python/Plugins/Extensions/AutoBackup/ui.py:414
 msgid "Select"
 msgstr "Selezionare"
 
-#: ../ui.py:201
-msgid "Select files to backup"
-msgstr "Selezionare file da salvare"
-
-#: ../ui.py:405
-msgid "Select files/folders to backup"
-msgstr "Selezionare i file e le cartelle da includere nel backup"
-
-#: ../ui.py:23
-msgid "USB"
-msgstr "Unità USB"
-
-#: ../ui.py:245 ../ui.py:284 ../ui.py:313
-msgid "from: "
-msgstr ""
-
-#: ../ui.py:40
-msgid "root"
-msgstr "root"
+#: lib/enigma2/python/Plugins/Extensions/AutoBackup/ui.py:426
+msgid "Really close without saving settings?"
+msgstr "Chiudere senza salvare le impostazioni?"
