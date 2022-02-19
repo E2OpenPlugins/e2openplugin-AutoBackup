@@ -71,7 +71,7 @@ def saveSelectedFiles(files):
 			if fn not in standard:
 				f.write(fn + '\n')
 		f.close()
-	except Exception, ex:
+	except Exception as ex:
 		print("[AutoBackup] Failed to write /etc/backup.cfg", ex)
 
 
@@ -179,7 +179,7 @@ class Config(ConfigListScreen, Screen):
 					self["status"].setText(_("Last backup date") + ": " + " ".join(FuzzyTime(st.st_mtime, inPast=True)))
 				else:
 					self["status"].setText(_("No backup present"))
-			except Exception, ex:
+			except Exception as ex:
 				print("Failed to stat %s: %s" % (path, ex))
 				self["status"].setText(_("No backup present"))
 
@@ -244,7 +244,7 @@ class Config(ConfigListScreen, Screen):
 				try:
 					st = os.stat(os.path.join(path, ".timestamp"))
 					backupList.append(("/media/%s " % backupMedia + _("from: ") + " ".join(FuzzyTime(st.st_mtime, inPast=True)), "/media/%s" % backupMedia, st.st_mtime))
-				except Exception, ex:
+				except Exception as ex:
 					print("Failed to stat %s: %s" % (path, ex))
 
 		if not backupList:
@@ -283,7 +283,7 @@ class Config(ConfigListScreen, Screen):
 				try:
 					st = os.stat(os.path.join(path, ".timestamp"))
 					backupList.append(("/media/%s " % backupMedia + _("from: ") + " ".join(FuzzyTime(st.st_mtime, inPast=True)), "/media/%s" % backupMedia, st.st_mtime))
-				except Exception, ex:
+				except Exception as ex:
 					print("Failed to stat %s: %s" % (path, ex))
 
 		if not backupList:
@@ -312,7 +312,7 @@ class Config(ConfigListScreen, Screen):
 				try:
 					st = os.stat(os.path.join(path, ".timestamp"))
 					backupList.append(("/media/%s " % backupMedia + _("from: ") + " ".join(FuzzyTime(st.st_mtime, inPast=True)), "/media/%s" % backupMedia, st.st_mtime))
-				except Exception, ex:
+				except Exception as ex:
 					print("Failed to stat %s: %s" % (path, ex))
 
 		if not backupList:

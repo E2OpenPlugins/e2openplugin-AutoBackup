@@ -55,7 +55,7 @@ def runBackup():
 				raise Exception, "failed to execute:" + cmd
 			container.appClosed.append(appClosed)
 			container.dataAvail.append(dataAvail)
-		except Exception, e:
+		except Exception as e:
 			print("[AutoBackup] FAIL:", e)
 
 
