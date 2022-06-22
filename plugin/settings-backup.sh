@@ -46,7 +46,7 @@ fi
 for bckfile in $BACKUPFILE $USER_BACKUPFILE ; do
     if [ -f $bckfile ] ; then
 	while read file ; do
-		[ -f $file -o -d $file ] && echo $file >> $RESTORE_TEMP
+		[ -f "$file" -o -d "$file" ] && echo $file >> $RESTORE_TEMP
 	done < $bckfile
     fi
 done
