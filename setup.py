@@ -7,7 +7,7 @@ setup (name = 'enigma2-plugin-extensions-autobackup',
        description = 'AutoBackup',
        package_dir = {pkg: 'plugin'},
        packages = [pkg],
-       package_data = {pkg: 
+       package_data = {pkg:
            ['plugin.png', 'backup.cfg', 'settings-backup.sh', 'locale/*/LC_MESSAGES/*.mo']},
        cmdclass = setup_translate.cmdclass, # for translation
       )

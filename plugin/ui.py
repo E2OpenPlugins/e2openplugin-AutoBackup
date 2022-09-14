@@ -26,6 +26,8 @@ FRIENDLY = {
 	"/media/cf": _("CF"),
 	"/media/mmc1": _("SD"),
 	}
+
+
 def getLocationChoices():
 	result = []
 	for line in open('/proc/mounts', 'r'):
@@ -46,8 +48,10 @@ def getLocationChoices():
 			result.append((items[1], desc))
 	return result
 
+
 def getStandardFiles():
 	return [os.path.normpath(n.strip()) for n in open('/usr/lib/enigma2/python/Plugins/Extensions/AutoBackup/backup.cfg', 'r')]
+
 
 def getSelectedFiles():
 	result = getStandardFiles()
@@ -57,6 +61,7 @@ def getSelectedFiles():
 		# ignore missing user cfg file
 		pass
 	return result
+
 
 def saveSelectedFiles(files):
 	standard = getStandardFiles()
@@ -69,6 +74,7 @@ def saveSelectedFiles(files):
 		f.close()
 	except Exception as ex:
 		print("[AutoBackup] Failed to write /etc/backup.cfg", ex)
+
 
 class Config(ConfigListScreen, Screen):
 	skin = """
@@ -94,13 +100,13 @@ class Config(ConfigListScreen, Screen):
 	</widget>
 </screen>"""
 
-	def __init__(self, session, args = 0):
+	def __init__(self, session, args=0):
 		self.session = session
 		self.skinName = ["Config_AutoBackup", "Config"]
 		self.setup_title = _("AutoBackup Configuration")
 		Screen.__init__(self, session)
 		cfg = config.plugins.autobackup
-		choices=getLocationChoices()
+		choices = getLocationChoices()
 		if choices:
 			currentwhere = cfg.where.value
 			defaultchoice = choices[0][0]
@@ -116,15 +122,15 @@ class Config(ConfigListScreen, Screen):
 			getConfigListEntry(_("Backup location"), self.cfgwhere),
 			getConfigListEntry(_("Daily automatic backup"), cfg.enabled),
 			getConfigListEntry(_("Automatic start time"), cfg.wakeup),
-			getConfigListEntry (_("Create Autoinstall"), cfg.autoinstall),
-			getConfigListEntry (_("EPG cache backup"), cfg.epgcache),
-			getConfigListEntry (_("Save previous backup"), cfg.prevbackup),
+			getConfigListEntry(_("Create Autoinstall"), cfg.autoinstall),
+			getConfigListEntry(_("EPG cache backup"), cfg.epgcache),
+			getConfigListEntry(_("Save previous backup"), cfg.prevbackup),
 			]
-		ConfigListScreen.__init__(self, configList, session=session, on_change = self.changedEntry)
+		ConfigListScreen.__init__(self, configList, session=session, on_change=self.changedEntry)
 		self["key_red"] = Button(_("Cancel"))
 		self["key_green"] = Button(_("OK"))
 		self["key_yellow"] = Button(_("Manual"))
-		self["key_blue"] = Button(_("Options/Restore"))
+		self["key_blue"] = Button(_("Restore"))
 		self["statusbar"] = Label()
 		self["status"] = ScrollLabel('', showscrollbar=False)
 		self["setupActions"] = ActionMap(["SetupActions", "ColorActions", "MenuActions"],
@@ -132,7 +138,7 @@ class Config(ConfigListScreen, Screen):
 			"red": self.cancel,
 			"green": self.save,
 			"yellow": self.dobackup,
-			"blue": self.menu,
+			"blue": self.dorestore,
 			"save": self.save,
 			"cancel": self.cancel,
 			"ok": self.save,
@@ -151,10 +157,13 @@ class Config(ConfigListScreen, Screen):
 	def changedEntry(self):
 		for x in self.onChangedEntry:
 			x()
+
 	def getCurrentEntry(self):
 		return self["config"].getCurrent()[0]
+
 	def getCurrentValue(self):
 		return str(self["config"].getCurrent()[1].getText())
+
 	def createSummary(self):
 		from Screens.Setup import SetupSummary
 		return SetupSummary
@@ -198,7 +207,7 @@ class Config(ConfigListScreen, Screen):
 			(_("Remove autoinstall list"), self.doremoveautoinstall),
 			(_("Restore"), self.dorestore),
 		]
-		self.session.openWithCallback(self.menuDone, ChoiceBox, list = lst)
+		self.session.openWithCallback(self.menuDone, ChoiceBox, list=lst)
 
 	def menuDone(self, result):
 		if not result or not result[1]:
@@ -240,10 +249,10 @@ class Config(ConfigListScreen, Screen):
 					print("Failed to stat %s: %s" % (path, ex))
 
 		if not backupList:
-			self.session.open(MessageBox, _("No settings backups found"), type = MessageBox.TYPE_ERROR, timeout = 10)
+			self.session.open(MessageBox, _("No settings backups found"), type=MessageBox.TYPE_ERROR, timeout=10)
 			return
-		backupList.sort(key = lambda b: b[2], reverse = True)
-		self.session.openWithCallback(self.dorestorenow_reason, MessageBox, _("Choose settings backup which should be restored.\nDo you really want to restore these settings and restart?"), list = backupList)
+		backupList.sort(key=lambda b: b[2], reverse=True)
+		self.session.openWithCallback(self.dorestorenow_reason, MessageBox, _("Choose settings backup which should be restored.\nDo you really want to restore these settings and restart?"), list=backupList)
 
 	def dorestorenow_reason(self, path):
 		if not path:
@@ -279,10 +288,10 @@ class Config(ConfigListScreen, Screen):
 					print("Failed to stat %s: %s" % (path, ex))
 
 		if not backupList:
-			self.session.open(MessageBox, _("No autoinstall list found"), type = MessageBox.TYPE_ERROR, timeout = 10)
+			self.session.open(MessageBox, _("No autoinstall list found"), type=MessageBox.TYPE_ERROR, timeout=10)
 			return
-		backupList.sort(key = lambda b: b[2], reverse = True)
-		self.session.openWithCallback(self.doautoinstallnow, MessageBox, _("Choose a backup.\nThis will reinstall all plugins from your backup.\nDo you really want to reinstall?"), list = backupList)
+		backupList.sort(key=lambda b: b[2], reverse=True)
+		self.session.openWithCallback(self.doautoinstallnow, MessageBox, _("Choose a backup.\nThis will reinstall all plugins from your backup.\nDo you really want to reinstall?"), list=backupList)
 
 	def doautoinstallnow(self, path):
 		if not path:
@@ -308,10 +317,10 @@ class Config(ConfigListScreen, Screen):
 					print("Failed to stat %s: %s" % (path, ex))
 
 		if not backupList:
-			self.session.open(MessageBox, _("No autoinstall list found"), type = MessageBox.TYPE_ERROR, timeout = 10)
+			self.session.open(MessageBox, _("No autoinstall list found"), type=MessageBox.TYPE_ERROR, timeout=10)
 			return
-		backupList.sort(key = lambda b: b[2], reverse = True)
-		self.session.openWithCallback(self.doremoveautoinstallnow, MessageBox, _("Choose a backup.\nThis will delete autoinstall list.\nDo you really want to continue?"), list = backupList)
+		backupList.sort(key=lambda b: b[2], reverse=True)
+		self.session.openWithCallback(self.doremoveautoinstallnow, MessageBox, _("Choose a backup.\nThis will delete autoinstall list.\nDo you really want to continue?"), list=backupList)
 
 	def doremoveautoinstallnow(self, path):
 		if not path:
@@ -346,6 +355,7 @@ class Config(ConfigListScreen, Screen):
 		print("[AutoBackup]", s.strip())
 		self["status"].appendText(s)
 
+
 class BackupSelection(Screen):
 	skin = """
 		<screen position="center,center" size="560,400" title="Select files/folders to backup">
@@ -369,8 +379,9 @@ class BackupSelection(Screen):
 		selectedFiles = getSelectedFiles()
 		defaultDir = '/'
 		inhibitDirs = ["/bin", "/boot", "/dev", "/autofs", "/lib", "/proc", "/sbin", "/sys", "/hdd", "/tmp", "/mnt", "/media"]
-		self.filelist = MultiFileSelectList(selectedFiles, defaultDir, inhibitDirs = inhibitDirs )
+		self.filelist = MultiFileSelectList(selectedFiles, defaultDir, inhibitDirs=inhibitDirs)
 		self["checkList"] = self.filelist
+		self.prev_files = selectedFiles
 		self["actions"] = ActionMap(["DirectionActions", "OkCancelActions", "ShortcutActions"],
 		{
 			"cancel": self.exit,
@@ -398,11 +409,13 @@ class BackupSelection(Screen):
 
 	def selectionChanged(self):
 		current = self["checkList"].getCurrent()[0]
+		text = ""
 		if len(current) > 2:
 			if current[2] is True:
-				self["key_yellow"].setText(_("Deselect"))
+				text = _("Deselect")
 			else:
-				self["key_yellow"].setText(_("Select"))
+				text = _("Select")
+		self["key_yellow"].setText(text)
 
 	def changeSelectionState(self):
 		self["checkList"].changeSelectionState()
@@ -412,9 +425,15 @@ class BackupSelection(Screen):
 		self.close(None)
 
 	def exit(self):
-		self.close(None)
+		if self.prev_files != [os.path.normpath(n.strip()) for n in self["checkList"].getSelectedList()]:
+			self.session.openWithCallback(self.exitConfirm, MessageBox, _("Really close without saving settings?"))
+		else:
+			self.close(None)
+
+	def exitConfirm(self, result):
+		if result:
+			self.close(None)
 
 	def okClicked(self):
 		if self.filelist.canDescent():
 			self.filelist.descent()
-

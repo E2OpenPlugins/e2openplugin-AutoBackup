@@ -35,15 +35,18 @@ def backupCommand():
 	cmd += " " + str(int(config.plugins.autobackup.prevbackup.value))
 	return cmd
 
+
 def runBackup():
 	destination = config.plugins.autobackup.where.value
 	if destination:
 		try:
 			global container  # Need to keep a ref alive...
+
 			def appClosed(retval):
 				global container
 				print("[AutoBackup] complete, result:", retval)
 				container = None
+
 			def dataAvail(data):
 				print("[AutoBackup]", data.rstrip())
 			print("[AutoBackup] start daily backup")
@@ -56,9 +59,11 @@ def runBackup():
 		except Exception as e:
 			print("[AutoBackup] FAIL:", e)
 
+
 def main(session, **kwargs):
 	from . import ui
 	session.openWithCallback(doneConfiguring, ui.Config)
+
 
 def doneConfiguring(session, retval):
 	"user has closed configuration, check new values...."
@@ -68,10 +73,12 @@ def doneConfiguring(session, retval):
 
 ##################################
 # Autostart section
+
+
 class AutoStartTimer:
 	def __init__(self, session):
 		self.session = session
-		self.timer = enigma.eTimer() 
+		self.timer = enigma.eTimer()
 		self.timer.callback.append(self.onTimer)
 		self.update()
 
@@ -85,14 +92,14 @@ class AutoStartTimer:
 		else:
 			return -1
 
-	def update(self, atLeast = 0):
+	def update(self, atLeast=0):
 		self.timer.stop()
 		wake = self.getWakeTime()
 		now = int(time.time())
 		if wake > 0:
 			if wake < now + atLeast:
 				# Tomorrow.
-				wake += 24*3600
+				wake += 24 * 3600
 			next = wake - now
 			# it could be that we do not have the correct system time yet,
 			# limit the update interval to 1h, to make sure we try again soon
@@ -114,7 +121,7 @@ class AutoStartTimer:
 		# If we're close enough, we're okay...
 		atLeast = 0
 		if abs(wake - now) < 60:
-			runBackup() 
+			runBackup()
 			atLeast = 60
 		self.update(atLeast)
 
@@ -127,22 +134,24 @@ def autostart(reason, session=None, **kwargs):
 			if autoStartTimer is None:
 				autoStartTimer = AutoStartTimer(session)
 
+
 def checkmenu(menuid):
 	return [(_("Auto backup"), main, "autobackup", 8)] if menuid == "setup" else []
+
 
 def Plugins(**kwargs):
 	description = _("Automatic settings backup")
 	return [
 		PluginDescriptor(
 			name="AutoBackup",
-			description = description,
-			where = [PluginDescriptor.WHERE_AUTOSTART, PluginDescriptor.WHERE_SESSIONSTART],
-			fnc = autostart
+			description=description,
+			where=[PluginDescriptor.WHERE_AUTOSTART, PluginDescriptor.WHERE_SESSIONSTART],
+			fnc=autostart
 		),
 		PluginDescriptor(
-			name= "Autobackup",
+			name="Autobackup",
 			description=description,
-			where = PluginDescriptor.WHERE_MENU,
+			where=PluginDescriptor.WHERE_MENU,
 			needsRestart=False,
 			fnc=checkmenu
 		)
