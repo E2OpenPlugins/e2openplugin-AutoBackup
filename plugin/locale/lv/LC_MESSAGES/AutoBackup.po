@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: AutoBackup\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-08-18 06:17+0300\n"
+"POT-Creation-Date: 2023-02-27 16:18+0200\n"
 "PO-Revision-Date: 2018-12-25 21:50+0200\n"
 "Last-Translator: Taapat <taapat@gmail.com>\n"
 "Language-Team: Taapat <taapat@gmail.com>\n"
@@ -50,25 +50,27 @@ msgid ""
 "This will delete autoinstall list.\n"
 "Do you really want to continue?"
 msgstr ""
+"Izvēlieties dublējumkopiju.\n"
+"Uzstādāmo spraudņu saraksts tiks dzēsts.\n"
+"Vai tiešām vēlaties turpināt?"
 
 #: ../ui.py:292
-#, fuzzy
 msgid ""
 "Choose a backup.\n"
 "This will reinstall all plugins from your backup.\n"
 "Do you really want to reinstall?"
 msgstr ""
-"Tiks uzstādīti visi spraudņi dublējumkopijā no %s.\n"
+"Izvēlieties dublējumkopiju.\n"
+"Visi spraudņi no dublējumkopijas tiks uzstādīti no jauna.\n"
 "Vai tiešām vēlaties turpināt?"
 
 #: ../ui.py:253
-#, fuzzy
 msgid ""
 "Choose settings backup which should be restored.\n"
 "Do you really want to restore these settings and restart?"
 msgstr ""
-"Tiks uzstādīta dublējumkopija no %s.\n"
-"Vai tiešām vēlaties turpināt?"
+"Izvēlēties iestatījumu dublējumkopiju.\n"
+"Vai tiešām vēlaties atjaunot iestatījumus un pārstartēt uztvērēju?"
 
 #: ../ui.py:123
 msgid "Create Autoinstall"
@@ -84,7 +86,7 @@ msgstr "Atcelt izvēli"
 
 #: ../ui.py:260
 msgid "Do you want to restore your settings?"
-msgstr ""
+msgstr "Vai vēlaties atjaunot iestatījumus?"
 
 #: ../ui.py:345
 msgid "Done"
@@ -108,21 +110,19 @@ msgstr "Pēdējā dublējumkopija"
 
 #: ../ui.py:130
 msgid "Manual"
-msgstr "Manuāli"
+msgstr "Izveidot"
 
 #: ../ui.py:289 ../ui.py:318
-#, fuzzy
 msgid "No autoinstall list found"
-msgstr "Dzēst spraudņu sarakstu"
+msgstr "Uzstādāmo spraudņu saraksts nav atrasts"
 
 #: ../ui.py:180 ../ui.py:183
 msgid "No backup present"
 msgstr "Dublējumkopijas nav atrastas"
 
 #: ../ui.py:250
-#, fuzzy
 msgid "No settings backups found"
-msgstr "Iestatījumu dublējumkopija"
+msgstr "Iestatījumu dublējumkopija nav atrasta"
 
 #: ../ui.py:171
 msgid "No suitable media found, insert USB stick, flash card or harddisk."
@@ -138,7 +138,7 @@ msgstr "Labi"
 
 #: ../ui.py:424
 msgid "Really close without saving settings?"
-msgstr ""
+msgstr "Tiešām aizvērt nesaglabājot iestatījumus?"
 
 #: ../ui.py:205
 msgid "Remove autoinstall list"
@@ -146,7 +146,7 @@ msgstr "Dzēst spraudņu sarakstu"
 
 #: ../ui.py:131 ../ui.py:206
 msgid "Restore"
-msgstr "Uzstādīt dublējumkopiju"
+msgstr "Uzstādīt"
 
 #: ../ui.py:202
 msgid "Run a backup now"
@@ -190,7 +190,7 @@ msgstr "USB"
 
 #: ../ui.py:245 ../ui.py:284 ../ui.py:313
 msgid "from: "
-msgstr ""
+msgstr "no: "
 
 #: ../ui.py:40
 msgid "root"
