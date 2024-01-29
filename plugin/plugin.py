@@ -5,7 +5,7 @@ import enigma
 from Plugins.Plugin import PluginDescriptor
 from Components.config import config, \
 			ConfigEnableDisable, ConfigSubsection, \
-			ConfigClock, ConfigOnOff, ConfigText, NoSave
+			ConfigClock, ConfigOnOff, ConfigText
 
 #Set default configuration
 config.plugins.autobackup = ConfigSubsection()
@@ -14,7 +14,7 @@ config.plugins.autobackup.enabled = ConfigEnableDisable(default=False)
 config.plugins.autobackup.autoinstall = ConfigOnOff(default=True)
 config.plugins.autobackup.where = ConfigText(default="/media/hdd")
 config.plugins.autobackup.epgcache = ConfigOnOff(default=False)
-config.plugins.autobackup.prevbackup = NoSave(ConfigOnOff(default=False))
+config.plugins.autobackup.prevbackup = ConfigOnOff(default=False)
 
 # Global variables
 autoStartTimer = None
