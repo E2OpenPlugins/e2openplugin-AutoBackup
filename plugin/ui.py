@@ -14,6 +14,7 @@ from Components.ActionMap import ActionMap
 from Components.Button import Button
 from Components.Label import Label
 from Components.ScrollLabel import ScrollLabel
+from Components.Sources.StaticText import StaticText
 from Screens.ChoiceBox import ChoiceBox
 from Screens.MessageBox import MessageBox
 from Tools.FuzzyDate import FuzzyTime
@@ -131,6 +132,7 @@ class Config(ConfigListScreen, Screen):
 		self["key_green"] = Button(_("Save"))
 		self["key_yellow"] = Button(_("Manual"))
 		self["key_blue"] = Button(_("Restore"))
+		self["key_menu"] = StaticText(_("MENU"))
 		self["statusbar"] = Label()
 		self["status"] = ScrollLabel('', showscrollbar=False)
 		self["setupActions"] = ActionMap(["SetupActions", "ColorActions", "MenuActions"],
