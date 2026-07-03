@@ -5,7 +5,7 @@ from __future__ import print_function
 # Configuration GUI
 from . import _
 from . import plugin
-import os
+import os, tarfile
 import enigma
 from Components.config import config, configfile, getConfigListEntry, ConfigSelection
 from Screens.Screen import Screen
@@ -214,6 +214,7 @@ class Config(ConfigListScreen, Screen):
 			(_("Run autoinstall"), self.doautoinstall),
 			(_("Remove autoinstall list"), self.doremoveautoinstall),
 			(_("Restore"), self.dorestore),
+			(_("Restore previous backup"), self.dorestoreprevious),
 		]
 		self.session.openWithCallback(self.menuDone, ChoiceBox, list=lst)
 
@@ -363,7 +364,60 @@ class Config(ConfigListScreen, Screen):
 		print("[AutoBackup]", s.strip())
 		self["status"].appendText(s)
 
+	def dorestoreprevious(self):
+		backupList = []
+		backupDir = os.path.join(self.cfgwhere.value, "backup")
 
+		if os.path.isdir(backupDir):
+			for filename in os.listdir(backupDir):
+				if filename.startswith("backup.") and filename.endswith(".tar.gz"):
+					fullpath = os.path.join(backupDir, filename)
+					try:
+						st = os.stat(fullpath)
+						backupList.append((filename, fullpath, st.st_mtime))
+					except Exception as ex:
+						print("[AutoBackup] Failed to stat %s: %s" % (fullpath, ex))
+
+		if not backupList:
+			self.session.open(MessageBox, _("No previous backups found"), type=MessageBox.TYPE_ERROR, timeout=10)
+			return
+
+		backupList.sort(key=lambda b: b[2], reverse=True)
+		self.session.openWithCallback(self.dorestorepreviousnow, MessageBox, _("Choose previous backup which should be restored.\nDo you really want to restore this backup and restart?"), list=backupList)
+
+	def dorestorepreviousnow(self, result):
+		if not result:
+			return
+
+		backupFile = result
+		backupDir = os.path.join(self.cfgwhere.value, "backup")
+
+		if not self.checkPreviousBackup(backupFile):
+			self.session.open(MessageBox, _("This backup was created for another receiver."), type=MessageBox.TYPE_ERROR, timeout=10)
+			return
+
+		self.data = ''
+		self.showOutput()
+		self["statusbar"].setText(_('Running...'))
+
+		cmd = 'tar -tzf "%s" && tar -xzf "%s" -C "%s" && /etc/init.d/settings-restore.sh %s ; killall -9 enigma2' % (backupFile, backupFile, backupDir, self.cfgwhere.value)
+
+		if self.container.execute(cmd):
+			print("[AutoBackup] failed to execute")
+		self.showOutput()
+
+	def checkPreviousBackup(self, backupFile):
+		try:
+			mac = open("/sys/class/net/eth0/address").read().strip().replace(":", "")
+
+			with tarfile.open(backupFile, "r:gz") as tar:
+				names = tar.getnames()
+
+			return ("autoinstall%s" % mac) in names
+
+		except Exception as ex:
+			print("[AutoBackup] Failed to check backup: %s" % ex)
+			return False
 class BackupSelection(Screen):
 	skin = """
 		<screen position="center,center" size="560,400" title="Select files/folders to backup">
