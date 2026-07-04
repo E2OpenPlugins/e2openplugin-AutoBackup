@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2-plugin-extensions-autobackup\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-07-04 17:40+0200\n"
+"POT-Creation-Date: 2026-07-04 21:25+0200\n"
 "PO-Revision-Date: 2020-04-27 19:00+0100\n"
 "Last-Translator: esmos <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -49,7 +49,7 @@ msgstr "Yedekleme yeri"
 msgid "CF"
 msgstr ""
 
-#: ../ui.py:133 ../ui.py:545
+#: ../ui.py:133 ../ui.py:555
 msgid "Cancel"
 msgstr "İptal et"
 
@@ -92,7 +92,7 @@ msgid "Create a backup of the current settings."
 msgstr ""
 
 #: ../ui.py:219
-msgid "Create a separate archive with current settings without overwriting the existing backup. Slot number is added to the archive name."
+msgid "Create a separate archive with current settings without overwriting the existing backup. The hostname and slot number are added to the archive name."
 msgstr ""
 
 #: ../ui.py:219
@@ -103,7 +103,7 @@ msgstr ""
 msgid "Daily automatic backup"
 msgstr "Günlük otomatik yedekleme"
 
-#: ../ui.py:584
+#: ../ui.py:594
 msgid "Deselect"
 msgstr "Seçimini kaldır"
 
@@ -181,7 +181,7 @@ msgstr "Uygun ortam bulunamadı, USB, flash kart veya sabit disk takın."
 msgid "Nowhere"
 msgstr "Hiçbir yerde"
 
-#: ../ui.py:598
+#: ../ui.py:608
 msgid "Really close without saving settings?"
 msgstr ""
 
@@ -218,7 +218,7 @@ msgstr "Şimdi bir yedek çalıştırın"
 msgid "Run autoinstall"
 msgstr "Otomatik yüklemeyi çalıştır"
 
-#: ../ui.py:253 ../ui.py:292 ../ui.py:321 ../ui.py:435 ../ui.py:484
+#: ../ui.py:253 ../ui.py:292 ../ui.py:321 ../ui.py:435 ../ui.py:485
 msgid "Running..."
 msgstr "Çalıştırılıyor..."
 
@@ -226,7 +226,7 @@ msgstr "Çalıştırılıyor..."
 msgid "SD"
 msgstr ""
 
-#: ../ui.py:134 ../ui.py:546
+#: ../ui.py:134 ../ui.py:556
 msgid "Save"
 msgstr "Kaydet"
 
@@ -238,7 +238,7 @@ msgstr ""
 msgid "Save previous backup"
 msgstr "Önceki yedeklemeyi kaydet"
 
-#: ../ui.py:586
+#: ../ui.py:596
 msgid "Select"
 msgstr "Seç"
 
@@ -250,7 +250,7 @@ msgstr ""
 msgid "Select files to backup"
 msgstr "Yedeklenecek dosyaları seçin"
 
-#: ../ui.py:577
+#: ../ui.py:587
 msgid "Select files/folders to backup"
 msgstr "Yedeklenecek dosyaları/klasörleri seçin"
 

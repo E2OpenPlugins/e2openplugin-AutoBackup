@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: auto backup Persian Translation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-07-04 17:40+0200\n"
+"POT-Creation-Date: 2026-07-04 21:25+0200\n"
 "PO-Revision-Date: 2016-05-06 14:13+0200\n"
 "Last-Translator: neoatomic <neoatomic@users.noreply.github.com>\n"
 "Language-Team: Persian Professionals <persianpros@yahoo.com>\n"
@@ -60,7 +60,7 @@ msgid "CF"
 msgstr "کارت حافظه از نوع از نوع سی اف"
 
 #
-#: ../ui.py:133 ../ui.py:545
+#: ../ui.py:133 ../ui.py:555
 msgid "Cancel"
 msgstr "لغو کردن"
 
@@ -106,7 +106,7 @@ msgid "Create a backup of the current settings."
 msgstr ""
 
 #: ../ui.py:219
-msgid "Create a separate archive with current settings without overwriting the existing backup. Slot number is added to the archive name."
+msgid "Create a separate archive with current settings without overwriting the existing backup. The hostname and slot number are added to the archive name."
 msgstr ""
 
 #: ../ui.py:219
@@ -119,7 +119,7 @@ msgid "Daily automatic backup"
 msgstr "تهیه نسخه پشتیبان بصورت روزانه"
 
 #
-#: ../ui.py:584
+#: ../ui.py:594
 msgid "Deselect"
 msgstr "لغو مورد انتخاب شده"
 
@@ -209,7 +209,7 @@ msgstr "هیچ رسانه مناسبی یافت نگردید پس فلش ممو�
 msgid "Nowhere"
 msgstr "هیچ کجا "
 
-#: ../ui.py:598
+#: ../ui.py:608
 msgid "Really close without saving settings?"
 msgstr ""
 
@@ -250,7 +250,7 @@ msgid "Run autoinstall"
 msgstr "ایجاد یک نصب خودکار"
 
 #
-#: ../ui.py:253 ../ui.py:292 ../ui.py:321 ../ui.py:435 ../ui.py:484
+#: ../ui.py:253 ../ui.py:292 ../ui.py:321 ../ui.py:435 ../ui.py:485
 #, fuzzy
 msgid "Running..."
 msgstr "عملیات در حال اجرا است"
@@ -261,7 +261,7 @@ msgid "SD"
 msgstr "کارت حافظه از نوع اس دی"
 
 #
-#: ../ui.py:134 ../ui.py:546
+#: ../ui.py:134 ../ui.py:556
 msgid "Save"
 msgstr "ذخیره سازی عملیات"
 
@@ -274,7 +274,7 @@ msgid "Save previous backup"
 msgstr ""
 
 #
-#: ../ui.py:586
+#: ../ui.py:596
 msgid "Select"
 msgstr "انتخاب کردن"
 
@@ -288,7 +288,7 @@ msgid "Select files to backup"
 msgstr "پوشه مورد نظر جهت ذخیره سازی نسخه پشتیبان را انتخاب کنید"
 
 #
-#: ../ui.py:577
+#: ../ui.py:587
 msgid "Select files/folders to backup"
 msgstr "فایل و پوشه مورد نظر را جهت ذخیره سازی نسخه پشتیبان انتخاب کنید"
 

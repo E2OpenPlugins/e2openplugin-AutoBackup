@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-07-04 17:40+0200\n"
+"POT-Creation-Date: 2026-07-04 21:25+0200\n"
 "PO-Revision-Date: 2019-07-25 09:28+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -57,7 +57,7 @@ msgstr "Vị trí dự phòng"
 msgid "CF"
 msgstr "CF"
 
-#: ../ui.py:133 ../ui.py:545
+#: ../ui.py:133 ../ui.py:555
 msgid "Cancel"
 msgstr "Hủy bỏ"
 
@@ -100,7 +100,7 @@ msgid "Create a backup of the current settings."
 msgstr ""
 
 #: ../ui.py:219
-msgid "Create a separate archive with current settings without overwriting the existing backup. Slot number is added to the archive name."
+msgid "Create a separate archive with current settings without overwriting the existing backup. The hostname and slot number are added to the archive name."
 msgstr ""
 
 #: ../ui.py:219
@@ -111,7 +111,7 @@ msgstr ""
 msgid "Daily automatic backup"
 msgstr "Sao lưu tự động hàng ngày"
 
-#: ../ui.py:584
+#: ../ui.py:594
 msgid "Deselect"
 msgstr "Bỏ chọn"
 
@@ -189,7 +189,7 @@ msgstr "Không tìm thấy phương tiện phù hợp, cắm thẻ nhớ USB, th
 msgid "Nowhere"
 msgstr "Không nơi nào"
 
-#: ../ui.py:598
+#: ../ui.py:608
 msgid "Really close without saving settings?"
 msgstr ""
 
@@ -226,7 +226,7 @@ msgstr "Chạy một bản sao lưu ngay bây giờ"
 msgid "Run autoinstall"
 msgstr "Chạy tự động cài đặt"
 
-#: ../ui.py:253 ../ui.py:292 ../ui.py:321 ../ui.py:435 ../ui.py:484
+#: ../ui.py:253 ../ui.py:292 ../ui.py:321 ../ui.py:435 ../ui.py:485
 msgid "Running..."
 msgstr "Đang chạy..."
 
@@ -234,7 +234,7 @@ msgstr "Đang chạy..."
 msgid "SD"
 msgstr "SD"
 
-#: ../ui.py:134 ../ui.py:546
+#: ../ui.py:134 ../ui.py:556
 msgid "Save"
 msgstr "Lưu lại"
 
@@ -246,7 +246,7 @@ msgstr ""
 msgid "Save previous backup"
 msgstr "Lưu bản sao lưu trước"
 
-#: ../ui.py:586
+#: ../ui.py:596
 msgid "Select"
 msgstr "Lựa chọn"
 
@@ -258,7 +258,7 @@ msgstr ""
 msgid "Select files to backup"
 msgstr "Chọn tập tin để sao lưu"
 
-#: ../ui.py:577
+#: ../ui.py:587
 msgid "Select files/folders to backup"
 msgstr "Chọn tập tin / thư mục để sao lưu"
 

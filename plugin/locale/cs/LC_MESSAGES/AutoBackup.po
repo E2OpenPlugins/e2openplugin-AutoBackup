@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ims\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-07-04 17:40+0200\n"
+"POT-Creation-Date: 2026-07-04 21:25+0200\n"
 "PO-Revision-Date: \n"
 "Last-Translator: ims <ims@openpli.org>\n"
 "Language-Team: PLi <ims21@users.sourceforge.net>\n"
@@ -61,7 +61,7 @@ msgid "CF"
 msgstr "CF"
 
 #
-#: ../ui.py:133 ../ui.py:545
+#: ../ui.py:133 ../ui.py:555
 msgid "Cancel"
 msgstr "Zavřít"
 
@@ -107,8 +107,8 @@ msgid "Create a backup of the current settings."
 msgstr "Vytvoří zálohu aktuálního nastavení."
 
 #: ../ui.py:219
-msgid "Create a separate archive with current settings without overwriting the existing backup. Slot number is added to the archive name."
-msgstr "Vytvoří samostatný archiv s aktuálním nastavením bez přepsání existující zálohy. Číslo slotu se přidá do názvu archivu."
+msgid "Create a separate archive with current settings without overwriting the existing backup. The hostname and slot number are added to the archive name."
+msgstr "Vytvoří samostatný archiv s aktuálním nastavením bez přepsání existující zálohy. Hostname a číslo slotu se přidají do názvu archivu."
 
 #: ../ui.py:219
 msgid "Create archive with current settings"
@@ -120,7 +120,7 @@ msgid "Daily automatic backup"
 msgstr "Denně automaticky zálohovat"
 
 #
-#: ../ui.py:584
+#: ../ui.py:594
 msgid "Deselect"
 msgstr "Odebrat"
 
@@ -200,7 +200,7 @@ msgstr "Žádné vhodné médium nebylo nalezeno. Vložte USB, flash kartu nebo 
 msgid "Nowhere"
 msgstr "Nikde"
 
-#: ../ui.py:598
+#: ../ui.py:608
 msgid "Really close without saving settings?"
 msgstr "Opravdu zavřít bez uloženého nastavení?"
 
@@ -238,7 +238,7 @@ msgid "Run autoinstall"
 msgstr "Spustit autoinstall"
 
 #
-#: ../ui.py:253 ../ui.py:292 ../ui.py:321 ../ui.py:435 ../ui.py:484
+#: ../ui.py:253 ../ui.py:292 ../ui.py:321 ../ui.py:435 ../ui.py:485
 msgid "Running..."
 msgstr "Probíhá..."
 
@@ -247,7 +247,7 @@ msgid "SD"
 msgstr "SD"
 
 #
-#: ../ui.py:134 ../ui.py:546
+#: ../ui.py:134 ../ui.py:556
 msgid "Save"
 msgstr "Uložit"
 
@@ -260,7 +260,7 @@ msgid "Save previous backup"
 msgstr "Uložit předchozí zálohu"
 
 #
-#: ../ui.py:586
+#: ../ui.py:596
 msgid "Select"
 msgstr "Zvolit"
 
@@ -273,7 +273,7 @@ msgid "Select files to backup"
 msgstr "Výběr souborů pro zálohování"
 
 #
-#: ../ui.py:577
+#: ../ui.py:587
 msgid "Select files/folders to backup"
 msgstr "Vyberte soubory/složky pro zálohování"
 

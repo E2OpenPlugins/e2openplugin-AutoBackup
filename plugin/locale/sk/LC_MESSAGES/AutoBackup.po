@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-07-04 17:40+0200\n"
+"POT-Creation-Date: 2026-07-04 21:25+0200\n"
 "PO-Revision-Date: 2019-02-01 14:31+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -57,7 +57,7 @@ msgstr "Umiestnenie zálohy"
 msgid "CF"
 msgstr "CF"
 
-#: ../ui.py:133 ../ui.py:545
+#: ../ui.py:133 ../ui.py:555
 msgid "Cancel"
 msgstr "Zrušiť"
 
@@ -100,7 +100,7 @@ msgid "Create a backup of the current settings."
 msgstr ""
 
 #: ../ui.py:219
-msgid "Create a separate archive with current settings without overwriting the existing backup. Slot number is added to the archive name."
+msgid "Create a separate archive with current settings without overwriting the existing backup. The hostname and slot number are added to the archive name."
 msgstr ""
 
 #: ../ui.py:219
@@ -111,7 +111,7 @@ msgstr ""
 msgid "Daily automatic backup"
 msgstr "Denná automatická záloha"
 
-#: ../ui.py:584
+#: ../ui.py:594
 msgid "Deselect"
 msgstr "Odškrtnúť"
 
@@ -189,7 +189,7 @@ msgstr "Nenájdené vhodné médium. Vložte USB disk, pamäťovú kartu alebo p
 msgid "Nowhere"
 msgstr "Nikde"
 
-#: ../ui.py:598
+#: ../ui.py:608
 msgid "Really close without saving settings?"
 msgstr ""
 
@@ -226,7 +226,7 @@ msgstr "Spustiť zálohovanie"
 msgid "Run autoinstall"
 msgstr "Spustiť automatickú inštaláciu"
 
-#: ../ui.py:253 ../ui.py:292 ../ui.py:321 ../ui.py:435 ../ui.py:484
+#: ../ui.py:253 ../ui.py:292 ../ui.py:321 ../ui.py:435 ../ui.py:485
 msgid "Running..."
 msgstr "Beží..."
 
@@ -234,7 +234,7 @@ msgstr "Beží..."
 msgid "SD"
 msgstr "SD"
 
-#: ../ui.py:134 ../ui.py:546
+#: ../ui.py:134 ../ui.py:556
 msgid "Save"
 msgstr "Uložiť"
 
@@ -246,7 +246,7 @@ msgstr ""
 msgid "Save previous backup"
 msgstr "Uložiť predchádzajúcu zálohu"
 
-#: ../ui.py:586
+#: ../ui.py:596
 msgid "Select"
 msgstr "Zvoliť"
 
@@ -258,7 +258,7 @@ msgstr ""
 msgid "Select files to backup"
 msgstr "Vybrať súbory na zálohovanie"
 
-#: ../ui.py:577
+#: ../ui.py:587
 msgid "Select files/folders to backup"
 msgstr "Vybrať súbory / zložky na zálohovanie"
 

@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: AutoBackup\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-07-04 17:40+0200\n"
+"POT-Creation-Date: 2026-07-04 21:25+0200\n"
 "PO-Revision-Date: \n"
 "Last-Translator: MCelliot_g <mcelliot_g@hotmail.com>\n"
 "Language-Team: \n"
@@ -50,7 +50,7 @@ msgstr "Θέση αντιγράφων ασφαλείας"
 msgid "CF"
 msgstr "CF"
 
-#: ../ui.py:133 ../ui.py:545
+#: ../ui.py:133 ../ui.py:555
 msgid "Cancel"
 msgstr "Ακύρωση"
 
@@ -87,7 +87,7 @@ msgid "Create a backup of the current settings."
 msgstr ""
 
 #: ../ui.py:219
-msgid "Create a separate archive with current settings without overwriting the existing backup. Slot number is added to the archive name."
+msgid "Create a separate archive with current settings without overwriting the existing backup. The hostname and slot number are added to the archive name."
 msgstr ""
 
 #: ../ui.py:219
@@ -98,7 +98,7 @@ msgstr ""
 msgid "Daily automatic backup"
 msgstr "Καθημερινή αυτόματη δημιουργία αντιγράφων ασφαλείας"
 
-#: ../ui.py:584
+#: ../ui.py:594
 msgid "Deselect"
 msgstr "Αποεπιλογή"
 
@@ -172,7 +172,7 @@ msgstr "Δεν βρέθηκαν κατάλληλα μέσα, τοποθετήσ�
 msgid "Nowhere"
 msgstr "Πουθενά"
 
-#: ../ui.py:598
+#: ../ui.py:608
 msgid "Really close without saving settings?"
 msgstr "Έξοδος χωρίς αποθήκευση ρυθμίσεων;"
 
@@ -209,7 +209,7 @@ msgstr "Δημιουργία αντιγράφου ασφαλείας τώρα"
 msgid "Run autoinstall"
 msgstr "Εκτέλεση αυτόματης εγκατάστασης"
 
-#: ../ui.py:253 ../ui.py:292 ../ui.py:321 ../ui.py:435 ../ui.py:484
+#: ../ui.py:253 ../ui.py:292 ../ui.py:321 ../ui.py:435 ../ui.py:485
 msgid "Running..."
 msgstr "Σε εκτέλεση..."
 
@@ -217,7 +217,7 @@ msgstr "Σε εκτέλεση..."
 msgid "SD"
 msgstr "SD"
 
-#: ../ui.py:134 ../ui.py:546
+#: ../ui.py:134 ../ui.py:556
 msgid "Save"
 msgstr "Αποθήκευση"
 
@@ -229,7 +229,7 @@ msgstr ""
 msgid "Save previous backup"
 msgstr "Αποθήκευση προηγούμενου αντιγράφου ασφαλείας"
 
-#: ../ui.py:586
+#: ../ui.py:596
 msgid "Select"
 msgstr "Επιλογή"
 
@@ -241,7 +241,7 @@ msgstr ""
 msgid "Select files to backup"
 msgstr "Επιλογή αρχείων προς εφεδρεία"
 
-#: ../ui.py:577
+#: ../ui.py:587
 msgid "Select files/folders to backup"
 msgstr "Επιλογή αρχείων/φακέλων προς εφεδρεία"
 

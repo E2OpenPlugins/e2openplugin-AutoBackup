@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: AutoBackup\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-07-04 17:40+0200\n"
+"POT-Creation-Date: 2026-07-04 21:25+0200\n"
 "PO-Revision-Date: 2018-12-25 21:50+0200\n"
 "Last-Translator: Taapat <taapat@gmail.com>\n"
 "Language-Team: Taapat <taapat@gmail.com>\n"
@@ -50,7 +50,7 @@ msgstr "Dublējumkopijas atrašanās vieta"
 msgid "CF"
 msgstr "CF"
 
-#: ../ui.py:133 ../ui.py:545
+#: ../ui.py:133 ../ui.py:555
 msgid "Cancel"
 msgstr "Atcelt"
 
@@ -93,7 +93,7 @@ msgid "Create a backup of the current settings."
 msgstr ""
 
 #: ../ui.py:219
-msgid "Create a separate archive with current settings without overwriting the existing backup. Slot number is added to the archive name."
+msgid "Create a separate archive with current settings without overwriting the existing backup. The hostname and slot number are added to the archive name."
 msgstr ""
 
 #: ../ui.py:219
@@ -104,7 +104,7 @@ msgstr ""
 msgid "Daily automatic backup"
 msgstr "Veidot dublējumkopiju katru dienu"
 
-#: ../ui.py:584
+#: ../ui.py:594
 msgid "Deselect"
 msgstr "Atcelt izvēli"
 
@@ -182,7 +182,7 @@ msgstr "Nav atrasts piemērots datu nesējs. Pievienojiet USB zibatmiņu, SD kar
 msgid "Nowhere"
 msgstr "Nekur"
 
-#: ../ui.py:598
+#: ../ui.py:608
 msgid "Really close without saving settings?"
 msgstr ""
 
@@ -219,7 +219,7 @@ msgstr "Izveidot dublējumkopiju tagad"
 msgid "Run autoinstall"
 msgstr "Uzstādīt spraudņus"
 
-#: ../ui.py:253 ../ui.py:292 ../ui.py:321 ../ui.py:435 ../ui.py:484
+#: ../ui.py:253 ../ui.py:292 ../ui.py:321 ../ui.py:435 ../ui.py:485
 msgid "Running..."
 msgstr "Darbojas..."
 
@@ -227,7 +227,7 @@ msgstr "Darbojas..."
 msgid "SD"
 msgstr "SD"
 
-#: ../ui.py:134 ../ui.py:546
+#: ../ui.py:134 ../ui.py:556
 msgid "Save"
 msgstr "Sagalbāt"
 
@@ -239,7 +239,7 @@ msgstr ""
 msgid "Save previous backup"
 msgstr "Sagalbāt iepriekšējo dublējumkopiju"
 
-#: ../ui.py:586
+#: ../ui.py:596
 msgid "Select"
 msgstr "Izvēlēties"
 
@@ -251,7 +251,7 @@ msgstr ""
 msgid "Select files to backup"
 msgstr "Izvēlēties dublējumkopijas failus"
 
-#: ../ui.py:577
+#: ../ui.py:587
 msgid "Select files/folders to backup"
 msgstr "Izvēlieties dublējumkopijas failus vai mapes"
 
