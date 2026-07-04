@@ -216,7 +216,7 @@ class Config(ConfigListScreen, Screen):
 			(_("Run autoinstall"), self.doautoinstall, _("Install all plugins listed in the 'autoinstall' file. Already installed plugins are skipped.")),
 			(_("Remove autoinstall list"), self.doremoveautoinstall, _("Remove the 'autoinstall' file from a backup.")),
 			(_("Restore"), self.dorestore, _("Restore settings from the current backup.")),
-			(_("Create archive with current settings"), self.doArchiveCurrentBackup, _("Create a separate archive with current settings without overwriting the existing backup. Slot number is added to the archive name.")),
+			(_("Create archive with current settings"), self.doArchiveCurrentBackup, _("Create a separate archive with current settings without overwriting the existing backup. The hostname and slot number are added to the archive name.")),
 			(_("Restore previous backup"), self.doRestorePrevious, _("Restore settings from a selected archive. MAC address is verified, archive is extracted and settings are restored.")),
 		]
 		self.session.openWithCallback(self.menuDone, ChoiceBox, list=lst)
@@ -375,7 +375,7 @@ class Config(ConfigListScreen, Screen):
 		print("[AutoBackup]", s.strip())
 		self["status"].appendText(s)
 
-	def doRestorePrevious(self, index=0):
+	def doRestorePrevious(self):
 		backupList = []
 		backupDir = os.path.join(self.cfgwhere.value, "backup")
 
@@ -473,7 +473,8 @@ class Config(ConfigListScreen, Screen):
 		except:
 			slot = None
 
-		boxSuffix = "." + about.getHardwareTypeString().replace(" ", "_")
+		hostname = self.getHostName().replace(" ", "_").replace("/", "_")
+		boxSuffix = "." + hostname
 
 		slotSuffix = ""
 		if slot is not None:
@@ -490,7 +491,7 @@ class Config(ConfigListScreen, Screen):
 			shutil.rmtree(tmpBackupDir)
 
 		os.makedirs(os.path.join(tmpBackupDir, "backup"))
-		self.createAutoBackupInfo(os.path.join(tmpBackupDir, "backup"), slot)
+		self.createAutoBackupInfo(os.path.join(tmpBackupDir, "backup"), hostname, slot)
 
 		cmd = (
 			'%s && '
@@ -511,19 +512,28 @@ class Config(ConfigListScreen, Screen):
 			print("[AutoBackup] failed to execute")
 			self.showOutput()
 
-	def createAutoBackupInfo(self, backupDir, slot):
+	def createAutoBackupInfo(self, backupDir, hostname, slot):
 		if not os.path.isdir(backupDir):
 			os.makedirs(backupDir)
 
 		infoFile = os.path.join(backupDir, "autobackup.info")
 
 		with open(infoFile, "w") as f:
+			f.write("hostname=%s\n" % hostname)
 			f.write("hardware=%s\n" % about.getHardwareTypeString())
 			f.write("image=%s\n" % about.getImageTypeString())
 			f.write("oe=%s\n" % about.getOEVersionString())
 			f.write("enigma=%s\n" % about.getEnigmaVersionString())
 			if slot is not None:
 				f.write("slot=slot%d\n" % slot)
+
+	def getHostName(self):
+		try:
+			with open("/etc/hostname", "r") as f:
+				return f.read().strip()
+		except:
+			return about.getHardwareTypeString()
+
 
 class BackupSelection(Screen):
 	skin = """
