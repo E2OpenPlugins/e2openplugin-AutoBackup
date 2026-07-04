@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ims\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-08-18 06:17+0300\n"
+"POT-Creation-Date: 2026-07-04 08:30+0200\n"
 "PO-Revision-Date: \n"
 "Last-Translator: neoatomic <neoatomic@users.noreply.github.com>\n"
 "Language-Team: \n"
@@ -13,39 +13,39 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Generator: Poedit 3.0\n"
 
-#: ../plugin.py:137
+#: ../plugin.py:139
 msgid "Auto backup"
 msgstr "Авто бэкап настроек"
 
-#: ../ui.py:104 ../ui.py:152
+#: ../ui.py:107 ../ui.py:156
 msgid "AutoBackup Configuration"
 msgstr "Настройки AutoBackup"
 
-#: ../plugin.py:141
+#: ../plugin.py:143
 msgid "Automatic settings backup"
 msgstr "Автоматический бэкап настроек"
 
-#: ../ui.py:122
+#: ../ui.py:125
 msgid "Automatic start time"
 msgstr "Время автоматического старта"
 
-#: ../ui.py:203
+#: ../ui.py:213
 msgid "Backup EPG cache"
 msgstr "Бекап кеша EPG"
 
-#: ../ui.py:120
+#: ../ui.py:123
 msgid "Backup location"
 msgstr "Расположение бэкапа"
 
-#: ../ui.py:24 ../ui.py:43
+#: ../ui.py:27 ../ui.py:46
 msgid "CF"
 msgstr "CF"
 
-#: ../ui.py:128 ../ui.py:373
+#: ../ui.py:131 ../ui.py:438
 msgid "Cancel"
 msgstr "Отмена"
 
-#: ../ui.py:321
+#: ../ui.py:332
 msgid ""
 "Choose a backup.\n"
 "This will delete autoinstall list.\n"
@@ -55,7 +55,7 @@ msgstr ""
 "Это удалит список автоинсталляции.\n"
 "Вы действительно хотите продолжить?"
 
-#: ../ui.py:292
+#: ../ui.py:303
 msgid ""
 "Choose a backup.\n"
 "This will reinstall all plugins from your backup.\n"
@@ -65,7 +65,16 @@ msgstr ""
 "Это переустановит все плагины из Вашего бэкапа.\n"
 "Вы действительно хотите переустановить?"
 
-#: ../ui.py:253
+#: ../ui.py:386
+#, fuzzy
+msgid ""
+"Choose previous backup which should be restored.\n"
+"Do you really want to restore this backup and restart?"
+msgstr ""
+"Выберите настройки резервного копирования, которые должны быть восстановлены.\n"
+"Вы действительно хотите восстановить эти настройки и сделать рестарт?"
+
+#: ../ui.py:264
 msgid ""
 "Choose settings backup which should be restored.\n"
 "Do you really want to restore these settings and restart?"
@@ -73,126 +82,168 @@ msgstr ""
 "Выберите настройки резервного копирования, которые должны быть восстановлены.\n"
 "Вы действительно хотите восстановить эти настройки и сделать рестарт?"
 
-#: ../ui.py:123
+#: ../ui.py:126
 msgid "Create Autoinstall"
 msgstr "Создать автоинсталляцию (установленные ipk)"
 
-#: ../ui.py:121
+#: ../ui.py:212
+msgid "Create a backup of the current settings."
+msgstr ""
+
+#: ../ui.py:124
 msgid "Daily automatic backup"
 msgstr "Ежедневный автоматический бэкап"
 
-#: ../ui.py:411
+#: ../ui.py:477
 msgid "Deselect"
 msgstr "Не выбирать"
 
-#: ../ui.py:260
+#: ../ui.py:271
 msgid "Do you want to restore your settings?"
 msgstr "Вы хотите восстановить настройки?"
 
-#: ../ui.py:345
+#: ../ui.py:356
 msgid "Done"
 msgstr "Выполнено"
 
-#: ../ui.py:124
+#: ../ui.py:127
 msgid "EPG cache backup"
 msgstr "Бекап кеша EPG"
 
-#: ../ui.py:343
+#: ../ui.py:354
 msgid "Failed"
 msgstr "Ошибка"
 
-#: ../ui.py:22 ../ui.py:45
+#: ../ui.py:25 ../ui.py:48
 msgid "Harddisk"
 msgstr "Жесткий диск"
 
-#: ../ui.py:178
+#: ../ui.py:214
+msgid "Install all plugins listed in the 'autoinstall' file. Already installed plugins are skipped."
+msgstr ""
+
+#: ../ui.py:182
 msgid "Last backup date"
 msgstr "Дата последнего бэкапа"
 
-#: ../ui.py:130
+#: ../ui.py:135
+msgid "MENU"
+msgstr ""
+
+#: ../ui.py:133
 msgid "Manual"
 msgstr "В ручную"
 
-#: ../ui.py:289 ../ui.py:318
+#: ../ui.py:300 ../ui.py:329
 msgid "No autoinstall list found"
 msgstr "Не найден список автоинсталляции"
 
-#: ../ui.py:180 ../ui.py:183
+#: ../ui.py:184 ../ui.py:187
 msgid "No backup present"
 msgstr "Не найден бэкап"
 
-#: ../ui.py:250
+#: ../ui.py:382
+#, fuzzy
+msgid "No previous backups found"
+msgstr "Не найден бэкап настроек"
+
+#: ../ui.py:261
 msgid "No settings backups found"
 msgstr "Не найден бэкап настроек"
 
-#: ../ui.py:171
+#: ../ui.py:175
 msgid "No suitable media found, insert USB stick, flash card or harddisk."
 msgstr "Нет подходящего устройства, необходимо подключить флешку/карту памяти/жесткий диск."
 
-#: ../ui.py:117
+#: ../ui.py:120
 msgid "Nowhere"
 msgstr "Нигде"
 
-#: ../ui.py:129
-msgid "OK"
-msgstr "Ок"
-
-#: ../ui.py:424
+#: ../ui.py:491
 msgid "Really close without saving settings?"
 msgstr "Действительно закрыть без сохранения настроек?"
 
-#: ../ui.py:205
+#: ../ui.py:215
 msgid "Remove autoinstall list"
 msgstr "Удалить файлы автоинсталляции"
 
-#: ../ui.py:131 ../ui.py:206
+#: ../ui.py:215
+msgid "Remove the 'autoinstall' file from a backup."
+msgstr ""
+
+#: ../ui.py:134 ../ui.py:216
 msgid "Restore"
 msgstr "Восстановить"
 
-#: ../ui.py:202
+#: ../ui.py:217
+#, fuzzy
+msgid "Restore previous backup"
+msgstr "Сохранить предыдущий бекап"
+
+#: ../ui.py:217
+msgid "Restore settings from a selected archive. MAC address is verified, archive is extracted and settings are restored."
+msgstr ""
+
+#: ../ui.py:216
+msgid "Restore settings from the current backup."
+msgstr ""
+
+#: ../ui.py:212
 msgid "Run a backup now"
 msgstr "Выполнить бэкап сейчас"
 
-#: ../ui.py:204
+#: ../ui.py:214
 msgid "Run autoinstall"
 msgstr "Запустить автоинсталляцию"
 
-#: ../ui.py:231 ../ui.py:270 ../ui.py:299
+#: ../ui.py:242 ../ui.py:281 ../ui.py:310 ../ui.py:401
 msgid "Running..."
 msgstr "Запущено..."
 
-#: ../ui.py:25
+#: ../ui.py:28
 msgid "SD"
 msgstr "SD"
 
-#: ../ui.py:374
+#: ../ui.py:132 ../ui.py:439
 msgid "Save"
 msgstr "Сохранить"
 
-#: ../ui.py:125
+#: ../ui.py:213
+msgid "Save current contents of EPG cache to a file."
+msgstr ""
+
+#: ../ui.py:128
 msgid "Save previous backup"
 msgstr "Сохранить предыдущий бекап"
 
-#: ../ui.py:413
+#: ../ui.py:479
 msgid "Select"
 msgstr "Выбрать"
 
-#: ../ui.py:201
+#: ../ui.py:211
+msgid "Select files and folders to include in the backup. Basic backup items are already selected."
+msgstr ""
+
+#: ../ui.py:211
 msgid "Select files to backup"
 msgstr "Выберите файлы для бэкапа"
 
-#: ../ui.py:405
+#: ../ui.py:470
 msgid "Select files/folders to backup"
 msgstr "Выбор файлов/папок для резервного копирования"
 
-#: ../ui.py:23
+#: ../ui.py:396
+msgid "This backup was created for another receiver."
+msgstr ""
+
+#: ../ui.py:26
 msgid "USB"
 msgstr "USB"
 
-#: ../ui.py:245 ../ui.py:284 ../ui.py:313
+#: ../ui.py:256 ../ui.py:295 ../ui.py:324
 msgid "from: "
 msgstr "от:"
 
-#: ../ui.py:40
+#: ../ui.py:43
 msgid "root"
 msgstr "root"

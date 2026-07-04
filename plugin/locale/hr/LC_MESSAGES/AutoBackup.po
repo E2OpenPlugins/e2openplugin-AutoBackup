@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: e 2openplugin-AutoBackup\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-08-18 06:17+0300\n"
+"POT-Creation-Date: 2026-07-04 08:30+0200\n"
 "PO-Revision-Date: 2020-06-03 19:42+0200\n"
 "Last-Translator: Željko <zeljko2@hi.ht.hr>\n"
 "Language-Team: Željko\n"
@@ -13,39 +13,39 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : 2);\n"
 "X-Generator: Poedit 2.3.1\n"
 
-#: ../plugin.py:137
+#: ../plugin.py:139
 msgid "Auto backup"
 msgstr "Auto backup"
 
-#: ../ui.py:104 ../ui.py:152
+#: ../ui.py:107 ../ui.py:156
 msgid "AutoBackup Configuration"
 msgstr "AutoBackup konfiguracija"
 
-#: ../plugin.py:141
+#: ../plugin.py:143
 msgid "Automatic settings backup"
 msgstr "Automatske backup postavke"
 
-#: ../ui.py:122
+#: ../ui.py:125
 msgid "Automatic start time"
 msgstr "Automatsko vrijeme pokretanja"
 
-#: ../ui.py:203
+#: ../ui.py:213
 msgid "Backup EPG cache"
 msgstr "Backup EPG predmemorije"
 
-#: ../ui.py:120
+#: ../ui.py:123
 msgid "Backup location"
 msgstr "Backup lokacija"
 
-#: ../ui.py:24 ../ui.py:43
+#: ../ui.py:27 ../ui.py:46
 msgid "CF"
 msgstr "CF"
 
-#: ../ui.py:128 ../ui.py:373
+#: ../ui.py:131 ../ui.py:438
 msgid "Cancel"
 msgstr "Otkazati"
 
-#: ../ui.py:321
+#: ../ui.py:332
 msgid ""
 "Choose a backup.\n"
 "This will delete autoinstall list.\n"
@@ -55,7 +55,7 @@ msgstr ""
 "To će izbrisati popis za automatsku instalaciju.\n"
 "Želite li zaista nastaviti?"
 
-#: ../ui.py:292
+#: ../ui.py:303
 msgid ""
 "Choose a backup.\n"
 "This will reinstall all plugins from your backup.\n"
@@ -65,7 +65,16 @@ msgstr ""
 "To će ponovo instalirati sve dodatke iz backupa.\n"
 "Želite li stvarno ponovo instalirati?"
 
-#: ../ui.py:253
+#: ../ui.py:386
+#, fuzzy
+msgid ""
+"Choose previous backup which should be restored.\n"
+"Do you really want to restore this backup and restart?"
+msgstr ""
+"Odaberite backup postavki koje treba vratiti.\n"
+"Želite li zaista vratiti te postavke i ponovno pokrenuti?"
+
+#: ../ui.py:264
 msgid ""
 "Choose settings backup which should be restored.\n"
 "Do you really want to restore these settings and restart?"
@@ -73,126 +82,168 @@ msgstr ""
 "Odaberite backup postavki koje treba vratiti.\n"
 "Želite li zaista vratiti te postavke i ponovno pokrenuti?"
 
-#: ../ui.py:123
+#: ../ui.py:126
 msgid "Create Autoinstall"
 msgstr "Kreiranje automatske instalacije"
 
-#: ../ui.py:121
+#: ../ui.py:212
+msgid "Create a backup of the current settings."
+msgstr ""
+
+#: ../ui.py:124
 msgid "Daily automatic backup"
 msgstr "Dnevni automatski backup"
 
-#: ../ui.py:411
+#: ../ui.py:477
 msgid "Deselect"
 msgstr "Poništite odabir"
 
-#: ../ui.py:260
+#: ../ui.py:271
 msgid "Do you want to restore your settings?"
 msgstr "Želite li vratiti postavke?"
 
-#: ../ui.py:345
+#: ../ui.py:356
 msgid "Done"
 msgstr "Gotovo"
 
-#: ../ui.py:124
+#: ../ui.py:127
 msgid "EPG cache backup"
 msgstr "Backup EPG predmemorije"
 
-#: ../ui.py:343
+#: ../ui.py:354
 msgid "Failed"
 msgstr "Neuspješno"
 
-#: ../ui.py:22 ../ui.py:45
+#: ../ui.py:25 ../ui.py:48
 msgid "Harddisk"
 msgstr "Hard disk"
 
-#: ../ui.py:178
+#: ../ui.py:214
+msgid "Install all plugins listed in the 'autoinstall' file. Already installed plugins are skipped."
+msgstr ""
+
+#: ../ui.py:182
 msgid "Last backup date"
 msgstr "Zadnji datum backupa"
 
-#: ../ui.py:130
+#: ../ui.py:135
+msgid "MENU"
+msgstr ""
+
+#: ../ui.py:133
 msgid "Manual"
 msgstr "Ručno"
 
-#: ../ui.py:289 ../ui.py:318
+#: ../ui.py:300 ../ui.py:329
 msgid "No autoinstall list found"
 msgstr "Nisu pronađene auto instalirane liste"
 
-#: ../ui.py:180 ../ui.py:183
+#: ../ui.py:184 ../ui.py:187
 msgid "No backup present"
 msgstr "Nema pronađenog backupa"
 
-#: ../ui.py:250
+#: ../ui.py:382
+#, fuzzy
+msgid "No previous backups found"
+msgstr "Nema pronađenih postavki backupa"
+
+#: ../ui.py:261
 msgid "No settings backups found"
 msgstr "Nema pronađenih postavki backupa"
 
-#: ../ui.py:171
+#: ../ui.py:175
 msgid "No suitable media found, insert USB stick, flash card or harddisk."
 msgstr "Nisu pronađeni odgovarajući mediji, USB stick, flash kartica ili tvrdi disk."
 
-#: ../ui.py:117
+#: ../ui.py:120
 msgid "Nowhere"
 msgstr "Nigdje"
 
-#: ../ui.py:129
-msgid "OK"
-msgstr "OK"
-
-#: ../ui.py:424
+#: ../ui.py:491
 msgid "Really close without saving settings?"
 msgstr ""
 
-#: ../ui.py:205
+#: ../ui.py:215
 msgid "Remove autoinstall list"
 msgstr "Uklonite popis za automatsku instalaciju"
 
-#: ../ui.py:131 ../ui.py:206
+#: ../ui.py:215
+msgid "Remove the 'autoinstall' file from a backup."
+msgstr ""
+
+#: ../ui.py:134 ../ui.py:216
 msgid "Restore"
 msgstr "Vratiti"
 
-#: ../ui.py:202
+#: ../ui.py:217
+#, fuzzy
+msgid "Restore previous backup"
+msgstr "Spremanje prethodnog backupa"
+
+#: ../ui.py:217
+msgid "Restore settings from a selected archive. MAC address is verified, archive is extracted and settings are restored."
+msgstr ""
+
+#: ../ui.py:216
+msgid "Restore settings from the current backup."
+msgstr ""
+
+#: ../ui.py:212
 msgid "Run a backup now"
 msgstr "Pokrenite sigurnosnu kopiju sada"
 
-#: ../ui.py:204
+#: ../ui.py:214
 msgid "Run autoinstall"
 msgstr "Pokrenite auto instalaciju"
 
-#: ../ui.py:231 ../ui.py:270 ../ui.py:299
+#: ../ui.py:242 ../ui.py:281 ../ui.py:310 ../ui.py:401
 msgid "Running..."
 msgstr "Pokretanje..."
 
-#: ../ui.py:25
+#: ../ui.py:28
 msgid "SD"
 msgstr "SD"
 
-#: ../ui.py:374
+#: ../ui.py:132 ../ui.py:439
 msgid "Save"
 msgstr "Spremite"
 
-#: ../ui.py:125
+#: ../ui.py:213
+msgid "Save current contents of EPG cache to a file."
+msgstr ""
+
+#: ../ui.py:128
 msgid "Save previous backup"
 msgstr "Spremanje prethodnog backupa"
 
-#: ../ui.py:413
+#: ../ui.py:479
 msgid "Select"
 msgstr "Odaberite"
 
-#: ../ui.py:201
+#: ../ui.py:211
+msgid "Select files and folders to include in the backup. Basic backup items are already selected."
+msgstr ""
+
+#: ../ui.py:211
 msgid "Select files to backup"
 msgstr "Odaberite datoteke za backup"
 
-#: ../ui.py:405
+#: ../ui.py:470
 msgid "Select files/folders to backup"
 msgstr "Odaberite datoteke/mape za backup"
 
-#: ../ui.py:23
+#: ../ui.py:396
+msgid "This backup was created for another receiver."
+msgstr ""
+
+#: ../ui.py:26
 msgid "USB"
 msgstr "USB"
 
-#: ../ui.py:245 ../ui.py:284 ../ui.py:313
+#: ../ui.py:256 ../ui.py:295 ../ui.py:324
 msgid "from: "
 msgstr "od: "
 
-#: ../ui.py:40
+#: ../ui.py:43
 msgid "root"
 msgstr "root"
