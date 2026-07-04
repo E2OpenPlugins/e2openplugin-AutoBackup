@@ -7,9 +7,11 @@ from . import _
 from . import plugin
 import os, tarfile
 import enigma
+import shutil
 from Components.config import config, configfile, getConfigListEntry, ConfigSelection
 from Screens.Screen import Screen
 from Components.ConfigList import ConfigListScreen
+from Components.About import about
 from Components.ActionMap import ActionMap
 from Components.Button import Button
 from Components.Label import Label
@@ -214,7 +216,8 @@ class Config(ConfigListScreen, Screen):
 			(_("Run autoinstall"), self.doautoinstall, _("Install all plugins listed in the 'autoinstall' file. Already installed plugins are skipped.")),
 			(_("Remove autoinstall list"), self.doremoveautoinstall, _("Remove the 'autoinstall' file from a backup.")),
 			(_("Restore"), self.dorestore, _("Restore settings from the current backup.")),
-			(_("Restore previous backup"), self.dorestoreprevious, _("Restore settings from a selected archive. MAC address is verified, archive is extracted and settings are restored.")),
+			(_("Create archive with current settings"), self.doArchiveCurrentBackup, _("Create a separate archive with current settings without overwriting the existing backup. Slot number is added to the archive name.")),
+			(_("Restore previous backup"), self.doRestorePrevious, _("Restore settings from a selected archive. MAC address is verified, archive is extracted and settings are restored.")),
 		]
 		self.session.openWithCallback(self.menuDone, ChoiceBox, list=lst)
 
@@ -232,6 +235,14 @@ class Config(ConfigListScreen, Screen):
 	def dobackup(self):
 		if not self.cfgwhere.value:
 			return
+
+		# remove existing autobackup.info if present.
+		infoFile = os.path.join(self.cfgwhere.value, "backup", "autobackup.info")
+		try:
+			os.remove(infoFile)
+		except OSError:
+			pass
+
 		self.saveAll()
 		# Write config file before creating the backup so we have it all
 		configfile.save()
@@ -364,7 +375,7 @@ class Config(ConfigListScreen, Screen):
 		print("[AutoBackup]", s.strip())
 		self["status"].appendText(s)
 
-	def dorestoreprevious(self):
+	def doRestorePrevious(self, index=0):
 		backupList = []
 		backupDir = os.path.join(self.cfgwhere.value, "backup")
 
@@ -383,17 +394,40 @@ class Config(ConfigListScreen, Screen):
 			return
 
 		backupList.sort(key=lambda b: b[2], reverse=True)
-		self.session.openWithCallback(self.dorestorepreviousnow, MessageBox, _("Choose previous backup which should be restored.\nDo you really want to restore this backup and restart?"), list=backupList)
+		self.restorePreviousList = backupList
+		self.session.openWithCallback(self.doRestorePreviousNow, ChoiceBox, title=_("Choose a previous backup archive to restore."), windowTitle=_("Backup archives"), list=backupList, keys=[""] * len(backupList), selection=getattr(self, "restorePreviousSelection", 0))
 
-	def dorestorepreviousnow(self, result):
+	def doRestorePreviousNow(self, result):
 		if not result:
 			return
 
-		backupFile = result
+		self.restorePreviousSelection = self.restorePreviousList.index(result)
+		backupFile = result[1]
 		backupDir = os.path.join(self.cfgwhere.value, "backup")
 
 		if not self.checkPreviousBackup(backupFile):
 			self.session.open(MessageBox, _("This backup was created for another receiver."), type=MessageBox.TYPE_ERROR, timeout=10)
+			return
+
+		info = self.formatAutoBackupInfo(self.readAutoBackupInfo(backupFile))
+
+		self.session.openWithCallback(
+			boundFunction(self.doRestorePreviousConfirmed, backupFile, backupDir),
+			MessageBox,
+			_("Backup information") + ":\n\n" + info + "\n\n" + _("Do you really want to restore this backup and restart?"),
+			default=False
+		)
+		return
+
+	def formatAutoBackupInfo(self, info):
+		result = []
+		for line in info.splitlines():
+			result.append(line.replace("=", ":\t", 1))
+		return "\n".join(result)
+
+	def doRestorePreviousConfirmed(self, backupFile, backupDir, answer):
+		if not answer:
+			self.doRestorePrevious()
 			return
 
 		self.data = ''
@@ -405,6 +439,17 @@ class Config(ConfigListScreen, Screen):
 		if self.container.execute(cmd):
 			print("[AutoBackup] failed to execute")
 		self.showOutput()
+
+	def readAutoBackupInfo(self, backupFile):
+		try:
+			with tarfile.open(backupFile, "r:gz") as tar:
+				f = tar.extractfile("autobackup.info")
+				if f:
+					return f.read().decode("utf-8")
+		except Exception as ex:
+			print("[AutoBackup] Failed to read autobackup.info:", ex)
+
+		return _("No backup information available.")
 
 	def checkPreviousBackup(self, backupFile):
 		try:
@@ -418,6 +463,68 @@ class Config(ConfigListScreen, Screen):
 		except Exception as ex:
 			print("[AutoBackup] Failed to check backup: %s" % ex)
 			return False
+
+	def doArchiveCurrentBackup(self):
+		if not self.cfgwhere.value:
+			return
+		try:
+			from Tools.Multiboot import getCurrentImage
+			slot = getCurrentImage()
+		except:
+			slot = None
+
+		boxSuffix = "." + about.getHardwareTypeString().replace(" ", "_")
+
+		slotSuffix = ""
+		if slot is not None:
+			slotSuffix = ".slot%02d" % slot
+
+		self.data = ''
+		self.showOutput()
+		self["statusbar"].setText(_('Running...'))
+
+		realBackupDir = self.cfgwhere.value
+		tmpBackupDir = "/tmp/autobackup.%d" % os.getpid()
+
+		if os.path.isdir(tmpBackupDir):
+			shutil.rmtree(tmpBackupDir)
+
+		os.makedirs(os.path.join(tmpBackupDir, "backup"))
+		self.createAutoBackupInfo(os.path.join(tmpBackupDir, "backup"), slot)
+
+		cmd = (
+			'%s && '
+			'cd "%s/backup" && '
+			'tar -czf "%s/backup/backup.$(date +%%Y%%m%%d_%%H%%M)%s%s.tar.gz" '
+			'PLi-AutoBackup*.tar.gz autoinstall* autobackup.info; '
+			'rm -rf "%s"'
+		) % (
+			plugin.backupCommand(tmpBackupDir),
+			tmpBackupDir,
+			realBackupDir,
+			boxSuffix,
+			slotSuffix,
+			tmpBackupDir
+		)
+
+		if self.container.execute(cmd):
+			print("[AutoBackup] failed to execute")
+			self.showOutput()
+
+	def createAutoBackupInfo(self, backupDir, slot):
+		if not os.path.isdir(backupDir):
+			os.makedirs(backupDir)
+
+		infoFile = os.path.join(backupDir, "autobackup.info")
+
+		with open(infoFile, "w") as f:
+			f.write("hardware=%s\n" % about.getHardwareTypeString())
+			f.write("image=%s\n" % about.getImageTypeString())
+			f.write("oe=%s\n" % about.getOEVersionString())
+			f.write("enigma=%s\n" % about.getEnigmaVersionString())
+			if slot is not None:
+				f.write("slot=slot%d\n" % slot)
+
 class BackupSelection(Screen):
 	skin = """
 		<screen position="center,center" size="560,400" title="Select files/folders to backup">
