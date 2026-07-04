@@ -208,13 +208,13 @@ class Config(ConfigListScreen, Screen):
 
 	def menu(self):
 		lst = [
-			(_("Select files to backup"), self.selectFiles),
-			(_("Run a backup now"), self.dobackup),
-			(_("Backup EPG cache"), self.doepgcachebackup),
-			(_("Run autoinstall"), self.doautoinstall),
-			(_("Remove autoinstall list"), self.doremoveautoinstall),
-			(_("Restore"), self.dorestore),
-			(_("Restore previous backup"), self.dorestoreprevious),
+			(_("Select files to backup"), self.selectFiles, _("Select files and folders to include in the backup. Basic backup items are already selected.")),
+			(_("Run a backup now"), self.dobackup, _("Create a backup of the current settings.")),
+			(_("Backup EPG cache"), self.doepgcachebackup, _("Save current contents of EPG cache to a file.")),
+			(_("Run autoinstall"), self.doautoinstall, _("Install all plugins listed in the 'autoinstall' file. Already installed plugins are skipped.")),
+			(_("Remove autoinstall list"), self.doremoveautoinstall, _("Remove the 'autoinstall' file from a backup.")),
+			(_("Restore"), self.dorestore, _("Restore settings from the current backup.")),
+			(_("Restore previous backup"), self.dorestoreprevious, _("Restore settings from a selected archive. MAC address is verified, archive is extracted and settings are restored.")),
 		]
 		self.session.openWithCallback(self.menuDone, ChoiceBox, list=lst)
 
