@@ -216,7 +216,7 @@ class Config(ConfigListScreen, Screen):
 			(_("Run autoinstall"), self.doautoinstall, _("Install all plugins listed in the 'autoinstall' file. Already installed plugins are skipped.")),
 			(_("Remove autoinstall list"), self.doremoveautoinstall, _("Remove the 'autoinstall' file from a backup.")),
 			(_("Restore"), self.dorestore, _("Restore settings from the current backup.")),
-			(_("Create archive with current settings"), self.doArchiveCurrentBackup, _("Create a separate archive with current settings without overwriting the existing backup. The hostname and slot number are added to the archive name.")),
+			(_("Create archive with current settings"), self.doArchiveCurrentBackup, _("Create a separate archive with current settings and autoinstall list without overwriting the existing backup. The hostname and slot number are added to the archive name.")),
 			(_("Restore previous backup"), self.doRestorePrevious, _("Restore settings from a selected archive. MAC address is verified, archive is extracted and settings are restored.")),
 		]
 		self.session.openWithCallback(self.menuDone, ChoiceBox, list=lst)
@@ -395,7 +395,7 @@ class Config(ConfigListScreen, Screen):
 
 		backupList.sort(key=lambda b: b[2], reverse=True)
 		self.restorePreviousList = backupList
-		self.session.openWithCallback(self.doRestorePreviousNow, ChoiceBox, title=_("Choose a previous backup archive to restore."), windowTitle=_("Backup archives"), list=backupList, keys=[""] * len(backupList), selection=getattr(self, "restorePreviousSelection", 0))
+		self.session.openWithCallback(self.doRestorePreviousNow, ChoiceBox, title=_("Select a backup archive and press OK."), windowTitle=_("Backup archive list"), list=backupList, keys=[""] * len(backupList), selection=getattr(self, "restorePreviousSelection", 0))
 
 	def doRestorePreviousNow(self, result):
 		if not result:
@@ -405,19 +405,62 @@ class Config(ConfigListScreen, Screen):
 		backupFile = result[1]
 		backupDir = os.path.join(self.cfgwhere.value, "backup")
 
-		if not self.checkPreviousBackup(backupFile):
-			self.session.open(MessageBox, _("This backup was created for another receiver."), type=MessageBox.TYPE_ERROR, timeout=10)
+		currentMac = open("/sys/class/net/eth0/address").read().strip().replace(":", "").lower()
+		backupMac = self.checkPreviousBackup(backupFile)
+
+		if backupMac != currentMac:
+			self.session.openWithCallback(
+				self.doRestorePreviousErrorClosed,
+				MessageBox,
+				_("This backup was created for another receiver.\nReceiver MAC does not match:") + "\n\n" + _("Receiver:") + " \t%s" % currentMac + "\n" + _("Backup:") + " \t%s" % (backupMac or _("Unknown")),
+				type=MessageBox.TYPE_ERROR,
+				timeout=10
+			)
 			return
 
 		info = self.formatAutoBackupInfo(self.readAutoBackupInfo(backupFile))
 
+		choices = [
+			(_("Restore settings now"), "restore"),
+			(_("Cancel"), "cancel"),
+			(_("Delete this archive"), "delete"),
+		]
 		self.session.openWithCallback(
-			boundFunction(self.doRestorePreviousConfirmed, backupFile, backupDir),
+			boundFunction(self.doRestorePreviousAction, backupFile, backupDir),
 			MessageBox,
-			_("Backup information") + ":\n\n" + info + "\n\n" + _("Do you really want to restore this backup and restart?"),
-			default=False
+			_("Backup information") + ":\n\n" + info + "\n\n" + _("What do you want to do?"),
+			list=choices
 		)
 		return
+
+	def doRestorePreviousErrorClosed(self, *args):
+		self.doRestorePrevious()
+
+	def doRestorePreviousAction(self, backupFile, backupDir, action):
+		if action == "restore":
+			self.doRestorePreviousConfirmed(backupFile, backupDir, True)
+		elif action == "delete":
+			self.session.openWithCallback(
+				boundFunction(self.doDeletePreviousConfirmed, backupFile),
+				MessageBox,
+				_("Do you really want delete this backup archive?"),
+				type=MessageBox.TYPE_YESNO,
+				default=False
+			)
+		else:
+			self.doRestorePrevious()
+
+	def doDeletePreviousConfirmed(self, backupFile, answer):
+		if not answer:
+			self.doRestorePrevious()
+			return
+		try:
+			os.remove(backupFile)
+		except Exception as ex:
+			print("[AutoBackup] Failed to delete backup %s: %s" % (backupFile, ex))
+			self.session.open(MessageBox, _("Failed to delete backup."), type=MessageBox.TYPE_ERROR, timeout=10)
+			return
+		self.doRestorePrevious()
 
 	def formatAutoBackupInfo(self, info):
 		result = []
@@ -453,16 +496,18 @@ class Config(ConfigListScreen, Screen):
 
 	def checkPreviousBackup(self, backupFile):
 		try:
-			mac = open("/sys/class/net/eth0/address").read().strip().replace(":", "")
-
 			with tarfile.open(backupFile, "r:gz") as tar:
-				names = tar.getnames()
-
-			return ("autoinstall%s" % mac) in names
-
+				for name in tar.getnames():
+					base = os.path.basename(name)
+					if base.endswith(".tar.gz"):
+						base = base[:-7]
+					if len(base) >= 12:
+						mac = base[-12:]
+						if all(c in "0123456789abcdefABCDEF" for c in mac):
+							return mac.lower()
 		except Exception as ex:
 			print("[AutoBackup] Failed to check backup: %s" % ex)
-			return False
+		return None
 
 	def doArchiveCurrentBackup(self):
 		if not self.cfgwhere.value:
@@ -500,7 +545,7 @@ class Config(ConfigListScreen, Screen):
 			'PLi-AutoBackup*.tar.gz autoinstall* autobackup.info; '
 			'rm -rf "%s"'
 		) % (
-			plugin.backupCommand(tmpBackupDir),
+			plugin.backupCommand(tmpBackupDir, fullArchive=True),
 			tmpBackupDir,
 			realBackupDir,
 			boxSuffix,

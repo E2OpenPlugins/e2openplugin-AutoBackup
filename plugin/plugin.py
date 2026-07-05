@@ -27,9 +27,9 @@ autoStartTimer = None
 BACKUP_SCRIPT = "/usr/lib/enigma2/python/Plugins/Extensions/AutoBackup/settings-backup.sh"
 
 
-def backupCommand(where=None):
+def backupCommand(where=None, fullArchive=False):
 	cmd = BACKUP_SCRIPT
-	if config.plugins.autobackup.autoinstall.value:
+	if config.plugins.autobackup.autoinstall.value or fullArchive:
 		cmd += " -a"
 	cmd += " " + (where or config.plugins.autobackup.where.value)
 	cmd += " " + str(int(config.plugins.autobackup.prevbackup.value))
