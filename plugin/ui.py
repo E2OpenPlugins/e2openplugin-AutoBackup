@@ -443,7 +443,7 @@ class Config(ConfigListScreen, Screen):
 			self.session.openWithCallback(
 				boundFunction(self.doDeletePreviousConfirmed, backupFile),
 				MessageBox,
-				_("Do you really want delete this backup archive?"),
+				_("Do you really want delete this backup archive?") + "\n\n" + backupFile,
 				type=MessageBox.TYPE_YESNO,
 				default=False
 			)
