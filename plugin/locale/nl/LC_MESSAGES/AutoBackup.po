@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: milo\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-07-04 21:25+0200\n"
+"POT-Creation-Date: 2026-07-05 11:02+0200\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Frenske <voorzitter@openpli.org>\n"
 "Language-Team: PLi <ims21@users.sourceforge.net>\n"
@@ -35,10 +35,10 @@ msgstr "Backup EPG-cache"
 
 #: ../ui.py:398
 #, fuzzy
-msgid "Backup archives"
+msgid "Backup archive list"
 msgstr "Backup EPG-cache"
 
-#: ../ui.py:417
+#: ../ui.py:431
 #, fuzzy
 msgid "Backup information"
 msgstr "Kies de locatie voor de backup"
@@ -47,11 +47,15 @@ msgstr "Kies de locatie voor de backup"
 msgid "Backup location"
 msgstr "Kies de locatie voor de backup"
 
+#: ../ui.py:415
+msgid "Backup:"
+msgstr ""
+
 #: ../ui.py:29 ../ui.py:48
 msgid "CF"
 msgstr "CF"
 
-#: ../ui.py:133 ../ui.py:555
+#: ../ui.py:133 ../ui.py:425 ../ui.py:600
 msgid "Cancel"
 msgstr "Annuleren"
 
@@ -75,10 +79,6 @@ msgstr ""
 "Hiermee worden alle plug-ins vanuit de backup hersteld.\n"
 "Wilt u de herstelprocedure starten?"
 
-#: ../ui.py:398
-msgid "Choose a previous backup archive to restore."
-msgstr ""
-
 #: ../ui.py:275
 msgid ""
 "Choose settings backup which should be restored.\n"
@@ -96,7 +96,7 @@ msgid "Create a backup of the current settings."
 msgstr ""
 
 #: ../ui.py:219
-msgid "Create a separate archive with current settings without overwriting the existing backup. The hostname and slot number are added to the archive name."
+msgid "Create a separate archive with current settings and autoinstall list without overwriting the existing backup. The hostname and slot number are added to the archive name."
 msgstr ""
 
 #: ../ui.py:219
@@ -107,13 +107,17 @@ msgstr ""
 msgid "Daily automatic backup"
 msgstr "Elke dag automatisch een backup maken"
 
-#: ../ui.py:594
+#: ../ui.py:426
+msgid "Delete this archive"
+msgstr ""
+
+#: ../ui.py:639
 msgid "Deselect"
 msgstr "Déselecteer"
 
-#: ../ui.py:417
+#: ../ui.py:446
 #, fuzzy
-msgid "Do you really want to restore this backup and restart?"
+msgid "Do you really want delete this backup archive?"
 msgstr ""
 "Kies de backup die u wenst te herstellen.\n"
 "Wilt u deze backup herstellen en daarna herstarten?"
@@ -133,6 +137,11 @@ msgstr "Backup de EPG-cache"
 #: ../ui.py:365
 msgid "Failed"
 msgstr "Mislukt"
+
+#: ../ui.py:461
+#, fuzzy
+msgid "Failed to delete backup."
+msgstr "Kies de bestanden om te backuppen"
 
 #: ../ui.py:27 ../ui.py:50
 msgid "Harddisk"
@@ -158,7 +167,7 @@ msgstr "Handmatig"
 msgid "No autoinstall list found"
 msgstr "Er is geen autoinstall lijst aangetroffen"
 
-#: ../ui.py:452
+#: ../ui.py:495
 msgid "No backup information available."
 msgstr ""
 
@@ -183,8 +192,12 @@ msgstr "Geen geschikt medium gevonden, USB stick, CF kaart of harddisk nodig."
 msgid "Nowhere"
 msgstr "Nergens"
 
-#: ../ui.py:608
+#: ../ui.py:653
 msgid "Really close without saving settings?"
+msgstr ""
+
+#: ../ui.py:415
+msgid "Receiver:"
 msgstr ""
 
 #: ../ui.py:217
@@ -212,6 +225,10 @@ msgstr ""
 msgid "Restore settings from the current backup."
 msgstr ""
 
+#: ../ui.py:424
+msgid "Restore settings now"
+msgstr ""
+
 #: ../ui.py:214
 msgid "Run a backup now"
 msgstr "Maak nu een backup"
@@ -220,7 +237,7 @@ msgstr "Maak nu een backup"
 msgid "Run autoinstall"
 msgstr "Start de AutoInstall"
 
-#: ../ui.py:253 ../ui.py:292 ../ui.py:321 ../ui.py:435 ../ui.py:485
+#: ../ui.py:253 ../ui.py:292 ../ui.py:321 ../ui.py:478 ../ui.py:530
 msgid "Running..."
 msgstr "Loopt"
 
@@ -228,7 +245,7 @@ msgstr "Loopt"
 msgid "SD"
 msgstr "SD"
 
-#: ../ui.py:134 ../ui.py:556
+#: ../ui.py:134 ../ui.py:601
 msgid "Save"
 msgstr "Opslaan"
 
@@ -240,9 +257,13 @@ msgstr ""
 msgid "Save previous backup"
 msgstr "Sla de vorige backup op"
 
-#: ../ui.py:596
+#: ../ui.py:641
 msgid "Select"
 msgstr "Kies"
+
+#: ../ui.py:398
+msgid "Select a backup archive and press OK."
+msgstr ""
 
 #: ../ui.py:213
 msgid "Select files and folders to include in the backup. Basic backup items are already selected."
@@ -252,17 +273,27 @@ msgstr ""
 msgid "Select files to backup"
 msgstr "Kies de bestanden om te backuppen"
 
-#: ../ui.py:587
+#: ../ui.py:632
 msgid "Select files/folders to backup"
 msgstr "Kies de bestanden en mappen voor de backup"
 
-#: ../ui.py:409
-msgid "This backup was created for another receiver."
+#: ../ui.py:415
+msgid ""
+"This backup was created for another receiver.\n"
+"Receiver MAC does not match:"
 msgstr ""
 
 #: ../ui.py:28
 msgid "USB"
 msgstr "USB"
+
+#: ../ui.py:415
+msgid "Unknown"
+msgstr ""
+
+#: ../ui.py:431
+msgid "What do you want to do?"
+msgstr ""
 
 #: ../ui.py:267 ../ui.py:306 ../ui.py:335
 msgid "from: "

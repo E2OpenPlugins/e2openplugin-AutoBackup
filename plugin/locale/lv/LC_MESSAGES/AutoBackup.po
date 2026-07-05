@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: AutoBackup\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-07-04 21:25+0200\n"
+"POT-Creation-Date: 2026-07-05 11:02+0200\n"
 "PO-Revision-Date: 2018-12-25 21:50+0200\n"
 "Last-Translator: Taapat <taapat@gmail.com>\n"
 "Language-Team: Taapat <taapat@gmail.com>\n"
@@ -34,10 +34,10 @@ msgstr "Saglabāt EPG informāciju"
 
 #: ../ui.py:398
 #, fuzzy
-msgid "Backup archives"
+msgid "Backup archive list"
 msgstr "Saglabāt EPG informāciju"
 
-#: ../ui.py:417
+#: ../ui.py:431
 #, fuzzy
 msgid "Backup information"
 msgstr "Dublējumkopijas atrašanās vieta"
@@ -46,11 +46,15 @@ msgstr "Dublējumkopijas atrašanās vieta"
 msgid "Backup location"
 msgstr "Dublējumkopijas atrašanās vieta"
 
+#: ../ui.py:415
+msgid "Backup:"
+msgstr ""
+
 #: ../ui.py:29 ../ui.py:48
 msgid "CF"
 msgstr "CF"
 
-#: ../ui.py:133 ../ui.py:555
+#: ../ui.py:133 ../ui.py:425 ../ui.py:600
 msgid "Cancel"
 msgstr "Atcelt"
 
@@ -71,10 +75,6 @@ msgstr ""
 "Tiks uzstādīti visi spraudņi dublējumkopijā no %s.\n"
 "Vai tiešām vēlaties turpināt?"
 
-#: ../ui.py:398
-msgid "Choose a previous backup archive to restore."
-msgstr ""
-
 #: ../ui.py:275
 #, fuzzy
 msgid ""
@@ -93,7 +93,7 @@ msgid "Create a backup of the current settings."
 msgstr ""
 
 #: ../ui.py:219
-msgid "Create a separate archive with current settings without overwriting the existing backup. The hostname and slot number are added to the archive name."
+msgid "Create a separate archive with current settings and autoinstall list without overwriting the existing backup. The hostname and slot number are added to the archive name."
 msgstr ""
 
 #: ../ui.py:219
@@ -104,13 +104,17 @@ msgstr ""
 msgid "Daily automatic backup"
 msgstr "Veidot dublējumkopiju katru dienu"
 
-#: ../ui.py:594
+#: ../ui.py:426
+msgid "Delete this archive"
+msgstr ""
+
+#: ../ui.py:639
 msgid "Deselect"
 msgstr "Atcelt izvēli"
 
-#: ../ui.py:417
+#: ../ui.py:446
 #, fuzzy
-msgid "Do you really want to restore this backup and restart?"
+msgid "Do you really want delete this backup archive?"
 msgstr ""
 "Tiks uzstādīta dublējumkopija no %s.\n"
 "Vai tiešām vēlaties turpināt?"
@@ -130,6 +134,11 @@ msgstr "Saglabāt EPG informāciju"
 #: ../ui.py:365
 msgid "Failed"
 msgstr "Neizdevās izeidot dublējumkopiju"
+
+#: ../ui.py:461
+#, fuzzy
+msgid "Failed to delete backup."
+msgstr "Izvēlēties dublējumkopijas failus"
 
 #: ../ui.py:27 ../ui.py:50
 msgid "Harddisk"
@@ -156,7 +165,7 @@ msgstr "Manuāli"
 msgid "No autoinstall list found"
 msgstr "Dzēst spraudņu sarakstu"
 
-#: ../ui.py:452
+#: ../ui.py:495
 msgid "No backup information available."
 msgstr ""
 
@@ -182,8 +191,12 @@ msgstr "Nav atrasts piemērots datu nesējs. Pievienojiet USB zibatmiņu, SD kar
 msgid "Nowhere"
 msgstr "Nekur"
 
-#: ../ui.py:608
+#: ../ui.py:653
 msgid "Really close without saving settings?"
+msgstr ""
+
+#: ../ui.py:415
+msgid "Receiver:"
 msgstr ""
 
 #: ../ui.py:217
@@ -211,6 +224,10 @@ msgstr ""
 msgid "Restore settings from the current backup."
 msgstr ""
 
+#: ../ui.py:424
+msgid "Restore settings now"
+msgstr ""
+
 #: ../ui.py:214
 msgid "Run a backup now"
 msgstr "Izveidot dublējumkopiju tagad"
@@ -219,7 +236,7 @@ msgstr "Izveidot dublējumkopiju tagad"
 msgid "Run autoinstall"
 msgstr "Uzstādīt spraudņus"
 
-#: ../ui.py:253 ../ui.py:292 ../ui.py:321 ../ui.py:435 ../ui.py:485
+#: ../ui.py:253 ../ui.py:292 ../ui.py:321 ../ui.py:478 ../ui.py:530
 msgid "Running..."
 msgstr "Darbojas..."
 
@@ -227,7 +244,7 @@ msgstr "Darbojas..."
 msgid "SD"
 msgstr "SD"
 
-#: ../ui.py:134 ../ui.py:556
+#: ../ui.py:134 ../ui.py:601
 msgid "Save"
 msgstr "Sagalbāt"
 
@@ -239,9 +256,13 @@ msgstr ""
 msgid "Save previous backup"
 msgstr "Sagalbāt iepriekšējo dublējumkopiju"
 
-#: ../ui.py:596
+#: ../ui.py:641
 msgid "Select"
 msgstr "Izvēlēties"
+
+#: ../ui.py:398
+msgid "Select a backup archive and press OK."
+msgstr ""
 
 #: ../ui.py:213
 msgid "Select files and folders to include in the backup. Basic backup items are already selected."
@@ -251,17 +272,27 @@ msgstr ""
 msgid "Select files to backup"
 msgstr "Izvēlēties dublējumkopijas failus"
 
-#: ../ui.py:587
+#: ../ui.py:632
 msgid "Select files/folders to backup"
 msgstr "Izvēlieties dublējumkopijas failus vai mapes"
 
-#: ../ui.py:409
-msgid "This backup was created for another receiver."
+#: ../ui.py:415
+msgid ""
+"This backup was created for another receiver.\n"
+"Receiver MAC does not match:"
 msgstr ""
 
 #: ../ui.py:28
 msgid "USB"
 msgstr "USB"
+
+#: ../ui.py:415
+msgid "Unknown"
+msgstr ""
+
+#: ../ui.py:431
+msgid "What do you want to do?"
+msgstr ""
 
 #: ../ui.py:267 ../ui.py:306 ../ui.py:335
 msgid "from: "

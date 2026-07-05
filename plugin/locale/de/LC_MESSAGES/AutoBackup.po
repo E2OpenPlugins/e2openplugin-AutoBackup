@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2-plugin-extensions-autobackup\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-07-04 21:25+0200\n"
+"POT-Creation-Date: 2026-07-05 11:02+0200\n"
 "PO-Revision-Date: 2019-07-25 21:34+0200\n"
 "Last-Translator: Pike_Bishop <alfredzngr023@gmail.com>\n"
 "Language-Team: daddelfalk\n"
@@ -44,11 +44,11 @@ msgstr "Sichere EPG-Cache"
 
 #: ../ui.py:398
 #, fuzzy
-msgid "Backup archives"
+msgid "Backup archive list"
 msgstr "Sichere EPG-Cache"
 
 #
-#: ../ui.py:417
+#: ../ui.py:431
 #, fuzzy
 msgid "Backup information"
 msgstr "Sicherungs-Ort"
@@ -58,13 +58,17 @@ msgstr "Sicherungs-Ort"
 msgid "Backup location"
 msgstr "Sicherungs-Ort"
 
+#: ../ui.py:415
+msgid "Backup:"
+msgstr ""
+
 #
 #: ../ui.py:29 ../ui.py:48
 msgid "CF"
 msgstr "CF"
 
 #
-#: ../ui.py:133 ../ui.py:555
+#: ../ui.py:133 ../ui.py:425 ../ui.py:600
 msgid "Cancel"
 msgstr "Abbrechen"
 
@@ -86,10 +90,6 @@ msgstr ""
 "Damit werden alle Plugins aus der Sicherung neu installiert auf  %s.\n"
 "Möchten Sie wirklich neu installieren ?"
 
-#: ../ui.py:398
-msgid "Choose a previous backup archive to restore."
-msgstr ""
-
 #
 #: ../ui.py:275
 #, fuzzy
@@ -110,7 +110,7 @@ msgid "Create a backup of the current settings."
 msgstr ""
 
 #: ../ui.py:219
-msgid "Create a separate archive with current settings without overwriting the existing backup. The hostname and slot number are added to the archive name."
+msgid "Create a separate archive with current settings and autoinstall list without overwriting the existing backup. The hostname and slot number are added to the archive name."
 msgstr ""
 
 #: ../ui.py:219
@@ -122,15 +122,19 @@ msgstr ""
 msgid "Daily automatic backup"
 msgstr "Automatische tägliche Sicherung"
 
+#: ../ui.py:426
+msgid "Delete this archive"
+msgstr ""
+
 #
-#: ../ui.py:594
+#: ../ui.py:639
 msgid "Deselect"
 msgstr "Markierung aufheben"
 
 #
-#: ../ui.py:417
+#: ../ui.py:446
 #, fuzzy
-msgid "Do you really want to restore this backup and restart?"
+msgid "Do you really want delete this backup archive?"
 msgstr ""
 "Damit wird Ihre Sicherung aus %s wiederhergestellt.\n"
 "Möchten Sie die Einstellungen wirklich wiederherstellen und neu starten ?"
@@ -152,6 +156,12 @@ msgstr "EPG-Cache Sicherung"
 #: ../ui.py:365
 msgid "Failed"
 msgstr "Fehlgeschlagen"
+
+#
+#: ../ui.py:461
+#, fuzzy
+msgid "Failed to delete backup."
+msgstr "Dateien zum Sichern auswählen"
 
 #
 #: ../ui.py:27 ../ui.py:50
@@ -181,7 +191,7 @@ msgstr "Manuell"
 msgid "No autoinstall list found"
 msgstr "Lösche Auto-Installations Liste"
 
-#: ../ui.py:452
+#: ../ui.py:495
 msgid "No backup information available."
 msgstr ""
 
@@ -212,8 +222,12 @@ msgstr "Kein passendes Sicherungsmedium gefunden. Bitte einen USB-Stick, CF oder
 msgid "Nowhere"
 msgstr "Nirgendwo"
 
-#: ../ui.py:608
+#: ../ui.py:653
 msgid "Really close without saving settings?"
+msgstr ""
+
+#: ../ui.py:415
+msgid "Receiver:"
 msgstr ""
 
 #: ../ui.py:217
@@ -242,6 +256,10 @@ msgstr ""
 msgid "Restore settings from the current backup."
 msgstr ""
 
+#: ../ui.py:424
+msgid "Restore settings now"
+msgstr ""
+
 #
 #: ../ui.py:214
 msgid "Run a backup now"
@@ -253,7 +271,7 @@ msgid "Run autoinstall"
 msgstr "Erstelle Auto-Installation"
 
 #
-#: ../ui.py:253 ../ui.py:292 ../ui.py:321 ../ui.py:435 ../ui.py:485
+#: ../ui.py:253 ../ui.py:292 ../ui.py:321 ../ui.py:478 ../ui.py:530
 msgid "Running..."
 msgstr "Wird ausgeführt ..."
 
@@ -263,7 +281,7 @@ msgid "SD"
 msgstr "SD"
 
 #
-#: ../ui.py:134 ../ui.py:556
+#: ../ui.py:134 ../ui.py:601
 msgid "Save"
 msgstr "Speichern"
 
@@ -276,9 +294,13 @@ msgid "Save previous backup"
 msgstr "Sichere vorhergehendes Backup"
 
 #
-#: ../ui.py:596
+#: ../ui.py:641
 msgid "Select"
 msgstr "Auswählen"
+
+#: ../ui.py:398
+msgid "Select a backup archive and press OK."
+msgstr ""
 
 #: ../ui.py:213
 msgid "Select files and folders to include in the backup. Basic backup items are already selected."
@@ -290,18 +312,28 @@ msgid "Select files to backup"
 msgstr "Dateien zum Sichern auswählen"
 
 #
-#: ../ui.py:587
+#: ../ui.py:632
 msgid "Select files/folders to backup"
 msgstr "Wählen Sie die Dateien / Ordner für die Sicherung"
 
-#: ../ui.py:409
-msgid "This backup was created for another receiver."
+#: ../ui.py:415
+msgid ""
+"This backup was created for another receiver.\n"
+"Receiver MAC does not match:"
 msgstr ""
 
 #
 #: ../ui.py:28
 msgid "USB"
 msgstr "USB"
+
+#: ../ui.py:415
+msgid "Unknown"
+msgstr ""
+
+#: ../ui.py:431
+msgid "What do you want to do?"
+msgstr ""
 
 #: ../ui.py:267 ../ui.py:306 ../ui.py:335
 msgid "from: "
