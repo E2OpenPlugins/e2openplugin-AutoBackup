@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2-plugin-extensions-autobackup\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-07-05 11:02+0200\n"
+"POT-Creation-Date: 2026-07-07 09:28+0200\n"
 "PO-Revision-Date: 2020-04-27 19:00+0100\n"
 "Last-Translator: esmos <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -10,6 +10,10 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+
+#: ../ui.py:442
+msgid "Archive contents"
+msgstr ""
 
 #: ../plugin.py:139
 msgid "Auto backup"
@@ -36,7 +40,7 @@ msgstr "Yedek EPG önbelleği"
 msgid "Backup archive list"
 msgstr "Yedek EPG önbelleği"
 
-#: ../ui.py:431
+#: ../ui.py:440
 #, fuzzy
 msgid "Backup information"
 msgstr "Yedekleme yeri"
@@ -45,15 +49,11 @@ msgstr "Yedekleme yeri"
 msgid "Backup location"
 msgstr "Yedekleme yeri"
 
-#: ../ui.py:415
-msgid "Backup:"
-msgstr ""
-
 #: ../ui.py:29 ../ui.py:48
 msgid "CF"
 msgstr ""
 
-#: ../ui.py:133 ../ui.py:425 ../ui.py:600
+#: ../ui.py:133 ../ui.py:422 ../ui.py:430 ../ui.py:611
 msgid "Cancel"
 msgstr "İptal et"
 
@@ -103,15 +103,15 @@ msgstr ""
 msgid "Daily automatic backup"
 msgstr "Günlük otomatik yedekleme"
 
-#: ../ui.py:426
+#: ../ui.py:424 ../ui.py:431
 msgid "Delete this archive"
 msgstr ""
 
-#: ../ui.py:639
+#: ../ui.py:650
 msgid "Deselect"
 msgstr "Seçimini kaldır"
 
-#: ../ui.py:446
+#: ../ui.py:457
 #, fuzzy
 msgid "Do you really want delete this backup archive?"
 msgstr ""
@@ -134,7 +134,7 @@ msgstr "EPG önbellek yedeklemesi"
 msgid "Failed"
 msgstr "Başarısız oldu"
 
-#: ../ui.py:461
+#: ../ui.py:472
 #, fuzzy
 msgid "Failed to delete backup."
 msgstr "Yedeklenecek dosyaları seçin"
@@ -164,7 +164,7 @@ msgstr "manuel (elle)"
 msgid "No autoinstall list found"
 msgstr "Otomatik kurulum listesini kaldır"
 
-#: ../ui.py:495
+#: ../ui.py:506
 msgid "No backup information available."
 msgstr ""
 
@@ -190,12 +190,8 @@ msgstr "Uygun ortam bulunamadı, USB, flash kart veya sabit disk takın."
 msgid "Nowhere"
 msgstr "Hiçbir yerde"
 
-#: ../ui.py:653
+#: ../ui.py:664
 msgid "Really close without saving settings?"
-msgstr ""
-
-#: ../ui.py:415
-msgid "Receiver:"
 msgstr ""
 
 #: ../ui.py:217
@@ -223,7 +219,7 @@ msgstr ""
 msgid "Restore settings from the current backup."
 msgstr ""
 
-#: ../ui.py:424
+#: ../ui.py:423
 msgid "Restore settings now"
 msgstr ""
 
@@ -235,7 +231,7 @@ msgstr "Şimdi bir yedek çalıştırın"
 msgid "Run autoinstall"
 msgstr "Otomatik yüklemeyi çalıştır"
 
-#: ../ui.py:253 ../ui.py:292 ../ui.py:321 ../ui.py:478 ../ui.py:530
+#: ../ui.py:253 ../ui.py:292 ../ui.py:321 ../ui.py:489 ../ui.py:541
 msgid "Running..."
 msgstr "Çalıştırılıyor..."
 
@@ -243,7 +239,7 @@ msgstr "Çalıştırılıyor..."
 msgid "SD"
 msgstr ""
 
-#: ../ui.py:134 ../ui.py:601
+#: ../ui.py:134 ../ui.py:612
 msgid "Save"
 msgstr "Kaydet"
 
@@ -255,7 +251,7 @@ msgstr ""
 msgid "Save previous backup"
 msgstr "Önceki yedeklemeyi kaydet"
 
-#: ../ui.py:641
+#: ../ui.py:652
 msgid "Select"
 msgstr "Seç"
 
@@ -271,25 +267,22 @@ msgstr ""
 msgid "Select files to backup"
 msgstr "Yedeklenecek dosyaları seçin"
 
-#: ../ui.py:632
+#: ../ui.py:643
 msgid "Select files/folders to backup"
 msgstr "Yedeklenecek dosyaları/klasörleri seçin"
 
-#: ../ui.py:415
+#: ../ui.py:433
+#, python-format
 msgid ""
 "This backup was created for another receiver.\n"
-"Receiver MAC does not match:"
+"Current receiver MAC: %s"
 msgstr ""
 
 #: ../ui.py:28
 msgid "USB"
 msgstr ""
 
-#: ../ui.py:415
-msgid "Unknown"
-msgstr ""
-
-#: ../ui.py:431
+#: ../ui.py:444
 msgid "What do you want to do?"
 msgstr ""
 

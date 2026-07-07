@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-07-05 11:02+0200\n"
+"POT-Creation-Date: 2026-07-07 09:28+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,6 +16,10 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+
+#: ../ui.py:442
+msgid "Archive contents"
+msgstr ""
 
 #: ../plugin.py:139
 msgid "Auto backup"
@@ -41,7 +45,7 @@ msgstr ""
 msgid "Backup archive list"
 msgstr ""
 
-#: ../ui.py:431
+#: ../ui.py:440
 msgid "Backup information"
 msgstr ""
 
@@ -49,15 +53,11 @@ msgstr ""
 msgid "Backup location"
 msgstr ""
 
-#: ../ui.py:415
-msgid "Backup:"
-msgstr ""
-
 #: ../ui.py:29 ../ui.py:48
 msgid "CF"
 msgstr ""
 
-#: ../ui.py:133 ../ui.py:425 ../ui.py:600
+#: ../ui.py:133 ../ui.py:422 ../ui.py:430 ../ui.py:611
 msgid "Cancel"
 msgstr ""
 
@@ -101,15 +101,15 @@ msgstr ""
 msgid "Daily automatic backup"
 msgstr ""
 
-#: ../ui.py:426
+#: ../ui.py:424 ../ui.py:431
 msgid "Delete this archive"
 msgstr ""
 
-#: ../ui.py:639
+#: ../ui.py:650
 msgid "Deselect"
 msgstr ""
 
-#: ../ui.py:446
+#: ../ui.py:457
 msgid "Do you really want delete this backup archive?"
 msgstr ""
 
@@ -129,7 +129,7 @@ msgstr ""
 msgid "Failed"
 msgstr ""
 
-#: ../ui.py:461
+#: ../ui.py:472
 msgid "Failed to delete backup."
 msgstr ""
 
@@ -157,7 +157,7 @@ msgstr ""
 msgid "No autoinstall list found"
 msgstr ""
 
-#: ../ui.py:495
+#: ../ui.py:506
 msgid "No backup information available."
 msgstr ""
 
@@ -181,12 +181,8 @@ msgstr ""
 msgid "Nowhere"
 msgstr ""
 
-#: ../ui.py:653
+#: ../ui.py:664
 msgid "Really close without saving settings?"
-msgstr ""
-
-#: ../ui.py:415
-msgid "Receiver:"
 msgstr ""
 
 #: ../ui.py:217
@@ -213,7 +209,7 @@ msgstr ""
 msgid "Restore settings from the current backup."
 msgstr ""
 
-#: ../ui.py:424
+#: ../ui.py:423
 msgid "Restore settings now"
 msgstr ""
 
@@ -225,7 +221,7 @@ msgstr ""
 msgid "Run autoinstall"
 msgstr ""
 
-#: ../ui.py:253 ../ui.py:292 ../ui.py:321 ../ui.py:478 ../ui.py:530
+#: ../ui.py:253 ../ui.py:292 ../ui.py:321 ../ui.py:489 ../ui.py:541
 msgid "Running..."
 msgstr ""
 
@@ -233,7 +229,7 @@ msgstr ""
 msgid "SD"
 msgstr ""
 
-#: ../ui.py:134 ../ui.py:601
+#: ../ui.py:134 ../ui.py:612
 msgid "Save"
 msgstr ""
 
@@ -245,7 +241,7 @@ msgstr ""
 msgid "Save previous backup"
 msgstr ""
 
-#: ../ui.py:641
+#: ../ui.py:652
 msgid "Select"
 msgstr ""
 
@@ -261,25 +257,22 @@ msgstr ""
 msgid "Select files to backup"
 msgstr ""
 
-#: ../ui.py:632
+#: ../ui.py:643
 msgid "Select files/folders to backup"
 msgstr ""
 
-#: ../ui.py:415
+#: ../ui.py:433
+#, python-format
 msgid ""
 "This backup was created for another receiver.\n"
-"Receiver MAC does not match:"
+"Current receiver MAC: %s"
 msgstr ""
 
 #: ../ui.py:28
 msgid "USB"
 msgstr ""
 
-#: ../ui.py:415
-msgid "Unknown"
-msgstr ""
-
-#: ../ui.py:431
+#: ../ui.py:444
 msgid "What do you want to do?"
 msgstr ""
 

@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-07-05 11:02+0200\n"
+"POT-Creation-Date: 2026-07-07 09:28+0200\n"
 "PO-Revision-Date: 2020-05-19 21:25+0100\n"
 "Last-Translator: Pereiira69 <pereira69@gmail.com>\n"
 "Language-Team: \n"
@@ -12,6 +12,10 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Generator: Poedit 2.3.1\n"
+
+#: ../ui.py:442
+msgid "Archive contents"
+msgstr ""
 
 #: ../plugin.py:139
 msgid "Auto backup"
@@ -38,7 +42,7 @@ msgstr "Backup EPG cache"
 msgid "Backup archive list"
 msgstr "Backup EPG cache"
 
-#: ../ui.py:431
+#: ../ui.py:440
 #, fuzzy
 msgid "Backup information"
 msgstr "Local de backup"
@@ -47,15 +51,11 @@ msgstr "Local de backup"
 msgid "Backup location"
 msgstr "Local de backup"
 
-#: ../ui.py:415
-msgid "Backup:"
-msgstr ""
-
 #: ../ui.py:29 ../ui.py:48
 msgid "CF"
 msgstr "CF"
 
-#: ../ui.py:133 ../ui.py:425 ../ui.py:600
+#: ../ui.py:133 ../ui.py:422 ../ui.py:430 ../ui.py:611
 msgid "Cancel"
 msgstr "Cancelar"
 
@@ -107,15 +107,15 @@ msgstr ""
 msgid "Daily automatic backup"
 msgstr "Backup automático diário"
 
-#: ../ui.py:426
+#: ../ui.py:424 ../ui.py:431
 msgid "Delete this archive"
 msgstr ""
 
-#: ../ui.py:639
+#: ../ui.py:650
 msgid "Deselect"
 msgstr "Desmarcar"
 
-#: ../ui.py:446
+#: ../ui.py:457
 #, fuzzy
 msgid "Do you really want delete this backup archive?"
 msgstr ""
@@ -138,7 +138,7 @@ msgstr "EPG cache backup"
 msgid "Failed"
 msgstr "Falhou"
 
-#: ../ui.py:461
+#: ../ui.py:472
 #, fuzzy
 msgid "Failed to delete backup."
 msgstr "Selecionar arquivos para backup"
@@ -167,7 +167,7 @@ msgstr "Manual"
 msgid "No autoinstall list found"
 msgstr "Nenhuma lista de instalação automática encontrada"
 
-#: ../ui.py:495
+#: ../ui.py:506
 msgid "No backup information available."
 msgstr ""
 
@@ -192,12 +192,8 @@ msgstr "Nenhuma mídia adequada encontrada, insira o pen drive, cartão flash ou
 msgid "Nowhere"
 msgstr "Em nenhum Lugar"
 
-#: ../ui.py:653
+#: ../ui.py:664
 msgid "Really close without saving settings?"
-msgstr ""
-
-#: ../ui.py:415
-msgid "Receiver:"
 msgstr ""
 
 #: ../ui.py:217
@@ -225,7 +221,7 @@ msgstr ""
 msgid "Restore settings from the current backup."
 msgstr ""
 
-#: ../ui.py:424
+#: ../ui.py:423
 msgid "Restore settings now"
 msgstr ""
 
@@ -237,7 +233,7 @@ msgstr "Execute um backup agora"
 msgid "Run autoinstall"
 msgstr "Execute a instalação automática"
 
-#: ../ui.py:253 ../ui.py:292 ../ui.py:321 ../ui.py:478 ../ui.py:530
+#: ../ui.py:253 ../ui.py:292 ../ui.py:321 ../ui.py:489 ../ui.py:541
 msgid "Running..."
 msgstr "Em funcionamento..."
 
@@ -245,7 +241,7 @@ msgstr "Em funcionamento..."
 msgid "SD"
 msgstr "SD"
 
-#: ../ui.py:134 ../ui.py:601
+#: ../ui.py:134 ../ui.py:612
 msgid "Save"
 msgstr "salvar"
 
@@ -257,7 +253,7 @@ msgstr ""
 msgid "Save previous backup"
 msgstr "Salvar backup anterior"
 
-#: ../ui.py:641
+#: ../ui.py:652
 msgid "Select"
 msgstr "Selecione"
 
@@ -273,25 +269,22 @@ msgstr ""
 msgid "Select files to backup"
 msgstr "Selecionar arquivos para backup"
 
-#: ../ui.py:632
+#: ../ui.py:643
 msgid "Select files/folders to backup"
 msgstr "Selecionar arquivos / pastas para backup"
 
-#: ../ui.py:415
+#: ../ui.py:433
+#, python-format
 msgid ""
 "This backup was created for another receiver.\n"
-"Receiver MAC does not match:"
+"Current receiver MAC: %s"
 msgstr ""
 
 #: ../ui.py:28
 msgid "USB"
 msgstr "USB"
 
-#: ../ui.py:415
-msgid "Unknown"
-msgstr ""
-
-#: ../ui.py:431
+#: ../ui.py:444
 msgid "What do you want to do?"
 msgstr ""
 

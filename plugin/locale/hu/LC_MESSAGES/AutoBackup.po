@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-07-05 11:02+0200\n"
+"POT-Creation-Date: 2026-07-07 09:28+0200\n"
 "PO-Revision-Date: 2020-06-02 09:52+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -17,6 +17,10 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 2.3.1\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../ui.py:442
+msgid "Archive contents"
+msgstr ""
 
 #: ../plugin.py:139
 msgid "Auto backup"
@@ -43,7 +47,7 @@ msgstr "EPG cache biztonsági mentése"
 msgid "Backup archive list"
 msgstr "EPG cache biztonsági mentése"
 
-#: ../ui.py:431
+#: ../ui.py:440
 #, fuzzy
 msgid "Backup information"
 msgstr "Biztonsági mentés helye"
@@ -52,15 +56,11 @@ msgstr "Biztonsági mentés helye"
 msgid "Backup location"
 msgstr "Biztonsági mentés helye"
 
-#: ../ui.py:415
-msgid "Backup:"
-msgstr ""
-
 #: ../ui.py:29 ../ui.py:48
 msgid "CF"
 msgstr "CF"
 
-#: ../ui.py:133 ../ui.py:425 ../ui.py:600
+#: ../ui.py:133 ../ui.py:422 ../ui.py:430 ../ui.py:611
 msgid "Cancel"
 msgstr "Mégsem"
 
@@ -112,15 +112,15 @@ msgstr ""
 msgid "Daily automatic backup"
 msgstr "Automatikus biztonsági mentés naponta"
 
-#: ../ui.py:426
+#: ../ui.py:424 ../ui.py:431
 msgid "Delete this archive"
 msgstr ""
 
-#: ../ui.py:639
+#: ../ui.py:650
 msgid "Deselect"
 msgstr "Kiválasztás megszüntetése"
 
-#: ../ui.py:446
+#: ../ui.py:457
 #, fuzzy
 msgid "Do you really want delete this backup archive?"
 msgstr ""
@@ -143,7 +143,7 @@ msgstr "EPG cache biztonsági mentése"
 msgid "Failed"
 msgstr "Sikertelen"
 
-#: ../ui.py:461
+#: ../ui.py:472
 #, fuzzy
 msgid "Failed to delete backup."
 msgstr "Fájlok kiválasztása a biztonsági mentéshez"
@@ -172,7 +172,7 @@ msgstr "Kézi"
 msgid "No autoinstall list found"
 msgstr "Nem található automatikus telepítő lista"
 
-#: ../ui.py:495
+#: ../ui.py:506
 msgid "No backup information available."
 msgstr ""
 
@@ -197,12 +197,8 @@ msgstr "Nem található megfelelő adathordozó! Csatlakoztasson egy pendrive-ot
 msgid "Nowhere"
 msgstr "Sehol"
 
-#: ../ui.py:653
+#: ../ui.py:664
 msgid "Really close without saving settings?"
-msgstr ""
-
-#: ../ui.py:415
-msgid "Receiver:"
 msgstr ""
 
 #: ../ui.py:217
@@ -230,7 +226,7 @@ msgstr ""
 msgid "Restore settings from the current backup."
 msgstr ""
 
-#: ../ui.py:424
+#: ../ui.py:423
 msgid "Restore settings now"
 msgstr ""
 
@@ -242,7 +238,7 @@ msgstr "Biztonsági mentés indítása most"
 msgid "Run autoinstall"
 msgstr "Automatikus telepítő indítása"
 
-#: ../ui.py:253 ../ui.py:292 ../ui.py:321 ../ui.py:478 ../ui.py:530
+#: ../ui.py:253 ../ui.py:292 ../ui.py:321 ../ui.py:489 ../ui.py:541
 msgid "Running..."
 msgstr "Futtatás..."
 
@@ -250,7 +246,7 @@ msgstr "Futtatás..."
 msgid "SD"
 msgstr "SD"
 
-#: ../ui.py:134 ../ui.py:601
+#: ../ui.py:134 ../ui.py:612
 msgid "Save"
 msgstr "Mentés"
 
@@ -262,7 +258,7 @@ msgstr ""
 msgid "Save previous backup"
 msgstr "Előző biztonsági mentés mentése"
 
-#: ../ui.py:641
+#: ../ui.py:652
 msgid "Select"
 msgstr "Kiválasztás"
 
@@ -278,25 +274,22 @@ msgstr ""
 msgid "Select files to backup"
 msgstr "Fájlok kiválasztása a biztonsági mentéshez"
 
-#: ../ui.py:632
+#: ../ui.py:643
 msgid "Select files/folders to backup"
 msgstr "Fájlok/mappák kiválasztása a biztonsági mentéshez"
 
-#: ../ui.py:415
+#: ../ui.py:433
+#, python-format
 msgid ""
 "This backup was created for another receiver.\n"
-"Receiver MAC does not match:"
+"Current receiver MAC: %s"
 msgstr ""
 
 #: ../ui.py:28
 msgid "USB"
 msgstr "USB"
 
-#: ../ui.py:415
-msgid "Unknown"
-msgstr ""
-
-#: ../ui.py:431
+#: ../ui.py:444
 msgid "What do you want to do?"
 msgstr ""
 

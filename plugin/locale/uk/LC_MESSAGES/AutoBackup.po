@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: AutoBackup\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-07-05 11:02+0200\n"
+"POT-Creation-Date: 2026-07-07 09:28+0200\n"
 "PO-Revision-Date: \n"
 "Last-Translator: kvinto\n"
 "Language-Team: http://gisclub.tv\n"
@@ -12,6 +12,10 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Generator: Poedit 3.0\n"
+
+#: ../ui.py:442
+msgid "Archive contents"
+msgstr ""
 
 #: ../plugin.py:139
 msgid "Auto backup"
@@ -38,7 +42,7 @@ msgstr "Резервне копіювання кешу EPG"
 msgid "Backup archive list"
 msgstr "Резервне копіювання кешу EPG"
 
-#: ../ui.py:431
+#: ../ui.py:440
 #, fuzzy
 msgid "Backup information"
 msgstr "Місце зберження"
@@ -47,15 +51,11 @@ msgstr "Місце зберження"
 msgid "Backup location"
 msgstr "Місце зберження"
 
-#: ../ui.py:415
-msgid "Backup:"
-msgstr ""
-
 #: ../ui.py:29 ../ui.py:48
 msgid "CF"
 msgstr "CF"
 
-#: ../ui.py:133 ../ui.py:425 ../ui.py:600
+#: ../ui.py:133 ../ui.py:422 ../ui.py:430 ../ui.py:611
 msgid "Cancel"
 msgstr "Відмінити"
 
@@ -107,15 +107,15 @@ msgstr ""
 msgid "Daily automatic backup"
 msgstr "Щоденно автоматичне резервне копіювання"
 
-#: ../ui.py:426
+#: ../ui.py:424 ../ui.py:431
 msgid "Delete this archive"
 msgstr ""
 
-#: ../ui.py:639
+#: ../ui.py:650
 msgid "Deselect"
 msgstr "Скасувати"
 
-#: ../ui.py:446
+#: ../ui.py:457
 #, fuzzy
 msgid "Do you really want delete this backup archive?"
 msgstr ""
@@ -138,7 +138,7 @@ msgstr "Резервне копіювання кешу EPG"
 msgid "Failed"
 msgstr "Не вдалося"
 
-#: ../ui.py:461
+#: ../ui.py:472
 #, fuzzy
 msgid "Failed to delete backup."
 msgstr "Вибір файлів для резервн. копіювання."
@@ -168,7 +168,7 @@ msgstr "Ручна"
 msgid "No autoinstall list found"
 msgstr "Створення AutoInstall"
 
-#: ../ui.py:495
+#: ../ui.py:506
 msgid "No backup information available."
 msgstr ""
 
@@ -194,13 +194,9 @@ msgstr "Не знайдено відповідного носія, вставт�
 msgid "Nowhere"
 msgstr "Ніколи"
 
-#: ../ui.py:653
+#: ../ui.py:664
 msgid "Really close without saving settings?"
 msgstr "Дійсно закрити без збереження налаштувань?"
-
-#: ../ui.py:415
-msgid "Receiver:"
-msgstr ""
 
 #: ../ui.py:217
 msgid "Remove autoinstall list"
@@ -227,7 +223,7 @@ msgstr ""
 msgid "Restore settings from the current backup."
 msgstr ""
 
-#: ../ui.py:424
+#: ../ui.py:423
 msgid "Restore settings now"
 msgstr ""
 
@@ -239,7 +235,7 @@ msgstr "Виконати резервне копіювання зараз"
 msgid "Run autoinstall"
 msgstr "Запутити AutoInstall"
 
-#: ../ui.py:253 ../ui.py:292 ../ui.py:321 ../ui.py:478 ../ui.py:530
+#: ../ui.py:253 ../ui.py:292 ../ui.py:321 ../ui.py:489 ../ui.py:541
 msgid "Running..."
 msgstr "Запуск..."
 
@@ -247,7 +243,7 @@ msgstr "Запуск..."
 msgid "SD"
 msgstr "SD"
 
-#: ../ui.py:134 ../ui.py:601
+#: ../ui.py:134 ../ui.py:612
 msgid "Save"
 msgstr "Зберегти"
 
@@ -259,7 +255,7 @@ msgstr ""
 msgid "Save previous backup"
 msgstr "Зберегти попередню резервну копію"
 
-#: ../ui.py:641
+#: ../ui.py:652
 msgid "Select"
 msgstr "Вибрати"
 
@@ -275,25 +271,22 @@ msgstr ""
 msgid "Select files to backup"
 msgstr "Вибір файлів для резервн. копіювання."
 
-#: ../ui.py:632
+#: ../ui.py:643
 msgid "Select files/folders to backup"
 msgstr "Виберіть файли/папки для резервн. копіювання"
 
-#: ../ui.py:415
+#: ../ui.py:433
+#, python-format
 msgid ""
 "This backup was created for another receiver.\n"
-"Receiver MAC does not match:"
+"Current receiver MAC: %s"
 msgstr ""
 
 #: ../ui.py:28
 msgid "USB"
 msgstr ""
 
-#: ../ui.py:415
-msgid "Unknown"
-msgstr ""
-
-#: ../ui.py:431
+#: ../ui.py:444
 msgid "What do you want to do?"
 msgstr ""
 
