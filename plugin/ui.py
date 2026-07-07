@@ -408,33 +408,44 @@ class Config(ConfigListScreen, Screen):
 		currentMac = open("/sys/class/net/eth0/address").read().strip().replace(":", "").lower()
 		backupMac = self.checkPreviousBackup(backupFile)
 
-		if backupMac != currentMac:
-			self.session.openWithCallback(
-				self.doRestorePreviousErrorClosed,
-				MessageBox,
-				_("This backup was created for another receiver.\nReceiver MAC does not match:") + "\n\n" + _("Receiver:") + " \t%s" % currentMac + "\n" + _("Backup:") + " \t%s" % (backupMac or _("Unknown")),
-				type=MessageBox.TYPE_ERROR,
-				timeout=10
-			)
-			return
+		with tarfile.open(backupFile, "r:gz") as tar:
+			files = []
+			for member in tar.getmembers():
+				if not member.issym() and not member.islnk():
+					files.append(8 * " " + member.name)
+			contents = "\n".join(sorted(files, key=str.lower))
 
 		info = self.formatAutoBackupInfo(self.readAutoBackupInfo(backupFile))
 
-		choices = [
-			(_("Restore settings now"), "restore"),
-			(_("Cancel"), "cancel"),
-			(_("Delete this archive"), "delete"),
-		]
+		if backupMac == currentMac:
+			choices = [
+				(_("Cancel"), "cancel"),
+				(_("Restore settings now"), "restore"),
+				(_("Delete this archive"), "delete"),
+			]
+			warning = ""
+			picon = MessageBox.TYPE_YESNO
+		else:
+			choices = [
+				(_("Cancel"), "cancel"),
+				(_("Delete this archive"), "delete"),
+			]
+			warning = _("This backup was created for another receiver.\nCurrent receiver MAC: %s") % currentMac + "\n\n"
+			picon = MessageBox.TYPE_ERROR
+
 		self.session.openWithCallback(
 			boundFunction(self.doRestorePreviousAction, backupFile, backupDir),
 			MessageBox,
-			_("Backup information") + ":\n\n" + info + "\n\n" + _("What do you want to do?"),
-			list=choices
+			warning +
+			_("Backup information") +
+			":\n\n" + info +
+			"\n\n" + _("Archive contents") +
+			":\n" + contents +
+			"\n\n" + _("What do you want to do?"),
+			list=choices,
+			picon = picon
 		)
 		return
-
-	def doRestorePreviousErrorClosed(self, *args):
-		self.doRestorePrevious()
 
 	def doRestorePreviousAction(self, backupFile, backupDir, action):
 		if action == "restore":
